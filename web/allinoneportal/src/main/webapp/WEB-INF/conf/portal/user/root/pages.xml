@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<page-set>
+	<page>
+  	<page-id>user::root::rss</page-id>
+    <owner-type>user</owner-type>
+    <owner-id>root</owner-id>
+    <name>rss</name>
+    <title>RSS</title>
+	  <access-permissions>root</access-permissions>
+	  <edit-permission>root</edit-permission>    
+    <application>
+      <instance-id>user#root:/content/RSSReaderPortlet/content</instance-id>    
+      <title>RSS Reader</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>  
+  </page>
+</page-set>
