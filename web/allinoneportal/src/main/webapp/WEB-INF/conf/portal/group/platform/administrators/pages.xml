@@ -111,6 +111,12 @@
     <show-max-window>true</show-max-window>
     
     <application>
+	    <instance-id>portal#@owner@:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
+	    <application-type>eXoWidget</application-type>
+	    <title>Welcome Widget</title>
+	  </application>
+    
+    <application>
       <instance-id>group#platform/administrators:/ecm/ECMAdminPortlet/ecmadmin</instance-id>
       <title>ECM Administration</title>
       <show-info-bar>true</show-info-bar>      

@@ -124,8 +124,8 @@
         <org.exoplatform.pc.version>2.0rc5</org.exoplatform.pc.version>
         <org.exoplatform.portal.version>2.1</org.exoplatform.portal.version>
         <org.exoplatform.ecm.version>2.0</org.exoplatform.ecm.version>                
-		<org.exoplatform.cs.version>1.0</org.exoplatform.cs.version>
-		<org.exoplatform.allinone.version>1.0</org.exoplatform.allinone.version>
+    		<org.exoplatform.cs.version>1.0</org.exoplatform.cs.version>
+    		<org.exoplatform.allinone.version>1.0</org.exoplatform.allinone.version>
         <test.classes>Test</test.classes>
         <test.skip>true</test.skip>
         <bonita.version>2.1</bonita.version>

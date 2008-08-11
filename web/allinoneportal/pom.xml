@@ -11,15 +11,6 @@
   <version>${org.exoplatform.allinone.version}</version>
   <name>eXo AllInOne web module</name>
   <build>    
-    <resources>
-      <resource>
-              <!-- this is relative to the pom.xml directory -->
-              <directory>src/main/webapp</directory>
-              <includes>
-                <include>**/*.xml</include>
-              </includes>
-            </resource>
-    </resources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -38,6 +29,8 @@
                 <exclude>WEB-INF/classes/locale/navigation/</exclude>                     
                 <exclude>WEB-INF/conf/configuration.xml</exclude>
                 <exclude>WEB-INF/conf/jcr/repository-configuration.xml</exclude>
+                <exclude>templates/groovy/webui/component/UIHomePagePortlet.gtmpl</exclude>
+                <exclude>templates/skin/webui/component/UIHomePagePortlet/</exclude>    
               </excludes>
             </resource>
             <resource>
@@ -47,7 +40,9 @@
                 <exclude>index.jsp</exclude>
                 <exclude>WEB-INF/web.xml</exclude>                     
                 <exclude>WEB-INF/conf/</exclude>                                     
-                <exclude>WEB-INF/classes/locale/navigation/</exclude>                     
+                <exclude>WEB-INF/classes/locale/navigation/</exclude> 
+                <exclude>templates/groovy/webui/component/UIHomePagePortlet.gtmpl</exclude>
+                <exclude>templates/skin/webui/component/UIHomePagePortlet/</exclude>                    
               </excludes>
             </resource>                         
             <resource>

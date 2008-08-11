@@ -12,6 +12,12 @@
     <show-max-window>true</show-max-window>
     
     <application>
+	    <instance-id>portal#@owner@:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
+	    <application-type>eXoWidget</application-type>
+	    <title>Welcome Widget</title>
+	  </application>
+    
+    <application>
       <instance-id>group#platform/users:/ecm/FileExplorerPortlet/fileexplorer</instance-id>
       <title>File Explorer</title>
       <show-info-bar>true</show-info-bar>
@@ -44,11 +50,10 @@
     <show-max-window>true</show-max-window>
     
     <application>
-      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
-      <title>Forum Portlet</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
+	    <instance-id>portal#@owner@:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
+	    <application-type>eXoWidget</application-type>
+	    <title>Welcome Widget</title>
+	  </application>
     
     <application>
       <instance-id>group#platform/users:/mail/MailPortlet/mail</instance-id>    
