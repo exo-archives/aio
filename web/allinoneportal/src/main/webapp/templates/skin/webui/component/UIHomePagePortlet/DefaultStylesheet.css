@@ -9,25 +9,25 @@
 }
 
 .UIHomePagePortlet .PortletDecoration{	
-	padding: 7px 7px 10px 7px;
+	padding: 7px;
 	border: 1px solid #c6c6c6;
 	background: #fff;
 }
 
 .UIHomePagePortlet .HomePortletAdBackround{	
 	background: #fff url('DefaultSkin/background/CSHomePortletBG.jpg') repeat-x top;
-	height: 220px;
+	height: 250px;
 }
 
 .UIHomePagePortlet .AdImage {
 	background: url('DefaultSkin/background/HomePortletAd.jpg') no-repeat left top; 
 	padding: 0px 20px 0px 0px;
 	text-align: right;
-	height: 220px;
+	height: 250px;
 }
 
 .UIHomePagePortlet .AdImage .EmptyBlock{
-	height: 110px;
+	height: 121px;
 }
 
 .UIHomePagePortlet .AdImage .ProductSlogan {
@@ -40,15 +40,12 @@
 }
 
 .UIHomePagePortlet .AdImage .ProductIntro {
-	font-size: 12px;
-	letter-spacing: 1px;
-	color: #ec7500;
-	font-weight: bold;
-	line-height: 16px;
+	background: url('DefaultSkin/background/CSHomePortletRight.jpg') no-repeat right top; 
+	height: 112px;
 }
 
 .UIHomePagePortlet .HomePortletContent {
-	margin-top: 10px;
+	margin-top: 7px;
 }
 
 .UIHomePagePortlet .HomePortletContent .UserAccountsContainer {

@@ -3,12 +3,10 @@
 		<div class="HomePortletAdBackround">
 			<div class="AdImage">
 				<div class="EmptyBlock"><span></span></div>
-				<div class="ProductSlogan">Leading Future OpenSource Collaboration</div>
-				<div class="ProductIntro">Innovative Collaboration Suite with shared Calendars, WebMail, Forums and Contact Management</div>
+				<div class="ProductIntro"><span></span></div>
 			</div>
 		</div>
 		<div class="HomePortletContent">
-			<div class="InstructionTitle">Try eXo All In One 1.0 with following available user accounts:</div>
 			<div class="UserAccountsContainer">
 				<div class="AccountsContainerDeco">
 					<div class="AccountBlock AdministratorUser">
