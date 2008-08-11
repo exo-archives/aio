@@ -205,8 +205,8 @@
                     <field  name="email"><string>john@localhost</string></field>
                     <field  name="groups">
                       <string>
-                      	validator:/platform/administrators,manager:/platform/users,
-                      	*:/organization/management/executive-board
+                      	member:/platform/administrators,member:/platform/users,
+                      	manager:/organization/management/executive-board
                       </string>
                     </field>
                   </object>
