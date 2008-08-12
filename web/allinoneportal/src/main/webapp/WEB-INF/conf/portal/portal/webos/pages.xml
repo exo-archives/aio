@@ -84,14 +84,14 @@
       <show-info-bar>true</show-info-bar>
       <show-application-state>true</show-application-state>
     </application>
-    
+    <!--
     <application>
       <instance-id>portal#webos:/forum/ForumPortlet/forum</instance-id>    
       <title>Forum</title>
       <show-info-bar>true</show-info-bar>
       <show-application-state>true</show-application-state>
     </application>
-    
+    -->
     <application>
       <instance-id>portal#webos:/mail/MailPortlet/mail</instance-id>    
       <title>Mail</title>
