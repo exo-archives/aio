@@ -9,7 +9,7 @@
   	<node>
       <uri>rss</uri>
       <name>rss</name>
-      <label>#{users.rss}</label>
+      <label>RSS Reader</label>
       <page-reference>user::demo::rss</page-reference>
     </node>
   </page-nodes>
