@@ -189,7 +189,7 @@
                     <field  name="email"><string>root@localhost</string></field>
                     <field  name="groups">
                       <string>
-                      	*:/platform/administrators,*:/platform/users,
+                      	manager:/platform/administrators,member:/platform/users,
                       	member:/organization/management/executive-board
                       </string>
                     </field>

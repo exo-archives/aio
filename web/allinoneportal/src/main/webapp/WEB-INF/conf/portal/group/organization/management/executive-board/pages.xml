@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <page-set>
-  <page>
-  	<page-id>group::organization/management/executive-board::Management</page-id>
+
+	<page>
+  	<page-id>group::organization/management/executive-board::organization</page-id>
   	<owner-type>group</owner-type>
     <owner-id>organization/management/executive-board</owner-id>
-    <name>management</name>
+    <name>organization</name>
     <factory-id>Desktop</factory-id>
     <access-permissions>*:/organization/management/executive-board</access-permissions>   
     <edit-permission>manager:/organization/management/executive-board</edit-permission>
     <show-max-window>true</show-max-window>
-    
-    <application>
+		
+		<application>
 	    <instance-id>portal#@owner@:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
 	    <application-type>eXoWidget</application-type>
 	    <title>Welcome Widget</title>
@@ -50,9 +51,8 @@
       <show-info-bar>true</show-info-bar>
       <show-application-state>true</show-application-state>
       <show-application-mode>true</show-application-mode>
-    </application>
-                  		       
-  </page>  
+    </application>      		       
+  </page> 
   
   <page>
   	<page-id>group::organization/management/executive-board::NewStaff</page-id>
@@ -71,10 +71,10 @@
   </page>
   
   <page>
-  	<page-id>group::organization/management/executive-board::Oganization</page-id>
+  	<page-id>group::organization/management/executive-board::Management</page-id>
  		<owner-type>group</owner-type>
     <owner-id>organization/management/executive-board</owner-id>
-    <name>organization</name>
+    <name>management</name>
     <access-permissions>*:/organization/management/executive-board</access-permissions>
     <edit-permission>manager:/organization/management/executive-board</edit-permission>
     
@@ -84,23 +84,7 @@
       <show-info-bar>false</show-info-bar>
     </application>  
   </page>
-  
-  <page>
-  	<page-id>group::organization/management/executive-board::ECMAdmin</page-id>
- 		<owner-type>group</owner-type>
-    <owner-id>organization/management/executive-board</owner-id>
-    <name>ECMAdmin</name>
-    <access-permissions>*:/organization/management/executive-board</access-permissions>
-    <edit-permission>manager:/organization/management/executive-board</edit-permission>
-    
-    <application>
-      <instance-id>group#platform/administrators:/ecm/ECMAdminPortlet/ECMAdministration</instance-id>
-      <title>ECMAdmin</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-mode>true</show-application-mode>
-    </application>  
-  </page>
-  
+	
   <page>
   	<page-id>group::organization/management/executive-board::BusinessProcess</page-id>
  		<owner-type>group</owner-type>
@@ -166,6 +150,22 @@
       <show-application-state>true</show-application-state>
       <show-application-mode>true</show-application-mode>
     </application>             
-  </page>       
+  </page>  
+
+	<page>
+  	<page-id>group::organization/management/executive-board::ECMAdmin</page-id>
+ 		<owner-type>group</owner-type>
+    <owner-id>organization/management/executive-board</owner-id>
+    <name>ECMAdmin</name>
+    <access-permissions>*:/organization/management/executive-board</access-permissions>
+    <edit-permission>manager:/organization/management/executive-board</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/administrators:/ecm/ECMAdminPortlet/ECMAdministration</instance-id>
+      <title>ECMAdmin</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-mode>true</show-application-mode>
+    </application>  
+  </page>     
     
 </page-set>
