@@ -3,7 +3,7 @@
   <groupId>org.exoplatform.allinone</groupId>
   <artifactId>config</artifactId>
   <name>eXo AllInOne Config</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>pom</packaging>
 
   <modules>    
@@ -117,15 +117,15 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <org.exoplatform.kernel.version>2.0.1</org.exoplatform.kernel.version>
-        <org.exoplatform.core.version>2.0.2</org.exoplatform.core.version>
-        <org.exoplatform.ws.version>1.1</org.exoplatform.ws.version>
-        <org.exoplatform.jcr.version>1.8.3</org.exoplatform.jcr.version>
-        <org.exoplatform.pc.version>2.0rc5</org.exoplatform.pc.version>
-        <org.exoplatform.portal.version>2.1</org.exoplatform.portal.version>
-        <org.exoplatform.ecm.version>2.0</org.exoplatform.ecm.version>                
-    		<org.exoplatform.cs.version>1.0</org.exoplatform.cs.version>
-    		<org.exoplatform.allinone.version>1.0</org.exoplatform.allinone.version>
+        <org.exoplatform.kernel.version>2.0.2</org.exoplatform.kernel.version>
+        <org.exoplatform.core.version>2.1.1</org.exoplatform.core.version>
+        <org.exoplatform.ws.version>1.2.1</org.exoplatform.ws.version>
+        <org.exoplatform.jcr.version>1.9.3</org.exoplatform.jcr.version>
+        <org.exoplatform.pc.version>2.0.2</org.exoplatform.pc.version>
+        <org.exoplatform.portal.version>2.2.1</org.exoplatform.portal.version>
+        <org.exoplatform.ecm.version>2.1.2</org.exoplatform.ecm.version>                
+    		<org.exoplatform.cs.version>1.1Beta1</org.exoplatform.cs.version>
+    		<org.exoplatform.allinone.version>1.1</org.exoplatform.allinone.version>
         <test.classes>Test</test.classes>
         <test.skip>true</test.skip>
         <bonita.version>2.1</bonita.version>
