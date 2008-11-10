@@ -12,13 +12,13 @@
       <properties-param>
         <name>working-conf</name>
         <description>working-conf</description>
-        <property name="persisterClassName" value="org.exoplatform.services.jcr.impl.config.JDBCConfigurationPersister"/>
-        <property name="sourceName" value="jdbcexo"/>
+        <property name="persister-class-name" value="org.exoplatform.services.jcr.impl.config.JDBCConfigurationPersister"/>
+        <property name="source-name" value="jdbcexo"/>
         <property name="dialect" value="hsqldb"/>
       </properties-param>
     </init-params>
   </component>
-
+  
   <component>
     <key>org.exoplatform.services.jcr.RepositoryService</key>
     <type>org.exoplatform.services.jcr.impl.RepositoryServiceImpl</type>
@@ -42,14 +42,19 @@
         <name>repository</name>
         <value>repository</value>
       </value-param>
+      <value-param>
+        <name>adminIdentity</name>
+        <value>*:/platform/administrators;exo</value>
+      </value-param>      
 	  </init-params>
   </component>
-  <component>
+  
+  <component> 
 	  <type>org.exoplatform.services.jcr.ext.app.ThreadLocalSessionProviderService</type>  
   </component>
   
   <component>
       <type>org.exoplatform.services.jcr.impl.ext.action.SessionActionCatalog</type>      
-  </component>  
-   
+  </component>
+    
 </configuration>
