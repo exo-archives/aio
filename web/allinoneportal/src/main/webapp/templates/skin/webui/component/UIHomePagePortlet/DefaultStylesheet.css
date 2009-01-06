@@ -120,3 +120,11 @@
 	color: #2c6fbd;
 	line-height: 25px;
 }
+
+.MiddleDecoratorCenter .UIJCRExplorerPortlet .UIJCRExplorer .UIViewBar {
+	background:transparent url(/ecm/skin/webui/component/explorer/control/DefaultSkin/background/LineDecorator1x28.gif) repeat-x scroll center center;
+	border-bottom:1px solid #B7B7B7;
+	height:28px;
+	line-height:26px;
+	overflow:auto;
+}
