@@ -18,16 +18,21 @@
         <value>locale.portal.custom</value>
         <value>locale.ecm.dialogs</value>
         <value>locale.ecm.views</value>
+        <value>locale.ecm.webui</value>
         <value>locale.ecm.homepage</value>
+        <value>locale.wcm.dialogs</value>
+        <value>locale.wcm.views</value>
+        <value>locale.wcm.webui</value>
+        <value>locale.wcm.publication</value>
         <value>locale.portal.custom</value>
         <value>locale.navigation.portal.classic</value>
         <value>locale.navigation.portal.webos</value>
+	<value>locale.navigation.portal.acme</value>
         <value>locale.navigation.group.platform.administrators</value>
         <value>locale.navigation.group.platform.users</value>
         <value>locale.navigation.group.platform.guests</value>
-        <value>locale.navigation.group.organization.management.executive-board</value>
-        <value>locale.navigation.user.template</value>               
-      </values-param>      
+        <value>locale.navigation.group.organization.management.executive-board</value>               
+        </values-param>      
       <values-param>
         <name>portal.resource.names</name>
         <description>The properties files of  the portal ,  those file will be merged 
@@ -35,10 +40,15 @@
         <value>locale.portal.expression</value>
         <value>locale.portal.services</value>
         <value>locale.portal.webui</value>
+        <value>locale.ecm.webui</value>
+        <value>locale.wcm.webui</value>
+        <value>locale.wcm.publication</value>
         <value>locale.portal.custom</value>
         <value>locale.ecm.dialogs</value>
         <value>locale.ecm.views</value>
-        <value>locale.ecm.homepage</value>      
+        <value>locale.ecm.homepage</value>     
+        <value>locale.wcm.dialogs</value>
+        <value>locale.wcm.views</value>       
       </values-param>      
     </init-params>
   </component>

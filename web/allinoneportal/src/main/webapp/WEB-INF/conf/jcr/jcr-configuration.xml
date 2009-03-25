@@ -12,13 +12,13 @@
       <properties-param>
         <name>working-conf</name>
         <description>working-conf</description>
-        <property name="persisterClassName" value="org.exoplatform.services.jcr.impl.config.JDBCConfigurationPersister"/>
-        <property name="sourceName" value="jdbcexo"/>
+        <property name="persister-class-name" value="org.exoplatform.services.jcr.impl.config.JDBCConfigurationPersister"/>
+        <property name="source-name" value="jdbcexo"/>
         <property name="dialect" value="hsqldb"/>
       </properties-param>
     </init-params>
   </component>
-
+  
   <component>
     <key>org.exoplatform.services.jcr.RepositoryService</key>
     <type>org.exoplatform.services.jcr.impl.RepositoryServiceImpl</type>
@@ -33,23 +33,34 @@
       </properties-param>
     </init-params>
   </component>
-  
+
   <component>
     <key>org.exoplatform.services.jcr.ext.audit.AuditService</key>  
     <type>org.exoplatform.services.jcr.ext.audit.AuditServiceImpl</type>
-	 	<init-params>
-	 		<value-param>
-        <name>repository</name>
-        <value>repository</value>
+      <init-params>
+        <!-- Group or user who may view audit information -->
+        <value-param>
+          <name>adminIdentity</name>
+          <value>*:/Platform/Administrators</value>
+        </value-param>
+        <value-param>
+          <name>repository</name>
+          <value>repository</value>
       </value-param>
-	  </init-params>
+    </init-params>
   </component>
+
   <component>
 	  <type>org.exoplatform.services.jcr.ext.app.ThreadLocalSessionProviderService</type>  
   </component>
   
   <component>
       <type>org.exoplatform.services.jcr.impl.ext.action.SessionActionCatalog</type>      
-  </component>  
-   
+  </component>
+
+  <component>
+    <key>org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator</key>
+    <type>org.exoplatform.services.jcr.ext.hierarchy.impl.NodeHierarchyCreatorImpl</type>
+  </component> 
+    
 </configuration>

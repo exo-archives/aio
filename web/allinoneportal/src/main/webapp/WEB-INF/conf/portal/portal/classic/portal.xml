@@ -2,47 +2,49 @@
 <portal-config>
   <portal-name>classic</portal-name>
   <locale>en</locale>
-  <factory-id>office</factory-id>
   <access-permissions>Everyone</access-permissions>
   <edit-permission>*:/platform/administrators</edit-permission>
   <creator>root</creator>
-  
-  <widget-layout>
-    <container>
-      <application>
-        <instance-id>portal#classic:/eXoWidgetWeb/InfoWidget/InfoWidget</instance-id>
-        <application-type>eXoWidget</application-type>
-        <title>Info Widget</title>
-      </application>
-      <application>
-        <instance-id>portal#classic:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
-        <application-type>eXoWidget</application-type>
-        <title>Welcome Widget</title>
-      </application>
+    
+  <portal-layout> 		
+ 	  <application>
+	    <instance-id>portal#classic:/web-presentation/SiteAdministrationPortlet/classic-admintoolbar</instance-id>
+	    <show-info-bar>false</show-info-bar>
+    </application>	  	
+      
+	  <container id="DefaultPortalContainer" template="system:/groovy/wcm/webui/container/UITableColumnContainer.gtmpl">
+      <container id="Banner" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+        <application>
+          <instance-id>portal#classic:/web-presentation/SingleContentViewer/classic-banner</instance-id>
+          <show-info-bar>false</show-info-bar>
+        </application>
+      </container>
+      <container id="AccessContainer" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+				<application>
+				  <instance-id>portal#classic:/web-presentation/SingleContentViewer/classic-access</instance-id>
+				  <show-info-bar>false</show-info-bar>
+				</application>
+	  		<application>
+				  <instance-id>portal#classic:/web-presentation/SingleContentViewer/classic-searchbox</instance-id>
+				  <show-info-bar>false</show-info-bar>
+				</application>
+      </container>
     </container>
-  </widget-layout>
-  
- 	<portal-layout> 		
-		<application>
-	    <instance-id>portal#classic:/web/BannerPortlet/banner</instance-id>
-	    <show-info-bar>false</show-info-bar>
-	  </application>
-
+	  
 	  <application>
-	  	<instance-id>portal#classic:/web/NavigationPortlet/toolbar</instance-id>
-	    <show-info-bar>false</show-info-bar>
-	  </application>
-		
-	  <application>
-	    <instance-id>portal#classic:/web/BreadcumbsPortlet/breadcumbs</instance-id>
+	  	<instance-id>portal#classic:/web-presentation/SingleContentViewer/classic-navigation</instance-id>
 	    <show-info-bar>false</show-info-bar>
 	  </application>
 	  
-	
+	  <application>
+		<instance-id>portal#classic:/web-presentation/SingleContentViewer/classic-breadcrumb</instance-id>
+	  	<show-info-bar>false</show-info-bar>
+	  </application>	 
+	  	  
 	  <page-body> </page-body>
 	  
 	  <application>
-	    <instance-id>portal#classic:/web/FooterPortlet/footer</instance-id>
+	    <instance-id>portal#classic:/web-presentation/SingleContentViewer/classic-footer</instance-id>
 	    <show-info-bar>false</show-info-bar>
 	  </application>
   </portal-layout>

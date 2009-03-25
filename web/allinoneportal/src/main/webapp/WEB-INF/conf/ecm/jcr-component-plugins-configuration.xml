@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <configuration>
-
+  
   <external-component-plugins>
   	<target-component>org.exoplatform.services.jcr.RepositoryService</target-component>
 		<component-plugin>
@@ -28,11 +28,14 @@
 	        <name>autoCreatedInNewRepository</name>
 	        <description>Node types configuration file</description>
 	        <value>war:/conf/ecm/nodetypes-ecm.xml</value>
+	        <!--
+	        <value>war:/conf/ecm/business-process-nodetypes.xml</value>
+	        -->
 	      </values-param>
 	    </init-params>
 	  </component-plugin>
-	</external-component-plugins>   
-	
+	</external-component-plugins>
+		      
   <external-component-plugins>
     <target-component>org.exoplatform.services.jcr.impl.ext.action.SessionActionCatalog</target-component>    	 
     <component-plugin>
@@ -69,7 +72,17 @@
 	        <name>actions</name>
 	        <object type="org.exoplatform.services.jcr.impl.ext.action.AddActionsPlugin$ActionsConfig">
 	          <field  name="actions">
-	            <collection type="java.util.ArrayList">                    
+	            <collection type="java.util.ArrayList">
+<!-- Uncomment this tag if you wish to enable audit in the entire workspace by default.
+                  <value>
+                    <object type="org.exoplatform.services.jcr.impl.ext.action.ActionConfiguration">
+                      <field  name="eventTypes"><string>addNode</string></field>
+                      <field name="path"><string>/</string></field>
+                      <field  name="isDeep"><boolean>true</boolean></field>
+                      <field name="actionClassName"><string>org.exoplatform.services.jcr.ext.audit.AddAuditableAction</string></field>
+                   </object>
+                  </value>
+-->
 	              <value>
 	                <object type="org.exoplatform.services.jcr.impl.ext.action.ActionConfiguration">
 	                  <field  name="eventTypes"><string>addProperty,changeProperty,removeProperty</string></field>
@@ -102,6 +115,7 @@
 	      </object-param>
 	    </init-params>
 	  </component-plugin>    
-	</external-component-plugins>     	
+	</external-component-plugins>    	
 	
+	   
 </configuration>

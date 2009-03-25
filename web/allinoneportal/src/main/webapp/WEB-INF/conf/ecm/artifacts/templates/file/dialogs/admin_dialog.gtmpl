@@ -8,15 +8,15 @@
   uicomponent.addCalendarField("hiddenInput4", hiddenField4) ;
   uicomponent.addCalendarField("hiddenInput5", hiddenField5) ;
 %>
-<div class="UIFormWithTitle">  
+<div class="UIForm FormLayout">  
 	<% uiform.begin() %>
-  <div class="HorizontalLayout" style="border:0px;">
+  <div class="HorizontalLayout">
 	  <table class="UIFormGrid">
 				<tr>
 				  <td class="FieldLabel"><%=_ctx.appRes("File.dialog.label.name")%></td>
 				  <td class="FieldComponent">
 			      <%
-			        String[] fieldName = ["jcrPath=/node", "mixintype=mix:votable,mix:commentable,mix:i18n", "editable=if-null", "validate=name"] ;
+			        String[] fieldName = ["jcrPath=/node", "mixintype=mix:votable,mix:commentable,mix:i18n", "editable=if-null", "validate=empty,name"] ;
 			        uicomponent.addTextField("name", fieldName) ; 
 			      %>
 				  </td>
@@ -47,13 +47,13 @@
 				              uicomponent.addWYSIWYGField("contentHtml", fieldSummary) ;						
 										} else {
 											String[] fieldSummary = ["jcrPath=/node/jcr:content/jcr:data", "validate=empty"] ;
-			          			uicomponent.addTextAreaField("contentTextArea", fieldSummary) ;
+			          			uicomponent.addTextAreaField("content", fieldSummary) ;
 										}
 									} else {
 									%>
-										<span style="font-size:12px; font-weight: bold; padding-top:5px;">
+										<div style="font-size:12px; font-weight: bold; line-height: 17px;">
 								    	<%=_ctx.appRes("File.dialog.label.re-upload")%>
-								    </span>
+								    </div>
 									<%
 									}
 								} else {
@@ -67,7 +67,7 @@
 			          	uicomponent.addWYSIWYGField("contentHtml", fieldSummary) ;
 								} else if(selectValue != null && selectValue.equals("text/plain")){
 									String[] fieldSummary = ["jcrPath=/node/jcr:content/jcr:data"] ;
-			          	uicomponent.addTextAreaField("contentTextArea", fieldSummary) ;
+			          	uicomponent.addTextAreaField("contentPlain", fieldSummary) ;
 								} else {
 									String[] fieldSummary = ["jcrPath=/node/jcr:content/jcr:data"] ;
 			          	uicomponent.addWYSIWYGField("contentHtml", fieldSummary) ;								  
@@ -79,22 +79,22 @@
 		</table>	     
 		<%/* start render action*/%>
 		<div class="UIAction"> 
-	    <table class="ActionContainer" align="center">
+	    <table class="ActionContainer">
 	    	<tr>
-	    		<td align="center">
+	    		<td>
 			      <% for(action in uicomponent.getActions()) { 
 			      		 String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action) ;
 								 String link = uicomponent.event(action) ;
 			      %>
-		          <a href="$link" class="ActionButton LightBlueStyle">
+		          <div onclick="$link" class="ActionButton LightBlueStyle">
 								<div class="ButtonLeft">
 								  <div class="ButtonRight">
 									  <div class="ButtonMiddle">
-									    $actionLabel
+									    <a href="javascript:void(0);">$actionLabel</a>
 							      </div>
 							    </div>
 						    </div>
-							</a>
+							</div>
 			      <%}%>          
 	      	</td>
 	      </tr>

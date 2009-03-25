@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <portal>
+    <classic>
+      <home>Trang chủ</home>
+      <webexplorer>Trình duyệt</webexplorer>
+      <presentation>Trình bày đơn nội dung</presentation>
+      <listViewer>Trình bày đa nội dung</listViewer>
+      <search>Tìm kiếm</search>
+      <searchResult>Kết quả tìm kiếm</searchResult>
+      <products>Sản phẩm</products>
+      <register>Đăng ký</register>
+      <sitemap>Sơ đồ trang</sitemap>
+      <parameterizedviewer>Ứng dụng trình bày nội dung theo tham số</parameterizedviewer>
+    </classic>
+  </portal>
+  <register>Đăng kí</register>
+  <sitemap>Bản đồ site</sitemap>
+  <news>Tin tức</news>
+  <ideas>
+    <title>Ý kiến</title>
+    <read>Đọc ý kiến</read>
+    <write>Viết ý kiến</write>
+  </ideas>
+  <welcome>Chào mừng</welcome>
+  <content-management>
+    <file-explorer>Quản lý tài liệu</file-explorer>
+    <content-creator>Tạo nhanh nội dung</content-creator>
+    <content-browser>Quản lý nội dung</content-browser>
+  </content-management>
+</bundle>

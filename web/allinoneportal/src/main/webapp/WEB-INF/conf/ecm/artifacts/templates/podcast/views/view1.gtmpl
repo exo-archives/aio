@@ -41,8 +41,8 @@
 		}
 	</style>
 </head>
-<div style="text-align: left; margin: 5px 8px;" id="$uicomponent.id">
-	<div>
+<div class="UIResizableBlock" id="$uicomponent.id">
+	<div style="padding: 8px">
 		<div class="ContentPodcast">
 			<% def originalNode = uicomponent.getOriginalNode(); %>
 			<span class="text"><%=_ctx.appRes("Podcast.view.label.podcast")%>: <span>
@@ -123,10 +123,8 @@
 				<%}%>
 			</span>
 		</div>				
-	</div>
-	<!-- div for  Description -->
-	<div style="overflow: hidden">
-		<div style="margin-top: 7px; border: 1px solid #bdbdbd;">
+		<!-- div for  Description -->
+		<div style="margin-top: 10px; border: 1px solid #bdbdbd;">
 			<div class="TitleBG">
 				<span class="text" style="padding-left: 5px"><%=_ctx.appRes("Podcast.view.label.description")%>:</span>
 			</div>
@@ -136,8 +134,8 @@
 				<%}%>
 			</div>
 		</div>
-  </div>	
-  <!-- End div for  Description -->	
-  <div><% _ctx.include(uicomponent.getViewTemplate("exo:vote", "view1")); %></div>
-  <div><% _ctx.include(uicomponent.getViewTemplate("exo:comment", "view1")); %></div>
+	  <!-- End div for  Description -->	
+	  <div><% _ctx.include(uicomponent.getViewTemplate("mix:votable", "view1")); %></div>
+	  <div><% _ctx.include(uicomponent.getViewTemplate("exo:comments", "view1")); %></div>
+	</div>
 </div>

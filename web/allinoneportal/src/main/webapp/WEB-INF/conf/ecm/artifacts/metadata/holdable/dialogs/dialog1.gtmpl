@@ -1,6 +1,6 @@
-<div class="UIFormWithTitle">  
+<div class="UIForm FormLayout">  
 	<% uiform.begin() %>
-  <div class="HorizontalLayout" style="border:0px;">
+  <div class="HorizontalLayout">
     <table class="UIFormGrid">
     	<tr>	
 	      <td class="FieldLabel"><%=_ctx.appRes("Holdable.dialog.label.hold-executed")%></td>
@@ -15,7 +15,7 @@
 	      <td class="FieldLabel"><%=_ctx.appRes("Holdable.dialog.label.hold-until")%></td>
 	      <td class="FieldComponent">
 		      <%
-		        String[] fieldHoldUntil = ["jcrPath=/node/rma:holdUntil"] ;
+		        String[] fieldHoldUntil = ["jcrPath=/node/rma:holdUntil", "visible=true"] ;
 		        uicomponent.addCalendarField("holdUntil", fieldHoldUntil) ;
 		      %>
 		    </td>
@@ -50,22 +50,22 @@
     </table>
 		<%/* start render action*/%>
 		<div class="UIAction"> 
-	    <table class="ActionContainer" align="center">
+	    <table class="ActionContainer">
 	    	<tr>
-	    		<td align="center">
+	    		<td>
 		      <% for(action in uicomponent.getActions()) {
 		      		 String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action) 
 							 String link = uicomponent.event(action) ;
 		      %>
-	          <a href="$link" class="ActionButton LightBlueStyle">
+	          <div onclick="$link" class="ActionButton LightBlueStyle">
 							<div class="ButtonLeft">
 							  <div class="ButtonRight">
 								  <div class="ButtonMiddle">
-								    $actionLabel
+								    <a href="javascript:void(0);">$actionLabel</a>
 						      </div>
 						    </div>
 					    </div>
-						</a>
+						</div>
 		      <%}%>          
 	      	</td>
 	      </tr>

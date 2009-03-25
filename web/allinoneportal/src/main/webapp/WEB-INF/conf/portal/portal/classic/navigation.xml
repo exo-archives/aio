@@ -3,23 +3,75 @@
   <owner-type>portal</owner-type>
   <owner-id>classic</owner-id>
   <priority>1</priority>
-
   <page-nodes>
 	  <node>
 	    <uri>home</uri>
 	    <name>home</name>
 	    <label>#{portal.classic.home}</label>
 	    <page-reference>portal::classic::homepage</page-reference>	    
-	  </node>
-	  
-	  <!-- ##### Commented by NhatDH - Aug 07 #####
+	  </node>    
 	  <node>
-	    <uri>forum</uri>
-	    <name>forum</name>
-	    <label>#{portal.classic.forum}</label>
-	    <page-reference>portal::classic::forum</page-reference>	    
+	    <uri>WCMHome</uri>
+	    <name>WCMHome</name>
+	    <label>WCM</label>
+	    <page-reference>portal::classic::WCMHome</page-reference>
+		<node>
+			<uri>presentation</uri>
+			<name>presentation</name>
+			<label>#{portal.classic.presentation}</label>
+			<page-reference>portal::classic::presentation</page-reference>	    
+		</node>	 
+		<node>
+			<uri>contentlistviewer</uri>
+			<name>contentlistviewer</name>
+			<label>#{portal.classic.listViewer}</label>
+			<page-reference>portal::classic::contentlistviewer</page-reference>	    
+		</node>	 
+		<node>
+			<uri>searchResult</uri>
+			<name>searchResult</name>
+			<label>#{portal.classic.searchResult}</label>
+			<visible>false</visible>			
+			<page-reference>portal::classic::searchResult</page-reference>	    
+		</node>  
+		<node>
+			<uri>search</uri>
+			<name>search</name>
+			<label>#{portal.classic.search}</label>
+			<page-reference>portal::classic::search</page-reference>	    
+		</node> 
+		<node>
+			<uri>parameterizedviewer</uri>
+			<name>parameterizedviewer</name>
+			<label>#{portal.classic.parameterizedviewer}</label>
+			<visible>false</visible>
+			<page-reference>portal::classic::parameterizedviewer</page-reference>
+		</node> 	        	    
 	  </node>
-	  ############################################ -->	   
-	        	  	  	  	 	     	  	  
+		<node>
+			<uri>sitemap</uri>
+			<name>sitemap</name>
+			<label>#{portal.classic.sitemap}</label>
+			<page-reference>portal::classic::sitemap</page-reference>	    
+		</node>	  	  
+	     	  
+    <node>
+      <uri>forum</uri>
+      <name>forum</name>
+      <label>#{portal.classic.forum}</label>
+      <page-reference>portal::classic::forum</page-reference>
+    </node>
+    <node>
+      <uri>faq</uri>
+      <name>faq</name>
+      <label>#{portal.classic.faq}</label>
+      <page-reference>portal::classic::faq</page-reference>
+    </node>
+	  <node>
+	    <uri>webexplorer</uri>
+	    <name>webexplorer</name>
+	    <label>#{portal.classic.webexplorer}</label>
+	    <page-reference>portal::classic::webexplorer</page-reference>	    
+	  </node>	  	  	 	     	  	  
   </page-nodes>
 </node-navigation>

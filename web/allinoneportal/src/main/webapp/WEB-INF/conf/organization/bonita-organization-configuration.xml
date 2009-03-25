@@ -81,6 +81,14 @@
                 </value>
                 <value>
                   <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field  name="name"><string>web-contributors</string></field>
+                    <field  name="parentId"><string>/platform</string></field>
+                    <field  name="description"><string>the /platform/web-contributors group</string></field>
+                    <field  name="label"><string>Web Contributors</string></field>
+                  </object>
+                </value>                                                
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
                     <field  name="name"><string>organization</string></field>
                     <field  name="parentId"><string></string></field>
                     <field  name="description"><string>the organization group</string></field>
@@ -197,7 +205,8 @@
                     <field  name="email"><string>root@localhost</string></field>
                     <field  name="groups">
                       <string>
-                      	manager:/platform/administrators,manager:/platform/users,
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
                       	member:/organization/management/executive-board, member:/platform/BONITAUSER
                       </string>
                     </field>
@@ -213,8 +222,8 @@
                     <field  name="email"><string>john@localhost</string></field>
                     <field  name="groups">
                       <string>
-                      	member:/platform/administrators,manager:/platform/users,
-                      	manager:/organization/management/executive-board,member:/platform/BONITAUSER
+                      	*:/platform/web-contributors,validator:/platform/administrators,manager:/platform/users,
+                      	*:/organization/management/executive-board,member:/platform/BONITAUSER
                       </string>
                     </field>
                   </object>
@@ -251,7 +260,7 @@
                     <field  name="lastName"><string>Anderson</string></field>
                     <field  name="email"><string>james@localhost</string></field>
                     <field  name="groups">
-                      <string>manager:/organization/management/human-resources,member:/platform/users,member:/platform/BONITAUSER</string>
+                      <string>*:/organization/management/human-resources,member:/platform/users,member:/platform/BONITAUSER</string>
                     </field>
                   </object>
                 </value>                       

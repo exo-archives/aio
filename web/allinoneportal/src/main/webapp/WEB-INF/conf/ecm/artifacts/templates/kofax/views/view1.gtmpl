@@ -1,9 +1,12 @@
 <%
-  import org.exoplatform.ecm.utils.Utils ;
 	import org.exoplatform.web.application.Parameter ;  
   def node = uicomponent.getNode() ;
   def originalNode = uicomponent.getOriginalNode();
   String namespace = "kfx:" ;
+  
+  private String formatNodeName(String text) {
+    return text.replaceAll("'", "\\\\'");
+  }
 %>
 <style>
 	.WorkKofax {
@@ -12,6 +15,10 @@
 	
 	.WorkKofax .UIGrid {
 		width: 97%;
+	}
+	
+	.WorkKofax .UIGrid td {
+		border: 1px solid #CCCCCC
 	}
 </style>
 <div class="WorkKofax">
@@ -58,7 +65,7 @@
 		      <tr>
 				    <td style="width:25%"><%=_ctx.appRes("Kofax.view.label.downloadable")%> #<%=i%></td>
 				    <td>
-				      <a href="<%=uicomponent.event("ChangeNode", Utils.formatNodeName(child.getPath()), new Parameter("workspaceName", child.getSession().getWorkspace().getName()))%>">
+				      <a href="<%=uicomponent.event("ChangeNode", formatNodeName(child.getPath()), new Parameter("workspaceName", child.getSession().getWorkspace().getName()))%>">
 				        <%=child.getName()%>
 				      </a>
 				    </td>
@@ -69,6 +76,6 @@
 		  } 
 		%>
 	</table>
-	<div><% _ctx.include(uicomponent.getViewTemplate("exo:vote", "view1")); %></div>
-  <div><% _ctx.include(uicomponent.getViewTemplate("exo:comment", "view1")); %></div>
+	<div><% _ctx.include(uicomponent.getViewTemplate("mix:votable", "view1")); %></div>
+  <div><% _ctx.include(uicomponent.getViewTemplate("exo:comments", "view1")); %></div>
 </div>

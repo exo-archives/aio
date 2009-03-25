@@ -9,31 +9,9 @@
 	  <node>
       <uri>register</uri>
       <name>register</name>
-      <label>#{platform.guests.register}</label>
+      <label>#{platform-guests.register}</label>
       <page-reference>group::platform/guests::register</page-reference>
-    </node>
-    <node>
-      <uri>news</uri>
-      <name>news</name>
-      <label>#{platform.guests.news}</label>
-      <page-reference>group::platform/guests::news</page-reference>
-    </node>
-        
-   <!-- ##### Commented by NhatDH - Aug 07 ###### 
-   <node>
-      <uri>forum</uri>
-      <name>forum</name>
-      <label>#{platform.guests.forum}</label>
-      <page-reference>group::platform/guests::forum</page-reference>
-    </node>
-    ########################################## -->
-            
-    <node>
-	    <uri>sitemap</uri>
-	    <name>sitemap</name>
-	    <label>#{platform.guests.sitemap}</label>
-	    <page-reference>group::platform/guests::sitemap</page-reference>	    
-	  </node>
+    </node>   
 	  	  
    </page-nodes>
   

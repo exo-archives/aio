@@ -5,12 +5,5 @@
 	<priority>3</priority>
   <description>description for node navigation </description>
   
-  <page-nodes>
-  	<node>
-      <uri>rss</uri>
-      <name>rss</name>
-      <label>RSS Reader</label>
-      <page-reference>user::james::rss</page-reference>
-    </node>
-  </page-nodes>
+  <page-nodes />
 </node-navigation>

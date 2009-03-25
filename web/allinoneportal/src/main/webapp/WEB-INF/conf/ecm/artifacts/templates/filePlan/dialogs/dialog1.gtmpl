@@ -56,7 +56,7 @@
       <%/*Start UITabContentContainer*/%>
       
 			<%uiform.begin()%>
-				<div class="HorizontalLayout" style="border: none; margin:0px; background: none; padding: 0px">	  
+				<div class="HorizontalLayout">	  
       
 		      <div class="UITabContentContainer">
 		      	<div class="UITabContent" style="display: block;">
@@ -65,11 +65,22 @@
 									  <td class="FieldLabel"><%=_ctx.appRes("FilePlan.dialog.label.name")%></td>
 									  <td class="FieldComponent">
 							      <%
-							        String[] fieldName = ["jcrPath=/node", "editable=if-null", "mixintype=mix:i18n", "validate=name"] ;
+							        String[] fieldName = ["jcrPath=/node", "editable=if-null", "mixintype=mix:i18n", "validate=empty,name"] ;
 							        uicomponent.addTextField("name", fieldName) ; 
 							      %>									  							      
 									  </td>
-									</tr>									
+									</tr>
+									<%if(!uicomponent.getId().equals("UILanguageDialogForm")){%>
+									<tr>
+							      <td class="FieldLabel"><%=_ctx.appRes("FilePlan.dialog.label.categories")%></td>
+							      <td class="FieldComponent">
+								      <% 
+								        String[] fieldCategories = ["jcrPath=/node/exo:category", "multiValues=true", "reference=true"];
+								        uicomponent.addTextField("categories", fieldCategories);
+								      %>
+								    </td>
+								  </tr>
+								  <%}%>									
 									<tr>
 									  <td class="FieldLabel"><%=_ctx.appRes("FilePlan.dialog.label.note")%></td>
 									  <td class="FieldComponent">							      							  							      

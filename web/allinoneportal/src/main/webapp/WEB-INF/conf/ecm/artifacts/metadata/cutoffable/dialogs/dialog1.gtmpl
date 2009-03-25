@@ -1,6 +1,6 @@
-<div class="UIFormWithTitle">  
+<div class="UIForm FormLayout">  
 	<% uiform.begin() %>
-  <div class="HorizontalLayout" style="border:0px;">
+  <div class="HorizontalLayout">
   	<table class="UIFormGrid">
   		<tr>
       	<td class="FieldLabel"><%=_ctx.appRes("Cutoffable.dialog.label.cutoff-executed")%></td>
@@ -24,7 +24,7 @@
 	      <td class="FieldLabel"><%=_ctx.appRes("Cutoffable.dialog.label.cutoff-date-time")%></td>
 	      <td class="FieldComponent">
 		      <%
-		        String[] fieldCutoffDateTime = ["jcrPath=/node/rma:cutoffDateTime", "options=displaytime"] ;
+		        String[] fieldCutoffDateTime = ["jcrPath=/node/rma:cutoffDateTime", "options=displaytime", "visible=true"] ;
 		        uicomponent.addCalendarField("cutoffDateTime", fieldCutoffDateTime) ;
 		      %>
 		    </td>
@@ -61,20 +61,20 @@
 		<div class="UIAction"> 
 	    <table class="ActionContainer">
 	    	<tr>
-	    		<td align="center">
+	    		<td>
 		      <% for(action in uicomponent.getActions()) {
 		      		 String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action) 
 							 String link = uicomponent.event(action) ;	
 		      %>
-	          <a href="$link" class="ActionButton LightBlueStyle">
+	          <div onclick="$link" class="ActionButton LightBlueStyle">
 							<div class="ButtonLeft">
 							  <div class="ButtonRight">
 								  <div class="ButtonMiddle">
-								    $actionLabel
+								    <a href="javascript:void(0);">$actionLabel</a>
 						      </div>
 						    </div>
 					    </div>
-						</a>
+						</div>
 		      <%}%>          
 	      	</td>
 	      </tr>

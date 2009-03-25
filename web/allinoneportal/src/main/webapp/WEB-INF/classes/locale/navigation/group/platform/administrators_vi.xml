@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <administration>
+    <title>Quản trị</title>
+<portalAdmin>Quản trị</portalAdmin> 
+    <application-registry>Quản lý ứng dụng</application-registry>
+    <newAccount>Tài khoản mới</newAccount>
+    <community-management>Quản lý cộng đồng</community-management>
+    <i18n>Quốc tế hóa</i18n>
+    <console>Web Console</console>
+    <contentAdministration>Quản trị nội dung</contentAdministration>
+    <wcm>Quản lý site</wcm>
+    <siteExplorer>Sites Explorer</siteExplorer>
+    <wcmAdmin>Quản trị site</wcmAdmin>
+  </administration>
+  <contentAdministration>
+    <ECMAdmin>Quản trị ECM</ECMAdmin>
+    <WorkflowAdministration>Quản trị quá trình nghiệp vụ</WorkflowAdministration>
+  </contentAdministration>
+</bundle>
+

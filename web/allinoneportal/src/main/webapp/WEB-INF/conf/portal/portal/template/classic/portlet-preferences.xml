@@ -3,10 +3,35 @@
   <portlet-preferences>
     <owner-type>portal</owner-type>
     <owner-id>@owner@</owner-id>
-    <window-id>portal#portalclassic:/web/BannerPortlet/banner</window-id>
+    <window-id>portal#@owner@:/web-presentation/SingleContentViewer/@owner@-banner</window-id>
     <preference>
-      <name>template</name>
-      <value>par:/groovy/groovy/webui/component/UIBannerPortlet.gtmpl</value>
+      <name>repository</name>
+      <value>repository</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>workspace</name>
+      <value>collaboration</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>nodeIdentifier</name>
+      <value>/sites content/live/@owner@/web contents/site artifacts/banner/Default</value>
+      <read-only>false</read-only>
+    </preference>
+		<preference>
+      <name>loginIdentifier</name>
+      <value>/sites content/live/@owner@/web contents/site artifacts/banner/loginUI</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>quickEdit</name>
+      <value>true</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>showLoginUI</name>
+      <value>true</value>
       <read-only>false</read-only>
     </preference>
   </portlet-preferences>
@@ -14,23 +39,90 @@
   <portlet-preferences>
     <owner-type>portal</owner-type>
     <owner-id>@owner@</owner-id>
-    <window-id>portal#portalclassic:/web/FooterPortlet/footer</window-id>
+    <window-id>portal#@owner@:/web-presentation/SingleContentViewer/@owner@-footer</window-id>
     <preference>
-      <name>template</name>
-      <value>par:/groovy/groovy/webui/component/UIFooterPortlet.gtmpl</value>
+      <name>repository</name>
+      <value>repository</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>workspace</name>
+      <value>collaboration</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>nodeIdentifier</name>
+      <value>/sites content/live/@owner@/web contents/site artifacts/footer/Default</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>quickEdit</name>
+      <value>true</value>
       <read-only>false</read-only>
     </preference>
   </portlet-preferences>
-  
   
   <portlet-preferences>
     <owner-type>portal</owner-type>
     <owner-id>@owner@</owner-id>
-    <window-id>portal#portalclassic:/web/GroovyPortlet/groovyportlet</window-id>
+    <window-id>portal#@owner@:/web-presentation/SingleContentViewer/@owner@-homepage</window-id>
     <preference>
-      <name>template</name>
-      <value>par:/groovy/groovy/webui/component/UIGroovyPortlet.gtmpl</value>
+      <name>repository</name>
+      <value>repository</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>workspace</name>
+      <value>collaboration</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>nodeIdentifier</name>
+      <value>/sites content/live/@owner@/web contents/site artifacts/homepage/Default</value>
+      <read-only>false</read-only>
+    </preference>
+    <preference>
+      <name>ShowQuickEdit</name>
+      <value>true</value>
       <read-only>false</read-only>
     </preference>
   </portlet-preferences>
+  
+  <portlet-preferences>
+    <owner-type>portal</owner-type>
+    <owner-id>@owner@</owner-id>
+    <window-id>portal#@owner@:/web/NavigationPortlet/@owner@-toolbar</window-id>
+    <preference>
+      <name>useAJAX</name>
+      <value>false</value>
+      <read-only>false</read-only>
+    </preference>
+  </portlet-preferences>
+  
+  <portlet-preferences>
+		<owner-type>portal</owner-type>
+		<owner-id>@owner@</owner-id>
+		<window-id>portal#@owner@:/web-presentation/SingleContentViewer/@owner@-presentation</window-id>
+      <preference>
+        <name>ShowTOC</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowTags</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowCategories</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowQuickEdit</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+      
 </portlet-preferences-set>

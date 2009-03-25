@@ -5,38 +5,37 @@
   <priority>5</priority>
   
   <page-nodes>
-  	<node>
-      <uri>organization</uri>
-      <name>organization</name>
-      <label>#{group.executive-board.management}</label>
-      <page-reference>group::organization/management/executive-board::organization</page-reference>
+    <node>
+      <uri>management</uri>
+      <name>management</name>
+      <label>#{group.executive-board.management.title}</label>
+      <page-reference>group::organization/management/executive-board::Management</page-reference>
+      
       <node>
-	      <uri>organization/newStaff</uri>
+	      <uri>management/newStaff</uri>
 	      <name>newStaff</name>
 	      <label>#{group.executive-board.management.newStaff}</label>
 	      <page-reference>group::organization/management/executive-board::NewStaff</page-reference>
     	</node>
     	
     	<node>
-	      <uri>organization/management</uri>
-	      <name>management</name>
+	      <uri>management/organization</uri>
+	      <name>organization</name>
 	      <label>#{group.executive-board.management.organization}</label>
-	      <page-reference>group::organization/management/executive-board::Management</page-reference>
+	      <page-reference>group::organization/management/executive-board::Organization</page-reference>
     	</node>
-    	
     	<node>
-	      <uri>organization/ecmadmin</uri>
+	      <uri>management/ecmadmin</uri>
 	      <name>ecmadmin</name>
 	      <label>#{group.executive-board.management.ecmadmin}</label>
 	      <page-reference>group::organization/management/executive-board::ECMAdmin</page-reference>
-    	</node>    	    	    	    	   
+    	</node>    	    	    	    	    	  
     </node>
-    
+       
     <node>
       <uri>businessprocess</uri>
       <name>businessprocess</name>
-      <label>#{group.executive-board.businessprocess}</label>
-      <page-reference>group::organization/management/executive-board::BusinessProcess</page-reference>
+      <label>#{group.executive-board.businessprocess.title}</label>
       
       <node>
 	      <uri>businessprocess/workflowadministrator</uri>

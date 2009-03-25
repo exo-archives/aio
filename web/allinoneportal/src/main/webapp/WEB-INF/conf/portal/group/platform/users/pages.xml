@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <page-set>
+	<!--page>
+  	<page-id>group::platform/users::LiveDesktop</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>LiveDesktop</name>
+    <factory-id>Desktop</factory-id>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>manager:/platform/administrators</edit-permission>
+    <show-max-window>true</show-max-window>
+    
+	  <application>
+      <instance-id>group#platform/users:/web/BrowserPortlet/webosWebExplorer</instance-id>    
+      <title>Web Explorer</title>
+    </application>        
+    	  	  	  	
+    <application>
+      <instance-id>group#platform/users:/ecm/FileExplorerPortlet/fileexplorer</instance-id>
+      <title>File Explorer</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/FastContentCreatorPortlet/fastcontentcreator</instance-id>
+      <title>Fast Content Creator</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/ContentBrowserPortlet/contentbrowser</instance-id>
+      <title>Content Browser</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/workflow/WorkflowControllerPortlet/workflowcontroller</instance-id>    
+      <title>Business Process</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+                 
+  </page-->
           		  		
   <page>
   	<page-id>group::platform/users::ContentManagement</page-id>
@@ -10,12 +58,6 @@
     <access-permissions>*:/platform/users</access-permissions>
     <edit-permission>manager:/platform/administrators</edit-permission>
     <show-max-window>true</show-max-window>
-    
-    <application>
-	    <instance-id>portal#@owner@:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
-	    <application-type>eXoWidget</application-type>
-	    <title>Welcome Widget</title>
-	  </application>
     
     <application>
       <instance-id>group#platform/users:/ecm/FileExplorerPortlet/fileexplorer</instance-id>
@@ -37,88 +79,14 @@
       <show-info-bar>true</show-info-bar>
       <show-application-mode>true</show-application-mode>      
     </application>
-                             
+    
+    <application>
+      <instance-id>group#platform/users:/workflow/WorkflowControllerPortlet/workflowcontroller</instance-id>    
+      <title>Business Process Center</title>
+      <show-info-bar>false</show-info-bar>      
+    </application>
+                                
   </page>
-  <page>
-  	<page-id>group::platform/users::collaboration</page-id>
-  	<owner-type>group</owner-type>
-    <owner-id>platform/users</owner-id>
-    <name>collaboration</name>
-    <factory-id>Desktop</factory-id>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>*:/platform/administrators</edit-permission>
-    <show-max-window>true</show-max-window>
-    
-    <application>
-	    <instance-id>portal#@owner@:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
-	    <application-type>eXoWidget</application-type>
-	    <title>Welcome Widget</title>
-	  </application>
-    
-    <application>
-      <instance-id>group#platform/users:/mail/MailPortlet/mail</instance-id>    
-      <title>Mail Portlet</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-    
-    <application>
-      <instance-id>group#platform/users:/calendar/CalendarPortlet/calendar</instance-id>    
-      <title>Calendar Portlet</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-    
-    <application>
-      <instance-id>group#platform/users:/contact/ContactPortlet/contact</instance-id>    
-      <title>Contact Portlet</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-    
-    <application>
-      <instance-id>group#platform/users:/content/RSSReaderPortlet/content</instance-id>    
-      <title>RSS Reader Portlet</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-          
-  </page>
-  
- <!-- ##### Commented by NhatDH - Aug 07 #####
-	<page>
-  	<page-id>group::platform/users::liveroom</page-id>
-  	<owner-type>group</owner-type>
-    <owner-id>platform/users</owner-id>
-    <name>liveroom</name>
-    <factory-id>Desktop</factory-id>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>*:/platform/administrators</edit-permission>
-    <show-max-window>true</show-max-window>
-    
-    <application>
-      <instance-id>group#platform/users:/exomessenger/ChatPortlet/chat</instance-id>    
-      <title>Chat Portlet</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>          
-  </page> 
-  
-  <page>
- 		<page-id>group::platform/users::chat</page-id>
-  	<owner-type>group</owner-type>
-    <owner-id>platform/users</owner-id>
-    <name>chat</name>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>*:/platform/administrators</edit-permission>
-    
-    <application>
-      <instance-id>group#platform/users:/exomessenger/ChatPortlet/chat</instance-id>    
-      <title>Chat Portlet</title>
-      <show-info-bar>true</show-info-bar>      
-    </application>  
-  </page>
-   ###############################################-->
   
   <page>
   	<page-id>group::platform/users::FileExplorer</page-id>
@@ -183,20 +151,67 @@
     </application>  
   </page>
   
-  <page>
-  	<page-id>group::platform/users::sitemap</page-id>
-    <owner-type>group</owner-type>
+	<page>
+  	<page-id>group::platform/users::collaboration</page-id>
+  	<owner-type>group</owner-type>
     <owner-id>platform/users</owner-id>
-    <name>sitemap</name>
-    <title>Site Map</title>
-	  <access-permissions>*:/platform/users</access-permissions>
-	  <edit-permission>*:/platform/administrators</edit-permission>
-	  <application>
-      <instance-id>group#platform/users:/web/SiteMapPortlet/sitemapportlet</instance-id>
-      <title>Site Map</title>
-      <show-info-bar>false</show-info-bar>      
-    </application>          
+    <name>collaboration</name>
+    <factory-id>Desktop</factory-id>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <show-max-window>true</show-max-window>
+    
+    <!--application>
+      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
+      <title>Forum Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application-->
+    
+    <application>
+      <instance-id>group#platform/users:/mail/MailPortlet/mail</instance-id>    
+      <title>Mail Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/calendar/CalendarPortlet/calendars</instance-id>    
+      <title>Calendar Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/contact/ContactPortlet/contact</instance-id>    
+      <title>Contact Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/content/RSSReaderPortlet/content</instance-id>    
+      <title>RSS Reader Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+          
   </page>
+  
+	<!--page>
+  	<page-id>group::platform/users::forum</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>forum</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
+      <title>Forum Portlet</title>
+      <show-info-bar>true</show-info-bar>      
+    </application>  
+  </page-->
   
   <page>
  		<page-id>group::platform/users::mail</page-id>
@@ -208,7 +223,7 @@
     
     <application>
       <instance-id>group#platform/users:/mail/MailPortlet/mail</instance-id>    
-      <title>Mail</title>
+      <title>Mail Portlet</title>
       <show-info-bar>true</show-info-bar>      
     </application>  
   </page>
@@ -222,9 +237,9 @@
     <edit-permission>*:/platform/administrators</edit-permission>
     
     <application>
-      <instance-id>group#platform/users:/calendar/CalendarPortlet/calendar</instance-id>    
-      <title>Calendar</title>
-      <show-info-bar>true</show-info-bar>      
+      <instance-id>group#platform/users:/calendar/CalendarPortlet/calendars</instance-id>
+      <title>Calendar Portlet</title>
+      <show-info-bar>true</show-info-bar>
     </application>  
   </page>
   
@@ -238,94 +253,25 @@
     
     <application>
       <instance-id>group#platform/users:/contact/ContactPortlet/contact</instance-id>    
-      <title>Contact Management</title>
+      <title>Contact Portlet</title>
       <show-info-bar>true</show-info-bar>      
     </application>  
-  </page>    
+  </page>
   
-  <!-- ##### Commented by NhatDH - Aug 07 #####
   <page>
-  	<page-id>group::platform/users::forum</page-id>
+  	<page-id>group::platform/users::content</page-id>
   	<owner-type>group</owner-type>
     <owner-id>platform/users</owner-id>
-    <name>forum</name>
+    <name>content</name>
     <access-permissions>*:/platform/users</access-permissions>
     <edit-permission>*:/platform/administrators</edit-permission>
     
     <application>
-      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
-      <title>Forum</title>
+      <instance-id>group#platform/users:/content/RSSReaderPortlet/content</instance-id>    
+      <title>RSS Reader Portlet</title>
       <show-info-bar>true</show-info-bar>      
     </application>  
   </page>
-  ######################################## -->
-  
-  <page>
-  	<page-id>group::platform/users::RSSReader</page-id>
-  	<owner-type>group</owner-type>
-    <owner-id>platform/users</owner-id>
-    <name>RSSReader</name>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>*:/platform/administrators</edit-permission>
-    
-    <application>
-      <instance-id>group#platform/users:/content/RSSReaderPortlet/RSSReader</instance-id>    
-      <title>RSS Reader</title>
-      <show-info-bar>true</show-info-bar>      
-    </application>  
-  </page>    
-
-
- <!-- ##### Commented by NhatDH - Aug 07 08 #####
-  <page>
-  	<page-id>group::platform/users::webContentManagement</page-id>
-  	<owner-type>group</owner-type>
-    <owner-id>platform/users</owner-id>
-    <name>webContentManagement</name>
-    <factory-id>Desktop</factory-id>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>*:/platform/administrators</edit-permission>  
-    <show-max-window>true</show-max-window>
-    
-    <application>
-      <instance-id>group#platform/users:/web-presentation/SimplePresentationPortlet/presentation</instance-id>    
-      <title>Web Presentation</title>
-      <show-info-bar>false</show-info-bar>      
-    </application>  
-  </page>    
-  
-  <page>
-  	<page-id>group::platform/users::WebPresentation</page-id>
-  	<owner-type>group</owner-type>
-    <owner-id>platform/users</owner-id>
-    <name>WebPresentation</name>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>*:/platform/administrators</edit-permission>  
-    <application>
-      <instance-id>group#platform/users:/web-presentation/SimplePresentationPortlet/presentation</instance-id>    
-      <title>Web Presentation</title>
-      <show-info-bar>true</show-info-bar>      
-      <show-application-state>true</show-application-state>
-      <show-application-mode>true</show-application-mode>
-    </application>  
-  </page>
-   
-  <page>
-  	<page-id>group::platform/users::WebSearch</page-id>
-  	<owner-type>group</owner-type>
-    <owner-id>platform/users</owner-id>
-    <name>WebSearch</name>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>*:/platform/administrators</edit-permission> 
-    <application>
-      <instance-id>group#platform/users:/web-searches/SimpleSearchPortlet/search</instance-id>
-      <title>Web Search</title>
-      <show-info-bar>true</show-info-bar>      
-      <show-application-state>true</show-application-state>
-      <show-application-mode>true</show-application-mode>
-    </application>  
-  </page>  
-  ############################################-->
   
 </page-set>
 

@@ -1,3 +1,8 @@
+<%
+	def repository = uicomponent.getRepositoryName();
+	String[] repositoryField = ["jcrPath=/node/exo:repository", "visible=false", repository] ;
+	uicomponent.addHiddenField("repository", repositoryField) ;
+%>
 <div class="UIFormWithTitle">
   <div class="TitleBar"><%=_ctx.appRes(uicomponent.getId() + ".title")%></div>
 	<% uiform.begin() %>
@@ -16,8 +21,8 @@
 	      <td class="FieldLabel"><%=_ctx.appRes("Workflow.dialog.label.name")%></td>
 	      <td class="FieldComponent">
 		      <% 
-		        String[] fieldName = ["jcrPath=/node/exo:name", "validate=name"] ;
-		        uicomponent.addTextField("name", fieldName)  ;
+		        String[] fieldName = ["jcrPath=/node/exo:name", "validate=empty"];
+		        uicomponent.addTextField("actionName", fieldName)  ;
 		      %>
 		    </td>
 		  </tr>
@@ -43,7 +48,7 @@
 	      <td class="FieldLabel"><%=_ctx.appRes("Workflow.dialog.label.validator")%></td>
 	      <td class="FieldComponent">
 		      <% 
-		        String[] fieldValidator = ["jcrPath=/node/exo:validator", "selectorAction=selectPermission", "selectorClass=org.exoplatform.ecm.webui.component.UIECMPermissionBrowser", "selectorIcon=Permission24x24Icon", "validate=empty", "editable=false"] ;
+		        String[] fieldValidator = ["jcrPath=/node/exo:validator", "selectorAction=selectPermission", "selectorClass=org.exoplatform.ecm.webui.selector.UIPermissionSelector", "selectorIcon=Permission24x24Icon", "validate=empty", "editable=false"] ;
 		        uicomponent.addActionField("validator", fieldValidator) ;
 		      %>
 		    </td>
@@ -61,7 +66,7 @@
 	      <td class="FieldLabel"><%=_ctx.appRes("Workflow.dialog.label.with-path")%></td>
 	      <td class="FieldComponent">
 		      <% 
-		        String[] fieldPath = ["jcrPath=/node/exo:destPath", "selectorAction=selectDestPath", "selectorClass=org.exoplatform.ecm.webui.component.UIJCRBrowser", "workspaceField=destWorkspace", "selectorIcon=SelectPath24x24Icon", "validate=empty", "editable=false"] ;
+		        String[] fieldPath = ["jcrPath=/node/exo:destPath", "selectorAction=selectDestPath", "selectorClass=org.exoplatform.ecm.webui.tree.selectone.UIOneNodePathSelector", "workspaceField=destWorkspace", "selectorIcon=SelectPath24x24Icon", "validate=empty", "editable=false"] ;
 		        uicomponent.addActionField("destPath", fieldPath)  ;
 		      %>
 		    </td>

@@ -16,8 +16,8 @@
       <td class="FieldLabel"><%=_ctx.appRes("ReloadAction.dialog.label.name")%></td>
       <td class="FieldComponent">
 	      <% 
-	        String[] fieldName = ["jcrPath=/node/exo:name", "validate=name"] ;
-	        uicomponent.addTextField("name", fieldName) ;  
+	        String[] fieldName = ["jcrPath=/node/exo:name", "validate=empty"];
+	        uicomponent.addTextField("actionName", fieldName);  
 	      %>
 	    </td>
     </tr>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <page-set>
-	<page>
+  <page>
   	<page-id>portal::webos::home</page-id>
   	<owner-type>portal</owner-type>
 		<owner-id>webos</owner-id>
@@ -9,141 +9,61 @@
 	  <access-permissions>*:/platform/guests</access-permissions>
 	  <edit-permission>manager:/platform/administrators</edit-permission>
     <show-max-window>true</show-max-window>
-    
+	  	                 
     <application>
-	    <instance-id>portal#webos:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
-	    <application-type>eXoWidget</application-type>
-	    <title>Welcome Widget</title>
-	    <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-      <show-application-mode>true</show-application-mode>
-	  </application>
-	  
-	  <application>
-      <instance-id>portal#webos:/exoadmin/AccountPortlet/webosAccount</instance-id>    
+      <instance-id>portal#webos:/exoadmin/AccountPortlet/Account</instance-id>    
       <title>Register</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-      <show-application-mode>true</show-application-mode>
-    </application>
-            
-    <application>
-      <instance-id>portal#webos:/web/BrowserPortlet/webosWebExplorer</instance-id>    
-      <title>Web Explorer</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-      <show-application-mode>true</show-application-mode>
-    </application>
-                            
-    <application>
-      <instance-id>portal#webos:/ecm/ContentBrowserPortlet/webosNews</instance-id>
-      <title>News</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-      <show-application-mode>true</show-application-mode>
     </application>
     
     <application>
-      <instance-id>portal#webos:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget1</instance-id>
-      <application-type>eXoWidget</application-type>
+      <instance-id>group#platform/guests:/web/IFramePortlet/blog</instance-id>
+      <title>Blog's Link</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>false</show-application-mode>
     </application>
- 
-                                
+                
   </page>
   
   <page>
-  	<page-id>portal::webos::LiveDesktop</page-id>
+  	<page-id>portal::webos::livedesktop</page-id>
   	<owner-type>portal</owner-type>
-    <owner-id>webos</owner-id>
-    <name>LiveDesktop</name>
+		<owner-id>webos</owner-id>
+    <name>livedesktop</name>		
     <factory-id>Desktop</factory-id>
-    <access-permissions>*:/platform/users</access-permissions>
-    <edit-permission>manager:/platform/administrators</edit-permission>
+	  <access-permissions>*:/platform/users</access-permissions>
+	  <edit-permission>*:/platform/administrators</edit-permission>
     <show-max-window>true</show-max-window>
-    
-    <application location-x="100" location-y="150">
-	    <instance-id>portal#webos:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
-	    <application-type>eXoWidget</application-type>
-	    <title>Welcome Widget</title>
-	  </application>
-	  
-	  <application location-x="300" location-y="150">
-	    <instance-id>portal#webos:/eXoWidgetWeb/CalendarWidget/CalendarWidget</instance-id>
-	    <application-type>eXoWidget</application-type>
-	    <title>Calendar Widget</title>
-	  </application>
-	  
-	  <application>
-      <instance-id>portal#webos:/web/BrowserPortlet/webosWebExplorer</instance-id>    
+	      
+    <application>
+      <instance-id>portal#webos:/web/BrowserPortlet/WebExplorer</instance-id>    
       <title>Web Explorer</title>
     </application>
-    
+                
     <application>
-      <instance-id>portal#webos:/content/RSSReaderPortlet/content</instance-id>    
-      <title>eXo Reader</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-    <!-- ##### Commented by NhatDH, Aug 12
-    <application>
-      <instance-id>portal#webos:/forum/ForumPortlet/forum</instance-id>    
-      <title>Forum</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-    ######################################-->
-    <application>
-      <instance-id>portal#webos:/mail/MailPortlet/mail</instance-id>    
-      <title>Mail</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-    
-    <application>
-      <instance-id>portal#webos:/calendar/CalendarPortlet/calendar</instance-id>    
-      <title>Calendar</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-    
-    <application>
-      <instance-id>portal#webos:/contact/ContactPortlet/contact</instance-id>    
-      <title>Contact Management</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-    </application>
-                    	  	  	  	
-    <application>
-      <instance-id>portal#webos:/ecm/FileExplorerPortlet/fileexplorer</instance-id>
-      <title>File Explorer</title>
+      <instance-id>portal#webos:/web/IFramePortlet/blog</instance-id>
+      <title>Blog</title>
       <show-info-bar>true</show-info-bar>
       <show-application-state>true</show-application-state>
       <show-application-mode>true</show-application-mode>
     </application>
     
     <application>
-      <instance-id>portal#webos:/ecm/FastContentCreatorPortlet/fastcontentcreator</instance-id>
-      <title>Fast Content Creator</title>
+      <instance-id>portal#webos:/web/IFramePortlet/google</instance-id>
+      <title>Google</title>
       <show-info-bar>true</show-info-bar>
       <show-application-state>true</show-application-state>
       <show-application-mode>true</show-application-mode>
     </application>
     
     <application>
-      <instance-id>portal#webos:/ecm/ContentBrowserPortlet/contentbrowser</instance-id>
-      <title>Content Browser</title>
+      <instance-id>portal#webos:/web/IFramePortlet/facebook</instance-id>
+      <title>FaceBook</title>
       <show-info-bar>true</show-info-bar>
       <show-application-state>true</show-application-state>
       <show-application-mode>true</show-application-mode>
     </application>
-    
-    <application>
-      <instance-id>portal#webos:/workflow/WorkflowControllerPortlet/workflowcontroller</instance-id>    
-      <title>Business Process</title>
-      <show-info-bar>true</show-info-bar>
-      <show-application-state>true</show-application-state>
-      <show-application-mode>true</show-application-mode>
-    </application>               
-  </page>
-  
+                    
+  </page>  
+   
 </page-set>

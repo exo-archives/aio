@@ -42,10 +42,10 @@
 	          <field name="processLocation"><string>war:/conf/bp</string></field>
 	          <field name="predefinedProcess">
 	            <collection type="java.util.HashSet">
-	              <value><string>/exo.ecm.bp.bonita.payraise-2.0.jar</string></value>
-	              <value><string>/exo.ecm.bp.bonita.holiday-2.0.jar</string></value>
-	              <value><string>/exo.ecm.bp.bonita.content.validation-2.0.jar</string></value>
-	              <value><string>/exo.ecm.bp.bonita.content.backup-2.0.jar</string></value>
+	              <value><string>/exo.ecm.bp.bonita.payraise-2.2.1.jar</string></value>
+	              <value><string>/exo.ecm.bp.bonita.holiday-2.2.1.jar</string></value>
+	              <value><string>/exo.ecm.bp.bonita.content.validation-2.2.1.jar</string></value>
+	              <value><string>/exo.ecm.bp.bonita.content.backup-2.2.1.jar</string></value>
 	            </collection>
 	          </field>
 	        </object>
@@ -53,6 +53,7 @@
 	    </init-params>
 	  </component-plugin>
 	</external-component-plugins>
+	
 	<!-- Script & template for reloadBP action-->	
 	<external-component-plugins>
     <target-component>org.exoplatform.services.cms.scripts.ScriptService</target-component>
@@ -151,5 +152,5 @@
           </object-param>
         </init-params>       
       </component-plugin>
-  </external-component-plugins>
+  </external-component-plugins>      		
 </configuration>
