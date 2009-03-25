@@ -1,0 +1,16 @@
+<project>
+  <parent>
+    <groupId>org.exoplatform.allinone</groupId>
+    <artifactId>config</artifactId>
+    <version>1.2</version>
+  </parent> 
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>exo.allinone.component.patch</artifactId>
+  <packaging>pom</packaging> 
+  <version>${org.exoplatform.allinone.version}</version>
+  <name>eXo AllInOne component patch</name>
+  <modules>    
+    <module>jcr/ext</module>
+  </modules>  
+</project>
