@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <bundle>
   <!--
   #############################################################################
@@ -9,7 +9,7 @@
   -->
   <EmptyStringValidator>
     <msg>
-      <empty-input>Gi� tr? tru?ng "{0}" l� b?t bu?c.</empty-input>
+      <empty-input>Giá trị trường "{0}" là bắt buộc.</empty-input>
     </msg>
   </EmptyStringValidator>
   <!--
@@ -21,7 +21,7 @@
   -->
   <EmailAddressValidator>
     <msg>
-      <invalid-email>B?n d� nh?p gi� tr? {0} v�o tru?ng {1}, d� l� m?t gi� tr? kh�ng h?p l?.</invalid-email>
+      <invalid-email>Bạn đã nhập giá trị {0} vào trường {1}, đó là một giá trị không hợp lệ.</invalid-email>
     </msg>
   </EmailAddressValidator>
   <!--
@@ -33,8 +33,8 @@
   -->
   <NumberFormatValidator>
     <msg>
-      <invalid-limitAccess>B?n d� nh?p gi� tr? {0} v�o tru?ng {1}, d� l� m?t gi� tr? kh�ng h?p l?\ gi?i h?n truy c?p.</invalid-limitAccess>
-      <Invalid-input>Gi� tr? v?a nh?p v�o tru?ng {0} kh�ng d�ng d?nh d?ng s?.</Invalid-input>
+      <invalid-limitAccess>Bạn đã nhập giá trị {0} vào trường {1}, đó là một giá trị không hợp lệ\ giới hạn truy cập.</invalid-limitAccess>
+      <Invalid-input>Giá trị vừa nhập vào trường {0} không dúng định dạng số.</Invalid-input>
     </msg>
   </NumberFormatValidator>
   <!--
@@ -49,8 +49,8 @@
   -->
   <IdentifierValidator>
     <msg>
-      <empty-input>Gi� tr? tru?ng "{0}" kh�ng th? r?ng.</empty-input>
-      <invalid-char>Tru?ng {0} ch? ch?p nh?n c�c k� t? l� ch? c�i, ch? s?, v� d?u g?ch du?i, d?u g?ch ngang.</invalid-char>
+      <empty-input>Giá trị trường "{0}" không thể rỗng.</empty-input>
+      <invalid-char>Trường {0} chỉ chấp nhận các ký tự là chữ cái, chữ số, và dấu gạch dưới, dấu gạch ngang.</invalid-char>
     </msg>
   </IdentifierValidator>
   <!--
@@ -65,8 +65,8 @@
   -->
   <NameValidator>
     <msg>
-      <empty-input>Gi� tr? tru?ng "{0}" kh�ng th? r?ng.</empty-input>
-      <invalid-char>Tru?ng {0} ch? ch?p nh?n c�c k� t? l� ch? c�i, ch? s?, d?u ch?m, d?u g?ch ngang v� d?u g?ch du?i.</invalid-char>
+      <empty-input>Giá trị trường "{0}" không thể rỗng.</empty-input>
+      <invalid-char>Trường {0} chỉ chấp nhận các ký tự là chữ cái, chữ số, dấu chấm, dấu gạch ngang và dấu gạch dưới.</invalid-char>
     </msg>
   </NameValidator>
   <!--
@@ -81,8 +81,8 @@
   -->
   <ValidUserValidator>
     <msg>
-      <empty-input>H�y nh?p m?t gi� tr? v�o tru?ng {0}.</empty-input>
-      <invalid-username>Kh�ng t�m th?y ngu?i d�ng {0}.</invalid-username>
+      <empty-input>Hãy nhập một giá trị vào trường {0}.</empty-input>
+      <invalid-username>Không tìm thấy người dùng {0}.</invalid-username>
     </msg>
   </ValidUserValidator>
   <!--
@@ -97,8 +97,8 @@
   -->
   <ValidGroupValidator>
     <msg>
-      <empty-input>H�y nh?p m?t gi� tr? v�o tru?ng {0}.</empty-input>
-      <invalid-group-id>Kh�ng t�m  th?y nh�m {0}.</invalid-group-id>
+      <empty-input>Hãy nhập một giá trị vào trường {0}.</empty-input>
+      <invalid-group-id>Không tìm  thấy nhóm {0}.</invalid-group-id>
     </msg>
   </ValidGroupValidator>
   <!--
@@ -111,8 +111,8 @@
   -->
   <PermissionValidator>
     <msg>
-      <invalid-permission-input>Ph�n quy?n kh�ng h?p l?, d?nh d?ng ph�n quy?n n�n l� th�nh vi�n:/Nh�m.</invalid-permission-input>
-      <membership-group-not-found>Ki?u th�nh vi�n ho?c t�n nh�m kh�ng t�m th?y.</membership-group-not-found>
+      <invalid-permission-input>Phân quyền không hợp lệ, định dạng phân quyền nên là thành viên:/Nhóm.</invalid-permission-input>
+      <membership-group-not-found>Kiểu thành viên hoặc tên nhóm không tìm thấy.</membership-group-not-found>
     </msg>
   </PermissionValidator>
   <!--
@@ -124,7 +124,7 @@
   -->
   <CheckAdminOrOwnerRoleInterceptor>
     <msg>
-      <owner-or-admin-require>B?n c?n dang nh?p ho?c c� vai tr� qu?n tr? d? th?c hi?n du?c ho?t d?ng '{0}'.</owner-or-admin-require>
+      <owner-or-admin-require>Bạn cần đăng nhập hoặc có vai trò quản trị để thực hiện được hoạt động '{0}'.</owner-or-admin-require>
     </msg>
   </CheckAdminOrOwnerRoleInterceptor>
   <!--
@@ -136,7 +136,7 @@
   -->
   <CheckOwnerInterceptor>
     <msg>
-      <owner-require>B?n c?n dang nh?p d? th?c hi?n ho?t d?ng '{0}'.</owner-require>
+      <owner-require>Bạn cần đăng nhập để thực hiện hoạt động '{0}'.</owner-require>
     </msg>
   </CheckOwnerInterceptor>
   <!--
@@ -148,7 +148,7 @@
   -->
   <ExoPermissionException>
     <msg>
-      <message>B?n ph?i l� {0} d? th?c hi?n du?c ho?t d?ng {1}.</message>
+      <message>Bạn phải là {0} để thực hiện được hoạt dộng {1}.</message>
     </msg>
   </ExoPermissionException>
   <!--
@@ -158,22 +158,22 @@
   #this exception is throw in GroupQueryHandler class
   -->
   <OrganizationService>
-    <unique-group-exception>T�n nh�m {0} d� t?n t?i.</unique-group-exception>
+    <unique-group-exception>Tên nhóm {0} đã tồn tại.</unique-group-exception>
   </OrganizationService>
   <!--
   #Throw in org.exoplatform.commons.utils.PageList, {0}=request page parameter, {1}=available pages parameter
   -->
   <PageList>
-    <page-out-of-range>B?n dang c? g?ng d? nh?n du?c trang {0}, nhung ch? c� nh?ng trang {1} t?n t?i.</page-out-of-range>
+    <page-out-of-range>Bạn đang cố gắng để nhận được trang {0}, nhưng chỉ có những trang {1} tồn tại.</page-out-of-range>
   </PageList>
   <!--
   #Throw in exo.services.communication.message.impl.MessageServiceImpl. 
   #{0}=account name, {1}=user name
   -->
   <MessageService>
-    <account-not-found>Kh�ng t�m th?y t�i kho?n {0} cho ngu?i d�ng {1}.</account-not-found>
-    <invalid-standalone-message-address>B?n dang s? d?ng ki?u t�i kho?n don l? v� d?u "\" trong dinh d?ng d?a ch? {0} l� kh�ng h?p l?. �?nh d?ng d�ng c?a d?a ch? l�: \ngu?i nh?n#T�n t�i kho?n</invalid-standalone-message-address>
-    <send-message-fail>Kh�ng th? g?i th�ng b�o.Ki?m tra d?a ch? e-mail\n\ L?i: {0}</send-message-fail>
+    <account-not-found>Không tìm thấy tài khoản {0} cho người dùng {1}.</account-not-found>
+    <invalid-standalone-message-address>Bạn đang sử dụng kiểu tài khoản đơn lẻ và dấu "\" trong đinh dạng địa chỉ {0} là không hợp lệ. Định đạng đúng của địa chỉ là: \người nhận#Tên tài khoản</invalid-standalone-message-address>
+    <send-message-fail>Không thể gửi thông báo.Kiểm tra địa chỉ e-mail\n\ Lỗi: {0}</send-message-fail>
   </MessageService>
   <!--
   #Throw in exo.services.communication.message.impl.StandaloneProtocolPlugin. 
@@ -193,7 +193,7 @@
   -->
   <Searcher>
     <msg>
-      <search-expression-error><![CDATA[C� m?t l?i trong bi?u th?c b?n nh?p v�o.<br />{0}]]></search-expression-error>
+      <search-expression-error><![CDATA[Có một lỗi trong biểu thức bạn nhập vào.<br />{0}]]></search-expression-error>
     </msg>
   </Searcher>
 </bundle>

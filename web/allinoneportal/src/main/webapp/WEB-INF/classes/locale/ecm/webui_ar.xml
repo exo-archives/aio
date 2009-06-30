@@ -7,12 +7,12 @@
   -->
   <UITreeList>
     <header>
-      <name>???</name>
-      <action>?????</action>
+      <name>اسم</name>
+      <action>إضافة</action>
     </header>
     <action />
     <info>
-      <child-not-found>????? ??? ?????!</child-not-found>
+      <child-not-found>الابن غير موجود!</child-not-found>
     </info>
   </UITreeList>
   <!--
@@ -22,19 +22,19 @@
   -->
   <UISelectedCategoriesGrid>
     <header>
-      <categoryName>??? ?????</categoryName>
-      <categoryPath>??? ??????</categoryPath>
-      <action>????</action>
+      <categoryName>اسم الفئة</categoryName>
+      <categoryPath>فئة الطريق</categoryPath>
+      <action>حركة</action>
     </header>
     <action>
-      <SaveCategories>????</SaveCategories>
-      <Cancel>?????</Cancel>
+      <SaveCategories>احفظ</SaveCategories>
+      <Cancel>الغاء</Cancel>
     </action>
     <msg>
-      <cannot-save>.?????? ??? ??????</cannot-save>
-      <have-saved>?????? ?????? ?????</have-saved>
-      <non-categories>.???? ?????. ?????? ?????? ???? ????</non-categories>
-      <confirm-delete>?? ???? ??? ??? ?????</confirm-delete>
+      <cannot-save>.الفئات غير محفوظة</cannot-save>
+      <have-saved>الفئات محفوظة بنجاح</have-saved>
+      <non-categories>.فئات خاطئة. الرجاء اختيار فئات جيدة</non-categories>
+      <confirm-delete>هل تريد حذف هذه الفئة</confirm-delete>
     </msg>
   </UISelectedCategoriesGrid>
   <!--
@@ -44,20 +44,20 @@
   -->
   <SelectUserOrGroup>
     <title>
-      <UIPermissionUser>?????? ????????</UIPermissionUser>
-      <UIPermissionMembership>?????????????</UIPermissionMembership>
+      <UIPermissionUser>اختيار المستخدم</UIPermissionUser>
+      <UIPermissionMembership>اختيارالعضوية</UIPermissionMembership>
     </title>
   </SelectUserOrGroup>
   <UIPermissionUser>
     <label>
-      <selectUser>?????? ????????</selectUser>
-      <selectGroup>???? ????? ??????</selectGroup>
+      <selectUser>اختيار المستخدم</selectUser>
+      <selectGroup>تصفح واختر مجموعة</selectGroup>
     </label>
   </UIPermissionUser>
   <UIPermissionMembership>
     <label>
-      <selectUser>?????????????</selectUser>
-      <selectGroup>???? ????? ??????</selectGroup>
+      <selectUser>اختيارالعضوية</selectUser>
+      <selectGroup>تصفح واختر مجموعة</selectGroup>
     </label>
   </UIPermissionMembership>
 </bundle>

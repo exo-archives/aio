@@ -7,12 +7,12 @@
     <dialog>
       <label>
         <end-time>Heure de fin</end-time>
-        <start-time>Heure de début</start-time>
+        <start-time>Heure de dÃ©but</start-time>
         <lifecycle>Cycle de vie</lifecycle>
         <mimeType>Type Mime</mimeType>
         <repeat-count>Nombre d'essais</repeat-count>
         <time-interval>Intervalle entre 2 essais</time-interval>
-        <query-items>Eléments de la requête</query-items>
+        <query-items>ElÃ©ments de la requÃªte</query-items>
         <schedule-type>Type de planification</schedule-type>
       </label>
     </dialog>
@@ -30,7 +30,7 @@
       </label>
     </dialog>
     <msg>
-      <no-view>Ce noeud ou ce formulaire a été supprimé ou modifié. Veuillez cliquer sur le bouton "Actualiser".</no-view>
+      <no-view>Ce noeud ou ce formulaire a Ã©tÃ© supprimÃ© ou modifiÃ©. Veuillez cliquer sur le bouton "Actualiser".</no-view>
     </msg>
   </Article>
   <UIDocumentForm>
@@ -50,13 +50,13 @@
     <dialog>
       <label>
         <name>Nom</name>
-        <categories>Catégories</categories>
+        <categories>CatÃ©gories</categories>
         <title>Titre</title>
         <link>Lien</link>
         <author>Auteur</author>
         <explicit>Explicite</explicit>
-        <category>Catégorie</category>
-        <keywords>Mot Clé</keywords>
+        <category>CatÃ©gorie</category>
+        <keywords>Mot ClÃ©</keywords>
         <publish-date>Date de Publication</publish-date>
         <description>Description</description>
         <upload-file>Uploader un Fichier</upload-file>
@@ -72,7 +72,7 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <shared>Partagé</shared>
+        <shared>PartagÃ©</shared>
       </label>
     </dialog>
   </Calendar>
@@ -86,11 +86,11 @@
         <subject>#{word.subject}</subject>
         <description>#{word.description}</description>
         <location>Emplacement</location>
-        <start-date-time>Date/Heure de début</start-date-time>
+        <start-date-time>Date/Heure de dÃ©but</start-date-time>
         <end-date-time>Date/Heure de fin</end-date-time>
         <comment>#{word.comment}</comment>
         <category>#{word.category}</category>
-        <availability>Disponibilité</availability>
+        <availability>DisponibilitÃ©</availability>
         <share-type>Type de partage</share-type>
       </label>
     </dialog>
@@ -102,10 +102,10 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>Catégories</categories>
+        <categories>CatÃ©gories</categories>
         <mimeType>#{Ecm.dialog.label.mimeType}</mimeType>
         <content>#{word.content}</content>
-        <re-upload>Vous devez uploader votre fichier à nouveau pour le modifier.</re-upload>
+        <re-upload>Vous devez uploader votre fichier Ã  nouveau pour le modifier.</re-upload>
       </label>
     </dialog>
   </File>
@@ -116,30 +116,30 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>Catégories</categories>
-        <record-properties>Propriétés de l'Enregistrement</record-properties>
-        <process-properties>Propriétés du Processus</process-properties>
+        <categories>CatÃ©gories</categories>
+        <record-properties>PropriÃ©tÃ©s de l'Enregistrement</record-properties>
+        <process-properties>PropriÃ©tÃ©s du Processus</process-properties>
         <note>Note du File Plan</note>
-        <record-category-identifier>Identification de la catégorie de l'Enregistrement</record-category-identifier>
+        <record-category-identifier>Identification de la catÃ©gorie de l'Enregistrement</record-category-identifier>
         <disposition-author>Auteur de la disposition</disposition-author>
         <disposition-instruction>Instructions de la disposition</disposition-instruction>
         <permanent-record-indicator>Indicateur d'enregistrement permanent</permanent-record-indicator>
         <contain-record-folder>Dossier contenant l'Enregistrement</contain-record-folder>
-        <default-media-type>Type de média par défaut</default-media-type>
-        <default-marking-list>Liste de marquage par défaut</default-marking-list>
-        <default-originating-organization>Organisation émettrice par défaut</default-originating-organization>
+        <default-media-type>Type de mÃ©dia par dÃ©faut</default-media-type>
+        <default-marking-list>Liste de marquage par dÃ©faut</default-marking-list>
+        <default-originating-organization>Organisation Ã©mettrice par dÃ©faut</default-originating-organization>
         <vital-record-indicator>Indicateur d'enregistrement vital</vital-record-indicator>
-        <vital-record-review-period>Période de revue pour les enregistrements vitaux</vital-record-review-period>
-        <process-cutoff>Processus de prélèvement</process-cutoff>
-        <event-trigger>Déclenchement d'évènement</event-trigger>
-        <cutoff-period>Période de prélèvement</cutoff-period>
-        <cutoff-on-obsolete>Prélèvement quand obsolète</cutoff-on-obsolete>
-        <cutoff-on-superseded>Prélèvement quand remplacé</cutoff-on-superseded>
+        <vital-record-review-period>PÃ©riode de revue pour les enregistrements vitaux</vital-record-review-period>
+        <process-cutoff>Processus de prÃ©lÃ¨vement</process-cutoff>
+        <event-trigger>DÃ©clenchement d'Ã©vÃ¨nement</event-trigger>
+        <cutoff-period>PÃ©riode de prÃ©lÃ¨vement</cutoff-period>
+        <cutoff-on-obsolete>PrÃ©lÃ¨vement quand obsolÃ¨te</cutoff-on-obsolete>
+        <cutoff-on-superseded>PrÃ©lÃ¨vement quand remplacÃ©</cutoff-on-superseded>
         <process-hold>Suspension du Processus</process-hold>
-        <hold-period>Période de suspension</hold-period>
-        <discretionary-hold>Suspension discrétionnaire</discretionary-hold>
+        <hold-period>PÃ©riode de suspension</hold-period>
+        <discretionary-hold>Suspension discrÃ©tionnaire</discretionary-hold>
         <process-transfer>Processus de transfert</process-transfer>
-        <default-transfer-location>Emplacement du transfert par défaut</default-transfer-location>
+        <default-transfer-location>Emplacement du transfert par dÃ©faut</default-transfer-location>
         <transfer-block-size>Taille du bloc de transfert</transfer-block-size>
         <process-accession>Processus d'acquisition</process-accession>
         <accession-location>Emplacement de l'acquisition</accession-location>
@@ -155,7 +155,7 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>Catégories</categories>
+        <categories>CatÃ©gories</categories>
       </label>
     </dialog>
   </Kofax>
@@ -166,7 +166,7 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>Catégories</categories>
+        <categories>CatÃ©gories</categories>
         <title>#{word.title}</title>
         <description>#{word.description}</description>
         <date>#{word.date}</date>
@@ -201,7 +201,7 @@
       <userName>#{word.userName}</userName>
       <password>Mot de Passe</password>
       <link>Lien</link>
-      <to>Envoyer un Email à</to>
+      <to>Envoyer un Email Ã </to>
       <actionName>#{word.name}</actionName>
     </label>
   </UIActionForm>
@@ -212,7 +212,7 @@
       <userName>#{word.userName}</userName>
       <password>Mot de Passe</password>
       <link>Lien</link>
-      <to>Envoyer un Email à</to>
+      <to>Envoyer un Email Ã </to>
       <actionName>#{word.name}</actionName>
     </label>
   </EditFormAction>
@@ -241,9 +241,9 @@
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <protocol>Protocole</protocol>
-        <host>Nom de l'hôte</host>
+        <host>Nom de l'hÃ´te</host>
         <port>Port</port>
-        <folder>Répertoire</folder>
+        <folder>RÃ©pertoire</folder>
         <username>#{word.userName}</username>
         <password>#{word.password}</password>
         <description>#{word.description}</description>
@@ -273,7 +273,7 @@
     <dialog>
       <label>
         <id>Id</id>
-        <feed-action-name>Créer un nom de flux</feed-action-name>
+        <feed-action-name>CrÃ©er un nom de flux</feed-action-name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
         <start-time>#{Ecm.dialog.label.start-time}</start-time>
@@ -295,11 +295,11 @@
         <language>Langue</language>
         <copyright>Droit d'auteur</copyright>
         <publish-date>Date de publication</publish-date>
-        <owner-name>Nom du propriétaire</owner-name>
-        <owner-email>Email du propriétaire</owner-email>
+        <owner-name>Nom du propriÃ©taire</owner-name>
+        <owner-email>Email du propriÃ©taire</owner-email>
         <image-url>URL de l'image</image-url>
         <category>#{word.category}</category>
-        <keywords>Mots clés</keywords>
+        <keywords>Mots clÃ©s</keywords>
       </label>
     </dialog>
   </Rss>
@@ -312,7 +312,7 @@
         <id>Id</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
-        <metadata>Metadonnée</metadata>
+        <metadata>MetadonnÃ©e</metadata>
         <description>#{word.description}</description>
       </label>
     </dialog>
@@ -346,7 +346,7 @@
         <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
         <cron-expression>Commande Cron</cron-expression>
         <description>#{word.description}</description>
-        <mail-to>Envoyer l'email à</mail-to>
+        <mail-to>Envoyer l'email Ã </mail-to>
       </label>
     </dialog>
   </SendMail>
@@ -414,7 +414,7 @@
     <dialog>
       <label>
         <title>#{word.title}</title>
-        <creator>Créateur</creator>
+        <creator>CrÃ©ateur</creator>
         <subject>#{word.subject}</subject>
         <source>Source</source>
         <contributor>Contributeur</contributor>
@@ -437,11 +437,11 @@
   <Cutoffable>
     <dialog>
       <label>
-        <cutoff-executed>Prélèvement exécuté</cutoff-executed>
-        <cutoff-now>Extraction immédiate</cutoff-now>
+        <cutoff-executed>PrÃ©lÃ¨vement exÃ©cutÃ©</cutoff-executed>
+        <cutoff-now>Extraction immÃ©diate</cutoff-now>
         <cutoff-date-time>Planification de l'extraction</cutoff-date-time>
-        <cutoff-event>Évènement d'extraction</cutoff-event>
-        <cutoff-obsolete>Extraction obsolète</cutoff-obsolete>
+        <cutoff-event>Ã‰vÃ¨nement d'extraction</cutoff-event>
+        <cutoff-obsolete>Extraction obsolÃ¨te</cutoff-obsolete>
         <cutoff-superseded>Extraction de remplacement</cutoff-superseded>
       </label>
     </dialog>
@@ -462,7 +462,7 @@
   <AccessControllable>
     <dialog>
       <label>
-        <owner>Propriétaire</owner>
+        <owner>PropriÃ©taire</owner>
         <permissions>Permissions</permissions>
       </label>
     </dialog>
@@ -473,7 +473,7 @@
   <Accessionable>
     <dialog>
       <label>
-        <accession-executed>Acquisition exécutée</accession-executed>
+        <accession-executed>Acquisition exÃ©cutÃ©e</accession-executed>
         <accession-date>Date d'acquisition</accession-date>
       </label>
     </dialog>
@@ -505,10 +505,10 @@
   <Holdable>
     <dialog>
       <label>
-        <hold-executed>Suspension exécutée</hold-executed>
-        <hold-until>Suspension jusqu'à</hold-until>
-        <holds-discretionary>Suspension discrétionnaire</holds-discretionary>
-        <hold-until-event>Suspension jusqu'à évènement</hold-until-event>
+        <hold-executed>Suspension exÃ©cutÃ©e</hold-executed>
+        <hold-until>Suspension jusqu'Ã </hold-until>
+        <holds-discretionary>Suspension discrÃ©tionnaire</holds-discretionary>
+        <hold-until-event>Suspension jusqu'Ã  Ã©vÃ¨nement</hold-until-event>
         <freeze>Geler</freeze>
       </label>
     </dialog>
@@ -519,8 +519,8 @@
   <Lockable>
     <dialog>
       <label>
-        <lock-owner>Détenteur du verrou</lock-owner>
-        <lock-is-deep>Verrou récursif</lock-is-deep>
+        <lock-owner>DÃ©tenteur du verrou</lock-owner>
+        <lock-is-deep>Verrou rÃ©cursif</lock-is-deep>
       </label>
     </dialog>
   </Lockable>
@@ -543,7 +543,7 @@
   <Published>
     <dialog>
       <label>
-        <start-publication>Début de publication</start-publication>
+        <start-publication>DÃ©but de publication</start-publication>
         <end-publication>Fin de publication</end-publication>
       </label>
     </dialog>
@@ -554,21 +554,21 @@
   <Record>
     <dialog>
       <label>
-        <supplemental-marking-list>Liste supplémentaire d'inscription</supplemental-marking-list>
+        <supplemental-marking-list>Liste supplÃ©mentaire d'inscription</supplemental-marking-list>
         <subject>#{word.subject}</subject>
         <record-identifier>Identifiant du Compte rendu</record-identifier>
-        <originator>Créateur</originator>
+        <originator>CrÃ©ateur</originator>
         <format>#{word.format}</format>
         <addresses>Adresses</addresses>
         <originating-organization>Organisme d'origine</originating-organization>
         <other-addresses>Autres adresses</other-addresses>
         <publication-date>Date de publication</publication-date>
         <record-note>Note du record</record-note>
-        <date-received>Date de réception</date-received>
+        <date-received>Date de rÃ©ception</date-received>
         <media-format>Format du media</media-format>
-        <is-obsolete>Est obsolète</is-obsolete>
+        <is-obsolete>Est obsolÃ¨te</is-obsolete>
         <date-field>Champ date</date-field>
-        <superseded>Remplacé</superseded>
+        <superseded>RemplacÃ©</superseded>
         <uuid>UUID</uuid>
       </label>
     </dialog>
@@ -610,7 +610,7 @@
   <Transferable>
     <dialog>
       <label>
-        <transfer-executed>Transfert exécuté</transfer-executed>
+        <transfer-executed>Transfert exÃ©cutÃ©</transfer-executed>
         <transfer-date>Date du Transfert</transfer-date>
         <transfer-location>Emplacement du Transfert</transfer-location>
       </label>
@@ -625,7 +625,7 @@
         <version-history>L'historique des versions</version-history>
         <base-version>Version de base</base-version>
         <is-checked-out>Est extrait</is-checked-out>
-        <predecessors>Prédécesseurs</predecessors>
+        <predecessors>PrÃ©dÃ©cesseurs</predecessors>
         <merge-failed>Echec de la fusion</merge-failed>
         <uuid>UUID</uuid>
       </label>
@@ -638,7 +638,7 @@
     <dialog>
       <label>
         <is-vital-record>Le Record est vital</is-vital-record>
-        <prev-review-date>Date de revue précédente</prev-review-date>
+        <prev-review-date>Date de revue prÃ©cÃ©dente</prev-review-date>
         <next-review-date>Date de revue suivante</next-review-date>
       </label>
     </dialog>

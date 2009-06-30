@@ -6,12 +6,12 @@
   <Ecm>
     <dialog>
       <label>
-        <end-time>????? ?????????</end-time>
-        <start-time>????? ??????</start-time>
-        <lifecycle>????????? ????</lifecycle>
-        <mimeType>Mime ???</mimeType>
+        <end-time>Время окончания</end-time>
+        <start-time>Время начала</start-time>
+        <lifecycle>Жизненный цикл</lifecycle>
+        <mimeType>Mime тип</mimeType>
         <repeat-count>Repeat count</repeat-count>
-        <time-interval>???????? ???????</time-interval>
+        <time-interval>Интервал времени</time-interval>
         <query-items>Query items</query-items>
         <schedule-type>Schedule type</schedule-type>
       </label>
@@ -72,7 +72,7 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <shared>????????? ????????????</shared>
+        <shared>Совместно используемые</shared>
       </label>
     </dialog>
   </Calendar>
@@ -85,13 +85,13 @@
         <name>#{word.name}</name>
         <subject>#{word.subject}</subject>
         <description>#{word.description}</description>
-        <location>?????????</location>
-        <start-date-time>????/????? ??????</start-date-time>
-        <end-date-time>????/????? ?????????</end-date-time>
+        <location>Положение</location>
+        <start-date-time>Дата/время начала</start-date-time>
+        <end-date-time>Дата/время окончания</end-date-time>
         <comment>#{word.comment}</comment>
         <category>#{word.category}</category>
-        <availability>???????????</availability>
-        <share-type>??? ??????????? ?????????????</share-type>
+        <availability>Доступность</availability>
+        <share-type>Тип совместного использования</share-type>
       </label>
     </dialog>
   </Event>
@@ -105,7 +105,7 @@
         <categories>Categories</categories>
         <mimeType>#{Ecm.dialog.label.mimeType}</mimeType>
         <content>#{word.content}</content>
-        <re-upload>?????????? ????????????? ???? ????? ??? ????????.</re-upload>
+        <re-upload>Необходимо перезагрузить файл чтобы его изменить.</re-upload>
       </label>
     </dialog>
   </File>
@@ -117,15 +117,15 @@
       <label>
         <name>#{word.name}</name>
         <categories>Categories</categories>
-        <record-properties>????????? ????????</record-properties>
-        <process-properties>?????????? ????????</process-properties>
+        <record-properties>Сохранить свойства</record-properties>
+        <process-properties>Обработать свойства</process-properties>
         <note>File plan note</note>
-        <record-category-identifier>????????????? ????????? ??????</record-category-identifier>
+        <record-category-identifier>Идентификатор категории записи</record-category-identifier>
         <disposition-author>Disposition authority</disposition-author>
-        <disposition-instruction>?????????? ??????????</disposition-instruction>
-        <permanent-record-indicator>?????????? ????????? ??????</permanent-record-indicator>
-        <contain-record-folder>???????? ????? ? ????????</contain-record-folder>
-        <default-media-type>????? ??? ?? ?????????</default-media-type>
+        <disposition-instruction>Размещение инструкций</disposition-instruction>
+        <permanent-record-indicator>Постоянный индикатор записи</permanent-record-indicator>
+        <contain-record-folder>Содержит папку с записями</contain-record-folder>
+        <default-media-type>Медиа тип по умолчанию</default-media-type>
         <default-marking-list>Default marking list</default-marking-list>
         <default-originating-organization>Default originating organization</default-originating-organization>
         <vital-record-indicator>Vital record indicator</vital-record-indicator>
@@ -170,8 +170,8 @@
         <title>#{word.title}</title>
         <description>#{word.description}</description>
         <date>#{word.date}</date>
-        <date-time>????/?????</date-time>
-        <upload-image>????????? ???????????</upload-image>
+        <date-time>Дата/время</date-time>
+        <upload-image>Загрузить изображение</upload-image>
         <mime-type>#{Ecm.dialog.label.mimeType}</mime-type>
         <summary>#{word.summary}</summary>
         <content>#{word.content}</content>
@@ -184,13 +184,13 @@
   <Workflow>
     <dialog>
       <label>
-        <id>?????????????</id>
+        <id>Идентификатор</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <description>#{word.description}</description>
-        <validator>?????????</validator>
-        <to-workspace>? ??????? ???????</to-workspace>
-        <with-path>? ?????</with-path>
+        <validator>Валидатор</validator>
+        <to-workspace>В рабочую область</to-workspace>
+        <with-path>С путем</with-path>
       </label>
     </dialog>
   </Workflow>
@@ -237,17 +237,17 @@
   <Getmail>
     <dialog>
       <label>
-        <id>?????????????</id>
+        <id>Идентификатор</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
-        <protocol>????????</protocol>
-        <host>????</host>
-        <port>????</port>
-        <folder>?????</folder>
+        <protocol>Протокол</protocol>
+        <host>Хост</host>
+        <port>Порт</port>
+        <folder>Папка</folder>
         <username>#{word.userName}</username>
         <password>#{word.password}</password>
         <description>#{word.description}</description>
-        <stote-path>????</stote-path>
+        <stote-path>Путь</stote-path>
       </label>
     </dialog>
   </Getmail>
@@ -257,11 +257,11 @@
   <Icalendar>
     <dialog>
       <label>
-        <id>?????????????</id>
-        <action-name>????????</action-name>
+        <id>Идентификатор</id>
+        <action-name>Действие</action-name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <description>#{word.description}</description>
-        <calendar-file-name>??? ????? ?????????</calendar-file-name>
+        <calendar-file-name>Имя файла календаря</calendar-file-name>
         <query-items>#{Ecm.dialog.label.query-items}</query-items>
       </label>
     </dialog>
@@ -272,7 +272,7 @@
   <Rss>
     <dialog>
       <label>
-        <id>?????????????</id>
+        <id>Идентификатор</id>
         <feed-action-name>Create feed action name</feed-action-name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
@@ -312,7 +312,7 @@
         <id>Id</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
-        <metadata>??????????</metadata>
+        <metadata>Метаданные</metadata>
         <description>#{word.description}</description>
       </label>
     </dialog>
@@ -346,7 +346,7 @@
         <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
         <cron-expression>Cron expression</cron-expression>
         <description>#{word.description}</description>
-        <mail-to>????????? ????? ??</mail-to>
+        <mail-to>Отправить почту на</mail-to>
       </label>
     </dialog>
   </SendMail>
@@ -414,20 +414,20 @@
     <dialog>
       <label>
         <title>#{word.title}</title>
-        <creator>?????????</creator>
+        <creator>Создатель</creator>
         <subject>#{word.subject}</subject>
-        <source>????????</source>
-        <contributor>????????</contributor>
-        <resource-type>??? ???????</resource-type>
+        <source>Источник</source>
+        <contributor>Помощник</contributor>
+        <resource-type>Тип ресурса</resource-type>
         <date>#{word.date}</date>
-        <publisher>????????</publisher>
+        <publisher>Издатель</publisher>
         <description>#{word.description}</description>
-        <rights>?????</rights>
-        <relation>?????????</relation>
+        <rights>Права</rights>
+        <relation>Отношение</relation>
         <format>#{word.format}</format>
-        <coverage>????????</coverage>
-        <identifier>?????????????</identifier>
-        <language>????</language>
+        <coverage>Покрытие</coverage>
+        <identifier>Идентификатор</identifier>
+        <language>Язык</language>
       </label>
     </dialog>
   </ElementSet>
@@ -462,8 +462,8 @@
   <AccessControllable>
     <dialog>
       <label>
-        <owner>????????</owner>
-        <permissions>?????</permissions>
+        <owner>Владелец</owner>
+        <permissions>Права</permissions>
       </label>
     </dialog>
   </AccessControllable>
@@ -543,8 +543,8 @@
   <Published>
     <dialog>
       <label>
-        <start-publication>?????? ??????????</start-publication>
-        <end-publication>????????? ??????????</end-publication>
+        <start-publication>Начало публикации</start-publication>
+        <end-publication>Окончание публикации</end-publication>
       </label>
     </dialog>
   </Published>

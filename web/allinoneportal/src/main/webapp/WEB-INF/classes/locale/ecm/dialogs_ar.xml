@@ -6,14 +6,14 @@
   <Ecm>
     <dialog>
       <label>
-        <end-time>????? ???????</end-time>
-        <start-time>????? ???????</start-time>
-        <lifecycle>???? ??????</lifecycle>
-        <mimeType>??? ????????</mimeType>
-        <repeat-count>????? ????</repeat-count>
-        <time-interval>?????? ???????</time-interval>
-        <query-items>????? ?????????</query-items>
-        <schedule-type>??? ???????</schedule-type>
+        <end-time>نهاية التوقيت</end-time>
+        <start-time>بداية التوقيت</start-time>
+        <lifecycle>دورة الحياة</lifecycle>
+        <mimeType>نوع التوصيلة</mimeType>
+        <repeat-count>تكرار العد</repeat-count>
+        <time-interval>الفترة الزمنية</time-interval>
+        <query-items>عناصر الاستبيان</query-items>
+        <schedule-type>نوع التخطيط</schedule-type>
       </label>
     </dialog>
   </Ecm>
@@ -30,17 +30,17 @@
       </label>
     </dialog>
     <msg>
-      <no-view>??? ?????? ?? ??? ?????? ?? ???? ?? ??????, ?????? ????? ??? ?? ???????</no-view>
+      <no-view>هذه العقدة أو هذا القالب تم حذفه أو تعديله, الرجاء الضغط على زر التحديث</no-view>
     </msg>
   </Article>
   <UIDocumentForm>
     <label>
       <title>#{word.title}</title>
-      <link>??????</link>
+      <link>الوصلة</link>
       <contentHtml>#{word.content}</contentHtml>
       <content>#{word.content}</content>
       <contentPlain>#{word.content}</contentPlain>
-      <name>?????</name>
+      <name>الاسم</name>
     </label>
   </UIDocumentForm>
   <!--
@@ -49,19 +49,19 @@
   <Podcast>
     <dialog>
       <label>
-        <name>?????</name>
-        <categories>??????</categories>
-        <title>???????</title>
-        <link>??????</link>
-        <author>??????</author>
-        <explicit>????</explicit>
-        <category>?????</category>
-        <keywords>??????? ????????</keywords>
-        <publish-date>????? ?????</publish-date>
-        <description>?????</description>
-        <upload-file>????? ?????</upload-file>
-        <mime-type>??? ????????</mime-type>
-        <lenght>?????</lenght>
+        <name>الاسم</name>
+        <categories>الفئات</categories>
+        <title>العنوان</title>
+        <link>الوصلة</link>
+        <author>المؤلف</author>
+        <explicit>واضح</explicit>
+        <category>الفئة</category>
+        <keywords>الكلمات المفاتيح</keywords>
+        <publish-date>تاريخ النشر</publish-date>
+        <description>الوصف</description>
+        <upload-file>تحميل الملف</upload-file>
+        <mime-type>نوع التوصيلة</mime-type>
+        <lenght>الطول</lenght>
       </label>
     </dialog>
   </Podcast>
@@ -72,7 +72,7 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <shared>?????</shared>
+        <shared>مشترك</shared>
       </label>
     </dialog>
   </Calendar>
@@ -85,13 +85,13 @@
         <name>#{word.name}</name>
         <subject>#{word.subject}</subject>
         <description>#{word.description}</description>
-        <location>??????</location>
-        <start-date-time>????? ???????/???????</start-date-time>
-        <end-date-time>????? ???????/???????</end-date-time>
+        <location>المكان</location>
+        <start-date-time>نهاية التوقيت/التاريخ</start-date-time>
+        <end-date-time>بداية التوقيت/التاريخ</end-date-time>
         <comment>#{word.comment}</comment>
         <category>#{word.category}</category>
-        <availability>????????</availability>
-        <share-type>??? ????????</share-type>
+        <availability>الإتاحية</availability>
+        <share-type>نوع الاشتراك</share-type>
       </label>
     </dialog>
   </Event>
@@ -102,10 +102,10 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>??????</categories>
+        <categories>الفئات</categories>
         <mimeType>#{Ecm.dialog.label.mimeType}</mimeType>
         <content>#{word.content}</content>
-        <re-upload>????? ??? ????? ????? ????? ???????</re-upload>
+        <re-upload>تحتاج إلى إعادة تحميل الملف لتغييره</re-upload>
       </label>
     </dialog>
   </File>
@@ -116,35 +116,35 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>??????</categories>
-        <record-properties>????? ?????</record-properties>
-        <process-properties>????? ???????</process-properties>
-        <note>????? ??? ?????</note>
-        <record-category-identifier>???? ????????</record-category-identifier>
-        <disposition-author>???? ???????</disposition-author>
-        <disposition-instruction>??????? ???????</disposition-instruction>
-        <permanent-record-indicator>???????????? ?????</permanent-record-indicator>
-        <contain-record-folder>?????? ??????? ?????</contain-record-folder>
-        <default-media-type>??? ??????? ?????????</default-media-type>
-        <default-marking-list>????? ??????? ??????????</default-marking-list>
-        <default-originating-organization>????? ????? ??????????</default-originating-organization>
-        <vital-record-indicator>???????????? ?????</vital-record-indicator>
-        <vital-record-review-period>??? ?????????????? ???????</vital-record-review-period>
-        <process-cutoff>????? ?????</process-cutoff>
-        <event-trigger>?????? ?????</event-trigger>
-        <cutoff-period>??? ?????</cutoff-period>
-        <cutoff-on-obsolete>????? ??? ???????</cutoff-on-obsolete>
-        <cutoff-on-superseded>????? ??? ???????</cutoff-on-superseded>
-        <process-hold>????? ???????</process-hold>
-        <hold-period>??? ???????</hold-period>
-        <discretionary-hold>??????? ????????</discretionary-hold>
-        <process-transfer>????? ???????</process-transfer>
-        <default-transfer-location>???? ??????? ?????????</default-transfer-location>
-        <transfer-block-size>??? ???? ???????</transfer-block-size>
-        <process-accession>????? ????????</process-accession>
-        <accession-location>???? ????????</accession-location>
-        <accession-block-size>??? ???? ????????</accession-block-size>
-        <process-destruction>????? ???????</process-destruction>
+        <categories>الفئات</categories>
+        <record-properties>خصائص السجل</record-properties>
+        <process-properties>خصائص العملية</process-properties>
+        <note>مذكرة خطة الملف</note>
+        <record-category-identifier>معرف فئةالسجل</record-category-identifier>
+        <disposition-author>مؤلف التنظيم</disposition-author>
+        <disposition-instruction>تعليمات التنظيم</disposition-instruction>
+        <permanent-record-indicator>المؤشرالدائم للسجل</permanent-record-indicator>
+        <contain-record-folder>المجلد المحتوي للسجل</contain-record-folder>
+        <default-media-type>نوع الوسائط الافتراضي</default-media-type>
+        <default-marking-list>قائمة التأشير الافتراضية</default-marking-list>
+        <default-originating-organization>منظمة البعث الافتراضية</default-originating-organization>
+        <vital-record-indicator>المؤشرالحيوي للسجل</vital-record-indicator>
+        <vital-record-review-period>مدة مراجعةالمؤشرات الحيوية</vital-record-review-period>
+        <process-cutoff>عملية القطع</process-cutoff>
+        <event-trigger>انطلاق الحدث</event-trigger>
+        <cutoff-period>مدة القطع</cutoff-period>
+        <cutoff-on-obsolete>القطع عند الاهمال</cutoff-on-obsolete>
+        <cutoff-on-superseded>القطع عند التعويض</cutoff-on-superseded>
+        <process-hold>إرجاء العملية</process-hold>
+        <hold-period>مدة الارجاء</hold-period>
+        <discretionary-hold>الارجاء التقديري</discretionary-hold>
+        <process-transfer>عملية التحويل</process-transfer>
+        <default-transfer-location>مكان التحويل الافتراضي</default-transfer-location>
+        <transfer-block-size>حجم كتلة التحويل</transfer-block-size>
+        <process-accession>عملية الاكتساب</process-accession>
+        <accession-location>مكان الاكتساب</accession-location>
+        <accession-block-size>حجم كتلة الاكتساب</accession-block-size>
+        <process-destruction>عملية الاتلاف</process-destruction>
       </label>
     </dialog>
   </FilePlan>
@@ -155,7 +155,7 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>??????</categories>
+        <categories>الفئات</categories>
       </label>
     </dialog>
   </Kofax>
@@ -166,12 +166,12 @@
     <dialog>
       <label>
         <name>#{word.name}</name>
-        <categories>??????</categories>
+        <categories>الفئات</categories>
         <title>#{word.title}</title>
         <description>#{word.description}</description>
         <date>#{word.date}</date>
-        <date-time>??????? ? ???????</date-time>
-        <upload-image>????? ??????</upload-image>
+        <date-time>التوقيت و التاريخ</date-time>
+        <upload-image>تحميل الصورة</upload-image>
         <mime-type>#{Ecm.dialog.label.mimeType}</mime-type>
         <summary>#{word.summary}</summary>
         <content>#{word.content}</content>
@@ -184,35 +184,35 @@
   <Workflow>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <description>#{word.description}</description>
-        <validator>???????</validator>
-        <to-workspace>?????????</to-workspace>
-        <with-path>??????</with-path>
+        <validator>المصادق</validator>
+        <to-workspace>فضاءالعمل</to-workspace>
+        <with-path>المسار</with-path>
       </label>
     </dialog>
   </Workflow>
   <UIActionForm>
     <label>
       <description>#{word.description}</description>
-      <port>??????</port>
+      <port>المنفذ</port>
       <userName>#{word.userName}</userName>
-      <password>????????</password>
-      <link>??????</link>
-      <to>??? ??????? ??????????? ???</to>
+      <password>كلمةالسر</password>
+      <link>الوصلة</link>
+      <to>بعث الرسالة الالكترونية إلى</to>
       <actionName>#{word.name}</actionName>
     </label>
   </UIActionForm>
   <EditFormAction>
     <label>
       <description>#{word.description}</description>
-      <port>??????</port>
+      <port>المنفذ</port>
       <userName>#{word.userName}</userName>
-      <password>???? ????</password>
-      <link>??????</link>
-      <to>??? ??????? ??????????? ???</to>
+      <password>كلمة السر</password>
+      <link>الوصلة</link>
+      <to>بعث الرسالة الالكترونية إلى</to>
       <actionName>#{word.name}</actionName>
     </label>
   </EditFormAction>
@@ -222,12 +222,12 @@
   <Backup>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <description>#{word.description}</description>
-        <to-workspace>?????????</to-workspace>
-        <with-path>??????</with-path>
+        <to-workspace>فضاءالعمل</to-workspace>
+        <with-path>المسار</with-path>
       </label>
     </dialog>
   </Backup>
@@ -237,17 +237,17 @@
   <Getmail>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
-        <protocol>??????????</protocol>
-        <host>??????</host>
-        <port>??????</port>
-        <folder>??????</folder>
+        <protocol>البروتوكول</protocol>
+        <host>المضيف</host>
+        <port>المنفذ</port>
+        <folder>المجلد</folder>
         <username>#{word.userName}</username>
-        <password>????????</password>
+        <password>كلمةالسر</password>
         <description>#{word.description}</description>
-        <stote-path>???? ???????</stote-path>
+        <stote-path>مسار التخزين</stote-path>
       </label>
     </dialog>
   </Getmail>
@@ -257,11 +257,11 @@
   <Icalendar>
     <dialog>
       <label>
-        <id>?????? ??????</id>
-        <action-name>??? ?????</action-name>
+        <id>المعرف الوحيد</id>
+        <action-name>اسم العمل</action-name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <description>#{word.description}</description>
-        <calendar-file-name>??? ??? ????????</calendar-file-name>
+        <calendar-file-name>اسم ملف الرزنامة</calendar-file-name>
         <query-items>#{Ecm.dialog.label.query-items}</query-items>
       </label>
     </dialog>
@@ -272,34 +272,34 @@
   <Rss>
     <dialog>
       <label>
-        <id>?????? ??????</id>
-        <feed-action-name>??? ??? ??????</feed-action-name>
+        <id>المعرف الوحيد</id>
+        <feed-action-name>خلق اسم التدفق</feed-action-name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
         <start-time>#{Ecm.dialog.label.start-time}</start-time>
         <end-time>#{Ecm.dialog.label.end-time}</end-time>
         <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
         <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
-        <cron-expression>????? ????</cron-expression>
-        <feed-node-name>??? ??????</feed-node-name>
-        <feed-store-path>???????????</feed-store-path>
+        <cron-expression>عبارة كرون</cron-expression>
+        <feed-node-name>اسم العقدة</feed-node-name>
+        <feed-store-path>مسارالتخزين</feed-store-path>
         <query-items>#{Ecm.dialog.label.query-items}</query-items>
-        <rss-url>????? ??????? ?????? ? "RSS"</rss-url>
-        <feed-title>????? ??????</feed-title>
-        <feed-type>??? ??????</feed-type>
-        <summary>??????</summary>
-        <title>???????</title>
-        <rss-version>????? "RSS"</rss-version>
-        <link>??????</link>
+        <rss-url>عنوان الموارد الموحد ل "RSS"</rss-url>
+        <feed-title>عنوان التدفق</feed-title>
+        <feed-type>نوع التدفق</feed-type>
+        <summary>الملخص</summary>
+        <title>العنوان</title>
+        <rss-version>اصدار "RSS"</rss-version>
+        <link>الوصلة</link>
         <description>#{word.description}</description>
-        <language>?????</language>
-        <copyright>??? ?????</copyright>
-        <publish-date>????? ???????</publish-date>
-        <owner-name>??? ??????</owner-name>
-        <owner-email>????? ?????? ?????????? ??????</owner-email>
-        <image-url>????? ??????? ?????? ????????</image-url>
+        <language>اللغة</language>
+        <copyright>حقّ النشر</copyright>
+        <publish-date>تاريخ الاصدار</publish-date>
+        <owner-name>اسم المالك</owner-name>
+        <owner-email>عنوان البريد الإلكتروني للمالك</owner-email>
+        <image-url>عنوان الموارد الموحد لــلصورة</image-url>
         <category>#{word.category}</category>
-        <keywords>??????? ????????</keywords>
+        <keywords>الكلمات المفاتيح</keywords>
       </label>
     </dialog>
   </Rss>
@@ -309,10 +309,10 @@
   <AddMetadata>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
-        <metadata>???? ????????? ????????</metadata>
+        <metadata>قالب المعلومات القياسية</metadata>
         <description>#{word.description}</description>
       </label>
     </dialog>
@@ -323,7 +323,7 @@
   <ReloadAction>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <description>#{word.description}</description>
@@ -336,7 +336,7 @@
   <SendMail>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
@@ -344,9 +344,9 @@
         <end-time>#{Ecm.dialog.label.end-time}</end-time>
         <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
         <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
-        <cron-expression>????? ????</cron-expression>
+        <cron-expression>عبارة كرون</cron-expression>
         <description>#{word.description}</description>
-        <mail-to>??? ??????? ??????????? ???</mail-to>
+        <mail-to>بعث الرسالة الالكترونية إلى</mail-to>
       </label>
     </dialog>
   </SendMail>
@@ -356,7 +356,7 @@
   <Transform>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
@@ -364,7 +364,7 @@
         <end-time>#{Ecm.dialog.label.end-time}</end-time>
         <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
         <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
-        <cron-expression>????? ????</cron-expression>
+        <cron-expression>عبارة كرون</cron-expression>
         <description>#{word.description}</description>
       </label>
     </dialog>
@@ -375,7 +375,7 @@
   <AutoVersioning>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
@@ -383,7 +383,7 @@
         <end-time>#{Ecm.dialog.label.end-time}</end-time>
         <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
         <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
-        <cron-expression>????? ????</cron-expression>
+        <cron-expression>عبارة كرون</cron-expression>
         <description>#{word.description}</description>
       </label>
     </dialog>
@@ -394,7 +394,7 @@
   <EnableVersioning>
     <dialog>
       <label>
-        <id>?????? ??????</id>
+        <id>المعرف الوحيد</id>
         <name>#{word.name}</name>
         <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
         <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
@@ -402,7 +402,7 @@
         <end-time>#{Ecm.dialog.label.end-time}</end-time>
         <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
         <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
-        <cron-expression>????? ????</cron-expression>
+        <cron-expression>عبارة كرون</cron-expression>
         <description>#{word.description}</description>
       </label>
     </dialog>
@@ -414,20 +414,20 @@
     <dialog>
       <label>
         <title>#{word.title}</title>
-        <creator>??????</creator>
+        <creator>الصانع</creator>
         <subject>#{word.subject}</subject>
-        <source>??????</source>
-        <contributor>???????</contributor>
-        <resource-type>??? ??????</resource-type>
+        <source>المصدر</source>
+        <contributor>المساهم</contributor>
+        <resource-type>نوع المورد</resource-type>
         <date>#{word.date}</date>
-        <publisher>??????</publisher>
+        <publisher>الناشر</publisher>
         <description>#{word.description}</description>
-        <rights>??????</rights>
-        <relation>???????</relation>
+        <rights>الحقوق</rights>
+        <relation>العلاقة</relation>
         <format>#{word.format}</format>
-        <coverage>???????</coverage>
-        <identifier>?????? ??????</identifier>
-        <language>?????</language>
+        <coverage>التغطية</coverage>
+        <identifier>المعرف الوحيد</identifier>
+        <language>اللغة</language>
       </label>
     </dialog>
   </ElementSet>
@@ -437,12 +437,12 @@
   <Cutoffable>
     <dialog>
       <label>
-        <cutoff-executed>??? ????</cutoff-executed>
-        <cutoff-now>??? ????</cutoff-now>
-        <cutoff-date-time>????? ?????</cutoff-date-time>
-        <cutoff-event>??? ?????</cutoff-event>
-        <cutoff-obsolete>????? ??????</cutoff-obsolete>
-        <cutoff-superseded>??? ???????</cutoff-superseded>
+        <cutoff-executed>قطع منفذ</cutoff-executed>
+        <cutoff-now>قطع فوري</cutoff-now>
+        <cutoff-date-time>تصميم القطع</cutoff-date-time>
+        <cutoff-event>حدث القطع</cutoff-event>
+        <cutoff-obsolete>القطع المهمل</cutoff-obsolete>
+        <cutoff-superseded>قطع التعويض</cutoff-superseded>
       </label>
     </dialog>
   </Cutoffable>
@@ -452,7 +452,7 @@
   <Destroyable>
     <dialog>
       <label>
-        <destruction-date>????? ???????</destruction-date>
+        <destruction-date>تاريخ الاتلاف</destruction-date>
       </label>
     </dialog>
   </Destroyable>
@@ -462,8 +462,8 @@
   <AccessControllable>
     <dialog>
       <label>
-        <owner>??????</owner>
-        <permissions>?????????</permissions>
+        <owner>الصاحب</owner>
+        <permissions>الصلاحيات</permissions>
       </label>
     </dialog>
   </AccessControllable>
@@ -473,8 +473,8 @@
   <Accessionable>
     <dialog>
       <label>
-        <accession-executed>?????? ????</accession-executed>
-        <accession-date>????? ????????</accession-date>
+        <accession-executed>اكتساب منفذ</accession-executed>
+        <accession-date>تاريخ الاكتساب</accession-date>
       </label>
     </dialog>
   </Accessionable>
@@ -484,8 +484,8 @@
   <Actionable>
     <dialog>
       <label>
-        <primary-type>????? ???????</primary-type>
-        <mixin-types>????? 'MIXIN'</mixin-types>
+        <primary-type>النوع الرئيسي</primary-type>
+        <mixin-types>انواع 'MIXIN'</mixin-types>
       </label>
     </dialog>
   </Actionable>
@@ -505,11 +505,11 @@
   <Holdable>
     <dialog>
       <label>
-        <hold-executed>????? ????</hold-executed>
-        <hold-until>????? ???</hold-until>
-        <holds-discretionary>????? ??????</holds-discretionary>
-        <hold-until-event>????? ??? ??? ???</hold-until-event>
-        <freeze>?????</freeze>
+        <hold-executed>إرجاء منفذ</hold-executed>
+        <hold-until>إرجاء حتى</hold-until>
+        <holds-discretionary>إرجاء تقديري</holds-discretionary>
+        <hold-until-event>إرجاء الى حين حدث</hold-until-event>
+        <freeze>تجميد</freeze>
       </label>
     </dialog>
   </Holdable>
@@ -519,8 +519,8 @@
   <Lockable>
     <dialog>
       <label>
-        <lock-owner>???? ?????</lock-owner>
-        <lock-is-deep>??? ?????</lock-is-deep>
+        <lock-owner>صاحب القفل</lock-owner>
+        <lock-is-deep>قفل متكرر</lock-is-deep>
       </label>
     </dialog>
   </Lockable>
@@ -530,10 +530,10 @@
   <Move>
     <dialog>
       <label>
-        <destination-workpsace> ???? ????? ???????</destination-workpsace>
-        <destination-path>?????????????</destination-path>
-        <primary-type>????? ???????</primary-type>
-        <mixin-types>????? 'MIXIN'</mixin-types>
+        <destination-workpsace> فضاء العمل المقصود</destination-workpsace>
+        <destination-path>المسارالمقصود</destination-path>
+        <primary-type>النوع الرئيسي</primary-type>
+        <mixin-types>انواع 'MIXIN'</mixin-types>
       </label>
     </dialog>
   </Move>
@@ -543,8 +543,8 @@
   <Published>
     <dialog>
       <label>
-        <start-publication>????? ?????</start-publication>
-        <end-publication>????? ?????</end-publication>
+        <start-publication>بداية النشر</start-publication>
+        <end-publication>نهاية النشر</end-publication>
       </label>
     </dialog>
   </Published>
@@ -554,21 +554,21 @@
   <Record>
     <dialog>
       <label>
-        <supplemental-marking-list>??????? ???????? ???????</supplemental-marking-list>
+        <supplemental-marking-list>القائمة الإضافية للتسجيل</supplemental-marking-list>
         <subject>#{word.subject}</subject>
-        <record-identifier>???? ?????</record-identifier>
-        <originator>??????</originator>
+        <record-identifier>معرف السجل</record-identifier>
+        <originator>الصانع</originator>
         <format>#{word.format}</format>
-        <addresses>????????</addresses>
-        <originating-organization>??????? ???????</originating-organization>
-        <other-addresses>?????? ????</other-addresses>
-        <publication-date>????? ?????</publication-date>
-        <record-note>????? ?????</record-note>
-        <date-received>????? ?????????</date-received>
-        <media-format>??? ??????</media-format>
-        <is-obsolete>????</is-obsolete>
-        <date-field>???? ???????</date-field>
-        <superseded>????</superseded>
+        <addresses>العناوين</addresses>
+        <originating-organization>المنظمة الاصلية</originating-organization>
+        <other-addresses>عناوين اخرى</other-addresses>
+        <publication-date>تاريخ النشر</publication-date>
+        <record-note>مذكرة السجل</record-note>
+        <date-received>تاريخ الاستقبال</date-received>
+        <media-format>شكل الوسيط</media-format>
+        <is-obsolete>مهمل</is-obsolete>
+        <date-field>مجال التاريخ</date-field>
+        <superseded>معوض</superseded>
         <uuid>UUID</uuid>
       </label>
     </dialog>
@@ -589,7 +589,7 @@
   <Relationable>
     <dialog>
       <label>
-        <relation>???????</relation>
+        <relation>العلاقة</relation>
       </label>
     </dialog>
   </Relationable>
@@ -599,7 +599,7 @@
   <RssEnable>
     <dialog>
       <label>
-        <title>???????</title>
+        <title>العنوان</title>
         <summary>#{word.summary}</summary>
       </label>
     </dialog>
@@ -610,9 +610,9 @@
   <Transferable>
     <dialog>
       <label>
-        <transfer-executed>????? ????</transfer-executed>
-        <transfer-date>????? ???????</transfer-date>
-        <transfer-location>???? ???????</transfer-location>
+        <transfer-executed>تحويل منفذ</transfer-executed>
+        <transfer-date>تاريخ التحويل</transfer-date>
+        <transfer-location>مكان التحويل</transfer-location>
       </label>
     </dialog>
   </Transferable>
@@ -622,11 +622,11 @@
   <Versionable>
     <dialog>
       <label>
-        <version-history>????? ?????????</version-history>
-        <base-version>??????? ???????</base-version>
-        <is-checked-out>?? ???? ????? ????????</is-checked-out>
-        <predecessors>???????</predecessors>
-        <merge-failed>??? ????????</merge-failed>
+        <version-history>تاريخ الإصدارات</version-history>
+        <base-version>الاصدار الاساسي</base-version>
+        <is-checked-out>في حالة انهاء المعالجة</is-checked-out>
+        <predecessors>الاسلاف</predecessors>
+        <merge-failed>فشل الاندماج</merge-failed>
         <uuid>UUID</uuid>
       </label>
     </dialog>
@@ -637,9 +637,9 @@
   <VitalRecord>
     <dialog>
       <label>
-        <is-vital-record>????? ????</is-vital-record>
-        <previous-review-date>????? ???????? ???????</previous-review-date>
-        <next-review-date>????? ???????? ?????????</next-review-date>
+        <is-vital-record>السجل حيوي</is-vital-record>
+        <previous-review-date>تاريخ المراجعة السابقة</previous-review-date>
+        <next-review-date>تاريخ المراجعة المُـقبلة</next-review-date>
       </label>
     </dialog>
   </VitalRecord>
@@ -649,10 +649,10 @@
   <ResouceContainer>
     <dialog>
       <label>
-        <name>?????</name>
-        <autoload>??????? ?????</autoload>
-        <minetype>??? ????????</minetype>
-        <content>???????</content>
+        <name>الاسم</name>
+        <autoload>التحميل الالي</autoload>
+        <minetype>نوع التوصيلة</minetype>
+        <content>المحتوى</content>
       </label>
     </dialog>
   </ResouceContainer>
@@ -661,17 +661,17 @@
   -->
   <EmailAddressValidator>
     <msg>
-      <Invalid-input>????? ?????? ?????????? ??? ????</Invalid-input>
+      <Invalid-input>عنوان البريد الالكتروني غير صحيح</Invalid-input>
     </msg>
   </EmailAddressValidator>
   <EmptyFieldValidator>
     <msg>
-      <empty-input>?????? '{0}' ?????. ?????? ????? ??????</empty-input>
+      <empty-input>المجال '{0}' مطلوب. الرجاء ادخال القيمة</empty-input>
     </msg>
   </EmptyFieldValidator>
   <NumberFormatValidator>
     <msg>
-      <Invalid-number>?????? '{0}' ??? ????</Invalid-number>
+      <Invalid-number>المجال '{0}' غير صحيح</Invalid-number>
     </msg>
   </NumberFormatValidator>
 </bundle>

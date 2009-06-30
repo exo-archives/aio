@@ -2,21 +2,21 @@
 <bundle>
   <platform-guests>
     <register>S'enregistrer</register>
-    <news>Actualités</news>
+    <news>ActualitÃ©s</news>
     <ideas>
-      <title>Idées</title>
-      <read>Consulter les Idées</read>
-      <write>Proposer des Idées</write>
+      <title>IdÃ©es</title>
+      <read>Consulter les IdÃ©es</read>
+      <write>Proposer des IdÃ©es</write>
     </ideas>
     <sitemap>Plan du Site</sitemap>
   </platform-guests>
   <platform><guests>
     <register>S'enregistrer</register>
-    <news>Actualités</news>
+    <news>ActualitÃ©s</news>
     <ideas>
-      <title>Idées</title>
-      <read>Consulter les Idées</read>
-      <write>Proposer des Idées</write>
+      <title>IdÃ©es</title>
+      <read>Consulter les IdÃ©es</read>
+      <write>Proposer des IdÃ©es</write>
     </ideas>
     <sitemap>Plan du Site</sitemap>
   </guests>

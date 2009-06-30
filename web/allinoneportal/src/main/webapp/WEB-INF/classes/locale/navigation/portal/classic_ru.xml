@@ -2,10 +2,10 @@
 <bundle>
   <portal>
     <classic>
-      <home>?????</home>
-  <register>???????????</register>
-  <sitemap>????? ?????</sitemap>
-  <news>???????</news>
+      <home>Домой</home>
+  <register>Регистрация</register>
+  <sitemap>Карта Сайта</sitemap>
+  <news>Новости</news>
   <ideas>
     <title>Ideas</title>
     <read>Read Ideas</read>

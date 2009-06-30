@@ -9,9 +9,9 @@
         <ecmadmin>Administration de l'ECM</ecmadmin>
       </management>
       <businessprocess>
-        <title>Processus Métier</title>
-        <administrator>Administration des Processus Métiers</administrator>
-        <controller>Contrôle des Processus Métiers</controller>
+        <title>Processus MÃ©tier</title>
+        <administrator>Administration des Processus MÃ©tiers</administrator>
+        <controller>ContrÃ´le des Processus MÃ©tiers</controller>
       </businessprocess>
     </executive-board>
   </group>

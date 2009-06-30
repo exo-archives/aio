@@ -6,163 +6,163 @@
 	  #                  EXPRESSION START  WITH 'A'                     #
 	  ###################################################################
 	  -->
-    <accessPermission>Quy?n truy c?p</accessPermission>
-    <abort>Tho�t</abort>
-    <action>Th?c hi?n</action>
+    <accessPermission>Quyền truy cập</accessPermission>
+    <abort>Thoát</abort>
+    <action>Thực hiện</action>
     <!--
 		###################################################################
 		#                  EXPRESSION START  WITH 'B'                     #
 		###################################################################
 		-->
-    <back>Tr? l?i</back>
-    <birthday>Ng�y sinh</birthday>
+    <back>Trở lại</back>
+    <birthday>Ngày sinh</birthday>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'c'                     #
 	  ###################################################################
 	  -->
-    <cancel>H?y</cancel>
-    <category>Danh m?c</category>
-    <change>Thay d?i</change>
-    <city>Th�nh ph?</city>
-    <close>��ng</close>
-    <comment>Ghi ch�</comment>
-    <content>N?i dung</content>
-    <country>Qu?c gia</country>
+    <cancel>Hủy</cancel>
+    <category>Danh mục</category>
+    <change>Thay đổi</change>
+    <city>Thành phố</city>
+    <close>Đóng</close>
+    <comment>Ghi chú</comment>
+    <content>Nội dung</content>
+    <country>Quốc gia</country>
     <!--
 		###################################################################
 		#                  EXPRESSION START  WITH 'd'                     #
 		###################################################################
 		-->
-    <date>Ng�y</date>
-    <decorator>Trang tr�</decorator>
-    <department>Ph�ng/Ban</department>
-    <description>M� t?</description>
+    <date>Ngày</date>
+    <decorator>Trang trí</decorator>
+    <department>Phòng/Ban</department>
+    <description>Mô tả</description>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'e'                     #
 	  ###################################################################
 	  -->
-    <editPermission>S?a quy?n</editPermission>
-    <email>H?p thu</email>
-    <employer>Nh� tuy?n d?ng</employer>
+    <editPermission>Sửa quyền</editPermission>
+    <email>Hộp thư</email>
+    <employer>Nhà tuyển dụng</employer>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'f'                     #
 	  ###################################################################
 	  -->
-    <familyName>H?</familyName>
-    <finish>Ho�n t?t</finish>
-    <firstName>T�n</firstName>
-    <format>�?nh d?ng</format>
+    <familyName>Họ</familyName>
+    <finish>Hoàn tất</finish>
+    <firstName>Tên</firstName>
+    <format>Định dạng</format>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'g'                     #
 	  ###################################################################
 	  -->
-    <groupId>M� Nh�m</groupId>
-    <gender>Gi?i t�nh</gender>
-    <givenName>T�n khai sinh</givenName>
+    <groupId>Mã Nhóm</groupId>
+    <gender>Giới tính</gender>
+    <givenName>Tên khai sinh</givenName>
     <!--
 		###################################################################
 		#                  EXPRESSION START  WITH 'h'                     #
 		###################################################################
 		-->
-    <height>Chi?u cao</height>
+    <height>Chiều cao</height>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'i'                     #
 	  ###################################################################
 	  -->
-    <icon>Bi?u tu?ng</icon>
+    <icon>Biểu tượng</icon>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH ''                     #
 	  ###################################################################
 	  -->
-    <jobTitle>T�n vi?c l�m</jobTitle>
+    <jobTitle>Tên việc làm</jobTitle>
     <!--
 		###################################################################
 		#                  EXPRESSION START  WITH 'l'                     #
 		###################################################################
 		-->
-    <locale>Ng�n ng?</locale>
-    <label>Nh�n</label>
-    <language>Ng�n ng?</language>
-    <lastName>H?</lastName>
+    <locale>Ngôn ngữ</locale>
+    <label>Nhãn</label>
+    <language>Ngôn ngữ</language>
+    <lastName>Họ</lastName>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'm'                     #
 	  ###################################################################
 	  -->
-    <mobile>S? di d?ng</mobile>
+    <mobile>Số di động</mobile>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'n'                     #
 	  ###################################################################
 	  -->
-    <name>T�n</name>
-    <nickName>B� danh</nickName>
-    <next>Ti?p t?c</next>
+    <name>Tên</name>
+    <nickName>Bí danh</nickName>
+    <next>Tiếp tục</next>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'o'                     #
 	  ###################################################################
 	  -->
-    <owner>Ch?</owner>
+    <owner>Chủ</owner>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'p'                     #
 	  ###################################################################
 	  -->
-    <postalCode>M� v�ng</postalCode>
+    <postalCode>Mã vùng</postalCode>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'r'                     #
 	  ###################################################################
 	  -->
     <refresh>Refresh</refresh>
-    <restore>Kh�i ph?c</restore>
+    <restore>Khôi phục</restore>
 	  <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 's'                     #
 	  ###################################################################
 	  -->
-    <save>Luu</save>
-    <stateProv>Bang/H?t</stateProv>
-    <street>�u?ng Ph?</street>
-    <style>Giao di?n</style>
-    <subject>Ch? d?</subject>
-    <summary>T�m t?t</summary>
-    <skin>Giao di?n</skin>
+    <save>Lưu</save>
+    <stateProv>Bang/Hạt</stateProv>
+    <street>Đường Phố</street>
+    <style>Giao diện</style>
+    <subject>Chủ đề</subject>
+    <summary>Tóm tắt</summary>
+    <skin>Giao diện</skin>
 	  <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 't'                     #
 	  ###################################################################
 	  -->
-    <template>Khu�n m?u</template>
-    <tel>�i?n tho?i</tel>
-    <title>Ti�u d?</title>
+    <template>Khuôn mẫu</template>
+    <tel>Điện thoại</tel>
+    <title>Tiêu đề</title>
 	  <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'u'                     #
 	  ###################################################################
 	  -->
     <uri>Uri</uri>
-    <userName>T�n dang nh?p</userName>
-    <update>C?p nh?t</update>
+    <userName>Tên đăng nhập</userName>
+    <update>Cập nhật</update>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'v'                     #
 	  ###################################################################
 	  -->
-    <viewPermission>Xem quy?n</viewPermission>
+    <viewPermission>Xem quyền</viewPermission>
     <!--
 	  ###################################################################
 	  #                  EXPRESSION START  WITH 'w'                     #
 	  ###################################################################
 	  -->
-    <width>Chi?u r?ng</width>
+    <width>Chiều rộng</width>
     <website>Trang web</website>
   </word>
 </bundle>

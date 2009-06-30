@@ -6,124 +6,124 @@
   ###################################################################
   -->
   <word>
-    <accessPermission>?????? ??????</accessPermission>
+    <accessPermission>تصاريح الدخول</accessPermission>
     
-    <abort>?????</abort>
-    <action>????</action>
+    <abort>إلغاء</abort>
+    <action>حركة</action>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'B'                     #
   ###################################################################
   -->
-    <back>????</back>
-    <birthday>????? ???????</birthday>
+    <back>رجوع</back>
+    <birthday>تاريخ الولادة</birthday>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'c'                     #
   ###################################################################
   -->
-    <cancel>?????</cancel>
-    <category>???</category>
-    <change>?????</change>
-    <city>???????</city>
-    <close>?????</close>
-    <comment>?????</comment>
-    <content>?????</content>
-    <country> ?????  </country>
+    <cancel>إلغاء</cancel>
+    <category>فئة</category>
+    <change>تغيير</change>
+    <city>المدينة</city>
+    <close>إغلاق</close>
+    <comment>تعليق</comment>
+    <content>محتوى</content>
+    <country> البلد  </country>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'd'                     #
   ###################################################################
   -->
-    <date>?????</date>
-    <decorator>?????</decorator>
-    <department>???????</department>
-    <description>??????</description>
+    <date>تاريخ</date>
+    <decorator>تجميل</decorator>
+    <department>الادارة</department>
+    <description>تفاصيل</description>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'e'                     #
   ###################################################################
   -->
-    <editPermission>?????????????</editPermission>
-    <email>?????? ??????????</email>
-    <employer>??????</employer>
+    <editPermission>تحريرالتصاريح</editPermission>
+    <email>البريد الالكتروني</email>
+    <employer>الشركة</employer>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'f'                     #
   ###################################################################
   -->
-    <familyName>??? ???????</familyName>
-    <finish>?????</finish>
-    <firstName>?????</firstName>
-    <format>???</format>
+    <familyName>اسم العائلة</familyName>
+    <finish>نهاية</finish>
+    <firstName>الاسم</firstName>
+    <format>شكل</format>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'g'                     #
   ###################################################################
   -->
-    <groupId>?????? ????????</groupId>
-    <gender>?????</gender>
-    <givenName>?????</givenName>
+    <groupId>تعريفة المجموعة</groupId>
+    <gender>الجنس</gender>
+    <givenName>الاسم</givenName>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'h'                     #
   ###################################################################
   -->
-    <height>??????</height>
+    <height>ارتفاع</height>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'i'                     #
   ###################################################################
   -->
-    <icon>??????</icon>
+    <icon>أيقونة</icon>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'j'                     #
   ###################################################################
   -->
-    <jobTitle>???????</jobTitle>
+    <jobTitle>الوظيفة</jobTitle>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'l'                     #
   ###################################################################
   -->
-    <locale>??????</locale>
-    <label>?????</label>
-    <language>?????</language>
-    <lastName>??? ???????</lastName>
+    <locale>المحلي</locale>
+    <label>علامة</label>
+    <language>اللغة</language>
+    <lastName>اسم العائلة</lastName>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'm'                     #
   ###################################################################
   -->
-    <mobile>??????</mobile>
+    <mobile>الجوال</mobile>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'n'                     #
   ###################################################################
   -->
-    <name>???</name>
-    <nickName>??????</nickName>
-    <next>???????</next>
+    <name>اسم</name>
+    <nickName>الكنية</nickName>
+    <next>الموالي</next>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'o'                     #
   ###################################################################
   -->
-    <owner>??????</owner>
+    <owner>المالك</owner>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'p'                     #
   ###################################################################
   -->
-    <postalCode> ????? ???????</postalCode>
+    <postalCode> الرقم البريدي</postalCode>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'r'                     #
   ###################################################################
   -->
-    <refresh>????? ??????</refresh>
-    <restore>???????</restore>
+    <refresh>تحديث الصفحة</refresh>
+    <restore>استعادة</restore>
    
     
     
@@ -133,45 +133,45 @@
   #                  EXPRESSION START  WITH 's'                     #
   ###################################################################
   -->
-    <save>????</save>
+    <save>احفظ</save>
     
     
-    <stateProv> ??????? </stateProv>
-    <street>??????</street>
+    <stateProv> الولاية </stateProv>
+    <street>الشارع</street>
     
-    <style>?????</style>
-    <subject>?????</subject>
-    <summary>????</summary>
-    <skin>????</skin>
+    <style>أسلوب</style>
+    <subject>موضوع</subject>
+    <summary>موجز</summary>
+    <skin>مظهر</skin>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 't'                     #
   ###################################################################
   -->
-    <template>????</template>
-    <tel> ??????  </tel>
-    <title>?????</title>
+    <template>قالب</template>
+    <tel> الهاتف  </tel>
+    <title>عنوان</title>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'u'                     #
   ###################################################################
   -->
     <uri>Uri</uri>
-    <userName>??? ????????</userName>
-    <update>?????</update>
+    <userName>اسم المستخدم</userName>
+    <update>تحديث</update>
   <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'v'                     #
   ###################################################################
   -->
-    <viewPermission>???? ????????</viewPermission>
+    <viewPermission>اعرض التصاريح</viewPermission>
    <!--
   ###################################################################
   #                  EXPRESSION START  WITH 'w'                     #
   ###################################################################
   -->
-    <width>???</width>
-    <website> ???? ?????  </website>
+    <width>عرض</width>
+    <website> موقع الواب  </website>
     
     
   </word>

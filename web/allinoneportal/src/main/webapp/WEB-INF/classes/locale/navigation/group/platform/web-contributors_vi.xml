@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bundle>
   <administration>
-    <wcm>Qu?n l� site</wcm>
+    <wcm>Quản lý site</wcm>
     <siteExplorer>Sites Explorer</siteExplorer>
-    <wcmAdmin>Qu?n tr? site</wcmAdmin>
+    <wcmAdmin>Quản trị site</wcmAdmin>
   </administration>
 </bundle>
 

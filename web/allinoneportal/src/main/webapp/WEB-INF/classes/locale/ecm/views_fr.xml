@@ -7,12 +7,12 @@
     <view>
       <label>
         <languages>Langues</languages>
-        <summary>Résumé</summary>
-        <none-summary>Le résumé est vide</none-summary>
+        <summary>RÃ©sumÃ©</summary>
+        <none-summary>Le rÃ©sumÃ© est vide</none-summary>
         <content>Contenu</content>
         <none-content>Le contenu est vide</none-content>
         <link>Liens</link>
-        <attachment>Pièces jointes</attachment>
+        <attachment>PiÃ¨ces jointes</attachment>
       </label>
     </view>
   </Article>
@@ -20,10 +20,10 @@
     <label>
       <languages>
         <en>Anglais</en>
-        <fr>Français</fr>
+        <fr>FranÃ§ais</fr>
         <ru>Russe</ru>
         <vi>Vietnamien</vi>
-        <ln>Néerlandais</ln>
+        <ln>NÃ©erlandais</ln>
         <uk>Ukrainien</uk>
         <ar>Arabe</ar>
       </languages>
@@ -36,7 +36,7 @@
     <view>
       <label>
         <calendar>Calendrier</calendar>
-        <shared>Partagé</shared>
+        <shared>PartagÃ©</shared>
       </label>
     </view>
   </Calendar>
@@ -46,12 +46,12 @@
   <Comment>
     <view>
       <label>
-        <postedBy>Dernier commentaire posté par</postedBy>
-        <at>à</at>
+        <postedBy>Dernier commentaire postÃ© par</postedBy>
+        <at>Ã </at>
         <comments>Commentaires</comments>
         <show-comments>Afficher les commentaires</show-comments>
         <hide-comments>Cacher les commentaires</hide-comments>
-        <comment-by>Commenté par</comment-by>
+        <comment-by>CommentÃ© par</comment-by>
         <email>Email</email>
         <site>Site</site>
       </label>
@@ -64,17 +64,17 @@
     <view>
       <label>
         <january>Janvier</january>
-        <february>Février</february>
+        <february>FÃ©vrier</february>
         <march>Mars</march>
         <april>Avril</april>
         <may>Mai</may>
         <june>Juin</june>
         <july>Juillet</july>
-        <august>Août</august>
+        <august>AoÃ»t</august>
         <september>Septembre</september>
         <october>Octobre</october>
         <november>Novembre</november>
-        <december>Décembre</december>
+        <december>DÃ©cembre</december>
         <event>Rendez-vous</event>
         <subject>Objet</subject>
         <location>Emplacement</location>
@@ -90,10 +90,10 @@
   <File>
     <view>
       <label>
-        <not-viewable>Ce contenu n'est pas consultable. Veuillez le télécharger ou utiliser WebDAV pour y accéder.</not-viewable>
-        <file-size-too-big>Le contenu de ce fichier est trop important. Veuillez le télécharger pour le consulter.</file-size-too-big>
+        <not-viewable>Ce contenu n'est pas consultable. Veuillez le tÃ©lÃ©charger ou utiliser WebDAV pour y accÃ©der.</not-viewable>
+        <file-size-too-big>Le contenu de ce fichier est trop important. Veuillez le tÃ©lÃ©charger pour le consulter.</file-size-too-big>
         <webDAV>Vue WebDAV</webDAV>
-        <download>Télécharger ce fichier</download>
+        <download>TÃ©lÃ©charger ce fichier</download>
         <htmlview>Vue HTML</htmlview>
         <plaintextview>Vue texte brut</plaintextview>
       </label>
@@ -106,33 +106,33 @@
     <view>
       <label>
         <content>Contenu du File Plan</content>
-        <record-category-identifier>Identification de la catégorie de l'Enregistrement</record-category-identifier>
+        <record-category-identifier>Identification de la catÃ©gorie de l'Enregistrement</record-category-identifier>
         <disposition-author>Auteur de la disposition</disposition-author>
         <disposition-instruction>Instructions de la disposition</disposition-instruction>
         <permanent-record-indicator>Indicateur d'enregistrement permanent</permanent-record-indicator>
         <contain-record-folder>Dossier contenant l'Enregistrement</contain-record-folder>
-        <default-media-type>Type de média par défaut</default-media-type>
-        <default-marking-list>Liste de marquage par défaut</default-marking-list>
-        <default-originating-organization>Organisation émettrice par défaut</default-originating-organization>
+        <default-media-type>Type de mÃ©dia par dÃ©faut</default-media-type>
+        <default-marking-list>Liste de marquage par dÃ©faut</default-marking-list>
+        <default-originating-organization>Organisation Ã©mettrice par dÃ©faut</default-originating-organization>
         <number-of-record>Nombre d'Enregistrements</number-of-record>
         <record>Enregistrement</record>
-        <obsolete-record>Enregistrements obsolètes</obsolete-record>
-        <supreseded-record>Enregistrements remplacés</supreseded-record>
+        <obsolete-record>Enregistrements obsolÃ¨tes</obsolete-record>
+        <supreseded-record>Enregistrements remplacÃ©s</supreseded-record>
         <vital-record>Enregistrements vitaux</vital-record>
-        <cutoff-record>Enregistrements prélevés</cutoff-record>
+        <cutoff-record>Enregistrements prÃ©levÃ©s</cutoff-record>
         <holdable-record>Enregistrements suspensifs</holdable-record>
-        <transferable-record>Enregistrements transférables</transferable-record>
+        <transferable-record>Enregistrements transfÃ©rables</transferable-record>
         <accessionable-record>Enregistrements acquis</accessionable-record>
         <destroyable-record>Enregistrements destructibles</destroyable-record>
         <record-id>Identifiant de l'Enregistrement</record-id>
         <record-name>Nom de l'Enregistrement</record-name>
         <originator>Originataire</originator>
-        <date-received>Date de réception</date-received>
+        <date-received>Date de rÃ©ception</date-received>
         <originating-organization>Organisation originataire</originating-organization>
         <next-review-date>Date de revue suivante</next-review-date>
-        <previous-review-date>Date de revue précédente</previous-review-date>
+        <previous-review-date>Date de revue prÃ©cÃ©dente</previous-review-date>
         <cutoff-date>Date d'extraction</cutoff-date>
-        <hold-until>Suspension jusqu'à</hold-until>
+        <hold-until>Suspension jusqu'Ã </hold-until>
         <transfer-date>Date de transfert</transfer-date>
         <transfer-location>Emplacement du transfert</transfer-location>
         <accession-date>Date d'acquisition</accession-date>
@@ -148,7 +148,7 @@
     <view>
       <label>
         <document-name>Nom du document Kofax</document-name>
-        <downloadable>Fichier téléchargeable</downloadable>
+        <downloadable>Fichier tÃ©lÃ©chargeable</downloadable>
       </label>
     </view>
   </Kofax>
@@ -159,11 +159,11 @@
     <view>
       <label>
         <from>De :</from>
-        <to>À :</to>
+        <to>Ã€ :</to>
         <cc>Cc :</cc>
         <date>Date :</date>
         <subject>Sujet :</subject>
-        <attachment>Pièces jointes :</attachment>
+        <attachment>PiÃ¨ces jointes :</attachment>
       </label>
     </view>
   </Mail>
@@ -178,8 +178,8 @@
         <link>Lien</link>
         <author>Auteur</author>
         <explicit>Explicite</explicit>
-        <category>Catégorie</category>
-        <keyword>Mots clés</keyword>
+        <category>CatÃ©gorie</category>
+        <keyword>Mots clÃ©s</keyword>
         <publish-date>Date de publication</publish-date>
         <mime-type>Type Mime</mime-type>
         <length>Longueur</length>
@@ -199,10 +199,10 @@
         <date-time>Date-heure</date-time>
         <description>Description</description>
         <image>Image</image>
-        <summary>Résumé</summary>
+        <summary>RÃ©sumÃ©</summary>
         <content>Contenu</content>
         <relation>Relations</relation>
-        <attachment>Pièces jointes</attachment>
+        <attachment>PiÃ¨ces jointes</attachment>
       </label>
     </view>
   </Sample>
@@ -225,10 +225,10 @@
       <label>
         <name>Nom</name>
         <versionable>Versionable</versionable>
-        <exo_owner>Propriétaire</exo_owner>
-        <exo_dateCreated>Date de Création</exo_dateCreated>
+        <exo_owner>PropriÃ©taire</exo_owner>
+        <exo_dateCreated>Date de CrÃ©ation</exo_dateCreated>
         <exo_dateModified>Date de Modif.</exo_dateModified>
-        <auditing>Traçabilité</auditing>
+        <auditing>TraÃ§abilitÃ©</auditing>
       </label>
     </view>
   </ListView>
@@ -270,9 +270,9 @@
         <name>Nom de l'action</name>
         <lifecycle>Cycle de vie</lifecycle>
         <protocol>Protocole</protocol>
-        <host>Nom de l'hôte</host>
+        <host>Nom de l'hÃ´te</host>
         <port>Port</port>
-        <folder>Répertoire</folder>
+        <folder>RÃ©pertoire</folder>
         <username>Nom d'utilisateur</username>
         <description>Description</description>
         <stote-path>Emplacement de sauvegarde</stote-path>
@@ -289,8 +289,8 @@
         <lifecycle>Cycle de vie</lifecycle>
         <calendar-path>Emplacement du calendrier</calendar-path>
         <description>Description</description>
-        <query>Requête</query>
-        <repository>Dépôt de données</repository>
+        <query>RequÃªte</query>
+        <repository>DÃ©pÃ´t de donnÃ©es</repository>
       </label>
     </view>
   </Icalendar>
@@ -304,14 +304,14 @@
         <feed-name>Nom du flux</feed-name>
         <lifecycle>Cycle de vie</lifecycle>
         <schedule-type>Type de planification</schedule-type>
-        <start-time>Heure de début</start-time>
+        <start-time>Heure de dÃ©but</start-time>
         <end-time>Heure de fin</end-time>
         <repeat-count>Nombre d'essais</repeat-count>
         <time-inteval>Intervalle entre 2 essais</time-inteval>
         <cron-expression>Commande Cron</cron-expression>
         <feed-node-name>Nom du noeud</feed-node-name>
         <feed-store-path>Emplacement de stockage</feed-store-path>
-        <query-items>Eléments de la requête</query-items>
+        <query-items>ElÃ©ments de la requÃªte</query-items>
         <rss-url>URL du flux</rss-url>
         <feed-title>Titre du flux</feed-title>
         <feed-type>Type de flux</feed-type>
@@ -321,12 +321,12 @@
         <language>Langue</language>
         <copyright>Droit d'auteur</copyright>
         <publish-date>Date de publication</publish-date>
-        <owner-name>Nom du propriétaire</owner-name>
-        <owner-email>Email du propriétaire</owner-email>
+        <owner-name>Nom du propriÃ©taire</owner-name>
+        <owner-email>Email du propriÃ©taire</owner-email>
         <image-url>URL de l'image</image-url>
-        <category>Catégorie</category>
-        <keywords>Mots clés</keywords>
-        <query-path>Emplacement de la requête</query-path>
+        <category>CatÃ©gorie</category>
+        <keywords>Mots clÃ©s</keywords>
+        <query-path>Emplacement de la requÃªte</query-path>
       </label>
     </view>
   </Rss>
@@ -338,7 +338,7 @@
       <label>
         <action-name>Nom de l'action</action-name>
         <lifecycle>Cycle de vie</lifecycle>
-        <metadata>Metadonnée</metadata>
+        <metadata>MetadonnÃ©e</metadata>
         <description>Description</description>
       </label>
     </view>
@@ -364,7 +364,7 @@
         <action-name>Nom de l'action</action-name>
         <lifecycle>Cycle de vie</lifecycle>
         <description>Description</description>
-        <mail-to>Envoyer l'email à</mail-to>
+        <mail-to>Envoyer l'email Ã </mail-to>
       </label>
     </view>
   </SendMail>
@@ -412,7 +412,7 @@
       <label>
         <not-avaliable>ND</not-avaliable>
         <title>Titre</title>
-        <creator>Créateur</creator>
+        <creator>CrÃ©ateur</creator>
         <subject>Sujet</subject>
         <source>Source</source>
         <contributor>Contributeur</contributor>
@@ -433,7 +433,7 @@
       </action>
       <tooltip>
         <cancel>Annuler</cancel>
-        <add-edit>Ajouter/Editer les propriétés</add-edit>
+        <add-edit>Ajouter/Editer les propriÃ©tÃ©s</add-edit>
       </tooltip>
     </view>
   </ElementSet>
@@ -444,12 +444,12 @@
     <view>
       <label>
         <not-available>ND</not-available>
-        <cutoff-executed>Extraction exécutée</cutoff-executed>
-        <cutoff-now>Extraction immédiate</cutoff-now>
+        <cutoff-executed>Extraction exÃ©cutÃ©e</cutoff-executed>
+        <cutoff-now>Extraction immÃ©diate</cutoff-now>
         <cutoff-date-time>Planification de l'extraction</cutoff-date-time>
-        <cutoff-event>Évènement d'extraction</cutoff-event>
-        <cutoff-obsolete>Extraction obsolète</cutoff-obsolete>
-        <cutoff-superseded>Extraction remplacée</cutoff-superseded>
+        <cutoff-event>Ã‰vÃ¨nement d'extraction</cutoff-event>
+        <cutoff-obsolete>Extraction obsolÃ¨te</cutoff-obsolete>
+        <cutoff-superseded>Extraction remplacÃ©e</cutoff-superseded>
       </label>
       <action>
         <add-edit>Ajouter/Editer</add-edit>
@@ -457,7 +457,7 @@
       </action>
       <tooltip>
         <cancel>Annuler</cancel>
-        <add-edit>Ajouter/Editer les propriétés</add-edit>
+        <add-edit>Ajouter/Editer les propriÃ©tÃ©s</add-edit>
       </tooltip>
     </view>
   </Cutoffable>
@@ -476,7 +476,7 @@
       </action>
       <tooltip>
         <cancel>Annuler</cancel>
-        <add-edit>Ajouter/Editer les propriétés</add-edit>
+        <add-edit>Ajouter/Editer les propriÃ©tÃ©s</add-edit>
       </tooltip>
     </view>
   </Destroyable>
@@ -487,7 +487,7 @@
     <view>
       <label>
         <not-available>ND</not-available>
-        <accession-executed>Acquisition exécutée</accession-executed>
+        <accession-executed>Acquisition exÃ©cutÃ©e</accession-executed>
         <accession-date>Planification de l'extraction</accession-date>
       </label>
       <action>
@@ -506,10 +506,10 @@
     <view>
       <label>
         <not-available>ND</not-available>
-        <hold-executed>Arrêt exécuté</hold-executed>
-        <hold-until>Arrêt jusqu'à</hold-until>
-        <holds-discretionary>Arrêt discrétionnaire</holds-discretionary>
-        <hold-until-event>Arrêt jusqu'à évènement</hold-until-event>
+        <hold-executed>ArrÃªt exÃ©cutÃ©</hold-executed>
+        <hold-until>ArrÃªt jusqu'Ã </hold-until>
+        <holds-discretionary>ArrÃªt discrÃ©tionnaire</holds-discretionary>
+        <hold-until-event>ArrÃªt jusqu'Ã  Ã©vÃ¨nement</hold-until-event>
         <freeze>Geler</freeze>
       </label>
       <action>
@@ -518,7 +518,7 @@
       </action>
       <tooltip>
         <cancel>Annuler</cancel>
-        <add-edit>Ajouter/Editer les propriétés</add-edit>
+        <add-edit>Ajouter/Editer les propriÃ©tÃ©s</add-edit>
       </tooltip>
     </view>
   </Holdable>
@@ -529,21 +529,21 @@
     <view>
       <label>
         <not-available>ND</not-available>
-        <supplemental-marking-list>Liste supplémentaire d'inscription</supplemental-marking-list>
+        <supplemental-marking-list>Liste supplÃ©mentaire d'inscription</supplemental-marking-list>
         <subject>Sujet</subject>
         <record-identifier>Identifiant du Record</record-identifier>
-        <originator>Créateur</originator>
+        <originator>CrÃ©ateur</originator>
         <format>Format</format>
         <addresses>Adresses</addresses>
         <originating-organization>Organisme d'origine</originating-organization>
         <other-addresses>Autres adresses</other-addresses>
         <publication-date>Date de publication</publication-date>
         <record-note>Note du Record</record-note>
-        <date-received>Date de réception</date-received>
+        <date-received>Date de rÃ©ception</date-received>
         <media-format>Format du media</media-format>
-        <is-obsolete>Est obsolète</is-obsolete>
+        <is-obsolete>Est obsolÃ¨te</is-obsolete>
         <date-field>Champ date</date-field>
-        <superseded>Remplacé</superseded>
+        <superseded>RemplacÃ©</superseded>
         <uuid>UUID</uuid>
       </label>
       <action>
@@ -552,7 +552,7 @@
       </action>
       <tooltip>
         <cancel>Annuler</cancel>
-        <add-edit>Ajouter/Editer les propriétés</add-edit>
+        <add-edit>Ajouter/Editer les propriÃ©tÃ©s</add-edit>
       </tooltip>
     </view>
   </Record>
@@ -563,7 +563,7 @@
     <view>
       <label>
         <not-available>ND</not-available>
-        <transfer-executed>Transfert exécuté</transfer-executed>
+        <transfer-executed>Transfert exÃ©cutÃ©</transfer-executed>
         <transfer-date>Date du Transfert</transfer-date>
         <transfer-location>Emplacement du Transfert</transfer-location>
       </label>
@@ -573,7 +573,7 @@
       </action>
       <tooltip>
         <cancel>Annuler</cancel>
-        <add-edit>Ajouter/Editer les propriétés</add-edit>
+        <add-edit>Ajouter/Editer les propriÃ©tÃ©s</add-edit>
       </tooltip>
     </view>
   </Transferable>
@@ -585,7 +585,7 @@
       <label>
         <not-available>ND</not-available>
         <is-vital-record>Le Record est vital</is-vital-record>
-        <prev-review-date>Date de revue précédente</prev-review-date>
+        <prev-review-date>Date de revue prÃ©cÃ©dente</prev-review-date>
         <next-review-date>Date de revue suivante</next-review-date>
       </label>
       <action>
@@ -594,7 +594,7 @@
       </action>
       <tooltip>
         <cancel>Annuler</cancel>
-        <add-edit>Ajouter/Editer les propriétés</add-edit>
+        <add-edit>Ajouter/Editer les propriÃ©tÃ©s</add-edit>
       </tooltip>
     </view>
   </VitalRecord>
