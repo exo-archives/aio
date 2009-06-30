@@ -12,6 +12,9 @@
       <register>Đăng ký</register>
       <sitemap>Sơ đồ trang</sitemap>
       <parameterizedviewer>Ứng dụng trình bày nội dung theo tham số</parameterizedviewer>
+	  <forum>Forum</forum>
+  <faq>FAQ</faq>
+  <webexplorer>Web Explorer</webexplorer>
     </classic>
   </portal>
   <register>Đăng kí</register>

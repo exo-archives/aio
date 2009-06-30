@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <word>
+  	<!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'A'                     #
+	  ###################################################################
+	  -->
+    <accessPermission>Quy?n truy c?p</accessPermission>
+    <abort>Thoát</abort>
+    <action>Th?c hi?n</action>
+    <!--
+		###################################################################
+		#                  EXPRESSION START  WITH 'B'                     #
+		###################################################################
+		-->
+    <back>Tr? l?i</back>
+    <birthday>Ngày sinh</birthday>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'c'                     #
+	  ###################################################################
+	  -->
+    <cancel>H?y</cancel>
+    <category>Danh m?c</category>
+    <change>Thay d?i</change>
+    <city>Thành ph?</city>
+    <close>Ðóng</close>
+    <comment>Ghi chú</comment>
+    <content>N?i dung</content>
+    <country>Qu?c gia</country>
+    <!--
+		###################################################################
+		#                  EXPRESSION START  WITH 'd'                     #
+		###################################################################
+		-->
+    <date>Ngày</date>
+    <decorator>Trang trí</decorator>
+    <department>Phòng/Ban</department>
+    <description>Mô t?</description>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'e'                     #
+	  ###################################################################
+	  -->
+    <editPermission>S?a quy?n</editPermission>
+    <email>H?p thu</email>
+    <employer>Nhà tuy?n d?ng</employer>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'f'                     #
+	  ###################################################################
+	  -->
+    <familyName>H?</familyName>
+    <finish>Hoàn t?t</finish>
+    <firstName>Tên</firstName>
+    <format>Ð?nh d?ng</format>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'g'                     #
+	  ###################################################################
+	  -->
+    <groupId>Mã Nhóm</groupId>
+    <gender>Gi?i tính</gender>
+    <givenName>Tên khai sinh</givenName>
+    <!--
+		###################################################################
+		#                  EXPRESSION START  WITH 'h'                     #
+		###################################################################
+		-->
+    <height>Chi?u cao</height>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'i'                     #
+	  ###################################################################
+	  -->
+    <icon>Bi?u tu?ng</icon>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH ''                     #
+	  ###################################################################
+	  -->
+    <jobTitle>Tên vi?c làm</jobTitle>
+    <!--
+		###################################################################
+		#                  EXPRESSION START  WITH 'l'                     #
+		###################################################################
+		-->
+    <locale>Ngôn ng?</locale>
+    <label>Nhãn</label>
+    <language>Ngôn ng?</language>
+    <lastName>H?</lastName>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'm'                     #
+	  ###################################################################
+	  -->
+    <mobile>S? di d?ng</mobile>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'n'                     #
+	  ###################################################################
+	  -->
+    <name>Tên</name>
+    <nickName>Bí danh</nickName>
+    <next>Ti?p t?c</next>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'o'                     #
+	  ###################################################################
+	  -->
+    <owner>Ch?</owner>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'p'                     #
+	  ###################################################################
+	  -->
+    <postalCode>Mã vùng</postalCode>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'r'                     #
+	  ###################################################################
+	  -->
+    <refresh>Refresh</refresh>
+    <restore>Khôi ph?c</restore>
+	  <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 's'                     #
+	  ###################################################################
+	  -->
+    <save>Luu</save>
+    <stateProv>Bang/H?t</stateProv>
+    <street>Ðu?ng Ph?</street>
+    <style>Giao di?n</style>
+    <subject>Ch? d?</subject>
+    <summary>Tóm t?t</summary>
+    <skin>Giao di?n</skin>
+	  <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 't'                     #
+	  ###################################################################
+	  -->
+    <template>Khuôn m?u</template>
+    <tel>Ði?n tho?i</tel>
+    <title>Tiêu d?</title>
+	  <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'u'                     #
+	  ###################################################################
+	  -->
+    <uri>Uri</uri>
+    <userName>Tên dang nh?p</userName>
+    <update>C?p nh?t</update>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'v'                     #
+	  ###################################################################
+	  -->
+    <viewPermission>Xem quy?n</viewPermission>
+    <!--
+	  ###################################################################
+	  #                  EXPRESSION START  WITH 'w'                     #
+	  ###################################################################
+	  -->
+    <width>Chi?u r?ng</width>
+    <website>Trang web</website>
+  </word>
+</bundle>
+

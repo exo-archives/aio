@@ -127,7 +127,7 @@
       <show-application-state>false</show-application-state>
       <show-application-mode>false</show-application-mode>
     </application>
-  </page>                            
+  </page>                           
   <page>
   	<page-id>portal::classic::sitemap</page-id>
     <owner-type>portal</owner-type>

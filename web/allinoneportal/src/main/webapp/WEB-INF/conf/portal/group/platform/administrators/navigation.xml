@@ -9,20 +9,13 @@
       <uri>administration</uri>
       <name>administration</name>
       <label>#{administration.portalAdmin}</label>     
-      <page-reference>group::platform/administrators::administration</page-reference>      
+      <page-reference>group::platform/administrators::applicationRegistry</page-reference>      
       
       <node>
 		    <uri>administration/applicationregistry</uri>
 		    <name>applicationregistry</name>
 		    <label>#{administration.application-registry}</label>
 		    <page-reference>group::platform/administrators::applicationRegistry</page-reference>
-	    </node>
-	    
-	    <node>
-		    <uri>administration/newAccount</uri>
-		    <name>newAccount</name>
-		    <label>#{administration.newAccount}</label>
-		    <page-reference>group::platform/administrators::newAccount</page-reference>
 	    </node>
 	    
 	    <node>
@@ -39,7 +32,7 @@
 		    <page-reference>group::platform/administrators::i18n</page-reference>
 	    </node>	    	    	    	   	    	   	   
     </node>
-    <node>
+    <!--node>
       <uri>contentAdministration</uri>
       <name>contentAdministration</name>
       <label>#{administration.contentAdministration}</label>     
@@ -58,7 +51,7 @@
 		    <label>#{contentAdministration.WorkflowAdministration}</label>
 		    <page-reference>group::platform/administrators::workflowAdministration</page-reference>
 	    </node>	    	    	    	  	    	   	   
-    </node>       
+    </node-->       
     <node>
       <uri>wcm</uri>
       <name>wcm</name>

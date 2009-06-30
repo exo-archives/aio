@@ -7,7 +7,7 @@
   <edit-permission>manager:/platform/administrators</edit-permission>
   <creator>root</creator>
         
- 	<portal-layout> 
+ 	<portal-layout>
     <page-body>    
 	  </page-body>    
   </portal-layout>

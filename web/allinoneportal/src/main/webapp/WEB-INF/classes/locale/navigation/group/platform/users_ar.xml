@@ -6,6 +6,13 @@
       <sitemap>خريطه الموقع</sitemap>
       <mylink>عناوين</mylink>
       <dashboard>لوحة القيادة</dashboard>
+	  <collaboration>Collaboration</collaboration>
+	  <collaboration>
+	  <contact>Contacts</contact>
+	  <mail>Mail</mail>
+	  <calendar>Agenda</calendar>
+	  <chat>Chat</chat>
+	  <rss>RSS</rss></collaboration>
     </users>
   </platform>
 

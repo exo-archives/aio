@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <!--
+  ###################### global word for ECM dialogs resoucebundle ####
+  -->
+  <Ecm>
+    <dialog>
+      <label>
+        <end-time>????? ???????</end-time>
+        <start-time>????? ???????</start-time>
+        <lifecycle>???? ??????</lifecycle>
+        <mimeType>??? ????????</mimeType>
+        <repeat-count>????? ????</repeat-count>
+        <time-interval>?????? ???????</time-interval>
+        <query-items>????? ?????????</query-items>
+        <schedule-type>??? ???????</schedule-type>
+      </label>
+    </dialog>
+  </Ecm>
+  <!--
+  ###################### resoucebundle for exo:article dialogs template ####
+  -->
+  <Article>
+    <dialog>
+      <label>
+        <name>#{word.name}</name>
+        <title>#{word.title}</title>
+        <summary>#{word.summary}</summary>
+        <content>#{word.content}</content>
+      </label>
+    </dialog>
+    <msg>
+      <no-view>??? ?????? ?? ??? ?????? ?? ???? ?? ??????, ?????? ????? ??? ?? ???????</no-view>
+    </msg>
+  </Article>
+  <UIDocumentForm>
+    <label>
+      <title>#{word.title}</title>
+      <link>??????</link>
+      <contentHtml>#{word.content}</contentHtml>
+      <content>#{word.content}</content>
+      <contentPlain>#{word.content}</contentPlain>
+      <name>?????</name>
+    </label>
+  </UIDocumentForm>
+  <!--
+  ###################### resoucebundle for exo:podcast dialogs template ####
+  -->
+  <Podcast>
+    <dialog>
+      <label>
+        <name>?????</name>
+        <categories>??????</categories>
+        <title>???????</title>
+        <link>??????</link>
+        <author>??????</author>
+        <explicit>????</explicit>
+        <category>?????</category>
+        <keywords>??????? ????????</keywords>
+        <publish-date>????? ?????</publish-date>
+        <description>?????</description>
+        <upload-file>????? ?????</upload-file>
+        <mime-type>??? ????????</mime-type>
+        <lenght>?????</lenght>
+      </label>
+    </dialog>
+  </Podcast>
+  <!--
+  ###################### resoucebundle for exo:calendar dialogs template ####
+  -->
+  <Calendar>
+    <dialog>
+      <label>
+        <name>#{word.name}</name>
+        <shared>?????</shared>
+      </label>
+    </dialog>
+  </Calendar>
+  <!--
+  ###################### resoucebundle for exo:event dialogs template ####
+  -->
+  <Event>
+    <dialog>
+      <label>
+        <name>#{word.name}</name>
+        <subject>#{word.subject}</subject>
+        <description>#{word.description}</description>
+        <location>??????</location>
+        <start-date-time>????? ???????/???????</start-date-time>
+        <end-date-time>????? ???????/???????</end-date-time>
+        <comment>#{word.comment}</comment>
+        <category>#{word.category}</category>
+        <availability>????????</availability>
+        <share-type>??? ????????</share-type>
+      </label>
+    </dialog>
+  </Event>
+  <!--
+  ###################### resoucebundle for nt:file dialogs template ####
+  -->
+  <File>
+    <dialog>
+      <label>
+        <name>#{word.name}</name>
+        <categories>??????</categories>
+        <mimeType>#{Ecm.dialog.label.mimeType}</mimeType>
+        <content>#{word.content}</content>
+        <re-upload>????? ??? ????? ????? ????? ???????</re-upload>
+      </label>
+    </dialog>
+  </File>
+  <!--
+  ###################### resoucebundle for rma:filePlan dialogs template ####
+  -->
+  <FilePlan>
+    <dialog>
+      <label>
+        <name>#{word.name}</name>
+        <categories>??????</categories>
+        <record-properties>????? ?????</record-properties>
+        <process-properties>????? ???????</process-properties>
+        <note>????? ??? ?????</note>
+        <record-category-identifier>???? ????????</record-category-identifier>
+        <disposition-author>???? ???????</disposition-author>
+        <disposition-instruction>??????? ???????</disposition-instruction>
+        <permanent-record-indicator>???????????? ?????</permanent-record-indicator>
+        <contain-record-folder>?????? ??????? ?????</contain-record-folder>
+        <default-media-type>??? ??????? ?????????</default-media-type>
+        <default-marking-list>????? ??????? ??????????</default-marking-list>
+        <default-originating-organization>????? ????? ??????????</default-originating-organization>
+        <vital-record-indicator>???????????? ?????</vital-record-indicator>
+        <vital-record-review-period>??? ?????????????? ???????</vital-record-review-period>
+        <process-cutoff>????? ?????</process-cutoff>
+        <event-trigger>?????? ?????</event-trigger>
+        <cutoff-period>??? ?????</cutoff-period>
+        <cutoff-on-obsolete>????? ??? ???????</cutoff-on-obsolete>
+        <cutoff-on-superseded>????? ??? ???????</cutoff-on-superseded>
+        <process-hold>????? ???????</process-hold>
+        <hold-period>??? ???????</hold-period>
+        <discretionary-hold>??????? ????????</discretionary-hold>
+        <process-transfer>????? ???????</process-transfer>
+        <default-transfer-location>???? ??????? ?????????</default-transfer-location>
+        <transfer-block-size>??? ???? ???????</transfer-block-size>
+        <process-accession>????? ????????</process-accession>
+        <accession-location>???? ????????</accession-location>
+        <accession-block-size>??? ???? ????????</accession-block-size>
+        <process-destruction>????? ???????</process-destruction>
+      </label>
+    </dialog>
+  </FilePlan>
+  <!--
+  ###################### resoucebundle for kfx:document dialogs template ####
+  -->
+  <Kofax>
+    <dialog>
+      <label>
+        <name>#{word.name}</name>
+        <categories>??????</categories>
+      </label>
+    </dialog>
+  </Kofax>
+  <!--
+  ###################### resoucebundle for exo:sample dialogs template ####
+  -->
+  <Sample>
+    <dialog>
+      <label>
+        <name>#{word.name}</name>
+        <categories>??????</categories>
+        <title>#{word.title}</title>
+        <description>#{word.description}</description>
+        <date>#{word.date}</date>
+        <date-time>??????? ? ???????</date-time>
+        <upload-image>????? ??????</upload-image>
+        <mime-type>#{Ecm.dialog.label.mimeType}</mime-type>
+        <summary>#{word.summary}</summary>
+        <content>#{word.content}</content>
+      </label>
+    </dialog>
+  </Sample>
+  <!--
+  ###################### resoucebundle for exo:workflow dialogs template ####
+  -->
+  <Workflow>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <description>#{word.description}</description>
+        <validator>???????</validator>
+        <to-workspace>?????????</to-workspace>
+        <with-path>??????</with-path>
+      </label>
+    </dialog>
+  </Workflow>
+  <UIActionForm>
+    <label>
+      <description>#{word.description}</description>
+      <port>??????</port>
+      <userName>#{word.userName}</userName>
+      <password>????????</password>
+      <link>??????</link>
+      <to>??? ??????? ??????????? ???</to>
+      <actionName>#{word.name}</actionName>
+    </label>
+  </UIActionForm>
+  <EditFormAction>
+    <label>
+      <description>#{word.description}</description>
+      <port>??????</port>
+      <userName>#{word.userName}</userName>
+      <password>???? ????</password>
+      <link>??????</link>
+      <to>??? ??????? ??????????? ???</to>
+      <actionName>#{word.name}</actionName>
+    </label>
+  </EditFormAction>
+  <!--
+  ###################### resoucebundle for exo:bacupAction dialogs template ####
+  -->
+  <Backup>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <description>#{word.description}</description>
+        <to-workspace>?????????</to-workspace>
+        <with-path>??????</with-path>
+      </label>
+    </dialog>
+  </Backup>
+  <!--
+  ###################### resoucebundle for exo:getmail dialogs template ####
+  -->
+  <Getmail>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <protocol>??????????</protocol>
+        <host>??????</host>
+        <port>??????</port>
+        <folder>??????</folder>
+        <username>#{word.userName}</username>
+        <password>????????</password>
+        <description>#{word.description}</description>
+        <stote-path>???? ???????</stote-path>
+      </label>
+    </dialog>
+  </Getmail>
+  <!--
+  ###################### resoucebundle for exo:iCalendarGenerateAction dialogs template ####
+  -->
+  <Icalendar>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <action-name>??? ?????</action-name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <description>#{word.description}</description>
+        <calendar-file-name>??? ??? ????????</calendar-file-name>
+        <query-items>#{Ecm.dialog.label.query-items}</query-items>
+      </label>
+    </dialog>
+  </Icalendar>
+  <!--
+  ###################### resoucebundle for exo:createRSSFeedAction dialogs template ####
+  -->
+  <Rss>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <feed-action-name>??? ??? ??????</feed-action-name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
+        <start-time>#{Ecm.dialog.label.start-time}</start-time>
+        <end-time>#{Ecm.dialog.label.end-time}</end-time>
+        <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
+        <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
+        <cron-expression>????? ????</cron-expression>
+        <feed-node-name>??? ??????</feed-node-name>
+        <feed-store-path>???????????</feed-store-path>
+        <query-items>#{Ecm.dialog.label.query-items}</query-items>
+        <rss-url>????? ??????? ?????? ? "RSS"</rss-url>
+        <feed-title>????? ??????</feed-title>
+        <feed-type>??? ??????</feed-type>
+        <summary>??????</summary>
+        <title>???????</title>
+        <rss-version>????? "RSS"</rss-version>
+        <link>??????</link>
+        <description>#{word.description}</description>
+        <language>?????</language>
+        <copyright>??? ?????</copyright>
+        <publish-date>????? ???????</publish-date>
+        <owner-name>??? ??????</owner-name>
+        <owner-email>????? ?????? ?????????? ??????</owner-email>
+        <image-url>????? ??????? ?????? ????????</image-url>
+        <category>#{word.category}</category>
+        <keywords>??????? ????????</keywords>
+      </label>
+    </dialog>
+  </Rss>
+  <!--
+  ###################### resoucebundle for exo:addMetadataAction dialogs template ####
+  -->
+  <AddMetadata>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <metadata>???? ????????? ????????</metadata>
+        <description>#{word.description}</description>
+      </label>
+    </dialog>
+  </AddMetadata>
+  <!--
+  ###################### resoucebundle for exo:ReloadBPAction dialogs template ####
+  -->
+  <ReloadAction>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <description>#{word.description}</description>
+      </label>
+    </dialog>
+  </ReloadAction>
+  <!--
+  ###################### resoucebundle for exo:sendMailAction dialogs template ####
+  -->
+  <SendMail>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
+        <start-time>#{Ecm.dialog.label.start-time}</start-time>
+        <end-time>#{Ecm.dialog.label.end-time}</end-time>
+        <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
+        <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
+        <cron-expression>????? ????</cron-expression>
+        <description>#{word.description}</description>
+        <mail-to>??? ??????? ??????????? ???</mail-to>
+      </label>
+    </dialog>
+  </SendMail>
+  <!--
+  ###################### resoucebundle for exo:transformBinaryToTextAction dialogs template ####
+  -->
+  <Transform>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
+        <start-time>#{Ecm.dialog.label.start-time}</start-time>
+        <end-time>#{Ecm.dialog.label.end-time}</end-time>
+        <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
+        <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
+        <cron-expression>????? ????</cron-expression>
+        <description>#{word.description}</description>
+      </label>
+    </dialog>
+  </Transform>
+  <!--
+  ###################### resoucebundle for exo:autoVersioning dialogs template ####
+  -->
+  <AutoVersioning>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
+        <start-time>#{Ecm.dialog.label.start-time}</start-time>
+        <end-time>#{Ecm.dialog.label.end-time}</end-time>
+        <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
+        <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
+        <cron-expression>????? ????</cron-expression>
+        <description>#{word.description}</description>
+      </label>
+    </dialog>
+  </AutoVersioning>
+  <!--
+  ###################### resoucebundle for exo:enableVersiong dialogs template ####
+  -->
+  <EnableVersioning>
+    <dialog>
+      <label>
+        <id>?????? ??????</id>
+        <name>#{word.name}</name>
+        <lifecycle>#{Ecm.dialog.label.lifecycle}</lifecycle>
+        <schedule-type>#{Ecm.dialog.label.schedule-type}</schedule-type>
+        <start-time>#{Ecm.dialog.label.start-time}</start-time>
+        <end-time>#{Ecm.dialog.label.end-time}</end-time>
+        <repeat-count>#{Ecm.dialog.label.repeat-count}</repeat-count>
+        <time-inteval>#{Ecm.dialog.label.time-interval}</time-inteval>
+        <cron-expression>????? ????</cron-expression>
+        <description>#{word.description}</description>
+      </label>
+    </dialog>
+  </EnableVersioning>
+  <!--
+  ###################### resoucebundle for dc:elementSet dialogs template ####
+  -->
+  <ElementSet>
+    <dialog>
+      <label>
+        <title>#{word.title}</title>
+        <creator>??????</creator>
+        <subject>#{word.subject}</subject>
+        <source>??????</source>
+        <contributor>???????</contributor>
+        <resource-type>??? ??????</resource-type>
+        <date>#{word.date}</date>
+        <publisher>??????</publisher>
+        <description>#{word.description}</description>
+        <rights>??????</rights>
+        <relation>???????</relation>
+        <format>#{word.format}</format>
+        <coverage>???????</coverage>
+        <identifier>?????? ??????</identifier>
+        <language>?????</language>
+      </label>
+    </dialog>
+  </ElementSet>
+  <!--
+  ###################### resoucebundle for rma:cutoffable dialogs template ####
+  -->
+  <Cutoffable>
+    <dialog>
+      <label>
+        <cutoff-executed>??? ????</cutoff-executed>
+        <cutoff-now>??? ????</cutoff-now>
+        <cutoff-date-time>????? ?????</cutoff-date-time>
+        <cutoff-event>??? ?????</cutoff-event>
+        <cutoff-obsolete>????? ??????</cutoff-obsolete>
+        <cutoff-superseded>??? ???????</cutoff-superseded>
+      </label>
+    </dialog>
+  </Cutoffable>
+  <!--
+  ###################### resoucebundle for rma:destroyable dialogs template ####
+  -->
+  <Destroyable>
+    <dialog>
+      <label>
+        <destruction-date>????? ???????</destruction-date>
+      </label>
+    </dialog>
+  </Destroyable>
+  <!--
+  ###################### resoucebundle for rma:accessControllable dialogs template ####
+  -->
+  <AccessControllable>
+    <dialog>
+      <label>
+        <owner>??????</owner>
+        <permissions>?????????</permissions>
+      </label>
+    </dialog>
+  </AccessControllable>
+  <!--
+  ###################### resoucebundle for rma:accessionable dialogs template ####
+  -->
+  <Accessionable>
+    <dialog>
+      <label>
+        <accession-executed>?????? ????</accession-executed>
+        <accession-date>????? ????????</accession-date>
+      </label>
+    </dialog>
+  </Accessionable>
+  <!--
+  ###################### resoucebundle for exo:actionable dialogs template ####
+  -->
+  <Actionable>
+    <dialog>
+      <label>
+        <primary-type>????? ???????</primary-type>
+        <mixin-types>????? 'MIXIN'</mixin-types>
+      </label>
+    </dialog>
+  </Actionable>
+  <!--
+  ###################### resoucebundle for exo:categorized dialogs template ####
+  -->
+  <Categorized>
+    <dialog>
+      <label>
+        <category>#{word.category}</category>
+      </label>
+    </dialog>
+  </Categorized>
+  <!--
+  ###################### resoucebundle for rma:holdable dialogs template ####
+  -->
+  <Holdable>
+    <dialog>
+      <label>
+        <hold-executed>????? ????</hold-executed>
+        <hold-until>????? ???</hold-until>
+        <holds-discretionary>????? ??????</holds-discretionary>
+        <hold-until-event>????? ??? ??? ???</hold-until-event>
+        <freeze>?????</freeze>
+      </label>
+    </dialog>
+  </Holdable>
+  <!--
+  ###################### resoucebundle for rma:lockable dialogs template ####
+  -->
+  <Lockable>
+    <dialog>
+      <label>
+        <lock-owner>???? ?????</lock-owner>
+        <lock-is-deep>??? ?????</lock-is-deep>
+      </label>
+    </dialog>
+  </Lockable>
+  <!--
+  ###################### resoucebundle for exo:move dialogs template ####
+  -->
+  <Move>
+    <dialog>
+      <label>
+        <destination-workpsace> ???? ????? ???????</destination-workpsace>
+        <destination-path>?????????????</destination-path>
+        <primary-type>????? ???????</primary-type>
+        <mixin-types>????? 'MIXIN'</mixin-types>
+      </label>
+    </dialog>
+  </Move>
+  <!--
+  ###################### resoucebundle for exo:published dialogs template ####
+  -->
+  <Published>
+    <dialog>
+      <label>
+        <start-publication>????? ?????</start-publication>
+        <end-publication>????? ?????</end-publication>
+      </label>
+    </dialog>
+  </Published>
+  <!--
+  ###################### resoucebundle rma:record dialogs template ####
+  -->
+  <Record>
+    <dialog>
+      <label>
+        <supplemental-marking-list>??????? ???????? ???????</supplemental-marking-list>
+        <subject>#{word.subject}</subject>
+        <record-identifier>???? ?????</record-identifier>
+        <originator>??????</originator>
+        <format>#{word.format}</format>
+        <addresses>????????</addresses>
+        <originating-organization>??????? ???????</originating-organization>
+        <other-addresses>?????? ????</other-addresses>
+        <publication-date>????? ?????</publication-date>
+        <record-note>????? ?????</record-note>
+        <date-received>????? ?????????</date-received>
+        <media-format>??? ??????</media-format>
+        <is-obsolete>????</is-obsolete>
+        <date-field>???? ???????</date-field>
+        <superseded>????</superseded>
+        <uuid>UUID</uuid>
+      </label>
+    </dialog>
+  </Record>
+  <!--
+  ###################### resoucebundle mix:referenceable dialogs template ####
+  -->
+  <Referenceable>
+    <dialog>
+      <label>
+        <uuid>UUID</uuid>
+      </label>
+    </dialog>
+  </Referenceable>
+  <!--
+  ###################### resoucebundle exo:relationable dialogs template ####
+  -->
+  <Relationable>
+    <dialog>
+      <label>
+        <relation>???????</relation>
+      </label>
+    </dialog>
+  </Relationable>
+  <!--
+  ###################### resoucebundle exo:rss-enable dialogs template ####
+  -->
+  <RssEnable>
+    <dialog>
+      <label>
+        <title>???????</title>
+        <summary>#{word.summary}</summary>
+      </label>
+    </dialog>
+  </RssEnable>
+  <!--
+  ###################### resoucebundle rma:transferable dialogs template ####
+  -->
+  <Transferable>
+    <dialog>
+      <label>
+        <transfer-executed>????? ????</transfer-executed>
+        <transfer-date>????? ???????</transfer-date>
+        <transfer-location>???? ???????</transfer-location>
+      </label>
+    </dialog>
+  </Transferable>
+  <!--
+  ###################### resoucebundle mix:versionable dialogs template ####
+  -->
+  <Versionable>
+    <dialog>
+      <label>
+        <version-history>????? ?????????</version-history>
+        <base-version>??????? ???????</base-version>
+        <is-checked-out>?? ???? ????? ????????</is-checked-out>
+        <predecessors>???????</predecessors>
+        <merge-failed>??? ????????</merge-failed>
+        <uuid>UUID</uuid>
+      </label>
+    </dialog>
+  </Versionable>
+  <!--
+  ###################### resoucebundle rma:vitalRecord dialogs template ####
+  -->
+  <VitalRecord>
+    <dialog>
+      <label>
+        <is-vital-record>????? ????</is-vital-record>
+        <previous-review-date>????? ???????? ???????</previous-review-date>
+        <next-review-date>????? ???????? ?????????</next-review-date>
+      </label>
+    </dialog>
+  </VitalRecord>
+  <!--
+  ##################### resoucebundle for resouce container dialogs template#####
+  -->
+  <ResouceContainer>
+    <dialog>
+      <label>
+        <name>?????</name>
+        <autoload>??????? ?????</autoload>
+        <minetype>??? ????????</minetype>
+        <content>???????</content>
+      </label>
+    </dialog>
+  </ResouceContainer>
+  <!--
+  ###################### resoucebundle for validator ####
+  -->
+  <EmailAddressValidator>
+    <msg>
+      <Invalid-input>????? ?????? ?????????? ??? ????</Invalid-input>
+    </msg>
+  </EmailAddressValidator>
+  <EmptyFieldValidator>
+    <msg>
+      <empty-input>?????? '{0}' ?????. ?????? ????? ??????</empty-input>
+    </msg>
+  </EmptyFieldValidator>
+  <NumberFormatValidator>
+    <msg>
+      <Invalid-number>?????? '{0}' ??? ????</Invalid-number>
+    </msg>
+  </NumberFormatValidator>
+</bundle>

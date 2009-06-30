@@ -10,23 +10,39 @@
 	    <label>#{portal.classic.home}</label>
 	    <page-reference>portal::classic::homepage</page-reference>	    
 	  </node>    
+	  
 	  <node>
-	    <uri>WCMHome</uri>
-	    <name>WCMHome</name>
-	    <label>WCM</label>
-	    <page-reference>portal::classic::WCMHome</page-reference>
+	    <uri>viewer</uri>
+      <name>viewer</name>
+      <label>#{portal.classic.viewer}</label>     
+      <page-reference>portal::classic::presentation</page-reference>      
+      
+      <node>
+				<uri>viewer/presentation</uri>
+				<name>presentation</name>
+				<label>#{portal.classic.presentation}</label>
+				<page-reference>portal::classic::presentation</page-reference>	    
+			</node>	 
+			<node>
+				<uri>viewer/contentlistviewer</uri>
+				<name>contentlistviewer</name>
+				<label>#{portal.classic.listViewer}</label>
+				<page-reference>portal::classic::contentlistviewer</page-reference>	    
+			</node>  	   	    	   	   
+    </node>
+	  
 		<node>
-			<uri>presentation</uri>
-			<name>presentation</name>
-			<label>#{portal.classic.presentation}</label>
-			<page-reference>portal::classic::presentation</page-reference>	    
-		</node>	 
+			<uri>sitemap</uri>
+			<name>sitemap</name>
+			<label>#{portal.classic.sitemap}</label>
+			<page-reference>portal::classic::sitemap</page-reference>	    
+		</node>
 		<node>
-			<uri>contentlistviewer</uri>
-			<name>contentlistviewer</name>
-			<label>#{portal.classic.listViewer}</label>
-			<page-reference>portal::classic::contentlistviewer</page-reference>	    
-		</node>	 
+			<uri>search</uri>
+			<name>search</name>
+			<label>#{portal.classic.search}</label>
+			<page-reference>portal::classic::search</page-reference>	    
+		</node>
 		<node>
 			<uri>searchResult</uri>
 			<name>searchResult</name>
@@ -34,26 +50,6 @@
 			<visible>false</visible>			
 			<page-reference>portal::classic::searchResult</page-reference>	    
 		</node>  
-		<node>
-			<uri>search</uri>
-			<name>search</name>
-			<label>#{portal.classic.search}</label>
-			<page-reference>portal::classic::search</page-reference>	    
-		</node> 
-		<node>
-			<uri>parameterizedviewer</uri>
-			<name>parameterizedviewer</name>
-			<label>#{portal.classic.parameterizedviewer}</label>
-			<visible>false</visible>
-			<page-reference>portal::classic::parameterizedviewer</page-reference>
-		</node> 	        	    
-	  </node>
-		<node>
-			<uri>sitemap</uri>
-			<name>sitemap</name>
-			<label>#{portal.classic.sitemap}</label>
-			<page-reference>portal::classic::sitemap</page-reference>	    
-		</node>	  	  
 	     	  
     <node>
       <uri>forum</uri>

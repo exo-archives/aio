@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <platform>
+    <users>
+      <iframe>IFrame</iframe>
+      <content-management>Content Management</content-management>
+      <file-explorer>File Explorer</file-explorer>
+      <content-browser>Content Browser</content-browser>
+      <content-creator>Fast Content Creator</content-creator>
+      <workflow-controller>Business Process Controller</workflow-controller>
+      <sitemap>SiteMap</sitemap>
+	  <collaboration>Collaboration</collaboration>
+	  <collaboration>
+	  <contact>Contacts</contact>
+	  <mail>Mail</mail>
+	  <calendar>Agenda</calendar>
+	  <chat>Chat</chat>
+	  <rss>RSS Reader</rss></collaboration>
+    </users>
+  </platform>
+</bundle>
+

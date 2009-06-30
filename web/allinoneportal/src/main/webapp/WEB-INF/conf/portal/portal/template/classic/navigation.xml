@@ -10,12 +10,12 @@
 			<label>#{portal.classic.home}</label>
 			<page-reference>portal::@owner@::homepage</page-reference>
 		</node> 
-		<node>
+		<!--node>
 			<uri>register</uri>
 			<name>register</name>
 			<label>#{portal.classic.register}</label>
 			<page-reference>portal::@owner@::register</page-reference>		
-		</node>
+		</node-->
 		<node>
 			<uri>presentation</uri>
 			<name>presentation</name>

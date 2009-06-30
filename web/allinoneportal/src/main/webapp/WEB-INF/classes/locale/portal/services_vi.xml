@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <!--
+  #############################################################################
+  #              Empty String Validator                                      #
+  #############################################################################
+  #class org.exoplatform.webui.form.Validator.EmptyFieldValidator
+  #{0}=input field name
+  -->
+  <EmptyStringValidator>
+    <msg>
+      <empty-input>Giá tr? tru?ng "{0}" là b?t bu?c.</empty-input>
+    </msg>
+  </EmptyStringValidator>
+  <!--
+  #############################################################################
+  #              Email Address Validator                                      #
+  #############################################################################
+  #class org.exoplatform.webui.form.validator.Validator.EmailAddressValidator
+  #{1}=input field name, {0} user input email address
+  -->
+  <EmailAddressValidator>
+    <msg>
+      <invalid-email>B?n dã nh?p giá tr? {0} vào tru?ng {1}, dó là m?t giá tr? không h?p l?.</invalid-email>
+    </msg>
+  </EmailAddressValidator>
+  <!--
+  #############################################################################
+  #              Number Format Validator                                      #
+  #############################################################################
+  #class org.exoplatform.webui.form.validator.Validator.NumberFormatValidator
+  #{0}=input field name, {1} user input limit access
+  -->
+  <NumberFormatValidator>
+    <msg>
+      <invalid-limitAccess>B?n dã nh?p giá tr? {0} vào tru?ng {1}, dó là m?t giá tr? không h?p l?\ gi?i h?n truy c?p.</invalid-limitAccess>
+      <Invalid-input>Giá tr? v?a nh?p vào tru?ng {0} không dúng d?nh d?ng s?.</Invalid-input>
+    </msg>
+  </NumberFormatValidator>
+  <!--
+  #{0}=input field name
+  -->
+  <!--
+  #############################################################################
+  #              Identifier String Validator                                  #
+  #############################################################################
+  #class org.exoplatform.webui.form.validator.Validator.IdentifierValidator
+  #{0}=input field name
+  -->
+  <IdentifierValidator>
+    <msg>
+      <empty-input>Giá tr? tru?ng "{0}" không th? r?ng.</empty-input>
+      <invalid-char>Tru?ng {0} ch? ch?p nh?n các ký t? là ch? cái, ch? s?, và d?u g?ch du?i, d?u g?ch ngang.</invalid-char>
+    </msg>
+  </IdentifierValidator>
+  <!--
+  #{0}=input field name
+  -->
+  <!--
+  #############################################################################
+  #              Name String Validator		                            #
+  #############################################################################
+  #class org.exoplatform.webui.form.validator.Validator.NameValidator
+  #{0}=input field name
+  -->
+  <NameValidator>
+    <msg>
+      <empty-input>Giá tr? tru?ng "{0}" không th? r?ng.</empty-input>
+      <invalid-char>Tru?ng {0} ch? ch?p nh?n các ký t? là ch? cái, ch? s?, d?u ch?m, d?u g?ch ngang và d?u g?ch du?i.</invalid-char>
+    </msg>
+  </NameValidator>
+  <!--
+  #{0}=input field name
+  -->
+  <!--
+  #############################################################################
+  #              Valid User Validator                                         #
+  #############################################################################
+  #class org.exoplatform.faces.user.validator.ValidUserValidator
+  #{0}=input field name, {1} input user name
+  -->
+  <ValidUserValidator>
+    <msg>
+      <empty-input>Hãy nh?p m?t giá tr? vào tru?ng {0}.</empty-input>
+      <invalid-username>Không tìm th?y ngu?i dùng {0}.</invalid-username>
+    </msg>
+  </ValidUserValidator>
+  <!--
+  #{0}=input field name, {1} input user name
+  -->
+  <!--
+  #############################################################################
+  #              Valid User Validator                                         #
+  #############################################################################
+  #class org.exoplatform.faces.user.validator.ValidGroupValidator
+  #{0}=input field name, {1} input group id
+  -->
+  <ValidGroupValidator>
+    <msg>
+      <empty-input>Hãy nh?p m?t giá tr? vào tru?ng {0}.</empty-input>
+      <invalid-group-id>Không tìm  th?y nhóm {0}.</invalid-group-id>
+    </msg>
+  </ValidGroupValidator>
+  <!--
+  #{0}=input field name, {1} input group id
+  -->
+  <!--
+  #############################################################################
+  #              Valid Permission Validator                                   #
+  #############################################################################
+  -->
+  <PermissionValidator>
+    <msg>
+      <invalid-permission-input>Phân quy?n không h?p l?, d?nh d?ng phân quy?n nên là thành viên:/Nhóm.</invalid-permission-input>
+      <membership-group-not-found>Ki?u thành viên ho?c tên nhóm không tìm th?y.</membership-group-not-found>
+    </msg>
+  </PermissionValidator>
+  <!--
+  #############################################################################
+  #              CheckAdminOrOwnerRoleInterceptor                             #
+  #############################################################################
+  #class org.exoplatform.faces.core.event.CheckAdminOrOwnerRoleInterceptor
+  #{0}=action name
+  -->
+  <CheckAdminOrOwnerRoleInterceptor>
+    <msg>
+      <owner-or-admin-require>B?n c?n dang nh?p ho?c có vai trò qu?n tr? d? th?c hi?n du?c ho?t d?ng '{0}'.</owner-or-admin-require>
+    </msg>
+  </CheckAdminOrOwnerRoleInterceptor>
+  <!--
+  #############################################################################
+  #              CheckOwnerInterceptor                                        #
+  #############################################################################
+  #class org.exoplatform.faces.core.event.CheckOwnerInterceptor
+  #{0}=action name
+  -->
+  <CheckOwnerInterceptor>
+    <msg>
+      <owner-require>B?n c?n dang nh?p d? th?c hi?n ho?t d?ng '{0}'.</owner-require>
+    </msg>
+  </CheckOwnerInterceptor>
+  <!--
+  #############################################################################
+  #              ExoPermissionException                                        #
+  #############################################################################
+  #class org.exoplatform.commons.exception.ExoPermissionException
+  #{0}=require role, {1} action name
+  -->
+  <ExoPermissionException>
+    <msg>
+      <message>B?n ph?i là {0} d? th?c hi?n du?c ho?t d?ng {1}.</message>
+    </msg>
+  </ExoPermissionException>
+  <!--
+  #############################################################################
+  #           Message Service properties                                      #
+  #############################################################################
+  #this exception is throw in GroupQueryHandler class
+  -->
+  <OrganizationService>
+    <unique-group-exception>Tên nhóm {0} dã t?n t?i.</unique-group-exception>
+  </OrganizationService>
+  <!--
+  #Throw in org.exoplatform.commons.utils.PageList, {0}=request page parameter, {1}=available pages parameter
+  -->
+  <PageList>
+    <page-out-of-range>B?n dang c? g?ng d? nh?n du?c trang {0}, nhung ch? có nh?ng trang {1} t?n t?i.</page-out-of-range>
+  </PageList>
+  <!--
+  #Throw in exo.services.communication.message.impl.MessageServiceImpl. 
+  #{0}=account name, {1}=user name
+  -->
+  <MessageService>
+    <account-not-found>Không tìm th?y tài kho?n {0} cho ngu?i dùng {1}.</account-not-found>
+    <invalid-standalone-message-address>B?n dang s? d?ng ki?u tài kho?n don l? và d?u "\" trong dinh d?ng d?a ch? {0} là không h?p l?. Ð?nh d?ng dúng c?a d?a ch? là: \ngu?i nh?n#Tên tài kho?n</invalid-standalone-message-address>
+    <send-message-fail>Không th? g?i thông báo.Ki?m tra d?a ch? e-mail\n\ L?i: {0}</send-message-fail>
+  </MessageService>
+  <!--
+  #Throw in exo.services.communication.message.impl.StandaloneProtocolPlugin. 
+  #{0}=to address
+  -->
+  <!--
+  #Throw in exo.services.communication.message.impl.MailServiceImpl 
+  #{0}=The orginal error message throw by java mail library
+  -->
+  <!--
+  #############################################################################
+  #           Forum Service properties                                        #
+  #############################################################################
+  #Throw in org.exoplatform.services.communication.forum.impl.ForumServiceImpl
+  #Throw in org.exoplatform.services.indexing.Searcher
+  #{0}=The orginal error message throw by lucence
+  -->
+  <Searcher>
+    <msg>
+      <search-expression-error><![CDATA[Có m?t l?i trong bi?u th?c b?n nh?p vào.<br />{0}]]></search-expression-error>
+    </msg>
+  </Searcher>
+</bundle>
+

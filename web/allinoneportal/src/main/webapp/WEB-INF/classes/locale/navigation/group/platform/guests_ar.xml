@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bundle>
-
-  <platform>
-    <guests>
+  <platform-guests>
       <register>تسجيل</register>
       <sitemap>خريطه الموقع</sitemap>
       <link>عناوين</link>
-    </guests>
-  </platform>
-
+    </platform-guests>
+	<platform><guests>
+      <register>تسجيل</register>
+      <sitemap>خريطه الموقع</sitemap>
+      <link>عناوين</link>
+	  </guests>
+    </platform>
 </bundle>

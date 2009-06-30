@@ -65,20 +65,6 @@
     </application>
   </page>  
   <page>
-  	<page-id>portal::@owner@::register</page-id>
-    <owner-type>portal</owner-type>
-    <owner-id>@owner@</owner-id>
-    <name>register</name>
-    <title>Register</title>
-	  <access-permissions>*:/platform/guests</access-permissions>
-	  <edit-permission>*:/platform/administrators</edit-permission>    
-    <application>
-      <instance-id>portal#@owner@:/exoadmin/AccountPortlet/@owner@-Account</instance-id>
-      <title>Account</title>
-      <show-info-bar>false</show-info-bar>      
-    </application>  
-  </page>            
-  <page>
   	<page-id>portal::@owner@::sitemap</page-id>
     <owner-type>portal</owner-type>
     <owner-id>@owner@</owner-id>
