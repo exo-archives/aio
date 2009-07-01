@@ -64,6 +64,6 @@
   <import>war:/conf/workflow/workflow-system-configuration.xml</import>
   <import>war:/conf/workflow/workflow-path-configuration.xml</import>
   <import>war:/conf/workflow/${workflow}-configuration.xml</import>  						
-  <import>war:/conf/workflow/organization-component-plugins-configuration.xml</import>	
+	<import>war:/conf/workflow/organization-component-plugins-configuration.xml</import>	
 	
 </configuration>
