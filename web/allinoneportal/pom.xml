@@ -59,7 +59,8 @@
               <targetPath>WEB-INF/conf/bp</targetPath>
               <includes><include>*.jar</include></includes>
             </resource>
-          </webResources>		
+          </webResources>
+			<dependentWarExcludes>groovy/portal/webui/workspace/UIExoStart.gtmpl</dependentWarExcludes>		  
         </configuration>
       </plugin>
     </plugins>
