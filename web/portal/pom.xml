@@ -1,0 +1,67 @@
+<project>
+  <parent>
+    <groupId>org.exoplatform.allinone</groupId>
+    <artifactId>config</artifactId>
+    <version>1.4</version>
+  </parent> 
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>exo.allinone.web.portal</artifactId>
+  <packaging>war</packaging>
+  <name>eXo AllInOne web module</name>
+
+  <dependencies>
+   <!-- WCM -->
+    <dependency>
+      <groupId>org.exoplatform.ecm.wcm</groupId>
+      <artifactId>exo.ecm.wcm.web.portal</artifactId>
+      <version>${org.exoplatform.ecm.wcm.version}</version>
+          <type>war</type>
+         <scope>runtime</scope>
+    </dependency>
+   <!-- Portal -->
+    <dependency>
+      <groupId>org.exoplatform.portal</groupId>
+      <artifactId>exo.portal.web.portal</artifactId>
+      <version>${org.exoplatform.portal.version}</version>
+          <type>war</type>
+         <scope>runtime</scope>
+    </dependency>
+    <!-- DMS -->
+    <dependency>
+      <groupId>org.exoplatform.ecm.dms.core</groupId>
+      <artifactId>exo.ecm.dms.core.web.portal</artifactId>
+      <version>${org.exoplatform.ecm.dms.version}</version>
+          <type>war</type>
+         <scope>runtime</scope>
+    </dependency>
+    <!-- Workflow -->
+    <dependency>
+      <groupId>org.exoplatform.ecm.workflow</groupId>
+      <artifactId>exo.ecm.workflow.web.portal</artifactId>
+      <version>${org.exoplatform.ecm.workflow.version}</version>
+          <type>war</type>
+         <scope>runtime</scope>
+    </dependency>
+    <!-- CS -->
+    <dependency>
+      <groupId>org.exoplatform.cs</groupId>
+      <artifactId>exo.cs.web.portal</artifactId>
+      <version>${org.exoplatform.cs.version}</version>
+          <type>war</type>
+         <scope>runtime</scope>
+    </dependency>
+    <!-- KS -->
+    <dependency>
+      <groupId>org.exoplatform.ks</groupId>
+      <artifactId>exo.ks.web.portal</artifactId>
+      <version>${org.exoplatform.ks.version}</version>
+          <type>war</type>
+         <scope>runtime</scope>
+    </dependency>
+  </dependencies>  
+
+  <build>
+  </build>
+
+</project>
