@@ -1,0 +1,17 @@
+<project>
+  <parent>
+    <groupId>org.exoplatform.vinaworks</groupId>
+    <artifactId>config</artifactId>
+    <version>trunk</version>
+  </parent> 
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>vinaworks.web.vinaworkswebos</artifactId>
+  <packaging>war</packaging> 
+  <version>${org.exoplatform.vinaworks.version}</version>
+  <name>vinaworks webos</name>
+
+  <build>
+    <finalName>vinaworkswebos</finalName>
+  </build>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <group>
+    <executive-board>
+      <organization>
+        <title>Organisation</title>
+        <newStaff>Nouveau membre du personnel</newStaff>
+        <management>Gestion</management>
+       </organization>
+      
+    </executive-board>
+  </group>
+</bundle>
+

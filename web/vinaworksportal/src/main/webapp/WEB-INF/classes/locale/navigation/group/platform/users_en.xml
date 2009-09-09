@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <platform>
+    <users>
+	<iframe>IFrame</iframe>
+	<portal.webos.livedesktop>Live Desktop</portal.webos.livedesktop>
+	<mylink> My Link</mylink>
+	<mylink-blog>Blog</mylink-blog>
+	<mylink-google>Google</mylink-google>
+	<mylink-facebook>Facebook</mylink-facebook>
+	<sitemap>Sitemap</sitemap>
+	<dashboard>Dashboard</dashboard>
+	<content-management>content management</content-management>
+	<file-explorer>File Explorer</file-explorer>
+	<content-browser>Content Browser</content-browser>
+	<content-creator>Fast Content Creator</content-creator>
+	<content>Fast RSS Reader</content>
+	<businessprocess>
+		<controller>Business Process Center</controller>
+	</businessprocess>
+	<collaboration>
+		<title>Collaboration Suite</title>
+
+		<contact>Contact Application</contact>
+		<mail>Mail Application</mail>
+		<calendar>Calendar Application</calendar>
+		<rss>RSS Reader</rss>
+	</collaboration>
+
+	<ks>
+		<title>Knowdlege Suite</title>
+		<faq>FAQ</faq>
+		<forum>Forum</forum>
+		<tour>Tour</tour>
+
+	</ks>
+      
+    </users>
+  </platform>
+</bundle>
+

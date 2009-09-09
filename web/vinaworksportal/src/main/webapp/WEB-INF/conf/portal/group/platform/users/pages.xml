@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<page-set>             
+  <page>
+  	<page-id>group::platform/users::webexplorer</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>webexplorer</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <application>
+      <instance-id>group#platform/users:/web/BrowserPortlet/WebExplorer</instance-id>
+      <title>Web Explorer</title>
+      <show-info-bar>false</show-info-bar>
+     </application>
+       <!--ajout de workflow-->
+
+      <!--application location-x="100" location-y="150">
+	    <instance-id>portal#webos:/eXoWidgetWeb/WelcomeWidget/WelcomeWidget</instance-id>
+	    <application-type>eXoWidget</application-type>
+	    <title>Welcome Widget</title>
+	  </application>
+	  
+	  <application location-x="300" location-y="150">
+	    <instance-id>portal#webos:/eXoWidgetWeb/CalendarWidget/CalendarWidget</instance-id>
+	    <application-type>eXoWidget</application-type>
+	    <title>Calendar Widget</title>
+	  </application-->
+ </page>      
+  
+ <page>
+  	<page-id>group::platform/users::livedesktop</page-id>
+  	<owner-type>group</owner-type>
+		<owner-id>platform/users</owner-id>
+    <name>livedesktop</name>		
+    <factory-id>Desktop</factory-id>
+	  <access-permissions>*:/platform/users</access-permissions>
+	  <edit-permission>*:/platform/users</edit-permission>
+    <show-max-window>true</show-max-window>
+	      
+    <application>
+      <instance-id>portal#webos:/web/BrowserPortlet/WebExplorer</instance-id>    
+      <title>Web Explorer</title>
+    </application>
+                
+    <application>
+      <instance-id>portal#webos:/web/IFramePortlet/blog</instance-id>
+      <title>Blog</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+    
+    <application>
+      <instance-id>portal#webos:/web/IFramePortlet/google</instance-id>
+      <title>Google</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+    
+    <application>
+      <instance-id>portal#webos:/web/IFramePortlet/vnexpress</instance-id>
+      <title>VnExpress</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+
+    <application>
+      <instance-id>group#platform/users:/mail/MailPortlet/mail</instance-id>    
+      <title>Mail Portlet</title>
+      <show-info-bar>true</show-info-bar>      
+    </application>  
+
+    <application>
+      <instance-id>group#platform/users:/calendar/CalendarPortlet/calendars</instance-id>
+      <title>Calendar Portlet</title>
+      <show-info-bar>true</show-info-bar>
+    </application>  
+
+    <application>
+      <instance-id>group#platform/users:/contact/ContactPortlet/contact</instance-id>    
+      <title>Contact Portlet</title>
+      <show-info-bar>true</show-info-bar>      
+    </application> 
+
+    <application>
+      <instance-id>group#platform/users:/content/RSSReaderPortlet/content</instance-id>    
+      <title>RSS Reader Portlet</title>
+      <show-info-bar>true</show-info-bar>      
+    </application>  
+
+     <application>
+      <instance-id>portal#classic:/forum/ForumPortlet/forum</instance-id>
+      <title>Forum Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>false</show-application-state>
+      <show-application-mode>false</show-application-mode>
+    </application>
+	  
+    <application>
+      <instance-id>portal#webos:/web/SiteMapPortlet/SitemapPortlet/SiteMap</instance-id>    
+      <title>Site Map</title>
+    </application>
+    
+    <application>
+      <instance-id>portal#classic:/faq/FAQPortlet/faq</instance-id>
+      <title>FAQ Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>false</show-application-state>
+      <show-application-mode>false</show-application-mode>
+    </application>
+
+    <application>
+      <instance-id>group#platform/users:/ecm/FileExplorerPortlet/fileexplorer</instance-id>
+      <title>File Explorer</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+	  
+
+                    
+  </page>  
+
+
+
+
+  <page>
+		<page-id>group::platform/users::mylink</page-id>
+		<owner-type>group</owner-type>
+		<owner-id>platform/users</owner-id>
+		<name>mylink</name>
+		<factory-id>Desktop</factory-id>
+		<access-permissions>*:/platform/users</access-permissions>
+		<edit-permission>manager:/platform/administrators</edit-permission>
+		<show-max-window>true</show-max-window>
+		<application>
+			<instance-id>group#platform/users:/web/IFramePortlet/blog</instance-id>
+			<title>Blog</title>
+			<show-info-bar>false</show-info-bar>
+			<show-application-state>true</show-application-state>
+			<show-application-mode>true</show-application-mode>
+		</application>
+		<application>
+			<instance-id>group#platform/users:/web/IFramePortlet/google</instance-id>
+			<title>Google</title>
+			<show-info-bar>false</show-info-bar>
+			<show-application-state>true</show-application-state>
+			<show-application-mode>true</show-application-mode>
+		</application>
+		<application>
+			<instance-id>group#platform/users:/web/IFramePortlet/vnexpress</instance-id>
+			<title>VnExpress</title>
+			<show-info-bar>true</show-info-bar>
+			<show-application-state>true</show-application-state>
+			<show-application-mode>true</show-application-mode>
+		</application>
+		<application>
+			<instance-id>group#platform/users:/web/BrowserPortlet/WebExplorer</instance-id>
+			<title>Web Explorer</title>
+			<show-info-bar>true</show-info-bar>
+			<show-application-state>true</show-application-state>
+			<show-application-mode>true</show-application-mode>
+		</application>
+  </page>
+    
+  <page>
+  	<page-id>group::platform/users::mylink-blog</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>mylink-blog</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <application>
+      <instance-id>group#platform/users:/web/IFramePortlet/blog</instance-id>
+      <title>Blog</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>  
+  </page>
+  
+  <page>
+  	<page-id>group::platform/users::mylink-google</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>mylink-google</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <application>
+      <instance-id>group#platform/users:/web/IFramePortlet/google</instance-id>
+      <title>Google</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>  
+  </page>
+  
+  <page>
+  	<page-id>group::platform/users::mylink-facebook</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>mylink-facebook</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <application>
+      <instance-id>group#platform/users:/web/IFramePortlet/facebook</instance-id>
+      <title>FaceBook</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>  
+  </page>
+  <!--CS-->
+     <page>
+    <page-id>group::platform/users::collaboration</page-id>
+    <owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>collaboration</name>
+    <factory-id>Desktop</factory-id>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <show-max-window>true</show-max-window>
+    
+    <!--application>
+      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
+      <title>Forum Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+       <show-application-mode>true</show-application-mode>
+    </application-->
+    
+    <application>
+      <instance-id>group#platform/users:/mail/MailPortlet/mail</instance-id>    
+      <title>Mail Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <!--show-application-mode>true</show-application-mode-->
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/calendar/CalendarPortlet/calendars</instance-id>    
+      <title>Calendar Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/contact/ContactPortlet/contact</instance-id>    
+      <title>Contact Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <!--show-application-mode>true</show-application-mode-->
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/content/RSSReaderPortlet/content</instance-id>    
+      <title>RSS Reader Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <!--show-application-mode>true</show-application-mode-->
+    </application>
+  </page>
+
+<!--KS-->
+ <page>
+  <page-id>group::platform/users::ks</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>ks</name>
+    <factory-id>Desktop</factory-id>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <show-max-window>true</show-max-window>
+    
+    <!--application>
+      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
+      <title>Forum Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application-->
+    
+    <!--application>
+      <instance-id>group#platform/users:/tour/TourPortlet/tour</instance-id>    
+      <title>Tour Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application-->
+    
+    <application>
+      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
+      <title>Forum Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+    
+   <application>
+      <instance-id>group#platform/users:/faq/FAQPortlet/faq</instance-id>    
+      <title>Faq Portlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+      
+      <!--application>
+      <instance-id>group#platform/users:/web/HomePagePortlet/tour</instance-id>
+      <title>Tour Porlet </title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>false</show-application-mode>
+    </application-->
+  </page>  
+
+
+
+ 
+
+
+<!--DMS_porlet-->
+ <page>
+    <page-id>group::platform/users::contentmanagement</page-id>
+    <owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>contentmanagement</name>
+    <factory-id>Desktop</factory-id>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <show-max-window>true</show-max-window>
+    
+    <!--application>
+      <instance-id>group#platform/users:/forum/ForumPortlet/forum</instance-id>    
+      <title>Forum Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application-->
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/FileExplorerPortlet/fileexplorer</instance-id>    
+      <title>FileExplorer Porlet </title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/FastContentCreatorPortlet/fastcontentcreator</instance-id>    
+      <title>Fast Content Creator Porlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application>
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/ContentBrowserPortlet/contentbrowser</instance-id>
+      <title>Content Browser Porlet </title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>
+    
+    <!--application>
+      <instance-id>group#platform/users:/content/RSSReaderPortlet/content</instance-id>    
+      <title>Fast RSS Reader Porlet</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+    </application-->
+          
+  </page>
+<!--wcm-->
+  <page>
+  <page-id>group::platform/users::viewer</page-id>
+    <owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>viewer</name>
+    <factory-id>Desktop</factory-id>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    <show-max-window>true</show-max-window>
+    <application>
+      <instance-id>group#platform/users:/web-presentation/SingleContentViewer/presentation</instance-id>
+      <title>Presentation </title>
+      <show-info-bar>false</show-info-bar>      
+      <show-application-state>true</show-application-state>
+     </application>
+      <application>
+      <instance-id>group#platform/users/web-presentation/ContentListViewerPortlet/contentlistviewer</instance-id>
+      <title>Content List Viewer </title>
+      <show-info-bar>false</show-info-bar>      
+      <show-application-state>true</show-application-state>
+      </application>
+  </page>
+
+<!--DMS-->
+  <!--page>
+  	<page-id>group::platform/users::FileExplorer</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>FileExplorer</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>manager:/platform/administrators</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/FileExplorerPortlet/fileexplorer</instance-id>
+      <title>File Explorer </title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-mode>true</show-application-mode>      
+    </application>  
+  </page>
+
+   <page>
+  	<page-id>group::platform/users::ContentBrowser</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>ContentBrowser </name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>manager:/platform/administrators</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/ContentBrowserPortlet/contentbrowser</instance-id>
+      <title>Content Browser</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-mode>true</show-application-mode>      
+    </application>  
+  </page>
+
+  <page>
+  	<page-id>group::platform/users::FastContentCreator</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>FastContentCreator</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>manager:/platform/administrators</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/users:/ecm/FastContentCreatorPortlet/fastcontentcreator</instance-id>
+      <title>Fast Content Creator</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-mode>true</show-application-mode>      
+    </application>  
+  </page-->
+
+
+  <!--page>
+ <page-id>group::platform/users::mail</page-id>
+  <owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>mail</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+      <application>
+      <instance-id>group#platform/users:/mail/MailPortlet/mail</instance-id>    
+      <title>Mail Portlet</title>
+       <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+      <show-info-bar>true</show-info-bar>      
+    </application>  
+  </page>
+  
+  <page>
+  	<page-id>group::platform/users::calendar</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>calendar</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/users:/calendar/CalendarPortlet/calendars</instance-id>
+      <title>Calendar Portlet</title>
+      <show-info-bar>true</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>
+    </application>  
+  </page>
+  
+  <page>
+  	<page-id>group::platform/users::contact</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>contact</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/users:/contact/ContactPortlet/contact</instance-id>    
+      <title>Contact Portlet</title>
+      <show-info-bar>true</show-info-bar>  
+      <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>    
+    </application>  
+  </page>
+  
+  <page>
+  	<page-id>group::platform/users::content</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>content</name>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>*:/platform/administrators</edit-permission>
+    
+    <application>
+      <instance-id>group#platform/users:/content/RSSReaderPortlet/content</instance-id>    
+      <title>RSS Reader Portlet</title>
+      <show-info-bar>true</show-info-bar>   
+       <show-application-state>true</show-application-state>
+      <show-application-mode>true</show-application-mode>   
+    </application>  
+  </page-->  
+ 
+
+
+ <page>
+  	<page-id>group::platform/users::sitemap</page-id>
+    <owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>sitemap</name>
+    <title>Site Map</title>
+	  <access-permissions>*:/platform/users</access-permissions>
+	  <edit-permission>*:/platform/administrators</edit-permission>
+	  <application>
+      <instance-id>group#platform/users:/web/SiteMapPortlet/sitemapportlet</instance-id>
+      <title>SiteMap</title>
+      <show-info-bar>false</show-info-bar>      
+    </application>          
+  </page>
+ <!--workflow-->
+
+
+ <page>
+  	<page-id>group::platform/users::WorkflowController</page-id>
+  	<owner-type>group</owner-type>
+    <owner-id>platform/users</owner-id>
+    <name>WorkflowController</name>
+     <factory-id>Desktop</factory-id>
+    <access-permissions>*:/platform/users</access-permissions>
+    <edit-permission>manager:/platform/administrators</edit-permission>   
+   
+     <application>
+      <instance-id>group#platform/administrators:/workflow/WorkflowAdministrationPortlet/WorkflowAdministration</instance-id>    
+      <title>Workflow Administration</title>
+      <show-info-bar>false</show-info-bar>
+      <show-application-state>true</show-application-state>
+      <!--show-application-mode>true</show-application-mode-->      
+    </application>
+
+    <application>
+      <instance-id>group#platform/users:/workflow/WorkflowControllerPortlet/workflowcontroller</instance-id>    
+      <title>Business Process</title>
+      <show-info-bar>false</show-info-bar>      
+    </application>  
+  </page>
+    
+</page-set>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <platform>
+    <users>
+        <livedesktop>Bàn làm việc</livedesktop>
+	<iframe>IFrame</iframe>
+	<mylink>Liên kết của tôi</mylink>
+	<mylink-blog>Blog</mylink-blog>
+	<mylink-google>Google</mylink-google>
+	<!--mylink-facebook>Facebook</mylink-facebook-->
+       <!--mylink-vietnamWebsite>Vietnam Website </mylink-vietnamWebsite-->
+       <mylink-vietnamWebsite>Trang Tiếng Việt </mylink-vietnamWebsite>
+
+	<sitemap>Sơ đồ trang</sitemap>
+	<dashboard>Bảng điều khiển</dashboard>
+	<content-management>
+               <title>Quản lý nội dung</title> 
+	       <file-explorer>Quản lý tài liệur</file-explorer>
+	       <content-browser>Quản lý nội dung</content-browser>
+	       <content-creator>Tạo nhanh nội dung</content-creator>
+	       
+         </content-management>
+	<businessprocess>
+		  <title> Quá trình nghiệp vụ</title>
+                  <WorkflowAdministration> Quản trị quá trình nghiệp vụ  </WorkflowAdministration>
+                  <workflowcontroller> Trung tâm quá trình nghiệp vụ </workflowcontroller>
+	</businessprocess>
+	<!--collaboration>
+		<title></title>
+
+		<contact>Contact Application</contact>
+		<mail>Mail Application</mail>
+		<calendar>Calendar Application</calendar>
+		<rss>RSS Reader</rss>
+	</collaboration-->
+
+	<!--ks>
+		<title>Knowdlege Suite</title>
+		<faq>FAQ</faq>
+		<forum>Forum</forum-->
+		<!--tour>Tour</tour-->
+              
+
+          <collaboration>
+              <title>Bộ công cụ cộng tác</title>
+                    <contact>Ứng dụng quản lý địa chỉ</contact>
+                     <mail>Hòm Thư</mail>
+                     <calendar>Lịch công tác</calendar>
+                     <rss>Tạo RSS</rss>
+            </collaboration>
+
+          <ks>
+             <title>Bộ Chia sẻ thông tin</title>
+             <faq>Hỏi Đáp</faq>
+             <forum>Diễn Đàn</forum>
+            <!--tour>Giới Thiệu</tour-->
+
+         </ks>
+
+
+         
+
+
+	
+      
+    </users>
+  </platform>
+</bundle>

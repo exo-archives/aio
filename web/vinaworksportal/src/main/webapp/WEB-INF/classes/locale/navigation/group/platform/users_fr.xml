@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <platform>
+    <users>
+	<iframe>IFrame</iframe>
+	<portal.webos.livedesktop>Ordinateur Virtuel</portal.webos.livedesktop>
+	<mylink> Mon Lien</mylink>
+	<mylink-blog>Blog</mylink-blog>
+	<mylink-google>Google</mylink-google>
+	<mylink-facebook>Facebook</mylink-facebook>
+	<sitemap>Plan du site</sitemap>
+	<dashboard>Dashboard</dashboard>
+	<content-management>Gestion de Contenu</content-management>
+	<file-explorer>Explorateur de Fichiers</file-explorer>
+	<content-browser>Explorateur de Contenu</content-browser>
+	<content-creator>Création Rapide de Contenu</content-creator>
+	<content>Lecteur de flux</content>
+	<businessprocess>
+		<controller>Processus Métiers</controller>
+	</businessprocess>
+	<collaboration>
+		<title>Suite Collaborative</title>
+		<contact>Carnet d'adresses</contact>
+		<mail>Webmail</mail>
+		<calendar>Agenda</calendar>
+		<rss>Lecteur de flux</rss>
+	</collaboration>
+
+	<ks>
+		<title>Knowdlege Suite</title>
+		<faq>FAQ</faq>
+		<forum>Forum</forum>
+		<tour>Tour</tour>
+
+	</ks>
+      
+    </users>
+  </platform>
+</bundle>
+

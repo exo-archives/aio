@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <component>
+    <key>org.exoplatform.application.gadget.GadgetRegistryService</key>
+    <type>org.exoplatform.application.gadget.jcr.GadgetRegistryServiceImpl</type>
+  </component>
+
+  <component>
+  	<key>org.exoplatform.application.gadget.SourceStorage</key>
+  	<type>org.exoplatform.application.gadget.jcr.SourceStorageImpl</type>
+  	<init-params>
+  		<properties-param>
+  		<name>location</name>
+  		<description>The location store source of gadgets</description>
+  		<property name="repository" value="repository"></property>
+  		<property name="workspace" value="gadgets"></property>
+  		<property name="store.path" value="/"></property>
+  		</properties-param>
+  	</init-params>
+  </component>
+      
+  <component>
+    <key>org.exoplatform.application.registry.ApplicationRegistryService</key>
+    <type>org.exoplatform.application.registry.jcr.ApplicationRegistryServiceImpl</type>
+  	<component-plugins>      
+	    <component-plugin>
+	      <name>new.portal.portlets.registry</name>
+	      <set-method>initListener</set-method>
+	      <type>org.exoplatform.application.registry.ApplicationCategoriesPlugins</type>
+	      <description>this listener init the portlets are registered in PortletRegister</description>
+	      <init-params>	      	      
+	      	<object-param>
+	          <name>administration</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>administration</string></field>
+	            <field  name="displayName"><string>Administration</string></field> 
+	            <field  name="description"><string>application for administration</string></field> 
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+									<value>                 
+	                  <object type="org.exoplatform.application.registry.Application">                     
+									    <field name="applicationName"><string>ApplicationRegistryPortlet</string></field>
+	                    <field  name="categoryName"><string>administration</string></field>
+						          <field name="displayName"><string>Application Registry</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>exoadmin</string></field>       
+						          <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+								        	<value><string>*:/platform/administrators</string></value>
+								        	<value><string>*:/organization/management/executive-board</string></value>
+								        </collection>
+						          </field> 
+		                </object>
+	                </value>
+					        <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field name="applicationName"><string>OrganizationPortlet</string></field>
+		                  <field  name="categoryName"><string>administration</string></field>
+	                    <field name="displayName"><string>Organization Management</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>exoadmin</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/administrators</string></value>
+													<value><string>*:/organization/management/executive-board</string></value>
+								        </collection>
+						          </field>                 
+		                </object>
+	                </value>
+					        <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field name="applicationName"><string>AccountPortlet</string></field>
+		                  <field  name="categoryName"><string>administration</string></field>
+						          <field name="displayName"><string>New Account</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>exoadmin</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/administrators</string></value>
+													<value><string>*:/organization/management/executive-board</string></value>
+								        </collection>
+						          </field>                 
+		                </object>
+	                </value>
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param> 
+			
+			    <object-param>
+	          <name>web</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>web</string></field>
+	            <field  name="displayName"><string>web</string></field> 
+	            <field  name="description"><string>BasicPortlets</string></field> 
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>web</string></field>
+		                  <field name="applicationName"><string>IFramePortlet</string></field>
+						          <field name="displayName"><string>IFrame</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>web</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/users</string></value>													
+								        </collection>
+						          </field>                 
+		                </object>
+	                </value>
+					        <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>web</string></field>
+		                  <field name="applicationName"><string>SiteMapPortlet</string></field>
+						          <field name="displayName"><string>SiteMap</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>web</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/users</string></value>													
+								        </collection>
+						          </field>                                 
+		                </object>
+	                </value>
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>web</string></field>
+		                  <field name="applicationName"><string>BrowserPortlet</string></field>
+						          <field name="displayName"><string>Web Explorer</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>web</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/users</string></value>													
+								        </collection>
+						          </field>                                 
+		                </object>
+	                </value>
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param> 
+
+		
+
+		<object-param>
+	          <name>calendar</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>calendar</string></field>
+	            <field  name="displayName"><string>calendar</string></field> 
+	            <field  name="description"><string>calendar portlets</string></field> 
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>calendar</string></field>
+		                  <field name="applicationName"><string>CalendarPortlet</string></field>
+						          <field name="displayName"><string>CalendarPortlet</string></field>
+			          <field name="description"><string>Calendar Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>calendar</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/users</string></value>													
+								        </collection>
+						          </field>                 
+		                </object>
+	                </value>
+					        
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param> 
+		
+		<object-param>
+	          <name>contact</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>contact</string></field>
+	            <field  name="displayName"><string>contact</string></field> 
+	            <field  name="description"><string>contact</string></field>
+              <field name="accessPermissions">
+				        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+									<value><string>*:/platform/users</string></value>													
+				        </collection>
+		          </field>                 	             
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>Contact</string></field>
+		                  <field name="applicationName"><string>ContactPortlet</string></field>
+			          <field name="displayName"><string>Contact Portlet</string></field>
+			          <field name="description"><string>Contact Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>contact</string></field>
+		                  <field name="accessPermissions">					<collection type="java.util.ArrayList" item-type="java.lang.String">													
+						<value><string>*:/platform/users</string></value>													
+					</collection>
+				</field>                 
+		                </object>
+	                </value>
+	                
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param>
+
+		
+		<object-param>
+	          <name>faq</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>faq</string></field>
+	            <field  name="displayName"><string>faq</string></field> 
+	            <field  name="description"><string>faq</string></field>
+              <field name="accessPermissions">
+				        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+									<value><string>*:/platform/users</string></value>													
+				        </collection>
+		          </field>                 	             
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>FAQ</string></field>
+		                  <field name="applicationName"><string>FAQPortlet</string></field>
+			          <field name="displayName"><string>FAQ Portlet</string></field>
+			          <field name="description"><string>FAQ Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>faq</string></field>
+		                  <field name="accessPermissions">					<collection type="java.util.ArrayList" item-type="java.lang.String">													
+						<value><string></string></value>													
+					</collection>
+				</field>                 
+		                </object>
+	                </value>
+	                
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param>	        
+
+
+		<object-param>
+	          <name>content</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>content</string></field>
+	            <field  name="displayName"><string>content</string></field> 
+	            <field  name="description"><string>content</string></field>
+              <field name="accessPermissions">
+				        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+									<value><string>*:/platform/users</string></value>													
+				        </collection>
+		          </field>                 	             
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>Content</string></field>
+		                  <field name="applicationName"><string>RSSReaderPortlet</string></field>
+			          <field name="displayName"><string>RSS Reader Portlet</string></field>
+			          <field name="description"><string>RSS Reader Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>content</string></field>
+		                  <field name="accessPermissions">					<collection type="java.util.ArrayList" item-type="java.lang.String">													
+						<value><string></string></value>													
+					</collection>
+				</field>                 
+		                </object>
+	                </value>
+	                
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param>	        
+
+
+		<object-param>
+	          <name>forum</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>forum</string></field>
+	            <field  name="displayName"><string>forum</string></field> 
+	            <field  name="description"><string>forum</string></field>
+              <field name="accessPermissions">
+				        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+									<value><string>*:/platform/users</string></value>													
+				        </collection>
+		          </field>                 	             
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>Forum</string></field>
+		                  <field name="applicationName"><string>ForumPortlet</string></field>
+			          <field name="displayName"><string>Forum Portlet</string></field>
+			          <field name="description"><string>Forum Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>forum</string></field>
+		                  <field name="accessPermissions">					<collection type="java.util.ArrayList" item-type="java.lang.String">													
+						<value><string></string></value>													
+					</collection>
+				</field>                 
+		                </object>
+	                </value>
+	                
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param>	        
+
+
+
+
+		<object-param>
+	          <name>mail</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>mail</string></field>
+	            <field  name="displayName"><string>mail</string></field> 
+	            <field  name="description"><string>mail</string></field>
+              <field name="accessPermissions">
+				        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+									<value><string>*:/platform/users</string></value>													
+				        </collection>
+		          </field>                 	             
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>Mail</string></field>
+		                  <field name="applicationName"><string>Mail</string></field>
+			          <field name="displayName"><string>Mail Portlet</string></field>
+			          <field name="description"><string>Mail Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>mail</string></field>
+		                  <field name="accessPermissions">					<collection type="java.util.ArrayList" item-type="java.lang.String">													
+						<value><string></string></value>													
+					</collection>
+				</field>                 
+		                </object>
+	                </value>
+	                
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param>	        
+
+
+		
+	        <object-param>
+	          <name>ecm</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>ecm</string></field>
+	            <field  name="displayName"><string>Ecm</string></field> 
+	            <field  name="description"><string>Ecm</string></field>
+              <field name="accessPermissions">
+				        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+									<value><string>*:/platform/users</string></value>													
+				        </collection>
+		          </field>                 	             
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>ecm</string></field>
+		                  <field name="applicationName"><string>ContentBrowserPortlet</string></field>
+			          <field name="displayName"><string>Content Browser Portlet</string></field>
+			          <field name="description"><string> Portlet Content Browser</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>ecm</string></field>
+		                  <field name="accessPermissions">					<collection type="java.util.ArrayList" item-type="java.lang.String">													
+						<value><string></string></value>													
+					</collection>
+				</field>                 
+		                </object>
+	                </value>
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field name="categoryName"><string>ecm</string></field>
+		                  <field name="applicationName"><string>FileExplorerPortlet</string></field>
+						          <field name="displayName"><string>FileExplorer Portlet</string></field>
+						          <field name="description"><string>FileExplorer Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>ecm</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/users</string></value>													
+								        </collection>
+						          </field>                 
+		                </object>
+	                </value>
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param>
+
+
+
+
+	        <object-param>
+	          <name>dashboard</name>
+	          <description>description</description>
+	          <object type="org.exoplatform.application.registry.ApplicationCategory">
+	            <field  name="name"><string>dashboard</string></field>
+	            <field  name="displayName"><string>Dashboard</string></field> 
+	            <field  name="description"><string>Dashboard</string></field>
+              <field name="accessPermissions">
+				        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+									<value><string>*:/platform/users</string></value>													
+				        </collection>
+		          </field>                 	             
+	            <field  name="applications">
+		            <collection type="java.util.ArrayList">
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field  name="categoryName"><string>Dashboard</string></field>
+		                  <field name="applicationName"><string>DashboardPortlet</string></field>
+			          <field name="displayName"><string>Dashboard Portlet</string></field>
+			          <field name="description"><string>Dashboard Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>dashboard</string></field>
+		                  <field name="accessPermissions">					<collection type="java.util.ArrayList" item-type="java.lang.String">													
+						<value><string>*:/platform/users</string></value>													
+					</collection>
+				</field>                 
+		                </object>
+	                </value>
+	                <value>                 
+		                <object type="org.exoplatform.application.registry.Application">                     
+		                  <field name="categoryName"><string>dashboard</string></field>
+		                  <field name="applicationName"><string>GadgetPortlet</string></field>
+						          <field name="displayName"><string>Gadget Wrapper Portlet</string></field>
+						          <field name="description"><string>Gadget Wrapper Portlet</string></field>
+		                  <field name="applicationType"><string>portlet</string></field>
+		                  <field name="applicationGroup"><string>dashboard</string></field>
+		                  <field name="accessPermissions">
+								        <collection type="java.util.ArrayList" item-type="java.lang.String">													
+													<value><string>*:/platform/users</string></value>													
+								        </collection>
+						          </field>                 
+		                </object>
+	                </value>
+		            </collection>                               
+	            </field> 
+	          </object>        
+	        </object-param>
+	      </init-params>
+	    </component-plugin>
+	  </component-plugins>      
+ </component>       
+</configuration>
