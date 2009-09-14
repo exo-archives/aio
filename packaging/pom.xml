@@ -1,0 +1,260 @@
+<project>
+  <parent>
+    <groupId>org.exoplatform.allinone</groupId>
+    <artifactId>aio</artifactId>
+    <version>2.5-SNAPSHOT</version>
+  </parent> 
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>exo.allinone.web.portal.packaging</artifactId>
+  <packaging>pom</packaging>
+  <name>eXo AllInOne web module</name> 
+
+  <dependencies>
+
+      <dependency>
+         <groupId>org.exoplatform.delivery</groupId>
+         <artifactId>exopackage-conf</artifactId>
+         <type>zip</type>
+         <version>20090901</version>
+      </dependency>
+
+      <!-- CS -->
+      <dependency>
+         <groupId>org.exoplatform.cs</groupId>
+         <artifactId>exo.cs.server.tomcat.patch</artifactId>
+         <version>${org.exoplatform.cs.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.exoplatform.cs</groupId>
+         <artifactId>exo.cs.web.portal</artifactId>
+         <type>war</type>
+         <version>${org.exoplatform.cs.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.exoplatform.cs</groupId>
+         <artifactId>exo.cs.web.webservice</artifactId>
+         <version>${org.exoplatform.cs.version}</version>
+      </dependency>
+      
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.gadgets-server</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.webui.dms</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.wcm</groupId><artifactId>exo.ecm.wcm.portlet.newsletter</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.core</groupId><artifactId>exo.core.component.gifbackport</artifactId><version>${org.exoplatform.core.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ks</groupId><artifactId>exo.ks.eXoApplication.forum.webapp</artifactId><version>${org.exoplatform.ks.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.webui.core</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.mail.webapp</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.web.rest</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.portlet.ecm.core.web</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.portlet.dashboard</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portletcontainer</groupId><artifactId>exo.pc.component.core</artifactId><version>${org.exoplatform.pc.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.component.search</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ks</groupId><artifactId>exo.ks.web.ksResources</artifactId><version>${org.exoplatform.ks.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.component.scripting</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.portlet.presentation</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.web.eXoResources</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.portlet.exoadmin</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.component.xml-parser</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portletcontainer</groupId><artifactId>exo.pc.component.plugins.wsrp2</artifactId><version>${org.exoplatform.pc.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.component.wcm</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.content.webapp</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.gadgets-core</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.webui.wcm</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.webui.portal</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.portlet.web</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.portlet.formgenerator</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.calendar.service</artifactId><version>${org.exoplatform.cs.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ws</groupId><artifactId>exo.ws.frameworks.cometd.webapp</artifactId><version>${org.exoplatform.ws.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.content.service</artifactId><version>${org.exoplatform.cs.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.web.eXoDMSResources</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.component.publication</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.web.eXoSkinMac</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.component.cms</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portletcontainer</groupId><artifactId>exo.pc.applications.wsrp</artifactId><version>${org.exoplatform.pc.version}</version><type>exopc-war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ks</groupId><artifactId>exo.ks.eXoApplication.common</artifactId><version>${org.exoplatform.ks.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.contact.webapp</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.webui.ext</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.eXoGadgets</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ks</groupId><artifactId>exo.ks.eXoApplication.faq.service</artifactId><version>${org.exoplatform.ks.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.component.application-registry</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ws</groupId><artifactId>exo.ws.frameworks.cometd.service</artifactId><version>${org.exoplatform.ws.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.chatbar.webapp</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.wcm</groupId><artifactId>exo.ecm.wcm.component.newsletter</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.connector.fckeditor</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.gadgets</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.web.eXoWCMResources</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ks</groupId><artifactId>exo.ks.eXoApplication.faq.webapp</artifactId><version>${org.exoplatform.ks.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.portlet.searches</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portletcontainer</groupId><artifactId>exo.pc.component.plugins.wsrp1</artifactId><version>${org.exoplatform.pc.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.component.deployment</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.connector.fckeditor</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.webos</groupId><artifactId>exo.webos.web.webosResources</artifactId><version>${org.exoplatform.webos.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.calendar.webapp</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.component.publication</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.web.eXoSkinVista</artifactId><version>${org.exoplatform.portal.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.ws</groupId><artifactId>exo.ws.frameworks.json</artifactId><version>${org.exoplatform.ws.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ecm.dms.core</groupId><artifactId>exo.ecm.dms.core.portlet.ecm.ext.config</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ks</groupId><artifactId>exo.ks.web.webservice</artifactId><version>${org.exoplatform.ks.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.web.csResources</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.webui.eXo</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.mail.service</artifactId><version>${org.exoplatform.cs.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.component.portal</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.ks</groupId><artifactId>exo.ks.eXoApplication.forum.service</artifactId><version>${org.exoplatform.ks.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.contact.service</artifactId><version>${org.exoplatform.cs.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.server.tomcat.plugin</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.component.web</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portal</groupId><artifactId>exo.portal.component.dashboard</artifactId><version>${org.exoplatform.portal.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.portletcontainer</groupId><artifactId>exo.pc.component.plugins.pc</artifactId><version>${org.exoplatform.pc.version}</version><type>jar</type></dependency>
+
+<dependency><groupId>com.thoughtworks.xstream</groupId><artifactId>xstream</artifactId><version>1.2</version><type>jar</type></dependency>
+
+<dependency><groupId>org.apache.shindig</groupId><artifactId>shindig-social-api</artifactId><version>0.8.1-1-r719456</version><type>jar</type></dependency>
+
+<!-- Workflow -->
+
+<dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.component.workflow.impl.jbpm.facade</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>jar</type></dependency><!-- 1.0.2-->
+
+<dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.component.jbpmconfig</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.1-->
+
+<dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation.bp</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.bp.jbpm.content.publishing</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.1-->
+
+<dependency><groupId>org.exoplatform.ecm.workflow.bp</groupId><artifactId>exo.ecm.workflow.bp.jbpm.payraise</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>jar</type></dependency><!-- 1.0.2-->
+
+<dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.component.workflow.api</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>jar</type></dependency><!-- 1.0.2-->
+
+<dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.component.webui</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.1-->
+
+<dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.component.workflow.impl.jbpm.engine</artifactId><version>3.0</version><type>jar</type></dependency><!-- 3.0-->
+
+<dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.component.plugin</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.1-->
+
+<dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.component.workflowPublication</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.1-->
+
+<dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.webui.workflow</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>jar</type></dependency><!-- 1.0.2-->
+
+<dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.portlet.workflow</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>war</type></dependency><!-- 1.0.2-->
+
+<dependency><groupId>org.exoplatform.ecm.workflow.bp</groupId><artifactId>exo.ecm.workflow.bp.jbpm.holiday</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>jar</type></dependency><!-- 1.0.2-->
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.organization.client.openfire</artifactId><version>${org.exoplatform.cs.version}</version><type>jar</type></dependency><!-- 1.0.2-->
+
+<!-- CS -->
+<dependency><groupId>jabber.smack</groupId><artifactId>smackx</artifactId><version>3.0.4</version><type>jar</type></dependency>
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.organization.service</artifactId><version>${org.exoplatform.cs.version}</version><type>jar</type></dependency><!-- 1.3-->
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.chat.service</artifactId><version>${org.exoplatform.cs.version}</version><type>jar</type></dependency><!-- 1.3-->
+
+<dependency><groupId>jabber.smack</groupId><artifactId>smack</artifactId><version>3.0.4</version><type>jar</type></dependency><!-- 3.0.4-->
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.chat.webapp</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency><!-- 1.3-->
+
+<dependency><groupId>org.exoplatform.cs</groupId><artifactId>exo.cs.eXoApplication.organization.webapp</artifactId><version>${org.exoplatform.cs.version}</version><type>war</type></dependency><!-- 1.3-->
+
+      <dependency>
+         <groupId>org.exoplatform.jcr</groupId>
+         <artifactId>exo.jcr.framework.web</artifactId>
+         <version>${org.exoplatform.jcr.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.exoplatform.jcr</groupId>
+         <artifactId>exo.jcr.component.webdav</artifactId>
+         <version>${org.exoplatform.jcr.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.exoplatform.jcr</groupId>
+         <artifactId>exo.jcr.component.ftp</artifactId>
+         <version>${org.exoplatform.jcr.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.exoplatform.core</groupId>
+         <artifactId>exo.core.component.ldap</artifactId>
+         <version>${org.exoplatform.core.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.exoplatform.core</groupId>
+         <artifactId>exo.core.component.organization.ldap</artifactId>
+         <version>${org.exoplatform.core.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.exoplatform.ws</groupId>
+         <artifactId>exo.ws.frameworks.servlet</artifactId>
+         <version>${org.exoplatform.ws.version}</version>
+      </dependency>
+
+   </dependencies>
+
+
+</project>
