@@ -16,12 +16,13 @@ List options = new ArrayList();
   );
  
 
-  SelectItemCategory webos = new SelectItemCategory("WebOSPortal");
+/*  SelectItemCategory webos = new SelectItemCategory("WebOSPortal");
   webos.addSelectItemOption(
     new PortalTemplateConfigOption("", "webos", "WebOS Portal", "WebOSPortal").addGroup("/platform/guests")
   );
   
   options.add(webos);
+*/
   options.add(guest);
   options.add(acme);
   

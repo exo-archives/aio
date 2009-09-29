@@ -10,7 +10,7 @@ ResourceBundle res = contextres.getApplicationResourceBundle();
 SelectItemCategory normalPageConfigs = new SelectItemCategory("normalPageConfigs") ;
 categories.add(normalPageConfigs);
 normalPageConfigs.addSelectItemOption(new SelectItemOption("normalPage.EmptyLayout", "empty", "EmptyLayout"));
-normalPageConfigs.addSelectItemOption(new SelectItemOption("normalPage.DesktopImage", "desktop", "DesktopImage"));
+/* normalPageConfigs.addSelectItemOption(new SelectItemOption("normalPage.DesktopImage", "desktop", "DesktopImage"));  */
 normalPageConfigs.addSelectItemOption(new SelectItemOption("normalPage.DashboardLayout", "dashboard", "DashboardLayout"));
 
 SelectItemCategory appPageConfigs = new SelectItemCategory("WCM Page Configs") ;
