@@ -15,6 +15,7 @@
 
   <modules>    
     <module>web/portal</module>
+    <module>server/tomcat/patch</module>
   </modules>
 
   <build>
