@@ -2,7 +2,7 @@
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
     <artifactId>aio</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5</version>
   </parent> 
 
   <modelVersion>4.0.0</modelVersion>
@@ -13,11 +13,11 @@
   <dependencies>
    <!-- WCM -->
     <dependency>
-      <groupId>org.exoplatform.ecm.wcm</groupId>
+      <groupId>org.exoplatform.ecm</groupId>
       <artifactId>exo.ecm.wcm.web.portal</artifactId>
       <version>${org.exoplatform.ecm.wcm.version}</version>
           <type>war</type>
-         <!--scope>runtime</scope-->
+         <scope>runtime</scope>
     </dependency>
     
     <!-- WebOS -->
@@ -26,7 +26,7 @@
       <artifactId>exo.webos.web.portal</artifactId>
       <version>${org.exoplatform.webos.version}</version>
           <type>war</type>
-         <!--scope>runtime</scope-->
+         <scope>runtime</scope>
     </dependency>
     
     <!-- Workflow -->
