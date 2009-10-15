@@ -1,0 +1,56 @@
+<project>
+  <parent>
+    <groupId>org.exoplatform.allinone</groupId>
+    <artifactId>aio</artifactId>
+    <version>1.5</version>
+  </parent> 
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>exo.aio.web.webservices</artifactId>
+  <version>${org.exoplatform.allinone.version}</version>
+  <packaging>jar</packaging>
+  <name>eXo CS WebService for AIO</name>
+  <url>http://www.exoplatform.org</url>
+  <description>eXo webservice</description>
+  
+  <dependencies> 
+    <dependency>
+      <groupId>org.exoplatform.cs</groupId>
+      <artifactId>exo.cs.web.webservice</artifactId>
+      <version>${org.exoplatform.cs.version}</version>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack-dependencies</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <excludeTransitive>true</excludeTransitive>
+              <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+              <includes>**/*</includes>
+	            <excludes>**/configuration.xml</excludes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes><include>**/*</include></includes>
+      </resource>
+    </resources>
+  </build>
+
+</project>
