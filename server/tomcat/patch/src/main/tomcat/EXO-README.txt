@@ -16,13 +16,14 @@ Follow the procedure of installation and start eXo All in One now !
 =============
 
 All in One 1.6 contains the following upgrades:
+- JCR 1.10.5.1
 - Portal 2.5.6.1
-- DMS 2.5.2
+- DMS 2.5.2.1
 - WCM 1.2.1
-- WF 1.0.4
-- CS 1.3.2
-- KS 1.2.1
-- WebOS 1.5.3
+- WF 1.0.4.1
+- CS 1.3.2.1
+- KS 1.2.1.1
+- WebOS 1.5.3.1
 
 =========
  Install
@@ -54,6 +55,22 @@ INFO: Server startup in 153590 ms
 
     * eXo All in One is now ready to use. Point your browser to http://localhost:8080/portal
 
+
+==================
+ TROUBLESHOOTING
+==================
+
+Our applications are designed in a way that eXoResources has to be deployed before other resources (component resources or custom resources).
+Hence, we named them so they are in alphabetical order. Unfortunately, Tomcat cannot insure that they will be deployed in a specific order, 
+especially alphabetical order. We already encountered errors because eXoResources was not deployed first, which led us to modify Tomcat.
+
+http://wiki.apache.org/tomcat/FAQ/Miscellaneous#Q27
+
+If you meet CSS or Javascript exception, because some files could not be loaded, the solution may be to replace the file {tomcat-home}/lib/catalina.jar 
+by this one: {tomcat-home}/patch/catalina.jar. This jar contains a modified HostConfig class that sorts the array of files in /conf/Catalina/localhost 
+in alphabetical order. The source file of this class is also available in {tomcat-home}/patch/HostConfig.java if you'd like to take a look (line 541), 
+or build tomcat yourself. 
+We used the version Tomcat-6.0.16 of the source for this build.
 
 
 ===========
