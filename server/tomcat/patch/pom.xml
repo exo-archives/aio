@@ -14,9 +14,9 @@
 
  <dependencies>
    <dependency>
-      <groupId>org.exoplatform.portal</groupId>
-      <artifactId>exo.portal.server.tomcat.patch</artifactId>
-      <version>${org.exoplatform.portal.version}</version>
+      <groupId>org.exoplatform.cs</groupId>
+      <artifactId>exo.cs.server.tomcat.patch</artifactId>
+      <version>${org.exoplatform.cs.version}</version>
       <type>jar</type>
     </dependency>
   </dependencies>
@@ -37,7 +37,7 @@
             <configuration>
               <outputDirectory>${project.build.outputDirectory}</outputDirectory>
               <includes>**/*</includes>
-	      <excludes>**/eXo.*</excludes>
+	            <excludes>**/eXo.*,**/server.xml</excludes>
             </configuration>
           </execution>
         </executions>
