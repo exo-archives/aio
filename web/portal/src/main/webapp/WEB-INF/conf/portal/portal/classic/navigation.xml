@@ -44,5 +44,7 @@
 			<visible>false</visible>			
 			<page-reference>portal::classic::searchResult</page-reference>	    
 		</node>
+		    
+		
 	</page-nodes>
 </node-navigation>

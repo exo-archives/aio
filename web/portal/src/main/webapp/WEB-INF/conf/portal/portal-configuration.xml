@@ -89,6 +89,7 @@
 	              <collection type="java.util.HashSet">
 	              	<value><string>platform/administrators</string></value>
 	              	<value><string>platform/web-contributors</string></value>
+	              	<value><string>platform/users</string></value>
 	              </collection>
 	            </field>
 	            <field  name="ownerType"><string>group</string></field>
