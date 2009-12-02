@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <UIWizardPageSelectLayoutForm>
+    <label>
+      <appPages>
+        <Presentation>Ứng dụng hiển thị đơn nội dung</Presentation>
+        <ContentListViewer>Ứng dụng hiển thị đa nội dung</ContentListViewer>
+        <Search>Tìm kiếm</Search>
+        <Sitemap>Sơ đồ trang</Sitemap>
+      </appPages>
+    </label>
+  </UIWizardPageSelectLayoutForm>
+  <ClassicSite>
+    <label>Site Classic</label>
+  </ClassicSite>
+  <ACMESite>
+    <label>Site ACME</label>
+  </ACMESite>
+  <Views>
+    <label>
+      <wcm-view>WCM View</wcm-view>
+      <admin-view>Admin View</admin-view>
+      <icon-view>Icon View</icon-view>
+      <thumbails-view>Thumbnails View</thumbails-view>
+      <cover-flow>Cover Flow View</cover-flow>
+    </label>
+  </Views>
+  <!--/n  ####################################################################################
+  #		../src/main/webapp/WEB-INF/conf/wcm/artifacts/application-templates        		 #
+  #		/content-list-viewer/paginators/UIDefaultPaginator.gtmpl		   		   					 #													
+  ####################################################################################
+  -->
+  <UIPaginatorDefault>
+    <label>
+      <previous>Trước</previous>
+      <next>Sau</next>
+    </label>
+  </UIPaginatorDefault>
+  <UIDefaultSearchResult>
+    <label>
+      <resutlsCaption>Kết quả</resutlsCaption>
+      <ofAboutCaption>trong khoảng</ofAboutCaption>
+      <forCaption>cho</forCaption>
+      <timeUnitCaption>giây</timeUnitCaption>
+      <kb>kB</kb>
+      <noresult>Không có kết quả</noresult>
+      <similar>Tương tự</similar>
+      <draft>Dự thảo</draft>
+    </label>
+    <action>
+    	<edit>Chỉnh sửa</edit>
+    </action>
+  </UIDefaultSearchResult>
+  <!--/n  ####################################################################################
+  #		../src/main/webapp/WEB-INF/conf/wcm/artifacts/application-templates            #
+  #		/content-list-viewer/list-by-folder/UIContentListPresentationDefault.gtmpl     #													
+  ####################################################################################
+  -->
+  <UIContentListPresentationDefault>
+      <action>
+        <refresh>Làm mới</refresh>
+        <edit>Chỉnh sửa</edit>
+        <content-not-found>Thư mục hiện thời không có sản phẩm nào.</content-not-found>
+      </action>
+      <label>
+	      <readmore>Chi tiết</readmore>
+	      <draft>Dự thảo</draft>      
+      </label>
+  </UIContentListPresentationDefault>  
+  <!--/n  ####################################################################################
+  -->
+  <UITabPane>
+    <title>
+      <metadata>
+        <siteMetadata>Site Metadata</siteMetadata>
+      </metadata>
+    </title>
+  </UITabPane>
+  <ContentType>
+    <lable>
+      <SiteBreadcrum>Thanh hiển thị vị trí hiện tại</SiteBreadcrum>
+      <SiteNavigation>Thanh định hướng</SiteNavigation>
+      <Twocolumnslayoutwebcontent>Bố cục nội dung trang web có hai cột</Twocolumnslayoutwebcontent>
+      <Pictureonheadlayoutwebcontent>Bố cục nội dung trang web có một ảnh</Pictureonheadlayoutwebcontent>
+      <Sitesearchboxwebcontent>hộp tìm kiếm</Sitesearchboxwebcontent>
+      <Freelayoutwebcontent>Bố cục tuỳ biến</Freelayoutwebcontent>
+      <Tablelayoutwebcontent>Bố cục bảng </Tablelayoutwebcontent>
+    </lable>
+  </ContentType>
+  <!--  
+  ##########################################################################################
+  # exo.ecm.wcm.webui.wcm.groovy.wcm.webui                                                 # 
+  ##########################################################################################
+  -->
+  <UITabPane>
+  	<title>
+  		<UIContentBrowsePanel>Cây tìm kiếm nội dung web</UIContentBrowsePanel>
+  		<UIContentSearchForm>Bảng tìm kiếm nội dung web</UIContentSearchForm>
+  		<UIContentSearchResult>Bảng kết quả</UIContentSearchResult>
+  		<WebContentMetadataPopup></WebContentMetadataPopup>
+  	</title>
+  </UITabPane>
+  <UIContentBrowsePanel>
+    <SelectContent>
+      <leftcolumn>
+        <title>Chọn thư mục để hiển thị các dữ liệu bên trong nó</title>
+      </leftcolumn>
+      <rightcolumn>
+        <title>Dưới đây là những dữ liệu có thể được lựa chọn</title>
+      </rightcolumn>
+      <searchbox>
+        <title>Tìm kiếm</title>
+      </searchbox>
+    </SelectContent>
+    <selectBoxValues>
+	    <FilterBy>Lọc bởi</FilterBy>
+    	<WebContent>Dữ liệu web</WebContent>
+    	<DMSDocument>Tài liệu</DMSDocument>
+    	<Media>Tài nguyên khác</Media>
+    </selectBoxValues>
+  </UIContentBrowsePanel>
+  <UIContentSearchForm>
+  	<empty-field>Bạn không nhập giá trị để tìm kiếm! Xin vui lòng nhập giá trị</empty-field>
+		<invalid-date>Giá trị "Đến ngày" phải lớn hơn giá trị "Từ ngày"</invalid-date>
+		<invalid-nodeType>Kiểu node"{0}" không đúng! Hãy kiểm tra lại.</invalid-nodeType>
+  	<action>
+  		<SearchWebContent>Tìm kiếm</SearchWebContent>
+  	</action>
+  </UIContentSearchForm>
+  <UIContentSelector>
+  	<header>
+  		<title>Tên</title>
+  		<score>Điểm</score>
+  		<action>Hoạt động</action>
+  		<publicationstate>Ngày xuát bản</publicationstate>
+  	</header>
+  	<action>
+  		<title>
+  			<Select>Chọn</Select>
+  			<View>Hiển thị</View>
+  		</title>
+  	</action>
+  </UIContentSelector>
+  <UIContentSearchForm>
+  	<title>
+  		<Location>Tên trang</Location>
+  		<SearchByName>Tìm kiếm theo tên</SearchByName>
+  		<Fulltext>Một từ hoặc một ngữ của nội dung</Fulltext>
+  		<Property>Thuộc tính</Property>
+  		<Contain>Chứa</Contain>
+  		<FromDate>từ ngày</FromDate>
+  		<ToDate>đến ngày</ToDate>
+  		<DocumentType>Kiểu tài liệu</DocumentType>
+  	</title>
+  </UIContentSearchForm>
+  <WebContentNodeTypePopup>
+  	<title>
+  		<UIContentNodeTypeSelector>Form chọn kiểu tài liệu</UIContentNodeTypeSelector>
+  	</title>
+  </WebContentNodeTypePopup>
+  <UIContentNodeTypeSelector>
+  	<action>
+  		<Save>Lưu trữ</Save>
+  		<Cancel>Huỷ bỏ</Cancel>
+  	</action>
+  </UIContentNodeTypeSelector>
+  <WebContentMetadataPopup>
+  	<title>
+  		<UIContentPropertySelector>Form chọn kiểu thuộc tính</UIContentPropertySelector>
+  	</title>
+  </WebContentMetadataPopup>
+  <UIContentPropertySelector>
+  	<action>
+  		<Add>Thêm</Add>
+  		<Cancel>Huỷ bỏ</Cancel>
+  	</action>
+  	<label>
+			<metadataType>Kiểu dữ liệu</metadataType>
+			<property_select>Chọn thuộc tính</property_select>
+		</label>
+  </UIContentPropertySelector>
+  <WCMContentView>
+  	<header>
+	  	<title>Tiêu đề</title>
+	  	<author>Tác giả</author>
+	  	<date>Ngày</date>
+	  	<status>Trạng thái</status>
+  	</header>
+  </WCMContentView>
+	<UISearchPageLayoutDefault>
+		<label>
+			<quickEditTitle>Chỉnh sửa nhanh</quickEditTitle>
+		</label>
+	</UISearchPageLayoutDefault>
+	<UIExoStart>
+		<tooltip>
+			<homepage>Trang chủ</homepage>
+		</tooltip>
+	</UIExoStart>
+	<UIPageSelectorPanel>
+		<header>
+			<path>Đường dẫn</path>
+			<action>Hành động</action>
+		</header>
+		<msg>
+			<child-not-found>Không có trang nào được tìm thấy</child-not-found>
+		</msg>
+	</UIPageSelectorPanel>
+	<UIMessageBoard>
+		<msg>
+			<get-resource-resolver>Có lôi khi lấy mẫu</get-resource-resolver>
+			<render>Có lỗi khi tải trang</render>
+			<select-navigation>Có lỗi khi chon điều hướng</select-navigation>
+			<get-tree-node>Có lỗi khi lấy node</get-tree-node>
+		</msg>
+	</UIMessageBoard>
+	
+	<ECMNameValidator>
+    <msg>
+      <Invalid-char>Có một vài kí tự không hợp lệ trong trường'{0}'. Hãy chọn giá trị khác!</Invalid-char>
+      <empty-input>Giá trị của trường '{0}' là rỗng!</empty-input>
+    </msg>
+  </ECMNameValidator>
+  <ZeroValidator>
+  	<msg>
+  		<Invalid-number>Số 0 không được chấp nhận trong trường '{0}'</Invalid-number>
+  	</msg>
+  </ZeroValidator>
+  
+	<Drives>
+  	<label>
+  		<ManagedSites>Quản lý tất cả các website</ManagedSites>
+  		<SharedSite>Website chung</SharedSite>
+  	</label>
+  </Drives> 
+   
+  <UIWebContentSearchForm>
+  	<msg>
+  		<invalid-format>Định dạng ngày tháng ở trường '{0}' không đúng</invalid-format>
+  	</msg>
+  </UIWebContentSearchForm>
+  
+  <UIContentDialogForm>
+    <action>
+      <SaveDraft>Lưu nháp</SaveDraft>
+      <FastPublish>Xuất bản nhanh</FastPublish>
+      <Preferences>Tùy chọn</Preferences>
+      <Close>Đóng</Close>
+    </action>
+  </UIContentDialogForm>
+  
+  <UIPermissionManager>
+  	<label>
+      <UIPermissionInputSetWithAction>Permission</UIPermissionInputSetWithAction>
+      <UIPermissionStringInput></UIPermissionStringInput>
+      <UIAccessibleCheckboxInput>Edit Right</UIAccessibleCheckboxInput>
+      <UIEditableCheckboxInput>Access Right</UIEditableCheckboxInput>
+    </label>
+    <action>
+			<Save>Lưu lại</Save>
+      <Clear>Làm lại</Clear>
+		</action>
+  </UIPermissionManager>
+  
+  <UIPermissionManagerGrid>
+    <action>
+      <title>
+        <Edit>Sửa</Edit>
+        <Delete>Xoá</Delete>
+      </title>
+    </action>
+    <header>
+      <owner>Permission</owner>
+      <accessible>Truy cập</accessible>
+      <editable>Chỉnh sửa</editable>
+      <action>Hành động</action>
+      <userOrGroup-required>Yêu cầu chọn nhóm hoặc người dùng</userOrGroup-required>
+      <checkbox-require>Bạn nên thiết lập quyền</checkbox-require>
+    </header>
+    <msg>
+      <confirm-delete-permission>Bạn có chắc để xoá</confirm-delete-permission>
+      <no-permission-remove>Không có quyền</no-permission-remove>
+      <access-denied>Truy cập bị từ chối</access-denied>
+    </msg>
+  </UIPermissionManagerGrid>
+
+	<UIPermissionInputSetWithAction>
+    <title>
+      <SelectUser>Select user</SelectUser>
+      <SelectMember>Select member</SelectMember>
+      <AddAny>Add any permission</AddAny>
+    </title>
+  </UIPermissionInputSetWithAction>
+  
+  <UIUserSelectorPopupWindow>
+  	<title>
+  		<UIUserContainer>Chọn người dùng</UIUserContainer>
+  	</title>
+  </UIUserSelectorPopupWindow>
+  
+  <UIGroupSelectorPopupWindow>
+  	<title>
+  		<UIGroupMemberSelector>Chọn nhóm</UIGroupMemberSelector>
+  	</title>
+  </UIGroupSelectorPopupWindow>
+</bundle>

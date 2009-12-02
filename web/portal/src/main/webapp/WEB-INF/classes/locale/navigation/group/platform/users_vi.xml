@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <platform>
+    <users>
+      <iframe>IFrame</iframe>
+      <file-explorer>Quản lý tài liệu</file-explorer>
+      <content-browser>Quản lý nội dung</content-browser>
+      <content-creator>Tạo nhanh nội dung</content-creator>
+      <workflow-controller>Trung tâm quá trình nghiệp vụ</workflow-controller>
+      <collaboration>
+      	<contact>Contacts</contact>
+      	<mail>Mail</mail>
+      	<calendar>Agenda</calendar>
+      	<chat>Chat</chat>
+      	<chatbar>Quick chat</chatbar>
+      </collaboration>
+      <forum>Forum</forum>
+      <answers>Answers</answers>
+      <faq>FAQ</faq>
+      <tour>Take a tour</tour>
+    </users>
+  </platform>
+</bundle>
