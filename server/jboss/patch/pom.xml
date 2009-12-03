@@ -6,16 +6,16 @@
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>aio-jboss-patch</artifactId>
+  <artifactId>aio-jboss-ear-patch</artifactId>
   <packaging>jar</packaging>
-  <name>eXo Tomcat Server</name>
+  <name>eXo JBoss Server - EAR</name>
   <url>http://www.exoplatform.org</url>
-  <description>eXo Tomcat Server</description>
+  <description>eXo JBoss Server - EAR packaging</description>
 
  <dependencies>
    <dependency>
       <groupId>org.exoplatform.cs</groupId>
-      <artifactId>exo.cs.server.jboss.patch</artifactId>
+      <artifactId>exo.cs.server.jboss.patch-ear</artifactId>
       <version>${org.exoplatform.cs.version}</version>
       <type>jar</type>
     </dependency>
