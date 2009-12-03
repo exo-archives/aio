@@ -15,29 +15,29 @@ normalPageConfigs.addSelectItemOption(new SelectItemOption("normalPage.Dashboard
 
 SelectItemCategory appPageConfigs = new SelectItemCategory("WCM Page Configs") ;
 categories.add(appPageConfigs) ;
-appPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.appPages.Presentation"), "single-content-viewer", "single-content-viewer")) ;
-appPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.appPages.ContentListViewer"), "content-list-viewer", "content-list-viewer")) ;
-appPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.appPages.Search"), "simple-searches-page", "Search")) ;
-appPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.appPages.Sitemap"), "sitemap-page", "Sitemap")) ;
+appPageConfigs.addSelectItemOption(new SelectItemOption("SingleContentViewer", "single-content-viewer", "SingleContentViewer")) ;
+appPageConfigs.addSelectItemOption(new SelectItemOption("ContentListViewer", "content-list-viewer", "ContentListViewer")) ;
+appPageConfigs.addSelectItemOption(new SelectItemOption("Search", "simple-searches-page", "Search")) ;
+appPageConfigs.addSelectItemOption(new SelectItemOption("Sitemap", "sitemap-page", "Sitemap")) ;
 
-SelectItemCategory columnPageConfigs = new SelectItemCategory("columnPageConfigs") ;
+SelectItemCategory columnPageConfigs = new SelectItemCategory("Column Page Configs") ;
 categories.add(columnPageConfigs);  
-columnPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.columnPage.TwoColumnsLayout"), "two-columns", "TwoColumnsLayout"));
-columnPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.columnPage.ThreeColumnsLayout"), "three-columns", "ThreeColumnsLayout"));
+columnPageConfigs.addSelectItemOption(new SelectItemOption("TwoColumnsLayout", "two-columns", "TwoColumnsLayout"));
+columnPageConfigs.addSelectItemOption(new SelectItemOption("ThreeColumnsLayout", "three-columns", "ThreeColumnsLayout"));
 
-SelectItemCategory rowPageConfigs = new SelectItemCategory("rowPageConfigs") ;
+SelectItemCategory rowPageConfigs = new SelectItemCategory("Row Page Configs") ;
 categories.add(rowPageConfigs); 
-rowPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.rowPage.TwoRowsLayout"), "two-rows", "TwoRowsLayout"));
-rowPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.rowPage.ThreeRowsLayout"), "three-rows", "ThreeRowsLayout"));
+rowPageConfigs.addSelectItemOption(new SelectItemOption("TwoRowsLayout", "two-rows", "TwoRowsLayout"));
+rowPageConfigs.addSelectItemOption(new SelectItemOption("ThreeRowsLayout", "three-rows", "ThreeRowsLayout"));
 
-SelectItemCategory tabsPageConfigs = new SelectItemCategory("tabsPageConfigs") ;
+SelectItemCategory tabsPageConfigs = new SelectItemCategory("Tabs Page Configs") ;
 categories.add(tabsPageConfigs) ;
-tabsPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.tabsPage.TwoTabsLayout"), "two-tabs", "TwoTabsLayout")) ;
-tabsPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.tabsPage.ThreeTabsLayout"), "three-tabs", "ThreeTabsLayout")) ;
+tabsPageConfigs.addSelectItemOption(new SelectItemOption("TwoTabsLayout", "two-tabs", "TwoTabsLayout")) ;
+tabsPageConfigs.addSelectItemOption(new SelectItemOption("ThreeTabsLayout", "three-tabs", "ThreeTabsLayout")) ;
 
-SelectItemCategory mixPageConfigs = new SelectItemCategory("mixPageConfigs") ;
+SelectItemCategory mixPageConfigs = new SelectItemCategory("Mix Page Configs") ;
 categories.add(mixPageConfigs); 
-mixPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.mixPage.TwoColumnsOneRowLayout"), "two-columns-one-row", "TwoColumnsOneRowLayout"));
-mixPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.mixPage.OneRowTwoColumnsLayout"), "one-row-two-columns", "OneRowTwoColumnsLayout"));
-mixPageConfigs.addSelectItemOption(new SelectItemOption(res.getString("UIWizardPageSelectLayoutForm.label.mixPage.ThreeRowsTwoColumnsLayout"), "three-rows-two-columns", "ThreeRowsTwoColumnsLayout"));
+mixPageConfigs.addSelectItemOption(new SelectItemOption("TwoColumnsOneRowLayout", "two-columns-one-row", "TwoColumnsOneRowLayout"));
+mixPageConfigs.addSelectItemOption(new SelectItemOption("OneRowTwoColumnsLayout", "one-row-two-columns", "OneRowTwoColumnsLayout"));
+mixPageConfigs.addSelectItemOption(new SelectItemOption("ThreeRowsTwoColumnsLayout", "three-rows-two-columns", "ThreeRowsTwoColumnsLayout"));
 return categories;
