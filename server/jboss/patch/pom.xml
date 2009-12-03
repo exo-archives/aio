@@ -37,7 +37,7 @@
             <configuration>
               <outputDirectory>${project.build.outputDirectory}</outputDirectory>
               <includes>**/*</includes>
-	      <excludes>**/EXO-README.txt</excludes>
+	      <excludes>**/server.xml,**/EXO-README.txt</excludes>
             </configuration>
           </execution>
         </executions>
