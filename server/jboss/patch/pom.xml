@@ -8,9 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>aio-jboss-ear-patch</artifactId>
   <packaging>jar</packaging>
-  <name>eXo JBoss Server - EAR</name>
-  <url>http://www.exoplatform.org</url>
-  <description>eXo JBoss Server - EAR packaging</description>
+  <name>eXo AIO JBoss Server - EAR</name>
 
  <dependencies>
    <dependency>
