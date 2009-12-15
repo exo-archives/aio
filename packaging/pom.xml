@@ -12,6 +12,9 @@
 
   <modules>
     <module>module</module>
+    <module>product</module>
+    <module>pkg</module>
+    <!--module>repo</module-->
   </modules>
   
   <dependencies>
