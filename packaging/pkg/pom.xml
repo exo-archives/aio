@@ -72,7 +72,7 @@
        <dependency>
          <groupId>org.exoplatform.portletcontainer</groupId>
          <artifactId>portletcontainer.packaging.module</artifactId>
-         <version>${org.exoplatform.pc.version}</version>
+         <version>${org.exoplatform.portletcontainer.version}</version>
          <type>js</type>
        </dependency>
        <dependency>
