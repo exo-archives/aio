@@ -2,7 +2,7 @@
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
     <artifactId>aio</artifactId>
-    <version>1.6-SNAPSHOT</version>
+    <version>1.6.1-SNAPSHOT</version>
   </parent>
   
   <modelVersion>4.0.0</modelVersion>
@@ -24,6 +24,63 @@
       <version>${org.exoplatform.portal.version}</version>
       <type>jar</type>
     </dependency>
+
+    <dependency>
+      <groupId>org.exoplatform.ecm.workflow</groupId>
+      <artifactId>exo.ecm.workflow.server.tomcat.patch</artifactId>
+      <version>${org.exoplatform.ecm.workflow.version}</version>
+      <type>jar</type>
+    </dependency>
+
+   <dependency>
+       <groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId>
+       <artifactId>exo.ecm.dms.ext.contentvalidation.component.webui</artifactId>
+       <version>${org.exoplatform.ecm.dms.version}</version>
+       <type>jar</type>
+    </dependency>
+
+    <dependency>
+       <groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId>
+       <artifactId>exo.ecm.dms.ext.contentvalidation.component.bonitaconfig</artifactId>
+       <version>${org.exoplatform.ecm.dms.version}</version>
+       <type>jar</type>
+    </dependency>
+
+    <dependency>
+       <groupId>org.exoplatform.ecm.workflow</groupId>
+       <artifactId>exo.ecm.workflow.component.workflow.impl.bonita</artifactId>
+       <version>${org.exoplatform.ecm.workflow.version}</version>
+       <type>jar</type>
+    </dependency>
+  
+    <dependency>
+       <groupId>org.exoplatform.ecm.workflow.bp</groupId>
+       <artifactId>exo.ecm.workflow.bp.bonita.payraise</artifactId>
+       <version>${org.exoplatform.ecm.workflow.version}</version>
+       <type>jar</type>
+    </dependency>
+
+    <dependency>
+       <groupId>org.exoplatform.ecm.workflow.bp</groupId>
+       <artifactId>exo.ecm.workflow.bp.bonita.holiday</artifactId>
+       <version>${org.exoplatform.ecm.workflow.version}</version>
+       <type>jar</type>
+    </dependency>
+
+    <dependency>
+       <groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId>
+       <artifactId>exo.ecm.dms.ext.contentvalidation.component.workflowPublication</artifactId>
+       <version>${org.exoplatform.ecm.dms.version}</version>
+       <type>jar</type>
+    </dependency>
+
+    <dependency>
+       <groupId>org.exoplatform.ecm.dms.ext.contentvalidation.bp</groupId>
+       <artifactId>exo.ecm.dms.ext.contentvalidation.bp.bonita.content-publishing</artifactId>
+       <version>${org.exoplatform.ecm.dms.version}</version>
+       <type>jar</type>
+    </dependency>
+
   </dependencies>
   
 </project>
