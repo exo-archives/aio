@@ -79,6 +79,7 @@
       <dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.portlet.workflow</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>war</type></dependency><!-- 1.0.5-SNAPSHOT-->
       <dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.web.eXoWorkflowResources</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>war</type></dependency><!-- 1.0.5-SNAPSHOT-->
       <dependency><groupId>org.exoplatform.ecm.workflow</groupId><artifactId>exo.ecm.workflow.webui.workflow</artifactId><version>${org.exoplatform.ecm.workflow.version}</version><type>jar</type></dependency><!-- 1.0.5-SNAPSHOT-->
+
       <!-- jbpm -->
       <dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.component.jbpmconfig</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.3-SNAPSHOT-->
       <dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation.bp</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.bp.jbpm.content.publishing</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.3-SNAPSHOT-->
@@ -91,6 +92,7 @@
       <!-- bonita -->
       <dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.component.bonitaconfig</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.3-SNAPSHOT-->
       <dependency><groupId>org.exoplatform.ecm.dms.ext.contentvalidation.bp</groupId><artifactId>exo.ecm.dms.ext.contentvalidation.bp.bonita.content-publishing</artifactId><version>${org.exoplatform.ecm.dms.version}</version><type>jar</type></dependency><!-- 2.5.3-SNAPSHOT-->
+
       <dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.component.newsletter</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency><!-- 1.2.2-SNAPSHOT-->
       <dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.component.publication</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency><!-- 1.2.2-SNAPSHOT-->
       <dependency><groupId>org.exoplatform.ecm</groupId><artifactId>exo.ecm.wcm.component.search</artifactId><version>${org.exoplatform.ecm.wcm.version}</version><type>jar</type></dependency><!-- 1.2.2-SNAPSHOT-->
