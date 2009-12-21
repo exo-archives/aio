@@ -11,8 +11,10 @@ function getProduct(version) {
   product.useContentvalidation = true;
   product.contentvalidationVersion = "${org.exoplatform.ecm.dms.version}";
   product.useWorkflow = true;
+  product.version = "${project.version}" ;
   product.workflowVersion = "${org.exoplatform.ecm.workflow.version}" ;
   product.serverPluginVersion = "${org.exoplatform.portal.version}" ;
+  product.workflowJbpmVersion = "${org.exoplatform.ecm.jbpm.version}";
   
   var kernel = Module.GetModule("kernel") ;
   var ws = Module.GetModule("ws");
@@ -90,10 +92,10 @@ function getProduct(version) {
 //  product.addServerPatch("tomcat", cs.server.tomcat.patch) ; 
   product.addServerPatch("tomcat", allinone.patches.tomcat) ;
 //  product.addServerPatch("jboss",  cs.server.jboss.patch) ;
-  product.addServerPatch("jbossear",  allinone.patches.jboss) ;
+  product.addServerPatch("jboss",  allinone.patches.jboss) ;
 //  product.addServerPatch("jbossear",  portal.server.jbossear.patch) ;  
 //  product.addServerPatch("jonas",  portal.server.jonas.patch) ;
-//  product.addServerPatch("ear",  portal.server.websphere.patch) ;
+  product.addServerPatch("wasear",  portal.server.websphere.patch) ;
 
   product.module = allinone ;
   product.dependencyModule = [ kernel, core, eXoPortletContainer, ws, eXoJcr, portal, dms, cs, ks, wcm, webos, workflow ];
