@@ -13,6 +13,13 @@
   <version>1.6.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <scm>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/allinone/branches/1.6.x</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/allinone/branches/1.6.x</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/allinone/branches/1.6.x</url>
+  </scm>
+
+
   <properties>
 
     <org.exoplatform.kernel.version>2.0.9-SNAPSHOT</org.exoplatform.kernel.version>
