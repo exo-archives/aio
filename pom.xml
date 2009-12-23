@@ -10,7 +10,7 @@
   <groupId>org.exoplatform.allinone</groupId>
   <artifactId>aio</artifactId>
   <name>eXo AllInOne Parent</name>
-  <version>1.6.2-SNAPSHOT</version>
+  <version>1.6.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <scm>
