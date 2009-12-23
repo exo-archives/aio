@@ -23,7 +23,7 @@
    <parent>
       <groupId>org.exoplatform.allinone</groupId>
       <artifactId>aio-packaging</artifactId>
-      <version>1.6.1-SNAPSHOT</version>
+      <version>1.6.1</version>
    </parent>
 
    <modelVersion>4.0.0</modelVersion>
@@ -34,6 +34,7 @@
    <properties>
       <product>allinone</product>
       <deploy>tomcat</deploy>
+      <exo.working.dir>${basedir}/target</exo.working.dir>
    </properties>
 
    <dependencies>
@@ -119,13 +120,13 @@
        <dependency>
          <groupId>org.exoplatform.allinone</groupId>
          <artifactId>allinone.packaging.module</artifactId>
-         <version>1.6.1-SNAPSHOT</version>
+         <version>1.6.1</version>
          <type>js</type>
        </dependency> 
        <dependency>
          <groupId>org.exoplatform.allinone</groupId>
          <artifactId>allinone.packaging.product</artifactId>
-         <version>1.6.1-SNAPSHOT</version>
+         <version>1.6.1</version>
          <type>js</type>
        </dependency> 
    </dependencies>
