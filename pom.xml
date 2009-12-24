@@ -10,13 +10,13 @@
   <groupId>org.exoplatform.allinone</groupId>
   <artifactId>aio</artifactId>
   <name>eXo AllInOne Parent</name>
-  <version>1.6.1-SNAPSHOT</version>
+  <version>1.6.1</version>
   <packaging>pom</packaging>
 
   <scm>
-    <connection>scm:svn:http://svn.exoplatform.org/projects/allinone/branches/1.6.x</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/allinone/branches/1.6.x</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/allinone/branches/1.6.x</url>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/allinone/tags/1.6.1</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/allinone/tags/1.6.1</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/allinone/tags/1.6.1</url>
   </scm>
 
   <properties>
