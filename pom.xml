@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.exoplatform.allinone</groupId>
   <artifactId>aio</artifactId>
-  <name>eXo AllInOne Parent</name>
+  <name>eXo All-In-One</name>
   <version>1.6.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
