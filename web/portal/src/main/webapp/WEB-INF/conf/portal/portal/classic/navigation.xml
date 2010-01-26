@@ -11,24 +11,11 @@
 			<page-reference>portal::classic::homepage</page-reference>	    
 		</node>
 		<node>
-			<uri>products</uri>
-			<name>products</name>
+			<uri>parameterizedviewer</uri>
+			<name>parameterizedviewer</name>
 			<label>#{portal.classic.parameterizedviewer}</label>
 			<visible>false</visible>
-			<page-reference>portal::classic::homepage</page-reference>
-			<node>
-				<uri>products/presentation</uri>
-				<name>presentation</name>
-				<label>#{portal.classic.parameterizedviewer}</label>
-				<page-reference>portal::classic::homepage</page-reference>
-				<node>
-					<uri>products/presentation/pcv</uri>
-					<name>pcv</name>
-					<label>#{portal.classic.parameterizedviewer}</label>
-					<visible>false</visible>
-					<page-reference>portal::classic::parameterizedviewer</page-reference>
-				</node>
-			</node>
+			<page-reference>portal::classic::parameterizedviewer</page-reference>
 		</node>
 		<node>
 			<uri>printviewer</uri>
@@ -44,7 +31,13 @@
 			<visible>false</visible>			
 			<page-reference>portal::classic::searchResult</page-reference>	    
 		</node>
-		    
 		
+		<node>
+	    <uri>newAccount</uri>
+	    <name>newAccount</name>
+	    <label>#{portal.classic.newAccount}</label>
+	    <visible>false</visible>
+	    <page-reference>portal::classic::newAccount</page-reference>
+    </node>
 	</page-nodes>
 </node-navigation>
