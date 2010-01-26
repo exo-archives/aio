@@ -7,6 +7,7 @@
       <content-browser>Explorateur de Contenu</content-browser>
       <content-creator>Création Rapide de Contenu</content-creator>
       <workflow-controller>Processus Métiers</workflow-controller>
+      <workflow-administration>Administration des Workflows</workflow-administration>
       <collaboration>
       	<contact>Contacts</contact>
       	<mail>Mail</mail>

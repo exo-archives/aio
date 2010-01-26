@@ -6,7 +6,8 @@
       <file-explorer>File Explorer</file-explorer>
       <content-browser>Content Browser</content-browser>
       <content-creator>Fast Content Creator</content-creator>
-      <workflow-controller>Business Process Controller</workflow-controller>
+      <workflow-controller>Workflow Controller</workflow-controller>
+      <workflow-administration>Workflow Administration</workflow-administration>
       <collaboration>
       	<contact>Contacts</contact>
       	<mail>Mail</mail>

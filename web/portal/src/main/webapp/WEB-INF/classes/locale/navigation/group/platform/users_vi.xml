@@ -7,6 +7,7 @@
       <content-browser>Quản lý nội dung</content-browser>
       <content-creator>Tạo nhanh nội dung</content-creator>
       <workflow-controller>Trung tâm quá trình nghiệp vụ</workflow-controller>
+      <workflow-administration>Workflow Administration</workflow-administration>
       <collaboration>
       	<contact>Contacts</contact>
       	<mail>Mail</mail>
