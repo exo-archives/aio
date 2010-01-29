@@ -1,80 +1,120 @@
 ==============================================
-    Release Notes - All in One - 1.6
+    Release Notes - All In One - 1.6.2
 ==============================================
 
 ===============
  Introduction
 ===============
 
-Thank you for downloading eXo All in One.
-eXo All in One allows you to discover and test all the eXo Products in a single package.
+Thank you for downloading eXo All In One.
+eXo All In One allows you to discover and test all the eXo Products in a single package.
 
-Follow the procedure of installation and start eXo All in One now !
+Follow the procedure of installation and start eXo All In One now !
 
 =============
  What's new?
 =============
 
-All in One 1.6 contains the following upgrades:
-- JCR 1.10.5.1
-- Portal 2.5.6.1
-- DMS 2.5.2.1
-- WCM 1.2.1
-- WF 1.0.4.1
-- CS 1.3.2.1
-- KS 1.2.1.1
-- WebOS 1.5.3.1
+All In One 1.6.2 contains the following products:
+    * JCR 1.10.6
+    * Portal 2.5.7
+    * DMS 2.5.3
+    * WCM 1.2.2
+    * WF 1.0.5
+    * CS 1.3.3
+    * KS 1.2.2
+    * WebOS 1.5.4
 
-=========
- Install
-=========
+===========================
+ Installation Requirements
+===========================
 
-Requirements
-
-    * OS : Windows, Linux or MAC OS.
-    * Memory : 1GB of RAM and at least one 1.5 Ghz processor.
+    * OS : Windows, Linux or MAC OS
+    * Memory : 1GB of RAM and at least one 1.5 Ghz processor
     * Disk : 150MB of disk space is necessary for the install
     * Browser : Firefox 3+ or Internet Explorer 7+
-    * eXo All in One requires a Java 5 environment, make sure the JAVA_HOME environment variable point to a JRE 5 folder
+    * eXo AIO requires a Java 5 environment, make sure the JAVA_HOME environment variable point to a JRE 5 folder
     * the eXo server will run on portal 8080, make sure this port is not currently in use
 
-Launch instructions :
+=====================
+ Launch instructions
+=====================
 
-    * Using command line, go to $TOMCAT_HOME/bin and start the server :
-          o Windows :
+    * Download the chat server :
 
-            eXo.bat run
+      eXo All In One Chat service is a Jabber engine powered by Openfire.
+      eXo will delegate the actual Jabber protocol communication to Openfire.
 
-          o Linux / Mac OS :
+      Warning: eXo AIO 1.6.2 has only been tested with Openfire 3.4.5.
+      Should you try to upgrade yourself, this would be at your own risks.
 
-            chmod +x *.sh ; eXo.sh run
+    * Configure openfire
+    
+      +) http://wiki.exoplatform.org/xwiki/bin/view/CS/Chat+Configuration
 
-    * Wait for the server to start. You should see something like this on the console :
+    * Start chat server:
 
-INFO: Server startup in 153590 ms
+      +) On the Windows platform
 
-    * eXo All in One is now ready to use. Point your browser to http://localhost:8080/portal
+        Open a DOS prompt command, go to exo-openfire/bin and type the command:
+
+        openfired.exe
+
+      +) On Unix/Linux
+
+        Open a terminal, go to exo-openfire/bin and type the command:
+
+        ./openfire start
+
+
+    * Download eXo All In One (Tomcat or JBoss)
+
+    * Using the command line, go your AS bin directory and start the server:
+   
+      +) Windows :
+
+        Tomcat:  eXo.bat run
+        JBoss:   run.bat
+
+      +) Linux / Mac OS :
+
+        Tomcat:  chmod +x *.sh ; eXo.sh run
+        JBoss:   chmod +x *.sh ; run.sh
+
+    * Wait for the server to start. You should see something like this on the console:
+
+        INFO: Server startup in 153590 ms
+
+    * eXo All In One is now ready to use. Point your browser to http://localhost:8080/portal/
 
 
 ==================
- TROUBLESHOOTING
+ Troubleshooting
 ==================
 
-Our applications are designed in a way that eXoResources has to be deployed before other resources (component resources or custom resources).
-Hence, we named them so they are in alphabetical order. Unfortunately, Tomcat cannot insure that they will be deployed in a specific order, 
-especially alphabetical order. We already encountered errors because eXoResources was not deployed first, which led us to modify Tomcat.
 
-http://wiki.apache.org/tomcat/FAQ/Miscellaneous#Q27
+If you meet a JS or a CSS error when you run the Tomcat package on Linux, please take a look at:
 
-If you meet CSS or Javascript exception, because some files could not be loaded, the solution may be to replace the file {tomcat-home}/lib/catalina.jar 
-by this one: {tomcat-home}/patch/catalina.jar. This jar contains a modified HostConfig class that sorts the array of files in /conf/Catalina/localhost 
-in alphabetical order. The source file of this class is also available in {tomcat-home}/patch/HostConfig.java if you'd like to take a look (line 541), 
-or build tomcat yourself. 
-We used the version Tomcat-6.0.16 of the source for this build.
+    * http://jira.exoplatform.org/browse/ALL-188
+      Error: eXo is undefined
+      Source File: http://localhost:8080/portal/public/classic/
+      Line: 2369
+      
+The current workaround is to replace the file:
+    * {tomcat-home}/lib/catalina.jar by the file
+    * {tomcat-home}/patch/catalina.jar
+
+We modified the class HostConfig to sort the webapps by alphabetical order.
+The java file is also available in {tomcat-home}/patch/HostConfig.java if you'd like to take a look (line 541), or compile it yourself. This is Tomcat version 6.0.16.
+
+These errors appear when eXoResources is *not* deployed first. We named the other webapps so they *should* be deployed after, following the alphabetical order.
+However, Tomcat doesn't ensure this order will be respected
+
+    * See also: http://wiki.apache.org/tomcat/FAQ/Miscellaneous#Q27
 
 
 ===========
- RESOURCES
+ Resources
 ===========
 
      Company site        http://www.exoplatform.com
@@ -84,8 +124,67 @@ We used the version Tomcat-6.0.16 of the source for this build.
 
 
 ===========
- CHANGELOG
+ Changelog
 ===========
+
+Version all-1.6.1
+
+** Bug
+    * [ALL-134] - Invalid display of some item is Answer popup menu
+    * [ALL-156] - Chat doesn't work in AIO 1.6 / JBoss ear package
+    * [ALL-157] - The Register page is not created
+    * [ALL-166] - Discussion function does not work well
+    * [ALL-167] - Display error message when trying to save a new repository
+    * [ALL-168] - Can't view the detail content in list content
+    * [ALL-171] - REGISTER in classic site is not working
+    * [ALL-187] - Chat messages are not sent or received
+
+** Task
+    * [ALL-127] - 1.6-SNAPSHOT depends on other products SNAPSHOT
+    * [ALL-178] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 1.6.x
+
+** Sub-task
+    * [ALL-179] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [ALL-180] - Build - Integrate module.js in the project to be used by exopackage and maven-exobuild-plugin
+    * [ALL-184] - Upd maven version from 1.6-SNAPSHOT to 1.6.1-SNAPSHOT
+    * [ALL-193] - Tag the products related to AIO 1.6.1 one by one
+    * [ALL-194] - Check JBPM integration, v3.0.1
+
+	
+Version portal-2.5.7
+
+** Bug
+    * [PORTAL-3379] - Session will be destroyed if there is a request to a portal not exist
+    * [PORTAL-3435] - Change site to current - navigation is changing, page is not.
+    * [PORTAL-3604] - Problem with URL of portal 
+    * [PORTAL-3616] - Double '*' membership type visible when selecting permissions to newly added drive
+    * [PORTAL-3650] - Calculator gadget: when user input many numeral characters, the textbox for displaying will be overflowed characters.
+    * [PORTAL-3659] - [feed back] user has no edit right on page but can edit the page
+    * [PORTAL-3660] - Cannot use @owner@ in portal template anymore
+    * [PORTAL-3675] - ClassCastException in Application registry when creating new category
+    * [PORTAL-3676] - Error when delete a portal.
+    * [PORTAL-3677] - IPC error with simple example
+    * [PORTAL-3682] - UIFormTextAreaInput.java doesn't extend UIFormStringInput anymore: breaks build in other products!
+    * [PORTAL-3689] -  No possible accented characters in the user profile
+    * [PORTAL-3702] - The user which was revoved from platform/users group can not login the Portal
+    * [PORTAL-3707] - Show 'Change Owner type' button when edit page& navigation
+
+** Improvement
+    * [PORTAL-2640] - Internationalize session timeout message
+    * [PORTAL-3664] - Changing logging level
+    * [PORTAL-3665] - Session destroyed exception
+
+** Task
+    * [PORTAL-3503] - Refresh navigation after a navigation is saved in datastorage
+    * [PORTAL-3663] - Release Portal 2.5.7
+    * [PORTAL-3667] - Upgrade to use JCR 1.10.5.1
+    * [PORTAL-3680] - Add capability to generate a maven repository extract (useful for support patch delivery)
+    * [PORTAL-3681] - Revert some code change in UIPortal
+    * [PORTAL-3692] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 2.5.x
+
+** Sub-task
+    * [PORTAL-3693] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [PORTAL-3701] - Patches are empty (wrong resources declaration in portal parent pom)
 
 Version portal-2.5.6.2
 
@@ -194,7 +293,116 @@ Version portal-2.5.4
 
 ** Task
     * [PORTAL-3078] - Create tag 2.5.4 based on JCR 1.10.4
+	
+Version dms-2.5.3
 
+** Bug
+    * [ECM-2021] - Error in display File Plan in special case
+    * [ECM-2068] - Error with * for required fields in ECM
+    * [ECM-2316] - Can not  select permission when edit dialog/view in special case
+    * [ECM-2359] - Invalid error message when importing a nodetype without specifying its namespace
+    * [ECM-2443] - BaseActionLauncherListener doesn't support anonymous access
+    * [ECM-3073] - Can not delete drive
+    * [ECM-3090] - Error in displaying 'Content' text-area of Cover-flow in 'Edit ECM Template' form
+    * [ECM-3304] - The file size should not be too accurate
+    * [ECM-3545] - Do not display Vietnamese language in the search result
+    * [ECM-3615] - Error when trying to copy a forlder that contains two nodes with the same name (test, test[2])
+    * [ECM-3689] - IE7: Error when close sidebar in File Explorer
+    * [ECM-3733] - Error in using page iterator in Advanced search result
+    * [ECM-3747] - Permission infor is not suitable with selected  version in edit template form
+    * [ECM-3758] - some problems  when user without read right try to access document from tag cloud
+    * [ECM-3788] - Error in displaying path in Content Browser after do search
+    * [ECM-3789] - "exo data" appears in Document templates list when create new document after do search in CB
+    * [ECM-3888] - Error in destination path in alert message when copy/cut & paste node
+    * [ECM-4153] - Should not allow to view comment node from search result instead of show blank form
+    * [ECM-4205] - localization and wording
+    * [ECM-4241] - IE: Lose stylesheet when view documents in Content Browser 
+    * [ECM-4248] - IE7: Error when select page in navigation bar with Vista and Mac skin
+    * [ECM-4258] - Error when create new document have sam name in other categories
+    * [ECM-4281] - Still display old name of document while viewing in Content Browser
+    * [ECM-4335] - Error in showing breadcumb in Content Browser
+    * [ECM-4338] - Error in selecting breadcrumb in Content Browser in specical case
+    * [ECM-4354] - Blanks in drive names are not shown
+    * [ECM-4355] - Show image replace content of File document when upload image into File 
+    * [ECM-4362] - Clean up chaotic Add Taxonomy Tree dialog
+    * [ECM-4363] - Incorrect English in Add Taxonomy Tree Dialog
+    * [ECM-4364] - CRON actions are not working 
+    * [ECM-4365] - DMS Action does not show the "Cron" information in edit mode of the action
+    * [ECM-4379] - Can not do any action when select multi nodes in thumbnails view 
+    * [ECM-4428] - DMS has Form Generator Portlet configuration
+    * [ECM-4432] - Show both published and unpublished documents  while configuration for CB to show only published document (with script and query)
+    * [ECM-4433] - Exception when edit default taxonomy tree in new repository
+    * [ECM-4444] - Exception when select path for Personal drives while configuration for File Explorer
+    * [ECM-4445] - All files are disappeared when delete blank form in "Upload" form
+    * [ECM-4446] - Can not unlock multi nodes at the same time
+    * [ECM-4456] - Little mistake in resouce bundle
+    * [ECM-4457] - Unknown error when upload multi  file with 1 form is blank
+    * [ECM-4461] - Can not add language for Sample node document in special case
+    * [ECM-4483] - Problem with the import of the version history for a node type nt: file
+    * [ECM-4504] - Can create taxonomy tree without select target path when add action for this tree
+    * [ECM-4530] - Can not add new view
+    * [ECM-4536] - StackOverflowError in org.exoplatform.ecm.webui.component.explorer.UIJCRExplorer after removing site
+    * [ECM-4537] - Exception when view metadata of node
+    * [ECM-4539] - Exception when view File Plan after editing
+    * [ECM-4541] - Exception when view new added language of uploaded file 
+    * [ECM-4547] - Exception when add workflow lifecycle for node
+    * [ECM-4548] - Exception when back to FE after approving task
+    * [ECM-4558] - uicomponent.addCheckboxField doesn't change anything in the JCR
+    * [ECM-4570] - JCR Explorer - selection interfeer with scrolling
+    * [ECM-4573] - Need to click twice to remove a reference
+    * [ECM-4577] - Need icon for document created by new added template
+    * [ECM-4583] - Unknown error when click on Save button without select any file to upload
+    * [ECM-4591] - Show content of published document after pressing F5  while chosing other node
+    * [ECM-4593] - UI: blank at the bottom of the File Explorer
+    * [ECM-4598] - Exception when anonymous create a content on public page
+    * [ECM-4605] - Permission of new workspace of new repository is not shown
+    * [ECM-4618] - Edit Drive generates a 'Workspace path invalid' error.
+    * [ECM-4620] - Exception when delete comment of document while node is in check-in status
+    * [ECM-4624] - Error in displaying page iterator
+    * [ECM-4627] - "root" has full right with * but can not access drives that was assigned for other membership types
+    * [ECM-4629] - FE: Can not jump to chosen path if hit enter after input the path in address bar
+    * [ECM-4631] - Problem of Memory leak (OutOfMemoryError.) with DMS 
+    * [ECM-4636] - "View document" func can not be done except select Collaboration Center drive
+    * [ECM-4658] - Error when configuring FileExplorer
+    * [ECM-4659] - Content Browser research
+    * [ECM-4660] - Redirection to classic portal is hardcoded
+    * [ECM-4685] - Find better French translation for DMS drives
+    * [ECM-4689] - Cannot use AddTaxonomyActionScript when start server
+    * [ECM-4712] - Exception when select new repository
+    * [ECM-4714] - Show jcr:frozenNode in Content Browser when view published document
+    * [ECM-4715] - Taxonomy import impossible if there are deleted taxonomies
+    * [ECM-4720] - Error in org.exoplatform.services.cms.taxonomy.impl.TaxonomyPlugin
+    * [ECM-4736] - Exception when create document in taxonomy in special case
+    * [ECM-4738] - Cannot edit the node with sibling.
+    * [ECM-4741] - Can not execute right click action of node in Icon View
+    * [ECM-4759] - Workflow :Error when publishing an article in Admin Workflow Management
+    * [ECM-4779] - Admin toolbar disapear when using File Explorer and ECM Admin
+    * [ECM-4818] - Unknown error when add action(not exo:taxonomyAction) for taxonomy tree
+    * [ECM-4825] - No Management  for exception  on service "org.exoplatform.services.deployment.ContentInitializerService"
+    * [ECM-4826] - Build uses antrun plugin 1.2-SNAPSHOT
+    * [ECM-4989] - JBPM 3.0.1 jar is missing the resources
+	
+** Improvement
+    * [ECM-3328] - Fix the performance issue in the PublicationGetDocumentRESTService
+    * [ECM-4204] - localize words on a roll list
+    * [ECM-4325] - Support execute action with field nodeTypes and isDeep
+    * [ECM-4552] - Translate :JCR: "Are you sure want to move?" in french version
+    * [ECM-4555] - Clarification of translation
+    * [ECM-4655] - Allows create a category (exo:category) inside an existing one instead of creating nt:folders
+
+** Task
+    * [ECM-4703] - Release DMS 2.5.3
+    * [ECM-4899] - Fix bugs for All In One 1.6.1
+    * [ECM-4910] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 2.5.x
+    * [ECM-4991] - Upgrade to use jBPM 3.0.2
+	
+** Sub-task
+    * [ECM-4637] - [DEV] Show message when cut node is being viewed
+    * [ECM-4844] - [DEV] Exception when view File Plan after editing
+    * [ECM-4911] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [ECM-4918] - Build - Integrate module.js in the project to be used by exopackage and maven-exobuild-plugin
+    * [ECM-4932] - JBPM and Bonita configuration.xml files contain hardcoded version of workflow
+    * [ECM-4933] - Use Kernel, Core, .... SNAPSHOTs
 
 Version dms-2.5.2
 
@@ -286,7 +494,6 @@ Version dms-2.5.2
 
 ** Sub-task
     * [ECM-3898] - Lock operation in FileExplorer - fails
-
 
 Version  dms-2.5.1
 
@@ -643,6 +850,80 @@ Version dms-2.3.2
     * [ECM-3586] - Describe this new feature in the guides
     * [ECM-3587] - Describe this new feature in the wiki
 
+Version cs-1.3.3
+
+** Bug
+    * [CS-3191] - IE7: Drag & drop event/task is fail in special case
+    * [CS-3310] - Safari: don't open Chat room immediately when join room
+    * [CS-3315] - Messages are not displayed in chat window
+    * [CS-3341] - IE7: when view message at Vertical Layout, Can't resize detail message pane
+    * [CS-3344] - IE7: little error at List view
+    * [CS-3345] - Occur some fails when run CS in Vietnamese 
+    * [CS-3350] - IE7/Webos: Little UI error at Chat portlet 
+    * [CS-3406] - Reply message:  wrong content of this message when content contain some special icons on gmail 
+    * [CS-3428] - FF : webos, all portlets are been empty in special case 
+    * [CS-3465] - CS on portal 2.5.6 : Occur some fails when run
+    * [CS-3527] - The chat doesn't work on any naviguator
+    * [CS-3529] - when reply a message which has some icons in content , in Compose form show attachments of corresponding icons 
+    * [CS-3530] - Drag n drop of Chat window in webos moves all conversations windows
+    * [CS-3533] - UI error at Reminder tab
+    * [CS-3535] - Icons on Chat Bar are hidden when open User workspace
+    * [CS-3536] - IE,Safari : Only see 5 users in a room 
+    * [CS-3537] - "show message from" is wrong when users login on computers , curent date/time on them  are different 
+    * [CS-3546] - some fields in Add/Edit Event form automatically back status before when refresh
+    * [CS-3547] - Now Name of Add/edit event form is only Event , it is wrong 
+    * [CS-3549] - POP3: when drag&drop/Move  message, message is not shown at destination folder
+    * [CS-3585] - Webos : don't show all user in contact list if the list too long
+    * [CS-3588] - Can not create RSS/CalDAV with Calendar have only event/task which are stored category [all]
+    * [CS-3592] - can not import event from invitation mail to calendar portlet in special case 
+    * [CS-3597] - Contact: not way to edit a contact when I view it in "full mode"
+    * [CS-3598] - IE6: chat bar is not at bottom browser
+    * [CS-3605] - Chatbar: messages and labels i18n
+    * [CS-3607] - can  create 2 calendars that name of them are the same
+    * [CS-3608] - new calendar is not shown on quick add event/task form in special case
+    * [CS-3610] - don't search all event/task of calendar in special case 
+    * [CS-3611] - FF 3.5 :UI error at chat room when message is too long
+    * [CS-3614] - webos: UI error when view Chat portlet in French
+    * [CS-3615] - Webos: UI error when view Calendar portlet in French
+    * [CS-3618] - status of user is not shown exactly on contact list when he has just added by other user 
+    * [CS-3619] - Can't delete/edit/mark all read/create new subfolder  folder when edit name of that folder before
+    * [CS-3621] - FF: appear unexpected icon on Compose new message form
+    * [CS-3637] - unknown error when add tag for contact which belong to shared calendar
+    * [CS-3642] - don't attach image into contact
+    * [CS-3668] - Unknown error when create contact with picture 
+	
+** Improvement
+    * [CS-931] - Edit last contact of the list in vcard view
+    * [CS-2496] - set SSL for incoming and outgoing mails as default settings
+    * [CS-2501] - Should be hide or disable "Every" field at tab Reminder of add/edit event/task form when don't repeat
+    * [CS-2503] - Describe correctly the status of the Mail Portlet without account
+    * [CS-2895] - use buttons in message view
+    * [CS-3005] - Chat: Should focus on existing room when create new room with name is the same with existing one
+    * [CS-3023] - should fill specific group into Group combobox on Calendar Import form when right click on a specific group and select Import
+    * [CS-3155] - Calendar: Hidden calendar is shown automatically after adding new event/task on it
+    * [CS-3156] - Chat, IE7, WebOS: New added user is not updated in list when click Refresh in invite user form
+    * [CS-3176] - improve drag and drop contact, mail, calendar make draged item is transparent and have only border
+    * [CS-3272] - Separate synchronizing folder and message with IMAP protocol
+    * [CS-3277] - IE8 support
+    * [CS-3336] - hardcoded URLS in openfire.xml
+    * [CS-3553] - Labels of ChatBarPortlet are hard coded
+    * [CS-3591] - should not allow to delete "Collected Addresses"
+	
+** Task
+    * [CS-2977] - check w3c code for some right click menu of mail 
+    * [CS-3671] - Create a JBoss EAR patch for packaging
+    * [CS-3679] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 1.2.x 
+
+** Sub-task
+    * [CS-3651] - DEV: always require enter username/pass although inputted username/pass exactly 
+    * [CS-3656] - [DEV] Don't search all events/tasks in calendar
+    * [CS-3657] - [TEST] Don't search all events/tasks in calendar
+    * [CS-3662] - [DEV] can not import event from invitation mail to calendar portlet
+    * [CS-3663] - [TEST] can not import event from invitation mail to calendar portlet
+    * [CS-3664] - [DEV] should not allow to delete "Collected Addresses
+    * [CS-3680] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [CS-3681] - Build - Integrate module.js in the project to be used by exopackage and maven-exobuild-plugin
+    * [CS-3687] - Use Kernel, Core, JCR, PC, Portal, WebOS SNAPSHOTs
 
 Version cs-1.3.2
 
@@ -1099,7 +1380,58 @@ Version cs-1.2.2
 ** Sub-task
     * [CS-3359] - Make svn tags
 
+Version ks-1.2.2
 
+** Bug
+    * [KS-1946] - Can't save an FAQ question while focus is in FCK Editor
+    * [KS-1980] - Wrong number of pages(zero) when using ldap-configuration
+    * [KS-1986] - Starts in Rate box are hidden. See file attach
+    * [KS-1994] - Change label in Add category form
+    * [KS-2011] - RSS feed: Don't get content of category/forum/topic which is default data.
+    * [KS-2016] - The name of days are not translated
+    * [KS-2024] - IE7: Show error message when discuss question to forum. See file attach
+    * [KS-2031] - Redirection to classic portal is hardcoded
+    * [KS-2034] - Signature could not be saved in Settings
+    * [KS-2035] - Add watch function is not updated with new email address of root
+    * [KS-2112] - Unknow error when Preview a quick post
+    * [KS-2113] - Can NOT create topic in Forum
+    * [KS-2114] - Small Icon display error in Posts by User form
+    * [KS-2117] - Answers - Invalid title in Search Result forum
+    * [KS-2118] - Answers: RSS Feed is not ok with created category and question
+    * [KS-2119] - Invalid display of some item is Answer popup menu
+    * [KS-2120] - Ivalid RSS Feed
+    * [KS-2121] - Signature is not saved and displayed
+    * [KS-2122] - Rate this topic, star in Rate form is not displayed
+    * [KS-2125] - Discussion function does not work well
+    * [KS-2129] - IE7 Attach File form is invalid
+    * [KS-2130] - Can NOT add Forum Category in special case
+
+** Improvement
+    * [KS-1660] - Error UI in list tag pane. See file attach
+    * [KS-1941] - Make "Post Reply" clickable even for guest users
+    * [KS-1942] - Make import/export labels clearer
+    * [KS-1944] - Make error messages clearer
+    * [KS-1945] - sort user list alphabetically
+    * [KS-1975] - FAQ - Language switch
+    * [KS-2003] - Add icon for "Untag" item in menu. See file attach
+
+** Task
+    * [KS-1734] - Avoid expensive calls to getAll()
+    * [KS-1895] - Do not use ajax by default
+    * [KS-1947] - Version on 1.2.x should contain-SNAPSHOT
+    * [KS-2126] - Upgrade KS branch 1.2.2-SNAPSHOT to use portal 2.5.7-SNAPSHOT
+    * [KS-2131] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 1.2.x
+    * [KS-2156] - Release KS 1.2.2
+	
+** Sub-task
+    * [KS-1965] - [DEV] Fix call getAll() when searching user profiles
+    * [KS-1998] - Fix bug when import forum but the data is data of category , forum still allow import.
+    * [KS-2132] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [KS-2134] - eXoApplication\blog\service\ is not compiled in 1.2.x -- should we keep that module ?
+    * [KS-2135] - eXoApplication\wiki\service\ is not compiled  in 1.2.x -- should we keep that module ?
+    * [KS-2137] - Build - Integrate module.js in the project to be used by exopackage and maven-exobuild-plugin
+    * [KS-2144] - Use Kernel, Core, JCR, PC, Portal, WebOS SNAPSHOTs
+    * [KS-2151] - Can not show attached image & exception in console when view a question
 
 Version ks-1.2.1
 
@@ -1614,6 +1946,22 @@ Version ks-1.1.2
 ** Task
     * [KS-1865] - Upgrade to Portal 2.5.5
     * [KS-1866] - Release 1.1.2
+	
+Version wcm-1.2.2
+
+** Bug
+    * [WCM-2435] - PortalArtifactsInitializerService removed, webos portal fails
+    * [WCM-2440] - fckeditor connector extend a wcm 1.3-SNAPSHOT and not 1.2.2-SNAPSHOT in 1.2.x branch
+
+** Task
+    * [WCM-2373] - Release WCM 1.2.2
+    * [WCM-2414] - Prefectch binaries in maven
+    * [WCM-2470] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 1.2.x
+
+** Sub-task
+    * [WCM-2471] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [WCM-2477] - Use Kernel, Core, ... SNAPSHOTs
+    * [WCM-2486] - Build - Integrate module.js in the project to be used by exopackage and maven-exobuild-plugin
 
 Version wcm-1.2.1
 
@@ -1979,6 +2327,7 @@ Version wcm-1.2
     * [WCM-1776] - Always show subscription1 in form to create new letter
     * [WCM-1777] - No result found when do advanced search in Sites Explorer
     * [WCM-1779] - The content of SCV was replaced by user without right
+
     * [WCM-1780] - IE7: Little UI error in Permission Settings form when add new content
     * [WCM-1782] - IE7: Error in displaying document in Category
     * [WCM-1783] - Content of selected category disappears after choose Help from portlet mode
@@ -2011,6 +2360,17 @@ Version wcm-1.2
     * [WCM-1883] - Unknown error when edit a default Script at Site Administrator
     * [WCM-1884] - Unknown error when add new letter into a blank category
 
+Version webos-1.5.4
+
+** Task
+    * [WEBOS-303] - Release WebOS 1.5.4
+    * [WEBOS-304] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 1.5.x
+    * [WEBOS-307] - Publish Webos 1.5.4 SNAPSHOT aritfacts in the snapshots repo
+
+** Sub-task
+    * [WEBOS-305] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [WEBOS-306] - Build - Integrate module.js in the project to be used by exopackage and maven-exobuild-plugin
+    * [WEBOS-308] - Use Kernel, Core, JCR, PC, Portal SNAPSHOTs
 
 Version webos-1.5.1
 
@@ -2223,5 +2583,22 @@ Version webos-1.5
     * [WEBOS-182] - [TEST]: Should have scroll in desktop page when restore down the windown
     * [WEBOS-183] - [DEV]: should set min-width and min-heigth for portlet when user resize portlet by using mouse
     * [WEBOS-184] - [TEST]:should set min-width and min-heigth for portlet when user resize portlet by using mouse
+
+Version WF-1.0.5
+
+** Task
+    * [WF-36] - Release WF 1.0.5
+    * [WF-39] - Cleanup the build process to be able to deploy on eXo Nexus with the release plugin for 1.0.x
+    * [WF-44] - Publish WF 1.0.5 SNAPSHOT aritfacts in the snapshots repo
+    * [WF-48] - Remove unused dependencies in pom.xml
+    * [WF-49] - Release JBPM 3.0.1
+    * [WF-51] - Upgrade to use jBPM 3.0.2
+
+** Sub-task
+    * [WF-40] - Build - Cleanup the profile with properties, remove the reporting and emma config, add parent pom v6
+    * [WF-43] - Build - Integrate module.js in the project to be used by exopackage and maven-exobuild-plugin
+    * [WF-45] - Extract jbpm 3.0 in a separate trunk and tags/3.0
+    * [WF-46] - Use Kernel, Core, JCR, PC, Portal SNAPSHOTs
+    * [WF-47] - Fix JBPM 3.0-SNAPSHOT issue (clean by hudson because a 3.0 is out), proably a 3.0.1 is needed.
 
 
