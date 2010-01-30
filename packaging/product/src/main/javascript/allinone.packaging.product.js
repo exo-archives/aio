@@ -37,7 +37,9 @@ function getProduct(version) {
   product.addDependencies(portal.eXoGadgetServer) ;
   product.addDependencies(portal.eXoGadgets) ;
   product.addDependencies(portal.webui.portal);
-  product.addDependencies(portal.web.eXoResources);
+// replaced by AIO resources to deploy some missing JS files (ALL-230)
+//  product.addDependencies(portal.web.eXoResources);
+  product.addDependencies(allinone.web.eXoResources);
 	
   product.addDependencies(dms.portlet.dms);
   product.addDependencies(dms.gadgets);

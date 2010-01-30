@@ -32,6 +32,9 @@ function getModule(params) {
     addDependency(jcr.frameworks.command).
     addDependency(jcr.frameworks.web).
     addDependency(portal.web.rest);
+    
+  module.web.eXoResources = 
+     new Project("org.exoplatform.allinone", "exo.allinone.web.eXoResources", "war", module.version);
 
   module.patches = {}
   module.patches.chatbar =
