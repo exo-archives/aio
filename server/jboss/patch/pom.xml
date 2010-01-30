@@ -28,6 +28,14 @@
   <packaging>jar</packaging>
   <name>eXo AIO JBoss Server - EAR</name>
   <dependencies>
+    <!-- Common files for AIO such as EXO-AIO-README.txt and external configuration -->
+    <dependency>
+      <groupId>org.exoplatform.allinone</groupId>
+      <artifactId>aio-common-patch</artifactId>
+      <version>${project.version}</version>
+      <type>jar</type>
+    </dependency>
+    <!-- CS server patch with modified server.xml -->
     <dependency>
       <groupId>org.exoplatform.cs</groupId>
       <artifactId>exo.cs.server.jboss.patch-ear</artifactId>
