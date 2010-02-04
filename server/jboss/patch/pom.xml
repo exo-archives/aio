@@ -43,10 +43,15 @@
       <type>jar</type>
     </dependency>
   </dependencies>
+
+  <!--
+    Because of http://jira.exoplatform.org/browse/PORTAL-3734
+    we have to define here all the configuration files for JBoss/EAR
+   -->
   <build>
     <resources>
       <resource>
-        <directory>src/main/tomcat</directory>
+        <directory>src/main/jboss</directory>
         <includes>
           <include>**/*</include>
         </includes>
@@ -67,6 +72,10 @@
               <outputDirectory>${project.build.outputDirectory}</outputDirectory>
               <includes>**/*</includes>
               <excludes>**/server.xml,**/EXO-README.txt</excludes>
+              <!-- 
+                  Because of http://jira.exoplatform.org/browse/CS-3920 we need to exclude the server.xml from portal
+                  and replace it by the one in src/main/jboss/server/default/deploy/jboss-web.deployer/
+              -->
             </configuration>
           </execution>
         </executions>
