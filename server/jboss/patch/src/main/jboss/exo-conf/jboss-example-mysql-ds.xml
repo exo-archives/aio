@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is an example of data source configuration for MySQL under JBoss -->
+<!-- For JBoss, copy it into /server/yourserver/deploy -->
+
+<datasources>
+   <local-tx-datasource>
+
+      <!-- The jndi name of the DataSource. In JBoss, it is prefixed with java:/ -->
+      <jndi-name>jdbcexo</jndi-name>
+
+      <!-- The connection URL -->
+      <connection-url>jdbc:mysql://localhost/exodb</connection-url>
+
+      <!-- The driver class -->
+      <driver-class>com.mysql.jdbc.Driver</driver-class>
+
+      <!-- The login and password -->
+      <user-name>user</user-name>
+      <password>s3cR3t</password>
+
+   </local-tx-datasource>
+</datasources>

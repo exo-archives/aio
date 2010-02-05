@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<configuration>
-	<import>common-configuration.xml</import>
-	<import>logs-configuration.xml</import>
-	<import>database-configuration.xml</import>
-	<import>jcr-configuration.xml</import>
-	
-</configuration>
