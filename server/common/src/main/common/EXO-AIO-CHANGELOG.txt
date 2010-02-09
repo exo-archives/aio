@@ -6,6 +6,30 @@
 Version all-1.6.2
 ******************
 
+** Bug
+    * [ALL-159] - The created Site is blank default
+    * [ALL-202] - SearchResult is not shown
+    * [ALL-208] - Register link does not work on Classic site
+    * [ALL-213] - Exception on link memberships
+    * [ALL-214] - No user's navigation available in portal 2.5.7
+    * [ALL-230] - Invalid JS Script in AiO 1.6.1
+    * [ALL-242] - When creating a new RSS Portlet , the field Description is empty
+
+** Improvement
+    * [ALL-109] - Create a customized home page and navigation for AIO
+    * [ALL-220] - There is no button to return on the home page
+    * [ALL-222] - Create the navigation for Work Flow in AIO
+    * [ALL-259] - Packaging improvements
+
+** Task
+    * [ALL-236] - Remove reference to customer data in "JMeter" scripts
+    * [ALL-237] - Instructions to configure openfire with AIO releases
+
+** Sub-task
+    * [ALL-204] - Fix duplicated dependencies entries in poms
+    * [ALL-205] - Add a reactor pom to build all components in AIO
+    * [ALL-234] - Cleanup POMs
+    * [ALL-256] - Basic externalized config
 
 
 ******************

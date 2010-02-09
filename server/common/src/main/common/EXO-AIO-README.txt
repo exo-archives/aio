@@ -38,7 +38,7 @@ All In One 1.6.2 contains the following improvements:
       eXo All In One Chat service is a Jabber engine powered by Openfire.
       eXo will delegate the actual Jabber protocol communication to Openfire.
 
-      Warning: eXo AIO 1.6.2 has only been tested with Openfire 3.4.5.
+      Warning: this version of eXo All In One has only been tested with Openfire 3.4.5.
       Should you try to upgrade yourself, this would be at your own risks.
 
     * Configure openfire
@@ -64,18 +64,32 @@ All In One 1.6.2 contains the following improvements:
     * Download eXo All In One (Tomcat or JBoss)
     
     * Configure the application (optional)
-    
-      +) http://wiki.exoplatform.org/xwiki/bin/view/Kernel/Service+Configuration+for+Beginners#HPortalContainer
       
       +) Open the folder 'exo-conf' in your application server :
          
-        It contains a sample configuration to use a MySQL database, feel free to adapt it to your needs
+        It contains a sample configuration to use a MySQL database, verify this before starting:
+         - the user/password to access your DB in database-configuration.xml
+         - the name of the datasource in database-configuration.xml
+           In jboss, use the datasource configuration file
+         - the dialect in database, jcr and repository configuration files
          
-      +) Run the server with the externalized configuration :
+      +) Use the externalized configuration :
       
         Parameter: -Dexo.user.conf=../exo-conf/mysql/
         Tomcat: Add this parameter in the eXo.sh/bat script, in the variable EXO_OPTS for example
         JBoss: Add this parameter to the startup command
+        
+      +) You can avoid using a parameter, check the wiki page for more details : 
+      
+        http://wiki.exoplatform.org/xwiki/bin/view/Kernel/Service+Configuration+for+Beginners#HPortalContainer
+      
+      +) You should see this in your startup log :
+      
+      Add configuration file:/path/to/exo-tomcat/exo-conf/portal/portal/configuration.xml
+	        import file:/path/to/exo-tomcat/exo-conf/portal/portal/common-configuration.xml
+	        import file:/path/to/exo-tomcat/exo-conf/portal/portal/logs-configuration.xml
+	        import file:/path/to/exo-tomcat/exo-conf/portal/portal/database-configuration.xml
+	        import file:/path/to/exo-tomcat/exo-conf/portal/portal/jcr-configuration.xml
 
     * Using the command line, go your AS bin directory and start the server:
    
@@ -109,7 +123,8 @@ If you meet a JS or a CSS error when you run the Tomcat package on Linux, please
       Line: 2369
       
 The current workaround is to replace the file:
-    * {tomcat-home}/lib/catalina.jar by the file
+    * {tomcat-home}/lib/catalina.jar
+by the file:
     * {tomcat-home}/patch/catalina.jar
 
 We modified the class HostConfig to sort the webapps by alphabetical order.
