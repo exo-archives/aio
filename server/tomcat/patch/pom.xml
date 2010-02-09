@@ -65,7 +65,7 @@
             <configuration>
               <outputDirectory>${project.build.outputDirectory}</outputDirectory>
               <includes>**/*</includes>
-              <excludes>**/eXo.*,**/server.xml,**/EXO-README.txt</excludes>
+              <excludes>**/eXo.*,**/eXo-Liveroom.*,**/server.xml,**/EXO-README.txt</excludes>
             </configuration>
           </execution>
         </executions>
