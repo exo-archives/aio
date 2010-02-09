@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
     <artifactId>aio-packaging</artifactId>
-    <version>1.6.2</version>
+    <version>1.6.3-SNAPSHOT</version>
   </parent>
   <artifactId>allinone.packaging.product</artifactId>
   <packaging>pom</packaging>
@@ -35,13 +35,13 @@
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
       <artifactId>aio-tomcat-patch</artifactId>
-      <version>1.6.2</version>
+      <version>1.6.3-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
       <artifactId>aio-jboss-ear-patch</artifactId>
-      <version>1.6.2</version>
+      <version>1.6.3-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
     <dependency>

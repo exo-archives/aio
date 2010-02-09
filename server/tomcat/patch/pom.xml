@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
     <artifactId>aio</artifactId>
-    <version>1.6.2</version>
+    <version>1.6.3-SNAPSHOT</version>
   </parent>
   <artifactId>aio-tomcat-patch</artifactId>
   <name>eXo AIO Tomcat Server</name>
