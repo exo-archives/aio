@@ -216,7 +216,7 @@
 							<property name="swap-directory" value="../temp/exo/swap/wcm-system"/>
 						</properties>
 						<value-storages>
-							<value-storage id="dms-system" class="org.exoplatform.services.jcr.impl.storage.value.fs.TreeFileValueStorage">
+							<value-storage id="wcm-system" class="org.exoplatform.services.jcr.impl.storage.value.fs.TreeFileValueStorage">
 								<properties>
 									<property name="path" value="../temp/exo/values/wcm-system"/>
 								</properties>

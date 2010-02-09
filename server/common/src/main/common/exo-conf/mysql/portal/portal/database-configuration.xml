@@ -20,9 +20,8 @@
 			</properties-param>
 		</init-params>
 	</component>
-</configuration>
-
-<external-component-plugins>
+	
+	<external-component-plugins>
     <target-component>org.exoplatform.services.naming.InitialContextInitializer</target-component>
     <component-plugin>
       <name>bind.datasource</name>
@@ -53,3 +52,5 @@
       </init-params>
     </component-plugin>
   </external-component-plugins>
+	
+</configuration>

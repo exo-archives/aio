@@ -4,5 +4,4 @@
 	<import>logs-configuration.xml</import>
 	<import>database-configuration.xml</import>
 	<import>jcr-configuration.xml</import>
-	
 </configuration>
