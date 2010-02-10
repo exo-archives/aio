@@ -42,6 +42,12 @@
       <type>jar</type>
     </dependency>
     <dependency>
+      <groupId>org.exoplatform.ecm.workflow</groupId>
+      <artifactId>exo.ecm.workflow.server.jboss.patch-ear</artifactId>
+      <version>${org.exoplatform.ecm.workflow.version}</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
       <groupId>org.exoplatform.ecm.dms.ext.contentvalidation</groupId>
       <artifactId>exo.ecm.dms.ext.contentvalidation.component.webui</artifactId>
       <version>${org.exoplatform.ecm.dms.version}</version>
