@@ -1,5 +1,5 @@
 ==============================================
-    Release Notes - All In One - 1.6.2
+    Release Notes - All In One - 1.6.3
 ==============================================
 
 
@@ -13,10 +13,8 @@ Follow the procedure of installation and start eXo All In One now !
  What's new?
 =============
 
-All In One 1.6.2 contains the following improvements:
-    * Externalized basic configuration (database, logs, cache)
-    * Complete navigation and configuration of eXo's products
-    * Few bug fixes
+All In One 1.6.3 contains the following improvements:
+    
 
 ===========================
  Installation requirements
@@ -96,12 +94,12 @@ All In One 1.6.2 contains the following improvements:
       +) Windows :
 
         Tomcat:  eXo.bat run
-        JBoss:   run.bat
+        JBoss:   run.bat (with Bonita workflow engine, use eXo.bat)
 
       +) Linux / Mac OS :
 
         Tomcat:  eXo.sh run
-        JBoss:   run.sh
+        JBoss:   run.sh (with Bonita workflow engine, use eXo.sh)
 
     * Wait for the server to start. You should see something like this on the console
 
@@ -139,11 +137,7 @@ However, Tomcat doesn't ensure this order will be respected
  Known major issues
 ====================
 
-    * ALL-170   	 Cannot delete user
-    * ALL-243   	 MultiDB configuration does now work on Oracle10G database.
-    * ALL-239   	 Portlet Content List Viewer: content update issues
-    * ALL-221   	 Ldap connexion with root performance issues
-    * ALL-216   	 [IBM JVM] Error occurs when trying to add a calendar 
+    
 
 ===========
  Resources
