@@ -24,7 +24,7 @@
     <artifactId>exo.aio.packaging</artifactId>
     <version>1.6.3-SNAPSHOT</version>
   </parent>
-  <artifactId>exo.aio.packaging.product</artifactId>
+  <artifactId>allinone.packaging.product</artifactId>
   <packaging>pom</packaging>
   <name>eXo AIO Packaging Product</name>
   <properties>
