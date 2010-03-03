@@ -21,10 +21,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
-    <artifactId>aio</artifactId>
+    <artifactId>aio.parent</artifactId>
     <version>1.6.3-SNAPSHOT</version>
   </parent>
-  <artifactId>aio-common-patch</artifactId>
+  <artifactId>exo.aio.common.patch</artifactId>
   <name>eXo AIO Common Server Patch</name>
   <build>
     <resources>

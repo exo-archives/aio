@@ -21,17 +21,17 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
-    <artifactId>aio</artifactId>
+    <artifactId>aio.parent</artifactId>
     <version>1.6.3-SNAPSHOT</version>
   </parent>
-  <artifactId>aio-jboss-ear-patch</artifactId>
+  <artifactId>exo.aio.jbossear.patch</artifactId>
   <packaging>jar</packaging>
   <name>eXo AIO JBoss Server - EAR</name>
   <dependencies>
     <!-- Common files for AIO such as EXO-AIO-README.txt and external configuration -->
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
-      <artifactId>aio-common-patch</artifactId>
+      <artifactId>exo.aio.common.patch</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency>

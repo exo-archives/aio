@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
-    <artifactId>aio-packaging</artifactId>
+    <artifactId>exo.aio.packaging</artifactId>
     <version>1.6.3-SNAPSHOT</version>
   </parent>
   <artifactId>exo.aio.packaging.assembly</artifactId>
@@ -113,13 +113,13 @@
     </dependency>
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
-      <artifactId>allinone.packaging.module</artifactId>
+      <artifactId>exo.aio.packaging.module</artifactId>
       <version>1.6.3-SNAPSHOT</version>
       <type>js</type>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
-      <artifactId>allinone.packaging.product</artifactId>
+      <artifactId>exo.aio.packaging.product</artifactId>
       <version>1.6.3-SNAPSHOT</version>
       <type>js</type>
     </dependency>

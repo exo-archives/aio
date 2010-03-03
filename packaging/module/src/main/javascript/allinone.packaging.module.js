@@ -24,7 +24,7 @@ function getModule(params) {
        
   module.web = {}
   module.web.allinoneportal = 
-    new Project("org.exoplatform.allinone", "exo.allinone.web.portal", "exo-portal", module.version).   
+    new Project("org.exoplatform.allinone", "exo.aio.web.portal", "exo-portal", module.version).   
     addDependency(portal.web.eXoResources).
     addDependency(portal.web.eXoMacSkin).
     addDependency(portal.web.eXoVistaSkin).
@@ -34,17 +34,14 @@ function getModule(params) {
     addDependency(portal.web.rest);
     
   module.web.eXoResources = 
-     new Project("org.exoplatform.allinone", "exo.allinone.web.eXoResources", "war", module.version);
+     new Project("org.exoplatform.allinone", "exo.aio.web.eXoResources", "war", module.version);
 
   module.patches = {}
-  module.patches.chatbar =
-     new Project("org.exoplatform.allinone", "exo.allinone.webapp.chatbar", "war", module.version);
-
   module.patches.tomcat =
-    new Project("org.exoplatform.allinone", "aio-tomcat-patch", "jar", module.version);
+    new Project("org.exoplatform.allinone", "exo.aio.tomcat.patch", "jar", module.version);
 
   module.patches.jboss =
-    new Project("org.exoplatform.allinone", "aio-jboss-ear-patch", "jar", module.version);
+    new Project("org.exoplatform.allinone", "exo.aio.jbossear.patch", "jar", module.version);
 
   
   return module;

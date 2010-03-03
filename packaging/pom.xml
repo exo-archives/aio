@@ -21,10 +21,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
-    <artifactId>aio</artifactId>
+    <artifactId>aio.parent</artifactId>
     <version>1.6.3-SNAPSHOT</version>
   </parent>
-  <artifactId>aio-packaging</artifactId>
+  <artifactId>exo.aio.packaging</artifactId>
   <packaging>pom</packaging>
   <name>eXo AIO Packaging</name>
   <!--module>repo</module-->

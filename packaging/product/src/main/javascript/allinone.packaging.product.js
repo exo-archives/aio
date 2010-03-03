@@ -31,6 +31,7 @@ function getProduct(version) {
   var webos = Module.GetModule("webos", {kernel : kernel, core : core, eXoPortletContainer : eXoPortletContainer, eXoJcr : eXoJcr });
   var allinone = Module.GetModule("allinone", {kernel : kernel, ws : ws, core : core, eXoPortletContainer : eXoPortletContainer, eXoJcr : eXoJcr, portal : portal, cs: cs, ks: ks, dms : dms, wcm: wcm,workflow : workflow});
   
+  /* PORTAL */
   product.addDependencies(portal.portlet.exoadmin) ;
   product.addDependencies(portal.portlet.web) ;
   product.addDependencies(portal.portlet.dashboard) ;  
@@ -41,9 +42,11 @@ function getProduct(version) {
 //  product.addDependencies(portal.web.eXoResources);
   product.addDependencies(allinone.web.eXoResources);
 	
+  /* DMS */
   product.addDependencies(dms.portlet.dms);
   product.addDependencies(dms.gadgets);
   
+  /* WCM */
   product.addDependencies(wcm.portlet.webpresentation);
   product.addDependencies(wcm.portlet.websearches); 
   product.addDependencies(wcm.portlet.newsletter); 
@@ -52,15 +55,13 @@ function getProduct(version) {
   product.addDependencies(dms.web.eXoDMSResources) ;
   product.addDependencies(allinone.web.allinoneportal) ;
   
-  
+  /* CS */ 
   product.addDependencies(cs.eXoApplication.mail) ;
   product.addDependencies(cs.eXoApplication.calendar) ;
   product.addDependencies(cs.eXoApplication.contact) ;
   product.addDependencies(cs.eXoApplication.content) ;
   product.addDependencies(cs.eXoApplication.chat) ;
-// Patched in AIO to display chatbar entirely in WCM layout (add css right:0; to UIChatBarPortlet)
   product.addDependencies(cs.eXoApplication.chatbar) ;
-//  product.addDependencies(allinone.patches.chatbar) ;
 
   product.addDependencies(cs.web.webservice) ;
   product.addDependencies(cs.web.csResources) ;
@@ -92,13 +93,9 @@ function getProduct(version) {
   product.removeDependency(new Project("rome", "rome", "jar", "0.8"));
   product.removeDependency(new Project("javax.mail", "mail", "jar", "1.4"));
    
-//  product.addServerPatch("tomcat", cs.server.tomcat.patch) ; 
+  /* server patches */
   product.addServerPatch("tomcat", allinone.patches.tomcat) ;
-//  product.addServerPatch("jboss",  cs.server.jboss.patch) ;
-//  product.addServerPatch("jboss",  allinone.patches.jboss) ;
   product.addServerPatch("jbossear", allinone.patches.jboss) ;
-//  product.addServerPatch("jbossear",  portal.server.jbossear.patch) ;  
-//  product.addServerPatch("jonas",  portal.server.jonas.patch) ;
   product.addServerPatch("wasear",  portal.server.websphere.patch) ;
 
   product.module = allinone ;
