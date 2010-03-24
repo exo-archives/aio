@@ -89,6 +89,42 @@
       <version>${org.exoplatform.ecm.dms.version}</version>
       <type>jar</type>
     </dependency>
+    <dependency>
+		  <groupId>org.apache.axis</groupId>
+		  <artifactId>axis-saaj</artifactId>
+		  <version>1.4</version>
+		  <type>jar</type>
+		</dependency>
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-jdk14</artifactId>
+		  <version>1.5.6</version>
+		  <type>jar</type>
+		</dependency>
+		<dependency>
+		  <groupId>jcr</groupId>
+		  <artifactId>jcr</artifactId>
+		  <version>1.0</version>
+		  <type>jar</type>
+		</dependency>
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-api</artifactId>
+		  <version>1.5.6</version>
+		  <type>jar</type>
+		</dependency>
+		<dependency>
+		  <groupId>org.jvnet.jaxb2.maven2</groupId>
+		  <artifactId>maven-jaxb2-plugin</artifactId>
+		  <version>0.1</version>
+		  <type>jar</type>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.axis</groupId>
+		    <artifactId>axis-jaxrpc</artifactId>
+		    <version>1.4</version>
+		    <type>jar</type>
+		  </dependency>
   </dependencies>
   <modules>
     <module>module</module>
