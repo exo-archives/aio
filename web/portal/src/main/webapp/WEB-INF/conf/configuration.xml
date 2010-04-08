@@ -22,6 +22,10 @@
 	<!--
 		<import>war:/conf/organization/ldap-configuration.xml</import>         
 	-->    
+	
+	<!-- Common JCR structure configuration -->
+	<import>war:/conf/allinone/jcr-component-plugins-configuration.xml</import>
+	
 	<import>war:/conf/common/resource-bundle-configuration.xml</import>  
 	<import>war:/conf/organization/organization-configuration.xml</import>
 	<import>war:/conf/portal/portal-configuration.xml</import>          
@@ -67,10 +71,14 @@
 	<import>war:/conf/wcm/taxonomy/template-taxonomies-configuration.xml</import>
 	<import>war:/conf/wcm/system/wcm-system-configuration.xml</import>
   
-  <!-- import>war:/conf/wcm/system/wcm-drives-configuration.xml</import>
-  <import>war:/conf/cs/jcr-component-plugins-configuration.xml</import -->
-  <import>war:/conf/cs/rssreader-configuration.xml</import>
+  <!-- import>war:/conf/wcm/system/wcm-drives-configuration.xml</import -->
   
+  <import>war:/conf/workflow/workflow-system-configuration.xml</import>
+  <import>war:/conf/workflow/workflow-path-configuration.xml</import>
+  <import>war:/conf/workflow/jcr-component-plugins-configuration.xml</import>
+  
+  <import>war:/conf/cs/jcr-component-plugins-configuration.xml</import>
+  <import>war:/conf/cs/rssreader-configuration.xml</import>
   <import>war:/conf/cs/cs-plugins-configuration.xml</import>
   
   <import>war:/conf/ks/jcr-component-plugins-configuration.xml</import>
