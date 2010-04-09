@@ -1,6 +1,41 @@
 ==============================================
-       Changelog - All In One - 1.6.2
+       Changelog - All In One - 1.6.3
 ==============================================
+
+*****************
+Version all-1.6.3
+*****************
+
+** Bug
+    * [ALL-61] - Title for actions in banner was not changed in selected language
+    * [ALL-154] - Small Icon display error in Posts by User form
+    * [ALL-206] - Homepage UI broken with eXo-dev.sh
+    * [ALL-207] - [WCM] Style is not loaded correctly on first start of the WCM 1.2.2 -in All in One 1.6.1
+    * [ALL-210] - Exception when creating a new user
+    * [ALL-211] - Can not edit a link in a CLV portlet
+    * [ALL-212] - Forum exception when we migrate to All In One 1.6.1
+    * [ALL-223] - UIFormSelectBox multiple : save problem
+    * [ALL-269] -  New User and new Group listeners are launched twice 
+    * [ALL-299] - Chat problems on IE 7
+    * [ALL-305] - Missing dependencies in packaging/pom.xml
+
+
+** Improvement
+    * [ALL-227] - Build, quality and automation improvements
+    * [ALL-259] - Packaging improvements
+
+
+** Task
+    * [ALL-283] - Prepare packaging for AIO 1.6.3
+    * [ALL-313] - Release AIO 1.6.3
+
+
+** Sub-task
+    * [ALL-228] - Upgrade to exo parent 8
+    * [ALL-245] - Rename artifactIDs aio.packaging.* to exo.aio.packaging.*
+    * [ALL-246] - Rename artifactIDs aio-* to exo.aio.*
+    * [ALL-284] - Remove usage of property org.exoplatform.mvnexobuild.version
+
 
 ******************
 Version all-1.6.2
@@ -56,6 +91,50 @@ Version all-1.6.1
     * [ALL-184] - Upd maven version from 1.6-SNAPSHOT to 1.6.1-SNAPSHOT
     * [ALL-193] - Tag the products related to AIO 1.6.1 one by one
     * [ALL-194] - Check JBPM integration, v3.0.1
+
+
+********************
+Version portal-2.5.8
+********************
+
+** Bug
+    * [PORTAL-3657] - Cannot modify portlet added in right or left container
+    * [PORTAL-3703] - Gadget RSS is not working in an SSL environment
+    * [PORTAL-3704] - the protocol is hardcoded in the URL in Gadgets.js
+    * [PORTAL-3716] - Can't upload empty file
+    * [PORTAL-3720] - Create an Upload MutiValued filed
+    * [PORTAL-3744] - UTF8 encoding in a jboss bundle
+    * [PORTAL-3745] -  Edit Navigation(Cannot edit label node)
+    * [PORTAL-3747] - User's research is case sensitive
+    * [PORTAL-3750] - Navigation ordering doesn't get saved
+    * [PORTAL-3760] - NPE when managing the publication in a portal containing a dash in it's name
+    * [PORTAL-3764] - GET null error  in the exo message popup 
+    * [PORTAL-3765] - exception is occurred after inserting gadgets
+    * [PORTAL-3770] - the container delete/edit buttons disappear while editting page/portal layout
+
+
+** Improvement
+    * [PORTAL-3683] - Should not update whole the mask layer when editing a portlet
+    * [PORTAL-3710] - Fire event when Edit current portal action is executed
+    * [PORTAL-3741] - Message Modification
+    * [PORTAL-3748] - allow adding listeners as component plugins in SkinService
+    * [PORTAL-3762] - Database Initialization when using LDAP
+
+
+** Task
+    * [PORTAL-3714] - Create Portal 2.5.8-SNAPSHOT for deployment
+    * [PORTAL-3761] - Enable generation of text reports in surefire
+    * [PORTAL-3768] - Release PORTAL 2.5.8
+
+
+** Sub-task
+    * [PORTAL-3696] - TestCrawlBBC hangs during tests
+    * [PORTAL-3722] - Cleanup and reactivate tests
+    * [PORTAL-3724] - Upgrade to exo parent 8
+    * [PORTAL-3725] - Cleanup POMs
+    * [PORTAL-3749] - Remove usage of property org.exoplatform.mvnexobuild.version
+    * [PORTAL-3751] - org.exoplatform.test.crawler.ITCrawlBBC is freezing in hudson
+    * [PORTAL-3752] - Fix/Remove tests failures
 
 *********************	
 Version portal-2.5.7
@@ -208,7 +287,125 @@ Version portal-2.5.4
 
 ** Task
     * [PORTAL-3078] - Create tag 2.5.4 based on JCR 1.10.4
-	
+
+*****************
+Version dms-2.5.4
+*****************
+
+** Bug
+    * [ECM-2469] - IE6 - Combo-box appears on top of all others components
+    * [ECM-3792] - Advanced search: Return blank search result when search location contains space
+    * [ECM-4102] - Need to click F5 to refresh to see the updated image for Picture on head document in Site Explorer
+    * [ECM-4356] - Can not drag and drop sub of sub node to parent node
+    * [ECM-4426] - Can't migrate taxonomy from ECM 2.2 to DMS 2.5.1
+    * [ECM-4442] - Can not add category for document while user has only read permission with taxonomy tree
+    * [ECM-4486] - Unknown error when add action for taxonomy created in workspace with root node type is nt:folder
+    * [ECM-4489] - Show both 2 types of folder while editing drive created in workspace with root node type is nt:folder
+    * [ECM-4494] - Field to select drive disappears when click on Cancel button while editing File Explorer
+    * [ECM-4498] - Show all nodes of other drive when view related document 
+    * [ECM-4502] - Exception when access CB while user does not have permssion 
+    * [ECM-4543] -  Show form to create exo:addMetadataAction action while action type's name is the action has just created
+    * [ECM-4545] - Still display image after delete in dialogs
+    * [ECM-4640] - Error message "msg" on Site Explorer
+    * [ECM-4698] - Cannot create a simlink in file explorer
+    * [ECM-4747] - Litte error in Tab Form when create/edit a view
+    * [ECM-4750] - Block Site Explorer when upload a file with name including special characters
+    * [ECM-4755] - Can not delete child node of symlink node
+    * [ECM-4813] - File name accepts special characters (like @%#^$^$^#$^^#$^) 
+    * [ECM-4819] - Still display content of dialog/view/tab after deleting
+    * [ECM-4820] - The check-box "Set as DMS System workspace" is not checked
+    * [ECM-4840] - Too much unwanted moving nodes in FileExplorer
+    * [ECM-4855] - Can add workspace for new repository without select permission in special case
+    * [ECM-4872] - Unknown error when create new repostiory after deleting 1 workspace
+    * [ECM-4878] - Show message "Repository error " when copy/ paste a node in root path
+    * [ECM-4879] - Exception when copy/paste 1 node in the same path when node's name has number character at the first
+    * [ECM-4880] - Do not show icon to delete attachement of Article document
+    * [ECM-4916] - Can not drag and drop node to Document Folder
+    * [ECM-4922] - Category is disappeared after restore document
+    * [ECM-4948] - FileExplorer : Displaying error in the right click menu
+    * [ECM-4959] - NPE while accessing File Explorer in Parameterized mode
+    * [ECM-4961] - Print Mode: exo:article template is not printable ( really ugly)
+    * [ECM-4964] - NodeItemLinkAware.getDepth() fails
+    * [ECM-4973] - unknown error when create Repository in some special cases
+    * [ECM-4990] - can't drag&drop document (except for  file Plan) when it is viewing
+    * [ECM-4996] - showing  name of folders are not exactly when they are the same name in special case
+    * [ECM-5015] - Branches : File explorer edit form is still shown when finished editing 
+    * [ECM-5040] - Default value of addRadioBoxField method in UIDialogForm
+    * [ECM-5049] - don't access File explore in special case
+    * [ECM-5063] - How can we set permission * for drive when edit drive
+    * [ECM-5068] - FileExplorer in mode "parameterized", dosen't work after logout /login
+    * [ECM-5070] - still can edit File explorer while don't allow to edit
+    * [ECM-5096] - Unknown error when choose target Node whose name includes special character
+    * [ECM-5100] - Unknown error when upload file in special case
+    * [ECM-5104] - there are some error messages when go to File Explorer
+    * [ECM-5105] - An upload field in a document dialog does not extract filename nor mimetype
+    * [ECM-5111] - ComponentSelector : selectorParams putted in gtmpl fields is not passed to the specific ComponentSelector(s)
+    * [ECM-5112] - ComponentSelector in multivalued field
+    * [ECM-5113] - Can't drag & drop node when tree folder is divided in many pages
+    * [ECM-5120] - IE7: Menu is not shown when right click  a folder  on folder tree
+    * [ECM-5123] - Problem with action publication:workflowAction and publication plugin WorkflowPublication
+    * [ECM-5134] - We can't validate an actionField in a dialog template of a nodetype
+    * [ECM-5144] - Unknown error when label of version begin with Space character OR end with Space character
+    * [ECM-5150] - template is reappeared in spcecial case  althought it was deleted 
+    * [ECM-5158] - "confirm-delete" & "confirm-delete-multi" english labels indicates a remove to Recycle Bin
+    * [ECM-5168] - Wrong Interceptors Management
+    * [ECM-5185] - Impossible to select a exo:image node path for a nodetype in its dialog template
+    * [ECM-5187] - Correct user permission of Taxonomy Tree
+    * [ECM-5203] - Checkbox value is not displayed when re-opening UIDialogForm 
+    * [ECM-5218] - [ERROR] UIJCRExplorer - The node '***' cannot be found
+    * [ECM-5219] - problem import export content
+    * [ECM-5237] - Modification of an action script's variables is considered only after server restart.
+    * [ECM-5312] - Add new Taxonomy , no work space is shown
+    * [ECM-5326] - Link not good after rgit click > copy url to clipboard
+    * [ECM-5351] - Copy/Cut functionalities unavailable
+    * [ECM-5363] - Advanced Search : exception when using "*"
+    * [ECM-5366] - Jcrexplorer : spelling error
+    * [ECM-5370] - JCRexplorer : Rename a node
+    * [ECM-5374] - ArrayIndexOutOfBoundsException in File Explorer if drive's permission is "any"
+    * [ECM-5396] - We are able to remove a file used by a Symlink and it will cause a problem of display in the fileExplorer
+
+** Improvement
+    * [ECM-4867] - JCRexplorer : ambiguous  message, to change
+    * [ECM-5024] - Add validator for UIFormSelectBoxField and UIFormCheckBoxField
+    * [ECM-5136] - Build, quality and automation improvements
+    * [ECM-5184] - Allow Taxonomy Service can run (get node's category for example) with SystemSessionProvider
+    * [ECM-5329] - Problem in initializing NbPerPage property of file explorer's paginator
+    * [ECM-5343] - webdav links not correct in private folder
+
+** New Feature
+    * [ECM-5106] - Allow multiple upload fields
+
+** Task
+    * [ECM-4960] - Remove publication:workflowAction in configuration
+    * [ECM-5115] - Display of File Explorer very long when there is a lot of users
+    * [ECM-5269] - Integrate the support for the Multivalued UISelectbox
+    * [ECM-5362] - Jcrexplorer : delete files confirmation message
+    * [ECM-5367] - JCRexplorer : Message to be corrected
+    * [ECM-5368] - JCRexplorer : Message to be corrected
+    * [ECM-5369] - JCRexplorer: Translate false & true
+    * [ECM-5373] - JCRexplorer : fix height of Upload and Save forms
+    * [ECM-5385] - JCRexplorer: traslation :  right click menu on a node 
+    * [ECM-5424] - Release DMS 2.5.4
+
+** Sub-task
+    * [ECM-5013] - [DEV] Block Site Explorer when upload a file with name including special characters
+    * [ECM-5021] - [TEST] Block Site Explorer when upload a file with name including special characters
+    * [ECM-5025] - [DEV] Error message "msg" on Site Explorer
+    * [ECM-5043] - Fix duplicated dependencies
+    * [ECM-5083] - [DEV] can't drag&drop document (except for file Plan) when it is viewed
+    * [ECM-5108] - [DEV] there are some error messages when go to File Explorer
+    * [ECM-5116] - [DEV] Create new OrganistationService for JAAS Module
+    * [ECM-5135] - Cleanup and reactivate tests
+    * [ECM-5137] - Upgrade to exo parent 8
+    * [ECM-5143] - Cleanup POMs
+    * [ECM-5311] - Remove usage of property org.exoplatform.mvnexobuild.version
+    * [ECM-5390] - [DEV] Rename a node
+    * [ECM-5391] - [TEST] - Rename a node
+    * [ECM-5401] - [DEV] - ECM Administration Portlet: Augment height size to avoid vertical scroller
+    * [ECM-5402] - [TEST] - ECM Administration Portlet: Augment height size to avoid vertical scroller
+    * [ECM-5405] - [DEV] - Add SendMail Groovy script
+
+
 *******************	
 Version dms-2.5.3
 *******************
@@ -777,6 +974,27 @@ Version dms-2.3.2
     * [ECM-3586] - Describe this new feature in the guides
     * [ECM-3587] - Describe this new feature in the wiki
 
+****************
+Version cs-1.3.4
+****************
+
+** Bug
+    * [CS-3012] - when view message which has attachment , attachment of this message is not shown in the first view
+    * [CS-3684] - IE7/safari: Lost a part of portlet chat when open room configuration form
+    * [CS-3734] - Webmail: Sorting messages by date
+    * [CS-3851] - ChatBar does'nt work with Internet Explorer 7
+    * [CS-3857] - [Unplanned] AddressBook Portlet is using OrganizationService instead of ContactService for Importing Groups
+    * [CS-3905] - [IBM JVM] Exception with calendar functions
+    * [CS-3920] - JBoss patch doesn't contain the specific server.xml with SSO
+    * [CS-4000] - [Unplanned] Use of webui_fr.properties
+    * [CS-4012] - Do not receive reminder by pop up
+    * [CS-4013] - Check Contact in AIO1.6,3Snapshop
+
+** Improvement
+    * [CS-3274] - Firefox 3.5 support
+    * [CS-3937] - Chat server packaging improvements
+    * [CS-3945] - Configurable exclusions for group addressbooks
+
 *****************
 Version cs-1.3.3
 *****************
@@ -1315,6 +1533,34 @@ Version cs-1.2.2
 
 ** Sub-task
     * [CS-3359] - Make svn tags
+
+****************
+Version ks-1.2.3
+****************
+
+** Bug
+    * [KS-1971] - the forum service doesn't take into account user profile modifications 
+    * [KS-2077] - Deleted forum message should not appear in "last posts" column
+    * [KS-2219] - Cannot open the forums created by the random initializer
+    * [KS-2220] - Scoping of Edit Mode tab does not work well in special cases
+    * [KS-2227] - Forum : "ban IP" style issue (152087)
+    * [KS-2239] - Forum AuthenticationLogin/Logout listeners generate too much JCR operations/ Many cl*.tmp files generated
+    * [KS-2245] - Forum : poll expiration not well localized
+    * [KS-2285] - Can not click any action in Forum in special case
+    * [KS-2289] - Problem with creating default data in ks-plugins-configuration.xml
+    * [KS-2305] - French label problem on forum
+    * [KS-2347] - Cannot add a new forum
+
+
+** Improvement
+    * [KS-1975] - FAQ - Language switch
+    * [KS-2206] - Build, quality and automation improvements
+    * [KS-2244] - Forum : the discussion windows must be resized 
+
+** Task
+    * [KS-2238] - Forum :Spelling - please correct the expression
+    * [KS-2246] - FAQ : incorrect label submit new question dialog
+
 
 *****************
 Version ks-1.2.2
@@ -1891,6 +2137,105 @@ Version ks-1.1.2
     * [KS-1865] - Upgrade to Portal 2.5.5
     * [KS-1866] - Release 1.1.2
 	
+*****************
+Version wcm-1.2.3
+*****************
+
+** Bug
+    * [WCM-1712] - Can not saved new re-uploaded image for illustration after deleted the old one in images node
+    * [WCM-2048] - Edit site breaks the layout of the portal
+    * [WCM-2051] - Fast Content Creator interface looses modifications when opening AddAction SubDialog
+    * [WCM-2090] - Only "Input" & "Text area" fields are checked for mandatory when use form that was added with * for every fields 
+    * [WCM-2110] - Error message "msg" on Site Explorer
+    * [WCM-2134] - Cannot delete Image from Web content (layout: Picture on head layout web content) when this WC belongs to a content list viewer
+    * [WCM-2142] - Naming error when input the same name in Title field in Create new web content form
+    * [WCM-2226] - Ajax event on an UIComponent refresh the whole page
+    * [WCM-2318] - Cannot do any thing in Newsletter management when creat new/edit Description having error html content in Category or Subscription
+    * [WCM-2331] - Cannot do any thing when create new site having the same name with the previous site which has been deleted. 
+    * [WCM-2374] - Cannot search a web content in new site when it is selected from another site.
+    * [WCM-2400] - Block Site Explorer when upload a file with name including special characters 
+    * [WCM-2438] - Portal layout configuration on Internet Explorer 7 : Offset between moved portlet and its real position
+    * [WCM-2460] - Unknow error when publish a checkin content to a page
+    * [WCM-2495] - Show msg: "repository-exception" when create contents with same name
+    * [WCM-2500] - Site-explorer trashes
+    * [WCM-2502] - Uploaded HTML doesn't create CSS nor JS default files
+    * [WCM-2505] - Add styles for template nodes generated by Form generator (Since DMS 2.5.3)
+    * [WCM-2506] - Error when list/view document in News page
+    * [WCM-2507] - Selected path to public a content is not listed in right pane when public document while it is being checked in
+    * [WCM-2511] - The FCK editor of Editor field when create new form & in created template are not the same
+    * [WCM-2513] - Div for "Surf Mode/Edit Mode Switch" too short
+    * [WCM-2514] - Bad message at the validation in the formgenerator
+    * [WCM-2521] - Delete all folder in "artifact"
+    * [WCM-2526] - Homepage UI broken with eXo-dev.sh
+    * [WCM-2528] - Missing translation for CLV and SLV configuration windows
+    * [WCM-2529] - impossible to customize the look and feel when a CLV matches an empty folder
+    * [WCM-2533] - Navigation cannot be dispalyed
+    * [WCM-2534] - UIPCVPortlet : Creating a document symlinked to "Subcategory"
+    * [WCM-2542] - Webdav view Error
+    * [WCM-2551] -  Portlet Content List Viewer: content update issues
+    * [WCM-2567] - Exception when the page register is opened the 1st time
+    * [WCM-2568] - Inconsistent document selector when adding new "image" or "editing" it
+    * [WCM-2573] - CLV data disappears while saving other tab
+    * [WCM-2597] - Navigation portlet does not show sub menus
+    * [WCM-2599] - Editing a Form Generator's template gives "Unknown error"
+    * [WCM-2600] - Content Creator's label component doesn't show
+    * [WCM-2611] - Unable to create web content with illustration
+    * [WCM-2615] - Two windows
+    * [WCM-2619] - FCKEditor doesn't show for the second time
+    * [WCM-2622] - Wrong I18N message
+    * [WCM-2629] - "wcm.composer" cache is caching PCV
+    * [WCM-2635] - Can't "Manage Publication" anymore. Uknown Error
+    * [WCM-2643] - CLV Portlet Preference (ORDER_BY) can't be stored
+    * [WCM-2646] - Impossible to expand the sub-elements in the tree view of nodes
+    * [WCM-2660] - Temple options' values are reseted when editing action in content Creator portlet 
+    * [WCM-2662] - DIV probleme with WCM
+    * [WCM-2663] - Media Player masks navigation functionality
+    * [WCM-2668] - Impossible to suscribe to news-letters with another user than root
+    * [WCM-2670] - Cannot edit a webcontent
+    * [WCM-2671] - In Inline mode, Quick Edit does not work
+    * [WCM-2672] - Can not add content
+    * [WCM-2673] - IE7: Lack of CSS style sheet of the title of page
+    * [WCM-2674] - Error when select user/member for New Subscription and New Category action
+    * [WCM-2678] - Cannot add a CLV portlet on a page
+    * [WCM-2679] - Do not see Quick Edit of Categories portlet in news page
+    * [WCM-2683] - WCM Default navigation does not respect permission
+    * [WCM-2685] -  WCM Advance Search Portlet : losing params after save
+    * [WCM-2687] - Mistakes in french internationalization
+    * [WCM-2689] - Changes in FCC action's parameters are not taken in consideration
+    * [WCM-2690] - Wrong search result in wcm search portlet
+    * [WCM-2691] - Parameterized Content Viewer does not work correctly when accessing content by category.
+    * [WCM-2692] - CLV does not work correctly with secured content (document with permission) cache issue
+    * [WCM-2693] - Tests are failing
+    * [WCM-2694] - Problem of label display (translation) in CLV  automatic and manual browse panel
+    * [WCM-2695] - Unknown error when create page wizard in special case
+    * [WCM-2697] - Content is not public immediately after the content have been created with "Fast public"
+    * [WCM-2703] - Broken UI when add Content by choosing a existing sample node which has attachment
+    * [WCM-2704] - IE7: UI error at Classic site
+    * [WCM-2705] - refreshing the search result page modify the result.
+    * [WCM-2708] - Cannot create new subscription, category in newsletter manager
+    * [WCM-2709] - Missing image in the PCLV portlet (404 error)
+    * [WCM-2711] - IE7: acme: all name of pages have background at the time when move mouse  over them
+    * [WCM-2712] - Content is not published if accessed through a sym link
+    * [WCM-2717] -  Problem with "Add a site page link " on FCKEDITOR
+
+** Improvement
+    * [WCM-2499] - Synchronize code from branches 1.2.x to trunk
+    * [WCM-2508] - Loose stylesheet of Close button in Manage Publication form
+    * [WCM-2531] - Build, quality and automation improvements
+
+** Task
+    * [WCM-1916] - Default contents in Acme categories
+    * [WCM-2638] - Use "continue" instruction instead of "return", in a "for" block
+    * [WCM-2667] - We can not edit nodeTypes created by the Form Generator portlet
+    * [WCM-2737] - Release WCM 1.2.3
+
+** Sub-task
+    * [WCM-2515] - Fix duplicated dependencies
+    * [WCM-2532] - Upgrade to exo parent 8
+    * [WCM-2541] - Cleanup POMs
+    * [WCM-2677] - Remove usage of property org.exoplatform.mvnexobuild.version
+
+	
 ******************	
 Version wcm-1.2.2
 ******************
@@ -2309,6 +2654,29 @@ Version wcm-1.2
     * [WCM-1883] - Unknown error when edit a default Script at Site Administrator
     * [WCM-1884] - Unknown error when add new letter into a blank category
 
+*******************
+Version webos-1.5.5
+*******************
+
+** Bug
+    * [WEBOS-294] - WEBOS 1.5.1 not working on chrome
+    * [WEBOS-295] - Can not access any page after click on a empty node on navigation of webos
+
+
+** Improvement
+    * [WEBOS-310] - Build, quality and automation improvements
+
+
+** Task
+    * [WEBOS-323] - Release WebOS 1.5.5
+
+
+** Sub-task
+    * [WEBOS-309] - Cleanup and reactivate tests
+    * [WEBOS-311] - Upgrade to exo parent 8
+    * [WEBOS-313] - Cleanup POMs
+    * [WEBOS-316] - Remove usage of property org.exoplatform.mvnexobuild.version
+
 ********************
 Version webos-1.5.4
 ********************
@@ -2539,6 +2907,33 @@ Version webos-1.5
     * [WEBOS-183] - [DEV]: should set min-width and min-heigth for portlet when user resize portlet by using mouse
     * [WEBOS-184] - [TEST]:should set min-width and min-heigth for portlet when user resize portlet by using mouse
 
+
+****************
+Version wf-1.0.6
+****************
+
+** Bug
+    * [WF-78] - Fix failing tests
+
+
+** Improvement
+    * [WF-55] - Build, quality and automation improvements
+
+
+** Task
+    * [WF-77] - Correct label in Workflow
+    * [WF-79] - center the icon to avoid ambiguity in the Task validation tab
+    * [WF-80] - Release WF 1.0.6
+
+
+** Sub-task
+    * [WF-52] - Fix duplicated dependencies
+    * [WF-53] - Fix missing dep in exo.ecm.workflow.web.portal
+    * [WF-54] - Cleanup and reactivate tests
+    * [WF-56] - Upgrade to exo parent 8
+    * [WF-59] - Cleanup POMs
+    * [WF-81] - Use dependency plugin instead of webResources with war plugin and local repository
+
 ******************
 Version WF-1.0.5
 ******************
@@ -2557,5 +2952,4 @@ Version WF-1.0.5
     * [WF-45] - Extract jbpm 3.0 in a separate trunk and tags/3.0
     * [WF-46] - Use Kernel, Core, JCR, PC, Portal SNAPSHOTs
     * [WF-47] - Fix JBPM 3.0-SNAPSHOT issue (clean by hudson because a 3.0 is out), proably a 3.0.1 is needed.
-
 

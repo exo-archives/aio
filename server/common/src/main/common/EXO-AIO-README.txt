@@ -14,6 +14,14 @@ Follow the procedure of installation and start eXo All In One now !
 =============
 
 All In One 1.6.3 contains the following improvements:
+ - Portal 2.5.8
+ - DMS 2.5.4 (WF 1.0.6)
+ - WCM 1.2.3
+ - CS 1.3.4
+ - KS 1.2.3
+ - WebOS 1.5.5
+
+Check the EXO-AIO-CHANGELOG.txt file for all details.
     
 
 ===========================
@@ -137,7 +145,9 @@ However, Tomcat doesn't ensure this order will be respected
  Known major issues
 ====================
 
-    
+    * Error when a user is deleted (ALL-170)
+    * Multi-DB configuration on Oracle (ALL-243)
+    * LDAP connection performance (ALL-221)
 
 ===========
  Resources
