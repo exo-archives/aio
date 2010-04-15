@@ -31,7 +31,7 @@
   <name>eXo All-In-One</name>
   <scm>
     <connection>scm:svn:http://svn.exoplatform.org/projects/allinone/branches/1.6.x</connection>
-    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/allinone/branches/1.6.x</developerConnection>
+    <developerConnection>scm:svn:https://svn.exoplatform.org/projects/allinone/branches/1.6.x</developerConnection>
     <url>http://fisheye.exoplatform.org/browse/projects/allinone/branches/1.6.x</url>
   </scm>
   <ciManagement>
