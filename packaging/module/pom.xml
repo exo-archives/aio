@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
     <artifactId>exo.aio.packaging</artifactId>
-    <version>1.6.4</version>
+    <version>1.6.5-SNAPSHOT</version>
   </parent>
   <artifactId>allinone.packaging.module</artifactId>
   <packaging>pom</packaging>
