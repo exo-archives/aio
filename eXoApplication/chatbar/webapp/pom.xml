@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"> 
+  <parent>
+    <groupId>org.exoplatform.allinone</groupId>
+    <artifactId>aio</artifactId>
+    <version>1.6.1</version>
+  </parent> 
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>exo.allinone.webapp.chatbar</artifactId>
+  <packaging>war</packaging> 
+  <name>eXo ChatBar Application patch</name>
+  <description>Add "right:0;" to the css style of div#UIChatBarPortlet to display it entirely in WCM home page.</description>
+  
+  <dependencies>
+    <dependency>
+       <groupId>org.exoplatform.cs</groupId>
+       <artifactId>exo.cs.eXoApplication.chatbar.webapp</artifactId>
+       <version>${org.exoplatform.cs.version}</version>
+       <scope>runtime</scope>
+       <type>war</type> 
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>chatbar</finalName>
+  </build>
+</project>

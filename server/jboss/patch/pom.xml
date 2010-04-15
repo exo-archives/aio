@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.exoplatform.allinone</groupId>
+    <artifactId>aio</artifactId>
+    <version>1.6.1</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>aio-jboss-ear-patch</artifactId>
+  <packaging>jar</packaging>
+  <name>eXo AIO JBoss Server - EAR</name>
+
+ <dependencies>
+   <dependency>
+      <groupId>org.exoplatform.cs</groupId>
+      <artifactId>exo.cs.server.jboss.patch-ear</artifactId>
+      <version>${org.exoplatform.cs.version}</version>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack-dependencies</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+              <includes>**/*</includes>
+	      <excludes>**/server.xml,**/EXO-README.txt</excludes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/tomcat</directory>
+        <includes><include>**/*</include></includes>
+      </resource>
+    </resources>
+  </build>
+
+
+</project>

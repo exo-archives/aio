@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"> 
+
+  <parent>
+    <groupId>org.exoplatform</groupId>
+    <artifactId>exo.parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.exoplatform.allinone</groupId>
+  <artifactId>aio</artifactId>
+  <name>eXo AllInOne Parent</name>
+  <version>1.6.1</version>
+  <packaging>pom</packaging>
+
+  <scm>
+    <connection>scm:svn:http://svn.exoplatform.org/projects/allinone/tags/1.6.1</connection>
+    <developerConnection>scm:svn:http://svn.exoplatform.org/projects/allinone/tags/1.6.1</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/allinone/tags/1.6.1</url>
+  </scm>
+
+  <properties>
+
+    <org.exoplatform.kernel.version>2.0.9</org.exoplatform.kernel.version>
+    <org.exoplatform.core.version>2.1.7</org.exoplatform.core.version>
+    <org.exoplatform.ws.version>1.3.5</org.exoplatform.ws.version>
+    <org.exoplatform.jcr.version>1.10.6</org.exoplatform.jcr.version>
+    <org.exoplatform.portletcontainer.version>2.0.8</org.exoplatform.portletcontainer.version>
+    <org.exoplatform.portal.version>2.5.7</org.exoplatform.portal.version>
+    <org.exoplatform.webos.version>1.5.4</org.exoplatform.webos.version>
+    <org.exoplatform.ecm.dms.version>2.5.3</org.exoplatform.ecm.dms.version>
+    <org.exoplatform.ecm.wcm.version>1.2.2</org.exoplatform.ecm.wcm.version>
+    <org.exoplatform.ecm.workflow.version>1.0.5</org.exoplatform.ecm.workflow.version>
+    <org.exoplatform.ecm.jbpm.version>3.0.2</org.exoplatform.ecm.jbpm.version>
+    <org.exoplatform.cs.version>1.3.3</org.exoplatform.cs.version>
+    <org.exoplatform.ks.version>1.2.2</org.exoplatform.ks.version>
+    <org.exoplatform.exopackage.version>1.2.0</org.exoplatform.exopackage.version>
+    <org.exoplatform.mvnexobuild.version>1.2.0</org.exoplatform.mvnexobuild.version>
+
+    <bonita.version>4.0</bonita.version>
+
+  </properties>
+
+  <modules>
+    <module>web/portal</module>
+    <module>server/tomcat/patch</module>
+    <module>server/jboss/patch</module>
+    <module>eXoApplication/chatbar/webapp</module>
+    <module>packaging</module> <!-- will download some artifacts needed for packaging by exobuild  -->
+  </modules>
+
+</project>
