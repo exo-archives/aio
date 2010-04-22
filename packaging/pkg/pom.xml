@@ -114,13 +114,13 @@
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
       <artifactId>allinone.packaging.module</artifactId>
-      <version>1.6.5-SNAPSHOT</version>
+      <version>${project.version}</version>
       <type>js</type>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
       <artifactId>allinone.packaging.product</artifactId>
-      <version>1.6.5-SNAPSHOT</version>
+      <version>${project.version}</version>
       <type>js</type>
     </dependency>
   </dependencies>

@@ -1,5 +1,5 @@
 ==============================================
-    Release Notes - All In One - 1.6.3
+    Release Notes - All In One - 1.6.5
 ==============================================
 
 
@@ -13,7 +13,8 @@ Follow the procedure of installation and start eXo All In One now !
  What's new?
 =============
 
-All In One 1.6.3 contains the following improvements:
+All In One 1.6.5 contains the following improvements:
+    
     
 
 ===========================
