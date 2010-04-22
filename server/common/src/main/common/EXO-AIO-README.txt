@@ -1,5 +1,5 @@
 ==============================================
-    Release Notes - All In One - 1.6.3
+    Release Notes - All In One - 1.6.4
 ==============================================
 
 
@@ -13,7 +13,10 @@ Follow the procedure of installation and start eXo All In One now !
  What's new?
 =============
 
-All In One 1.6.3 contains the following improvements:
+All In One 1.6.4 contains the following improvements:
+    * DMS 2.5.5
+    * WCM 1.2.4
+    
     
 
 ===========================
