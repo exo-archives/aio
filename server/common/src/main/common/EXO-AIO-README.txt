@@ -1,6 +1,9 @@
-==============================================
-    Release Notes - All In One - 1.6.5
-==============================================
+****************************
+eXo All In One Release Notes
+****************************
+
+Date:
+Version: 1.6.5
 
 
 Thank you for downloading eXo All In One.
@@ -9,28 +12,36 @@ eXo All In One allows you to discover and test all the eXo Products in a single 
 Follow the procedure of installation and start eXo All In One now !
 
 
-=============
- What's new?
-=============
+===============
+I. MAIN CHANGES
+===============
 
-All In One 1.6.5 contains the following improvements:
+
+
+====================
+II. PACKAGE CONTENTS
+====================
+
+    * eXoAllinOne-1.6.5-tomcat.zip
+    * eXoAllInOne-1.6.5-jbossear.zip
+    * eXoAllInOne-1.6.5-chatserver.zip
     
-    
+    * EXO-AIO-README.txt (this file)
+    * EXO-AIO-CHANGELOG.txt
 
-===========================
- Installation requirements
-===========================
+=========================
+III. STARTUP INSTRUCTIONS
+=========================
 
-    * OS : Windows, Linux or MAC OS
-    * Memory : 1GB of RAM and at least one 1.5 Ghz processor
-    * Disk : 150MB of disk space is necessary for the install
-    * Browser : Firefox 3+ or Internet Explorer 7+
-    * eXo AIO requires a Java 5 environment, make sure the JAVA_HOME environment variable point to a JRE 5 folder
-    * the eXo server will run on portal 8080, make sure this port is not currently in use
-
-=====================
- Launch instructions
-=====================
+    * Requirements
+      
+      +) CPU: 1.5GHz
+      +) Memory : 1GB of RAM
+      +) Disk : 150MB
+      +) OS : Windows, Linux or MAC OS
+      +) Java 5 or 6 (JAVA_HOME environment variable)
+      +) Browser : Firefox 3+ or Internet Explorer 7+
+      +) the eXo server will run on portal 8080, make sure this port is not currently in use
 
     * Download the chat server
 
@@ -49,15 +60,12 @@ All In One 1.6.5 contains the following improvements:
       +) On the Windows platform :
 
         Open a DOS prompt command, go to exo-openfire/bin and type the command:
-
         openfired.exe
 
       +) On Unix/Linux :
 
         Open a terminal, go to exo-openfire/bin and type the command:
-
         ./openfire start
-
 
 
     * Download eXo All In One (Tomcat or JBoss)
@@ -84,7 +92,7 @@ All In One 1.6.5 contains the following improvements:
       
       +) You should see this in your startup log :
       
-      Add configuration file:/path/to/exo-tomcat/exo-conf/portal/portal/configuration.xml
+        Add configuration file:/path/to/exo-tomcat/exo-conf/portal/portal/configuration.xml
 	        import file:/path/to/exo-tomcat/exo-conf/portal/portal/common-configuration.xml
 	        import file:/path/to/exo-tomcat/exo-conf/portal/portal/logs-configuration.xml
 	        import file:/path/to/exo-tomcat/exo-conf/portal/portal/database-configuration.xml
@@ -108,11 +116,15 @@ All In One 1.6.5 contains the following improvements:
 
     * eXo All In One is now ready to use. Point your browser to http://localhost:8080/portal/
 
+======================
+IV. DETAILS OF CHANGES
+======================
 
-==================
- Troubleshooting
-==================
+The file EXO-AIO-CHANGELOG.txt contains the detailed changelog of all the products.
 
+===============
+V. KNOWN ISSUES
+===============
 
 If you meet a JS or a CSS error when you run the Tomcat package on Linux, please take a look at:
 
@@ -133,18 +145,19 @@ These errors appear when eXoResources is *not* deployed first. We named the othe
 However, Tomcat doesn't ensure this order will be respected
 
     * See also: http://wiki.apache.org/tomcat/FAQ/Miscellaneous#Q27
-
-====================
- Known major issues
-====================
-
     
+======================
+VI. BUILD INSTRUCTIONS
+======================
 
-===========
- Resources
-===========
+Please refer to our public wiki:
+http://wiki.exoplatform.org/xwiki/bin/view/Main/Building+from+sources
 
-     Company site        http://www.exoplatform.com
+==============
+VII. RESOURCES
+==============
+
+     Corporate site      http://www.exoplatform.com
      Community JIRA      http://jira.exoplatform.org/browse/ALL
      Community site      http://www.exoplatform.org
      Developers wiki     http://wiki.exoplatform.org
