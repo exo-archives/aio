@@ -52,7 +52,8 @@
     <org.exoplatform.ecm.jbpm.version>3.0.2</org.exoplatform.ecm.jbpm.version>
     <org.exoplatform.cs.version>1.3.5-SNAPSHOT</org.exoplatform.cs.version>
     <org.exoplatform.ks.version>1.2.4-SNAPSHOT</org.exoplatform.ks.version>
-    <org.exoplatform.exopackage.version>1.2.2</org.exoplatform.exopackage.version>
+    <org.exoplatform.exopackage.version>1.2.3-SNAPSHOT</org.exoplatform.exopackage.version>
+    <org.exoplatform.exobuild.version>1.2.2-SNAPSHOT</org.exoplatform.exobuild.version>
     <bonita.version>4.0</bonita.version>
   </properties>
   <modules>
