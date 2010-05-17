@@ -141,6 +141,8 @@
                 <dependency><groupId>org.hibernate</groupId><artifactId>hibernate</artifactId><version>3.2.6.ga</version><type>jar</type></dependency><!-- 3.2.6.ga-->
                 <dependency><groupId>javassist</groupId><artifactId>javassist</artifactId><version>3.4.GA</version><type>jar</type></dependency><!-- 3.4.GA-->
                 <dependency><groupId>org.hibernate</groupId><artifactId>hibernate-core</artifactId><version>3.3.2.GA</version><type>jar</type></dependency><!-- 3.3.2.GA-->
+                <dependency><groupId>org.ow2.bonita</groupId><artifactId>bonita-core</artifactId><version>4.0</version><type>jar</type></dependency><!-- 4.0-->
+		<dependency><groupId>net.sf.ehcache</groupId><artifactId>ehcache</artifactId><version>1.5.0</version><type>jar</type></dependency><!-- 1.5.0-->
   </dependencies>
   <modules>
     <module>module</module>
