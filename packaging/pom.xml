@@ -90,60 +90,68 @@
       <type>jar</type>
     </dependency>
     <dependency>
-		  <groupId>org.apache.axis</groupId>
-		  <artifactId>axis-saaj</artifactId>
-		  <version>1.4</version>
-		  <type>jar</type>
-		</dependency>
-		<dependency>
-		  <groupId>org.slf4j</groupId>
-		  <artifactId>slf4j-jdk14</artifactId>
-		  <version>1.5.6</version>
-		  <type>jar</type>
-		</dependency>
-		<dependency>
-		  <groupId>jcr</groupId>
-		  <artifactId>jcr</artifactId>
-		  <version>1.0</version>
-		  <type>jar</type>
-		</dependency>
-		<dependency>
-		  <groupId>org.slf4j</groupId>
-		  <artifactId>slf4j-api</artifactId>
-		  <version>1.5.6</version>
-		  <type>jar</type>
-		</dependency>
-		<dependency>
-		  <groupId>org.jvnet.jaxb2.maven2</groupId>
-		  <artifactId>maven-jaxb2-plugin</artifactId>
-		  <version>0.1</version>
-		  <type>jar</type>
-		</dependency>
-		<dependency>
-		    <groupId>org.apache.axis</groupId>
-		    <artifactId>axis-jaxrpc</artifactId>
-		    <version>1.4</version>
-		    <type>jar</type>
-		  </dependency>
-                 <dependency>
-                    <groupId>jaxen</groupId>
-                    <artifactId>jaxen</artifactId>
-                    <version>1.1.1</version>
-                    <type>jar</type>
-                 </dependency><!-- 1.1.1-->
-                 <dependency><groupId>org.apache.shindig</groupId><artifactId>shindig-social-api</artifactId><version>0.8.1-1-r719456</version><type>jar</type></dependency><!-- 0.8.1-1-r719456-->
-                 <dependency><groupId>xml-apis</groupId><artifactId>xml-apis</artifactId><version>1.3.04</version><type>jar</type></dependency><!-- 1.3.04-->
-                 <dependency><groupId>rome</groupId><artifactId>rome</artifactId><version>0.9</version><type>jar</type></dependency><!-- 0.9-->
-                 <dependency><groupId>org.codehaus.woodstox</groupId><artifactId>wstx-asl</artifactId><version>3.2.1</version><type>jar</type></dependency><!-- 3.2.1-->
+	<groupId>org.apache.axis</groupId>
+	<artifactId>axis-saaj</artifactId>
+	<version>1.4</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-jdk14</artifactId>
+	<version>1.5.6</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>jcr</groupId>
+	<artifactId>jcr</artifactId>
+	<version>1.0</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-api</artifactId>
+	<version>1.5.6</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>org.jvnet.jaxb2.maven2</groupId>
+	<artifactId>maven-jaxb2-plugin</artifactId>
+	<version>0.1</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>org.apache.axis</groupId>
+	<artifactId>axis-jaxrpc</artifactId>
+	<version>1.4</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>jaxen</groupId>
+	<artifactId>jaxen</artifactId>
+	<version>1.1.1</version>
+	<type>jar</type>
+    </dependency>
 
-                <dependency><groupId>net.sf.ehcache</groupId><artifactId>ehcache</artifactId><version>1.6.0</version><type>jar</type></dependency><!-- 1.6.0-->
-                <dependency><groupId>org.hibernate</groupId><artifactId>hibernate-annotations</artifactId><version>3.4.0.GA</version><type>jar</type></dependency><!-- 3.4.0.GA-->
-                <dependency><groupId>org.hibernate</groupId><artifactId>hibernate</artifactId><version>3.2.6.ga</version><type>jar</type></dependency><!-- 3.2.6.ga-->
-                <dependency><groupId>javassist</groupId><artifactId>javassist</artifactId><version>3.4.GA</version><type>jar</type></dependency><!-- 3.4.GA-->
-                <dependency><groupId>org.hibernate</groupId><artifactId>hibernate-core</artifactId><version>3.3.2.GA</version><type>jar</type></dependency><!-- 3.3.2.GA-->
-                <dependency><groupId>org.ow2.bonita</groupId><artifactId>bonita-core</artifactId><version>4.0</version><type>jar</type></dependency><!-- 4.0-->
-		<dependency><groupId>net.sf.ehcache</groupId><artifactId>ehcache</artifactId><version>1.5.0</version><type>jar</type></dependency><!-- 1.5.0-->
+    <dependency>
+	<groupId>net.sf.ehcache</groupId>
+	<artifactId>ehcache</artifactId>
+	<version>1.6.0</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>javagroups</groupId>
+	<artifactId>jgroups-all</artifactId>
+	<version>2.5.2</version>
+	<type>jar</type>
+    </dependency>
+    <dependency>
+	<groupId>xerces</groupId>
+	<artifactId>xercesImpl</artifactId>
+	<version>2.9.1</version>
+	<type>jar</type>
+    </dependency>
   </dependencies>
+           
   <modules>
     <module>module</module>
     <module>product</module>
