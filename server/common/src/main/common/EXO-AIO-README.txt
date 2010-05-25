@@ -2,7 +2,7 @@
 eXo All In One Release Notes
 ****************************
 
-Date:
+Date: 2010-05-25
 Version: 1.6.5
 
 
@@ -16,13 +16,22 @@ Follow the procedure of installation and start eXo All In One now !
 I. MAIN CHANGES
 ===============
 
+Updated to the following products:
+    * Portal 2.5.9
+    * WebOS 1.5.6
+    * CS 1.3.5
+    * KS 1.2.4
+    * WF 1.0.7
+    * DMS 2.5.6
+    * WCM 1.2.5
 
+See EXO-AIO-CHANGELOG.txt for all details.
 
-====================
-II. PACKAGE CONTENTS
-====================
+===================
+II. PACKAGE CONTENT
+===================
 
-    * eXoAllinOne-1.6.5-tomcat.zip
+    * eXoAllInOne-1.6.5-tomcat.zip 
     * eXoAllInOne-1.6.5-jbossear.zip
     * eXoAllInOne-1.6.5-chatserver.zip
     
