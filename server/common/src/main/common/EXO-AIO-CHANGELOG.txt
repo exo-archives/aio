@@ -2334,6 +2334,7 @@ Version wcm-1.2.5
     * [WCM-2788] - WCM Content Selector: does not show content of a folder when switchin
     * [WCM-2790] - PCLV : error in nt:file Title
     * [WCM-2791] - Remove WCM's NewPortalConfigListener
+    * [WCM-2792] - incoherence in search results and suggested words
     * [WCM-2794] -  Problem for displaying documents with names containing illegal JCR characters using nt:file view 
     * [WCM-2797] - Search's results: suggestion always in plural
     * [WCM-2803] - WCM-Error in displaying name when node has more than 1 version
@@ -2342,6 +2343,8 @@ Version wcm-1.2.5
     * [WCM-2807] - Position of Homepage Button on Start Bar container to be changed when moving the mouse cursor over it
     * [WCM-2810] - PCLV: content-not-found
     * [WCM-2812] - Broken ACME's stylesheet
+    * [WCM-2821] - Container can't be removed after being inserted in the page
+    * [WCM-2822] - searched texts in search results are not highlighted
 
 
 ** Task
