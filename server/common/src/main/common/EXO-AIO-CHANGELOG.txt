@@ -379,6 +379,11 @@ Version dms-2.5.6
     * [ECM-5454] - Action on node is not executed 
     * [ECM-5455] - A bad translation of buttons
     * [ECM-5456] - Upload a file: label translation in French
+    * [ECM-5460] -  Inherited rights are lost after server restart
+
+
+** Improvement
+    * [ECM-5436] - Changes Labels of nodes in the tree of the File Explorer
 
 
 ** Task
