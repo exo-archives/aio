@@ -2319,7 +2319,6 @@ Version wcm-1.2.5
     * [WCM-2694] - Problem of label display (translation) in CLV  automatic and manual browse panel
     * [WCM-2713] - Several JS problems with IE 7
     * [WCM-2721] - Inversion of content's list in CLV at every validation
-    * [WCM-2725] - Cache & Categories errors : new published content is not considered and old content remains at cache (need to be removed)
     * [WCM-2727] - Content edition is not considered after publication
     * [WCM-2728] - Problems with Sorting Mechanism
     * [WCM-2745] - Problem with manage taxonomy
