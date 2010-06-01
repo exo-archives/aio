@@ -16,6 +16,7 @@ Version all-1.6.5
     * [ALL-353] - Search result - suggestion is writen in plural whereas only one suggestion is displayed
     * [ALL-358] - Can NOT send mail -- multiple product overriding mail configs
     * [ALL-361] - AIO packaging fails if not all the dependencies are already in local maven repo
+    * [ALL-385] - Can't login , login page doesn't appear - Workaround
 
 
 ** Task
@@ -2349,6 +2350,7 @@ Version wcm-1.2.5
     * [WCM-2812] - Broken ACME's stylesheet
     * [WCM-2821] - Container can't be removed after being inserted in the page
     * [WCM-2822] - searched texts in search results are not highlighted
+    * [WCM-2834] - Can't login , login page doesn't appear - Workaround
 
 
 ** Task
