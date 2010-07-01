@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>SNF_DMS_12_AddLocalize</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SNF_DMS_12_AddLocalize</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/public/classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Article_12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Article_11_title_English</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIDocumentForm']/div[2]/div/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Article_12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Article_12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=Collaboration</td>
+	<td>1,1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add/Edit localised contents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;eXo.webui.UIHorizontalTabs.changeTabForUITabPane(this, 'UIMultiLanguageManager', 'UIAddLanguageContainer')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>typeLang</td>
+	<td>label=Vietnamese</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='vi']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>test 04 tieng viet</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UILanguageDialogForm']/div[2]/div/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;javascript:ajaxGet('/portal/private/classic/fileexplorer?portal:componentId=fileexplorer&amp;portal:type=action&amp;portal:isSecure=false&amp;uicomponent=UIPopupWindow&amp;op=ClosePopup&amp;ajaxRequest=true')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=Vietnamese</td>
+	<td>1,1</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test 04 tieng viet</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
