@@ -4,3 +4,6 @@
 - Create manually folder name 'eXo_Folder' (if not available) in mail account: exotest3@gmail.com
 - Run the file script : Test_Mail.html firstly to create default data used during the test process.
 - Place file Test_Attachment.html in D:/ path
+
+
+
