@@ -22,9 +22,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -37,14 +42,19 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAtAndWait</td>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=Register</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -87,9 +97,9 @@
 	<td>test_user_05@yahoo.com</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIRowContainer']//div[@class='UIFormTabPane']//div[@class='TabsContainer']/div[2]/div/div/div/div</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
@@ -102,14 +112,14 @@
 	<td>test_name_given_05</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIRowContainer']//div[@class='UIFormTabPane']//div[@class='TabsContainer']/div/div/div/div/div</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -117,9 +127,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Community Management</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
@@ -137,33 +147,43 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIListUsers']//tbody/tr[1]//img[@class='ViewUserInfoIcon']</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>firstName</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>firstName</td>
-	<td>Test05Past</td>
+	<td>Test05Edited</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='UIWorkingWorkspace']//div[@id='UIPortal']//div[@id='UIPageBody']//div[@class='ManagementTabContent']/div[@class='UIPopupWindow UIDragObject']//a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Cancel</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Test05Edited</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyTextPresent</td>
-	<td>Test05Past</td>
+	<td>Test05Edited</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,19 +192,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIListUsers']//tbody/tr[1]//img[@class='DeleteUserIcon']</td>
-	<td>1,1</td>
-</tr>
-<tr>
-	<td>waitForConfirmation</td>
-	<td>Are you sure you want to delete test_user_05 user?</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete a_test_user_05 user?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 
 </tbody></table>

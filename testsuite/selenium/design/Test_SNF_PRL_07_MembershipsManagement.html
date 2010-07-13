@@ -18,13 +18,13 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>-MembershipManagement-</td>
+	<td>--Membership Management</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -52,9 +52,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Community Management</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -62,9 +62,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Membership Management</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -82,9 +82,9 @@
 	<td>descriptionofmembership_07</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
@@ -92,7 +92,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIListMembershipType']//tbody/tr[1]//img[@class='EditMembershipIcon']</td>
 	<td></td>
 </tr>
@@ -109,12 +109,12 @@
 <tr>
 	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIListMembershipType']//tbody/tr[1]//img[@class='DeleteMembershipIcon']</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>assertConfirmation</td>
@@ -122,9 +122,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>

@@ -22,9 +22,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -42,14 +42,19 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>//div[@id='UIPortalLoginFormAction']/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>waitForElementPresent</td>
 	<td>link=Application Registry</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Application Registry</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -57,9 +62,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>waitForElementPresent</td>
 	<td>//div[@id='UIApplicationOrganizer']//div/div</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIApplicationOrganizer']//div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -92,9 +107,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Add Permission</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -102,14 +117,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Platform</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>waitForElementPresent</td>
 	<td>link=Administrators</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Administrators</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -117,7 +137,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=manager</td>
 	<td></td>
 </tr>
@@ -127,9 +147,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -147,9 +167,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Test_cat_10</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -162,9 +182,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='ListContent']//div[@class='SelectedTab']//a[@class='ControlIcon CreateNewIcon']</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -177,9 +197,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//input[@name='application' and @value='1']</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -187,7 +207,7 @@
 	<td>test_displayname_10</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>css=form#UIAddApplicationForm div.UIAction div.ActionButton</td>
 	<td></td>
 </tr>
@@ -202,7 +222,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='ListContent']//div[@class='UIVTabContent']/div[1]//a[@class='ControlIcon DeletePortalIcon']</td>
 	<td></td>
 </tr>
@@ -227,12 +247,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='SelectedTab']//a[@class='ControlIcon DeleteIcon']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForConfirmation</td>
+	<td>assertConfirmation</td>
 	<td>Are you sure to delete this category and all applications on it?</td>
 	<td></td>
 </tr>
@@ -247,9 +267,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>

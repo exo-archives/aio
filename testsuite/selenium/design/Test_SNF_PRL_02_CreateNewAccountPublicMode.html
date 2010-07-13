@@ -22,9 +22,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Register</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -67,9 +67,9 @@
 	<td>test_user_02@yahoo.com</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIRowContainer']//div[@class='UIFormTabPane']//div[@class='TabsContainer']/div[2]/div/div/div/div</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
@@ -82,42 +82,47 @@
 	<td>test_name_given_02</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIRowContainer']//div[@class='UIFormTabPane']//div[@class='TabsContainer']/div/div/div/div/div</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@id='UIAccountPortlet']/div[2]/div/div[2]//div[@class='UIPopupMessages']/div[@class='MessageActionBar']/div[@class='UIAction']/table//tr/td/div/div/div/div/a</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIPortalComponentLogin']//div[2]//input</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>//form[@id='UIPortalComponentLogin']//input[@id='username']</td>
+	<td>//form[@id='UIPortalComponentLogin']//div[2]//input</td>
 	<td>root</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>//form[@id='UIPortalComponentLogin']//input[@id='password']</td>
+	<td>//div[@id='UIPortalLoginFormControl']//input</td>
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAtAndWait</td>
+	<td>clickAndWait</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Community Management</td>
 	<td></td>
 </tr>
@@ -142,19 +147,34 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIListUsers']//tbody/tr[1]//img[@class='DeleteUserIcon']</td>
-	<td>1,1</td>
-</tr>
-<tr>
-	<td>waitForConfirmation</td>
-	<td>Are you sure you want to delete test_user_02 user?</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete a_test_user_02 user?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>a_test_user_02</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>a_test_user_02</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>

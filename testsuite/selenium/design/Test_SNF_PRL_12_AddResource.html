@@ -22,9 +22,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -42,14 +42,19 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>//div[@id='UIPortalLoginFormAction']/div/div/div</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>waitForElementPresent</td>
 	<td>link=Internationalization</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Internationalization</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -62,7 +67,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=New Resource</td>
 	<td></td>
 </tr>
@@ -87,9 +92,9 @@
 	<td>label=en</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
@@ -107,13 +112,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='ResourceList']//tbody/tr[1]//img[@class='DeleteIcon']</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>waitForConfirmation</td>
+	<td>assertConfirmation</td>
 	<td>Are you sure you want to delete this resource?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>aTest_New_Resource_12</td>
 	<td></td>
 </tr>
 <tr>
@@ -122,9 +132,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>
