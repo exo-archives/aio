@@ -17,9 +17,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -32,8 +37,13 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -42,9 +52,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Manage Pages</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -52,9 +62,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Add New Page</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -64,32 +74,27 @@
 <tr>
 	<td>type</td>
 	<td>name</td>
-	<td>a_test_15</td>
+	<td>Page_15</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>title</td>
-	<td>test15_title</td>
+	<td>Page_15_title</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>test15_title</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>--Delete New Page</td>
+	<td>--search to check if page was added</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>searchTerm</td>
-	<td>test15</td>
+	<td>Page_15</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -102,14 +107,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>test15_title</td>
+	<td>waitForTextPresent</td>
+	<td>Page_15_title</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>verifyTextPresent</td>
+	<td>Page_15_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Delete New Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPageBrowser']//tbody/tr[1]//img[@class='DeleteIcon']</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>assertConfirmation</td>
@@ -118,18 +133,28 @@
 </tr>
 <tr>
 	<td>verifyTextNotPresent</td>
-	<td>test15_title</td>
+	<td>Page_15_title</td>
 	<td></td>
 </tr>
 <tr>
 	<td>open</td>
-	<td>/portal/private/classic/home</td>
+	<td>/portal/private/classic</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>waitForElementPresent</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>
