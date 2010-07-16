@@ -47,6 +47,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-- Add Portal</td>
 	<td></td>
@@ -79,7 +84,7 @@
 <tr>
 	<td>type</td>
 	<td>name</td>
-	<td>a_test_19</td>
+	<td>Portal_19</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -117,6 +122,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Administrators</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Administrators</td>
 	<td></td>
@@ -143,12 +153,12 @@
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td>a_test_19</td>
+	<td>Portal_19</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>a_test_19</td>
+	<td>Portal_19</td>
 	<td></td>
 </tr>
 <tr>
@@ -163,17 +173,32 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=a_test_19</td>
+	<td>link=Portal_19</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
 	<td></td>
-	<td>portal/private/a_test_19</td>
+	<td>portal/private/Portal_19</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=classic</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Manage Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -202,18 +227,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextNotPresent</td>
+	<td>Portal_19</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyTextNotPresent</td>
-	<td>a_test_19</td>
+	<td>Portal_19</td>
 	<td></td>
 </tr>
 <tr>
 	<td>open</td>
-	<td>/portal/private/classic</td>
+	<td>/portal/private/classic/home</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 
