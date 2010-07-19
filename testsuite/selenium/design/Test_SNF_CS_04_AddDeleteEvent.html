@@ -4,21 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
-<title>Test_SNF_CS_23_1_QuickSerchEvent</title>
+<title>Test_SNF_CS_04_AddEditDeleteEvent</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Test_SNF_CS_23_1_QuickSerchEvent</td></tr>
+<tr><td rowspan="1" colspan="3">Test_SNF_CS_04_AddEditDeleteEvent</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-Quik Search Event-</td>
 	<td></td>
 </tr>
 <tr>
@@ -84,12 +79,12 @@
 <tr>
 	<td>type</td>
 	<td>eventName</td>
-	<td>Test_23_Event</td>
+	<td>Test_04_Event</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>//div[@class='FormContainer']//textarea[@id='description']</td>
-	<td>Test_23_Event_description</td>
+	<td>Test_04_Event_description</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -98,17 +93,17 @@
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td>Test_23_Event</td>
+	<td>Test_04_Event</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Test_23_Event</td>
+	<td>Test_04_Event</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>-- Search Event</td>
+	<td>-- Search for&nbsp;&nbsp;and Delete Event</td>
 	<td></td>
 </tr>
 <tr>
@@ -119,7 +114,7 @@
 <tr>
 	<td>type</td>
 	<td>value</td>
-	<td>Test_23_Event</td>
+	<td>Test_04_Event</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -129,16 +124,6 @@
 <tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@class='UIListView SpliterResizableListArea']//tr[@class='UIListViewRow']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>//div[@class='UIListView SpliterResizableListArea']//tr[@class='UIListViewRow']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Delete Event</td>
 	<td></td>
 </tr>
 <tr>

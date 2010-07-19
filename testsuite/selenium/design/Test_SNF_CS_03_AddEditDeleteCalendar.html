@@ -4,21 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
-<title>Test_SNF_CS_19_1_EditEvent</title>
+<title>Test_SNF_CS_03_2_EditCalendar</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Test_SNF_CS_19_1_EditEvent</td></tr>
+<tr><td rowspan="1" colspan="3">Test_SNF_CS_03_2_EditCalendar</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-Edit Event-</td>
 	<td></td>
 </tr>
 <tr>
@@ -53,7 +48,7 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>-- Add Event</td>
+	<td>-- Add Calendar</td>
 	<td></td>
 </tr>
 <tr>
@@ -68,108 +63,38 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Event</td>
+	<td>//div[@onclick='eXo.calendar.UICalendarPortlet.showMainMenu(this, event);']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Event</td>
+	<td>//div[@onclick='eXo.calendar.UICalendarPortlet.showMainMenu(this, event);']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>eventName</td>
+	<td>link=Add calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>displayName</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>eventName</td>
-	<td>Test_19_Event</td>
+	<td>displayName</td>
+	<td>Test_03_calendar</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>//div[@class='FormContainer']//textarea[@id='description']</td>
-	<td>Test_19_Event_description</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='QuickAddEventContainer']//div[@class='ButtonRight']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTextPresent</td>
-	<td>Test_19_Event</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>Test_19_Event</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- Search for&nbsp;&nbsp;and Edit Event</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>value</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>value</td>
-	<td>Test_19_Event</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//form[@id='UISearchForm']//div[@title='Search']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@class='UIListView SpliterResizableListArea']//tr[@class='UIListViewRow']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@class='UIListView SpliterResizableListArea']//tr[@class='UIListViewRow']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//table[@id='RowContainerDay']//div[@class='IconHolder EditEventIcon']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//table[@id='RowContainerDay']//div[@class='IconHolder EditEventIcon']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@id='UIPopupAddEventContainer']//input[@id='eventName']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//div[@id='UIPopupAddEventContainer']//input[@id='eventName']</td>
-	<td>Test_19_Event_Edited</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>//div[@id='UIPopupAddEventContainer']//textarea[@id='description']</td>
-	<td>Test_19_Event_description_Edited</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='UIPopupAddEventContainer']//div[@class='ButtonRight']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Save</td>
-	<td></td>
+	<td>//div[@id='calendarDetail']//textarea[@id='description']</td>
+	<td>Test_03_calendar_description</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -177,43 +102,113 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Test_19_Event_Edited</td>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Test_19_Event_Edited</td>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>-- Delete Event</td>
+	<td>--Edit calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//table[@id='RowContainerDay']//div[@class='IconHolder DeleteEventIcon']</td>
+	<td>link=Edit</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//table[@id='RowContainerDay']//div[@class='IconHolder DeleteEventIcon']</td>
+	<td>link=Edit</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForConfirmation</td>
-	<td>Are you sure you want to delete?</td>
+	<td>waitForElementPresent</td>
+	<td>displayName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>displayName</td>
+	<td>Test_03_calendar_edited</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='calendarDetail']//textarea[@id='description']</td>
+	<td>Test_03_calendar_description_edited</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar_edited']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar_edited']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Delete group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar_edited']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar_edited']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>The calendar and all its events and tasks. Do you confirm?</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementNotPresent</td>
-	<td>//div[@class='UIListView SpliterResizableListArea']//tr[@class='UIListViewRow']</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar_edited']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementNotPresent</td>
-	<td>//div[@class='UIListView SpliterResizableListArea']//tr[@class='UIListViewRow']</td>
+	<td>//div[@class='UIVTabContent']//div[@title='Test_03_calendar_edited']</td>
 	<td></td>
 </tr>
 <tr>

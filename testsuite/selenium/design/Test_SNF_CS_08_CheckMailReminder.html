@@ -22,9 +22,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Register</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -57,19 +62,24 @@
 	<td>mytest.exo8@gmail.com</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@id='UIAccountPortlet']/div[2]/div/div[2]//div[@class='UIPopupMessages']/div[@class='MessageActionBar']/div[@class='UIAction']/table//tr/td/div/div/div/div/a</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIPortalComponentLogin']//input[@id='username']</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
@@ -82,13 +92,13 @@
 	<td>test_pwd_08</td>
 </tr>
 <tr>
-	<td>clickAtAndWait</td>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']/div/div/div</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>5000</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,7 +112,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Agenda</td>
 	<td></td>
 </tr>
@@ -112,9 +122,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Event</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -132,9 +142,9 @@
 	<td>Test_08_Event_description</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@id='QuickAddEventContainer']//td[@align='center']/div[2]</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -142,23 +152,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@id='UIPopupAddEventContainer']//div[@class='TabsContainer']/div[2]//div[@class='MiddleTab']</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Save and Send</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>link=Save and Send</td>
+	<td>waitForElementPresent</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
 	<td></td>
 </tr>
 <tr>
@@ -187,7 +197,7 @@
 	<td>Test_08_Event</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//form[@id='UISearchForm']//div[@title='Search']</td>
 	<td></td>
 </tr>
@@ -197,7 +207,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='UIListView SpliterResizableListArea']//tr[@class='UIListViewRow']</td>
 	<td></td>
 </tr>
@@ -207,12 +217,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//table[@id='RowContainerDay']//div[@class='IconHolder DeleteEventIcon']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>Are you sure you want to delete?</td>
 	<td></td>
 </tr>
@@ -228,13 +238,13 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -252,9 +262,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -272,13 +282,13 @@
 	<td>test_pwd_08</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>5000</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -292,9 +302,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Mail</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@onclick='eXo.cs.Utils.show(this, event);']</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -303,12 +318,17 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>- Check Get Mail</td>
+	<td>--Add new mail account</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//form[@id='UISelectAccount']/div[2]/div/div/div/div[2]/div/div/a[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>accountName</td>
 	<td></td>
 </tr>
 <tr>
@@ -319,6 +339,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>outgoingName</td>
 	<td></td>
 </tr>
 <tr>
@@ -337,8 +362,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>userName</td>
 	<td></td>
 </tr>
 <tr>
@@ -358,7 +393,22 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>getMail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=Finish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Finish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>20000</td>
 	<td></td>
 </tr>
 <tr>
@@ -367,13 +417,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIActionBar']//div[@class='IconHolder CheckMailIcon']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>5000</td>
+	<td>20000</td>
 	<td></td>
 </tr>
 <tr>
@@ -397,7 +447,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
 	<td></td>
 </tr>
@@ -407,18 +457,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIMessageActionsBar']//div[@class='IconHolder DeleteIcon']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForConfirmation</td>
 	<td>Are you sure you want to delete this(these) message(s)?</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -432,9 +477,79 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Community Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>User Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>a_test_user_08</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Delete User']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>a_test_user_08</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>
