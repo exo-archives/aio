@@ -22,9 +22,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -42,13 +42,23 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>10000</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Mail</td>
 	<td></td>
 </tr>
 <tr>
@@ -58,23 +68,28 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Mail</td>
+	<td>//form[@id='UISelectAccount']//div[2]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>link=Mail</td>
-	<td>1,1</td>
+	<td>click</td>
+	<td>//form[@id='UISelectAccount']//div[2]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIActionBar']//div[@class='IconHolder AccountSettingIcon']</td>
+	<td>link=Add account</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>xpath=//div[@class='UIActionBar']//div[@class='IconHolder AccountSettingIcon']</td>
-	<td>1,1</td>
+	<td>click</td>
+	<td>link=Add account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Create a new account</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -97,7 +112,7 @@
 	<td>Test_32_account_description</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -132,7 +147,7 @@
 	<td>Test_32_Signature</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -152,7 +167,7 @@
 	<td>imap.gmail.com</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -177,7 +192,7 @@
 	<td>exovietnam</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -197,13 +212,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Finish</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>10000</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Compose mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='MailWorkingWorkspace']/div[1]/div/div/div/div/div/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -212,8 +237,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>echo</td>
-	<td>- Check Get Mail</td>
+	<td>waitForElementPresent</td>
+	<td>to</td>
 	<td></td>
 </tr>
 <tr>
@@ -267,6 +292,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>folderName</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>folderName</td>
 	<td>eXo_Folder</td>
@@ -277,6 +307,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementNotPresent</td>
+	<td>folderName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
 	<td></td>
@@ -292,8 +332,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='DownArrow1Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@class='DownArrow1Icon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -302,8 +352,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>verifyElementPresent</td>
 	<td>link=Move</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Move</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Move Message</td>
 	<td></td>
 </tr>
 <tr>
@@ -317,13 +377,8 @@
 	<td>eXo_Folder</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>10000</td>
 	<td></td>
 </tr>
 <tr>
@@ -333,12 +388,27 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
+	<td>link=eXo_Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=eXo_Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=Test32_Move_Mail</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=eXo_Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -362,7 +432,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
 	<td></td>
 </tr>
@@ -372,7 +442,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='DownArrow1Icon']</td>
 	<td></td>
 </tr>
@@ -382,7 +452,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Move</td>
 	<td></td>
 </tr>
@@ -397,13 +467,13 @@
 	<td>Inbox</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>10000</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -417,7 +487,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Inbox</td>
 	<td></td>
 </tr>
@@ -433,11 +503,51 @@
 </tr>
 <tr>
 	<td>echo</td>
+	<td>--delete new added folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=eXo_Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=eXo_Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=eXo_Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td>The folder and its content will be deleted. Do you confirm ?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=eXo_Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
 	<td>-- Delete Create Account</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='UISelectAccount']//div[@title='Manage accounts']</td>
 	<td></td>
 </tr>
@@ -447,7 +557,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Delete account</td>
 	<td></td>
 </tr>
@@ -467,7 +577,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIAccountList']//img[@class='DeleteIcon']</td>
 	<td></td>
 </tr>
@@ -477,9 +587,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>
