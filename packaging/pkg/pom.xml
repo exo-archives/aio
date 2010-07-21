@@ -30,6 +30,7 @@
   <properties>
     <product>allinone</product>
     <deploy>tomcat</deploy>
+    <enable-workflow>${workflowEngine}</enable-workflow>
     <exo.working.dir>${basedir}/target</exo.working.dir>
   </properties>
   <dependencies>
@@ -347,6 +348,9 @@
                 <goals>
                   <goal>exobuild</goal>
                 </goals>
+                <!--configuration>
+                  <enable-workflow>${workflowEngine}</enable-workflow>
+                </configuration-->
               </execution>
             </executions>
           </plugin>

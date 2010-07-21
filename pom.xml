@@ -55,6 +55,7 @@
     <org.exoplatform.exopackage.version>1.2.3</org.exoplatform.exopackage.version>
     <version.exobuild.plugin>1.2.2</version.exobuild.plugin>
     <bonita.version>4.0</bonita.version>
+    <workflowEngine>jbpm</workflowEngine>
   </properties>
   <modules>
     <module>web/portal</module>
