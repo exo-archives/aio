@@ -1,8 +1,8 @@
 Index: web/portal/src/main/webapp/groovy/portal/webui/workspace/UIExoStart.gtmpl
 ===================================================================
---- web/portal/src/main/webapp/groovy/portal/webui/workspace/UIExoStart.gtmpl	(revision 47631)
+--- web/portal/src/main/webapp/groovy/portal/webui/workspace/UIExoStart.gtmpl	(revision 49594)
 +++ web/portal/src/main/webapp/groovy/portal/webui/workspace/UIExoStart.gtmpl	(working copy)
-@@ -1,17 +1,4 @@
+@@ -1,17 +1,5 @@
  <%
 -  import org.exoplatform.portal.webui.workspace.UIExoStart ;
 -  import org.exoplatform.portal.config.model.PageNode ;
@@ -15,23 +15,20 @@ Index: web/portal/src/main/webapp/groovy/portal/webui/workspace/UIExoStart.gtmpl
 -  
 -  jsmanager.importJavascript('eXo.portal.UIExoStartMenu') ;
 -  jsmanager.addOnLoadJavascript('eXo.portal.UIExoStartMenu.onLoad');
--
+ 
 -  String onclick = "eXo.portal.UIExoStartMenu.showStartMenu(event);" ;
    String onclickhome = "javascript:eXo.portal.UIControlWorkspace.showWorkspace();";
    
    navigations = uicomponent.getNavigations() ;
-@@ -25,11 +12,8 @@
-   }
+@@ -26,10 +14,7 @@
  %>
  <div class="UIExoStart" id="UIExoStart" title="<%= _ctx.appRes("UIExoStart.tooltip.homepage") %>">
--  <div class="StartBarContainer">
+   <div class="StartBarContainer">
 -<!-- Add ExoStartButton to fix js exception when UIExoStartMenu.js initializes the Start button -->
 -    <div class="ExoHomeButton ExoStartButton ButtonNormal" onclick="$onclickhome" title=""><span></span></div>
 -<!-- Add DigitalClock block to fix js exception when Util.js (ExoDateTime) initializes the clock in the Start menu -->
 -    <div id="DigitalClock" style="display:none;"></div>
-+  <div class="StartBarContainer">
 +    <div class="ExoHomeButton ButtonNormal" onclick="$onclickhome" title=""><span></span></div>
      <div class="ClearBoth"><span></span></div>
    </div>
    <div id="StartMenuContainer" class="StartMenuContainer" style="display: none; top: 0px;">
-
