@@ -22,7 +22,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
 	<td></td>
 </tr>
@@ -42,13 +42,13 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>10000</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Mail</td>
 	<td></td>
 </tr>
@@ -72,7 +72,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIActionBar']//div[@class='IconHolder AccountSettingIcon']</td>
 	<td></td>
 </tr>
@@ -97,7 +97,7 @@
 	<td>Test_38_account_description</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -132,7 +132,7 @@
 	<td>Test_38_Signature</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -152,7 +152,7 @@
 	<td>imap.gmail.com</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -177,7 +177,7 @@
 	<td>exovietnam</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -197,23 +197,48 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>getMail</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAt</td>
-	<td>getMail</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Finish</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>10000</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Compose mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='MailWorkingWorkspace']/div[1]/div/div/div/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>to</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>to</td>
+	<td>exotest3@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>subject</td>
+	<td>Mail test tag 38</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIComposeForm']/div[3]/div[2]/div/div/div/div[1]/div/div/div/div/div/a[1]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Compose a new message</td>
 	<td></td>
 </tr>
 <tr>
@@ -223,47 +248,37 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
+	<td>//form[@id='UITagContainer']//div[2]//div//div[2]//div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='DownArrow1Icon']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAt</td>
-	<td>xpath=//div[@class='DownArrow1Icon']</td>
+	<td>click</td>
+	<td>//form[@id='UITagContainer']//div[2]//div//div[2]//div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Tag</td>
+	<td>link=Add a new tag</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>link=Tag</td>
+	<td>click</td>
+	<td>link=Add a new tag</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>tag-name</td>
+	<td>newTagName</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>tag-name</td>
+	<td>newTagName</td>
 	<td>eXo_Tag_38</td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>xpath=//div[@class='UIForm UITagForm']//div[@class='UIAction']//div[@class='ButtonMiddle']</td>
+	<td>click</td>
+	<td>link=Save</td>
 	<td></td>
 </tr>
 <tr>
@@ -278,11 +293,216 @@
 </tr>
 <tr>
 	<td>echo</td>
+	<td>--Edit tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=eXo_Tag_38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=eXo_Tag_38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>newTagName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>newTagName</td>
+	<td>eXo_Tag_38 edited</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Get mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='MailWorkingWorkspace']/div[1]/div/div/div/div/div/div[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Mail test tag 38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--add tag to mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=Mail test tag 38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=Mail test tag 38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Tag Message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='eXo_Tag_38 edited']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UITagForm']/div[2]/div/div/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Tag Message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--check mail in tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Mail test tag 38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Empty tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=Mail test tag 38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Mail test tag 38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--check after empty tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Mail test tag 38</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--delete tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td>Are you sure you want to remove this tag ?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=eXo_Tag_38 edited</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
 	<td>-- Delete Create Account</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='UISelectAccount']//div[@title='Manage accounts']</td>
 	<td></td>
 </tr>
@@ -292,7 +512,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Delete account</td>
 	<td></td>
 </tr>
@@ -312,7 +532,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIAccountList']//img[@class='DeleteIcon']</td>
 	<td></td>
 </tr>
@@ -322,8 +542,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

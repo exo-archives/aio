@@ -22,7 +22,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Login</td>
 	<td></td>
 </tr>
@@ -42,13 +42,13 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>10000</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Mail</td>
 	<td></td>
 </tr>
@@ -72,7 +72,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIActionBar']//div[@class='IconHolder AccountSettingIcon']</td>
 	<td></td>
 </tr>
@@ -97,7 +97,7 @@
 	<td>Test_39_account_description</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -132,7 +132,7 @@
 	<td>Test_39_Signature</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -152,7 +152,7 @@
 	<td>imap.gmail.com</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -177,7 +177,7 @@
 	<td>exovietnam</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Next</td>
 	<td></td>
 </tr>
@@ -197,23 +197,63 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>getMail</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAt</td>
-	<td>getMail</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Finish</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>10000</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Compose mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='MailWorkingWorkspace']/div[1]/div/div/div/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>to</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>to</td>
+	<td>exotest3@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>subject</td>
+	<td>Mail test 39</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIComposeForm']/div[3]/div[2]/div/div/div/div[1]/div/div/div/div/div/a[1]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Compose a new message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--get mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='MailWorkingWorkspace']/div[1]/div/div/div/div/div/div[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Mail test 39</td>
 	<td></td>
 </tr>
 <tr>
@@ -227,7 +267,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
 	<td></td>
 </tr>
@@ -237,7 +277,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='DownArrow1Icon']</td>
 	<td></td>
 </tr>
@@ -247,23 +287,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Star</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>--Check mail stared</td>
+	<td>--Filter to view stared mails</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//div[@class='StarredIcon']</td>
+	<td>click</td>
+	<td>//form[@id='UIMessageList']/div[2]/div[5]/div[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='tmpMenuElement']/div/div[2]/div/div/div[2]/div[1]/a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//div[@class='StarredIcon']</td>
+	<td>link=Mail test 39</td>
 	<td></td>
 </tr>
 <tr>
@@ -273,11 +318,21 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//input[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>xpath=//div[@class='DownArrow1Icon']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='DownArrow1Icon']</td>
 	<td></td>
 </tr>
@@ -287,23 +342,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Unstar</td>
 	<td></td>
 </tr>
 <tr>
-	<td>echo</td>
-	<td>-- Check mail unstared</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//div[@class='UnStarredIcon']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>xpath=//div[@id='uiMessageGrid']//table[@id='UIListUsers']/tbody[1]//div[@class='UnStarredIcon']</td>
+	<td>waitForElementNotPresent</td>
+	<td>link=Mail test 39</td>
 	<td></td>
 </tr>
 <tr>
@@ -312,7 +357,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>//div[@class='UISelectAccount']//div[@title='Manage accounts']</td>
 	<td></td>
 </tr>
@@ -322,7 +367,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Delete account</td>
 	<td></td>
 </tr>
@@ -342,7 +387,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>xpath=//div[@class='UIAccountList']//img[@class='DeleteIcon']</td>
 	<td></td>
 </tr>
@@ -352,8 +397,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_39_account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 
