@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://localhost:8080/portal" />
-<title>SNF_DMS_09_Delete_Node</title>
+<title>Test_SNF_DMS_09_DeleteNode</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">SNF_DMS_09_Delete_Node</td></tr>
+<tr><td rowspan="1" colspan="3">Test_SNF_DMS_09_DeleteNode</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -17,8 +17,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
 	<td></td>
 </tr>
 <tr>
@@ -38,6 +48,11 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=Sites Explorer</td>
 	<td></td>
 </tr>
@@ -57,8 +72,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=documents</td>
 	<td></td>
 </tr>
 <tr>
@@ -77,6 +102,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>name</td>
 	<td>Content_folder_09</td>
@@ -87,6 +117,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Content_folder_09</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyElementPresent</td>
 	<td>link=Content_folder_09</td>
 	<td></td>
@@ -94,6 +129,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Add Folder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>type</td>
 	<td></td>
 </tr>
 <tr>
@@ -112,13 +152,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Document_folder_09</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyElementPresent</td>
 	<td>link=Document_folder_09</td>
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
 	<td></td>
 </tr>
 <tr>
@@ -134,6 +189,11 @@
 <tr>
 	<td>click</td>
 	<td>//form[@id='UIDocumentForm']/div[2]/div/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_09</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,8 +222,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete the node</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=Article_09</td>
 	<td></td>
 </tr>
 <tr>
@@ -187,12 +257,17 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete the node</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementNotPresent</td>
+	<td>waitForElementNotPresent</td>
 	<td>link=Content_folder_09</td>
 	<td></td>
 </tr>
@@ -202,7 +277,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>componentExoContextMenu</td>
+	<td>mouseDownRight</td>
 	<td>link=Document_folder_09</td>
 	<td></td>
 </tr>
@@ -212,18 +287,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete the node</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementNotPresent</td>
+	<td>waitForElementNotPresent</td>
 	<td>link=Document_folder_09</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

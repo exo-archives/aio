@@ -17,9 +17,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=Login</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -37,14 +42,19 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Sign in</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=Answers</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -57,19 +67,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;eXo.faq.UIAnswersPortlet.viewTitle('FAQCategroManager');&quot;]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Add category</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAt</td>
-	<td>//div[@onclick=&quot;eXo.faq.UIAnswersPortlet.viewTitle('FAQCategroManager');&quot;]</td>
-	<td>1,1</td>
-</tr>
-<tr>
-	<td>clickAt</td>
 	<td>link=Add category</td>
-	<td></td>
+	<td>1,1</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -82,17 +92,17 @@
 	<td>SNF_KS_02</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>moderatequestions</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>ViewAuthorInfor</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>moderateAnswers</td>
 	<td></td>
 </tr>
@@ -102,9 +112,9 @@
 	<td>SNF_KS_02</td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Save</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -115,14 +125,13 @@
 	<td>verifyTextPresent</td>
 	<td>SNF_KS_02</td>
 	<td></td>
-</tr>
-<tr>
+</tr><tr>
 	<td>echo</td>
-	<td>-Delete Category-</td>
+	<td>-Edit Category-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=SNF_KS_02</td>
 	<td></td>
 </tr>
@@ -132,14 +141,79 @@
 	<td></td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>//div[@id='FAQCategroManager']//div[@class='MenuItem']</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
-	<td>//div[@id='FAQCategroManager']//div[3][@class='MenuItem']</td>
+	<td>eventCategoryName</td>
+	<td>SNF_KS_02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>eventCategoryName</td>
+	<td>SNF_KS_02 Update</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>index</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>description</td>
+	<td>SNF_KS_02 Desc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UICategoryForm']/div[2]/div/div/table//div[1]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=SNF_KS_02 Update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Verify the edit category-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>SNF_KS_02 Update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Delete Category-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SNF_KS_02 Update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=SNF_KS_02 Update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=SNF_KS_02 Update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIFAQPopupCategories1']//div[@class='UIRightPopupMenuContainer']//div[6]//a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAt</td>
-	<td>//div[@id='FAQCategroManager']//div[3][@class='MenuItem']</td>
-	<td></td>
+	<td>//div[@id='UIFAQPopupCategories1']//div[@class='UIRightPopupMenuContainer']//div[6]//a</td>
+	<td>1,1</td>
 </tr>
 <tr>
 	<td>assertConfirmation</td>
@@ -148,12 +222,12 @@
 </tr>
 <tr>
 	<td>waitForElementNotPresent</td>
-	<td>link=SNF_KS_02</td>
+	<td>link=SNF_KS_02 Update</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementNotPresent</td>
-	<td>link=SNF_KS_02</td>
+	<td>link=SNF_KS_02 Update</td>
 	<td></td>
 </tr>
 <tr>
@@ -168,18 +242,23 @@
 </tr>
 <tr>
 	<td>waitForElementNotPresent</td>
-	<td>link=SNF_KS_02</td>
+	<td>link=SNF_KS_02_Update</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementNotPresent</td>
-	<td>link=SNF_KS_02</td>
+	<td>link=SNF_KS_02_Update</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>click</td>
 	<td>link=Logout</td>
-	<td>1,1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
 </tr>
 
 </tbody></table>

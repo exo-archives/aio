@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>SNF_DMS_16_ManageCategory</title>
+<title>Test_SNF_DMS_16_ManageCategory</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">SNF_DMS_16_ManageCategory</td></tr>
+<tr><td rowspan="1" colspan="3">Test_SNF_DMS_16_ManageCategory</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -17,8 +17,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
 	<td></td>
 </tr>
 <tr>
@@ -57,6 +67,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
 	<td></td>
@@ -72,8 +87,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
 	<td></td>
 </tr>
 <tr>
@@ -92,7 +122,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Article_16</td>
 	<td></td>
 </tr>
@@ -107,8 +137,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Manage Categories</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Manage Categories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UICategoryManager']/div/div/div[1]/div[1]/div/div/div/div/div[2]/div/div/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -127,12 +167,17 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISelectTaxonomyPanel']/table/tbody/tr[1]/td[2]/a/div</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UISelectTaxonomyPanel']/table/tbody/tr[1]/td[2]/a/div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>classic/News</td>
 	<td></td>
 </tr>
@@ -147,8 +192,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIViewBarContainer']/a[2]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIViewBarContainer']/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIDrivesBrowser']/div/div/div[3]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div/div/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -157,8 +212,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=News</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=News</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_16</td>
 	<td></td>
 </tr>
 <tr>
@@ -168,12 +233,17 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>--delete added category</td>
+	<td>--Back to Manage Sites drive to delete added category</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='UIViewBarContainer']/a[2]</td>
+	<td>//div[@id='UIViewBarContainer']//a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Management</td>
 	<td></td>
 </tr>
 <tr>
@@ -182,8 +252,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=documents</td>
 	<td></td>
 </tr>
 <tr>
@@ -192,8 +272,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_16</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Article_16</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Article_16_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Manage Categories</td>
 	<td></td>
 </tr>
 <tr>
@@ -212,6 +312,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertConfirmation</td>
+	<td>Do you really want to delete this reference?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>classic/News</td>
+	<td></td>
+</tr>
+<tr>
 	<td>verifyTextNotPresent</td>
 	<td>classic/News</td>
 	<td></td>
@@ -227,12 +337,17 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_16</td>
+	<td></td>
+</tr>
+<tr>
 	<td>mouseOver</td>
 	<td>link=Article_16</td>
 	<td></td>
 </tr>
 <tr>
-	<td>componentExoContextMenu</td>
+	<td>mouseDownRight</td>
 	<td>link=Article_16</td>
 	<td></td>
 </tr>
@@ -242,18 +357,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete the node</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementNotPresent</td>
+	<td>waitForElementNotPresent</td>
 	<td>link=Article_16</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

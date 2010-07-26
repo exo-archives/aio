@@ -4,21 +4,31 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>SNF_DMS_15_ManagePublication</title>
+<title>Test_SNF_DMS_15_ManagePublication</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">SNF_DMS_15_ManagePublication</td></tr>
+<tr><td rowspan="1" colspan="3">Test_SNF_DMS_15_ManagePublication</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/portal/public/classicn</td>
+	<td>/portal/public/classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
 	<td></td>
 </tr>
 <tr>
@@ -38,6 +48,11 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=Sites Explorer</td>
 	<td></td>
 </tr>
@@ -53,7 +68,22 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=documents</td>
 	<td></td>
 </tr>
 <tr>
@@ -67,8 +97,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,13 +132,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Article_15</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Article_15</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Article_15_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Manage publication</td>
 	<td></td>
 </tr>
 <tr>
@@ -107,17 +162,22 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Live</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Live</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Revision: Article_15</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Revision: 1</td>
 	<td></td>
 </tr>
@@ -137,8 +197,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>--select page from left pane</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIPageNodeSelector']/div/div/div/div/div/div/div[2]/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--click --&gt; icon</td>
 	<td></td>
 </tr>
 <tr>
@@ -147,18 +222,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>/classic/home</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//form[@id='UIPublicationPages']/div[2]/table/tbody/tr/td/a/div/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//img[@onclick=&quot;javascript:ajaxGet('/portal/private/classic/fileexplorer?portal:componentId=fileexplorer&amp;portal:type=action&amp;portal:isSecure=false&amp;uicomponent=UIActivePublication&amp;op=Enrol&amp;objectId=Workflow&amp;ajaxRequest=true')&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,8 +242,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyLocation</td>
+	<td>waitForLocation</td>
 	<td>http://localhost:8080/portal/private/classic/home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Article_15_title</td>
 	<td></td>
 </tr>
 <tr>
@@ -242,11 +317,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Manage Categories</td>
-	<td></td>
-</tr>
-<tr>
 	<td>verifyTextPresent</td>
 	<td>This content is not published in any page node yet</td>
 	<td></td>
@@ -267,8 +337,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyLocation</td>
+	<td>waitForLocation</td>
 	<td>http://localhost:8080/portal/private/classic/home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Article_15_title</td>
 	<td></td>
 </tr>
 <tr>
@@ -277,12 +352,27 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>--Back to Site Exp to delete document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_15</td>
+	<td></td>
+</tr>
+<tr>
 	<td>mouseOver</td>
 	<td>link=Article_15</td>
 	<td></td>
 </tr>
 <tr>
-	<td>componentExoContextMenu</td>
+	<td>mouseDownRight</td>
 	<td>link=Article_15</td>
 	<td></td>
 </tr>
@@ -292,18 +382,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete the node</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementNotPresent</td>
+	<td>waitForElementNotPresent</td>
 	<td>link=Article_15</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

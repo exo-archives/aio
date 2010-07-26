@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>SNF_DMS_13_AddComment</title>
+<title>Test_SNF_DMS_13_AddComment</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">SNF_DMS_13_AddComment</td></tr>
+<tr><td rowspan="1" colspan="3">Test_SNF_DMS_13_AddComment</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -17,8 +17,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
 	<td></td>
 </tr>
 <tr>
@@ -38,12 +48,22 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=Sites Explorer</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Management</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,8 +72,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=documents</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,8 +92,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
 	<td></td>
 </tr>
 <tr>
@@ -82,7 +122,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Article_13</td>
 	<td></td>
 </tr>
@@ -92,9 +132,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=Collaboration</td>
-	<td>1,1</td>
+	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -102,8 +147,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Comment this document</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Comment this document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//iframe[@id='comment___Frame']</td>
 	<td></td>
 </tr>
 <tr>
@@ -117,17 +177,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>typeLang</td>
-	<td>label=Vietnamese</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>Email</td>
-	<td>alliance1135</td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>Last comment posted by root</td>
 	<td></td>
 </tr>
@@ -197,18 +247,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete the node</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementNotPresent</td>
+	<td>waitForElementNotPresent</td>
 	<td>link=Article_13</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 
