@@ -1,0 +1,96 @@
+*********************************
+eXo All In One Build Instructions
+*********************************
+
+The main instructions to build eXo All In One are on
+http://wiki.exoplatform.org/xwiki/bin/view/Main/Building+from+sources
+
+This how to will guide you with some specific steps.
+
+============
+Requirements
+============
+
+ * SVN 1.6+
+ * Maven 2.2.1+
+   To configure your maven settings, follow the instructions
+   on our wiki.
+ * Tomcat 6.0.16 or JBoss 4.2.3
+   They are in a specific location, cf your maven settings.
+
+=====================
+1. Check out from svn
+=====================
+
+If you read this file, you probably did that already. However, you can
+check out from 2 different servers:
+ * http://svn.exoplatform.org/projects/allinone/branches/1.6.x
+   Will check out only the All In One project, and not all the projects
+   included in the final product. This means that they will be downloaded
+   from our maven repository during the packaging phase.
+   
+ * http://svn.exoplatform.org/aliases/aio/branches/aio-1.6.x
+   Will check out all the projects needed for All In One, i.e.
+   - Packaging tools
+   - Core Foundation modules (Core, Kernel, WS, JCR, Portlet Container)
+   - Products (Portal, CS, KS, DMS, WCM, Workflow, WebOS)
+   - All In One
+   
+========
+2. Build
+========
+
+Once you have set up your environment, and checked out the source from SVN,
+simply run a maven command:
+ * mvn clean install
+
+If you checked out only All In One, the needed binaries will be downloaded
+from our maven repository. It can take several minutes the first time.
+If you checked out all the projects, we provide a main pom.xml to build everything.
+
+============
+3. Packaging
+============
+
+We provide some tools to create the Tomcat and JBoss packages easily. Follow these steps
+from the main folder of the product you want to package:
+ * cd packaging/pkg
+ * mvn clean install -Ppkg
+
+There are many options to customize your packaging, each one is passed through a -D parameter:
+ * -Ddeploy=server
+ Deploy to a given application server. Possible values are: 'all', [jbossear, tomcat, jboss].
+ Default is tomcat.
+
+ * -Drelease=server   
+ Release for the target application server. Produce a zip named after the current SVN revision.
+ Possible values are: 'all', [jbossear, tomcat, jboss].
+ Default is tomcat.
+ 
+ * -Ddatabase=dialect
+ Specify target database dialect.
+ The possible values are [db2v8, postgresql, mysql, sqlserver, db2, oracle, hsqldb].
+ This will configure the appropriate JCR dialects and deploy the JDBC driver.
+ Used with -Ddbsetup=file option, exobuild tries to get database settings in a file named
+ database-configuration.{dialect}.xml
+ Default is hsqldb.
+ 
+ * -Ddbsetup=option
+ Use this option with -Ddatabase option to specify the database setup behaviour.
+ dbsetup=file will use the database and jcr files you provided.
+ dbsetup=ask allow you to enter the connection url , username and password of the database server.
+ dbsetup=defaults is the default option if dbsetup is not specified and will override settings by those defined in Database.js
+ 
+ * -Denable-workflow=engine
+ Specify the workflow engine to bundle with the product. The possible values are: [bonita, jbpm].
+ This option is only used for products that use workflow. Default engine is jbpm.
+
+================== 
+4. Troubleshooting
+==================
+
+If you meet any problem, please refer to our Forum (http://forum.exoplatform.com).
+If you can't find any help, open an issue in our bug tracker (http://jira.exoplatform.org/browse/ALL).
+
+Thank you for using eXo All In One.
+

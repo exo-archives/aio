@@ -1,6 +1,33 @@
 ============================
-CHANGELOG - ALL IN ONE 1.6.5
+CHANGELOG - ALL IN ONE 1.6.6
 ============================
+
+*****************
+Version all-1.6.6
+*****************
+
+
+*****************
+Version all-1.6.5
+*****************
+
+** Bug
+    * [ALL-266] - Search in file explorer doesn't work
+    * [ALL-285] - Copy/Cut functionalities not available in some contents
+    * [ALL-295] - IE 7 crash when publishing content after image resize with Shift button pressed
+    * [ALL-297] - Several JS problems with IE 7 on portal and page layout edition
+    * [ALL-325] - Title of button close window in popup not available in french
+    * [ALL-341] - Address book : missing french traduction in contacts
+    * [ALL-353] - Search result - suggestion is writen in plural whereas only one suggestion is displayed
+    * [ALL-358] - Can NOT send mail -- multiple product overriding mail configs
+    * [ALL-361] - AIO packaging fails if not all the dependencies are already in local maven repo
+
+
+** Task
+    * [ALL-346] - AIO 1.6.x dependencies should be SNAPSHOTs
+    * [ALL-354] - Release AIO 1.6.5
+    * [ALL-360] - path of NewPortalConfigListener
+
 
 *****************
 Version all-1.6.4
@@ -98,6 +125,74 @@ Version all-1.6.1
     * [ALL-184] - Upd maven version from 1.6-SNAPSHOT to 1.6.1-SNAPSHOT
     * [ALL-193] - Tag the products related to AIO 1.6.1 one by one
     * [ALL-194] - Check JBPM integration, v3.0.1
+
+*********************
+Version portal-2.5.10
+*********************
+
+** Bug
+    * [PORTAL-3684] - Plus ('+') symbol in an URL causes an ERROR 500
+    * [PORTAL-3717] - Cannot load upload form and FCK in edit mode of portlet
+    * [PORTAL-3787] - Problem in drag and drop when editing page
+    * [PORTAL-3789] - Problem in moving portlets when editing page
+    * [PORTAL-3790] - Do not delete Portlet Preference in System Files when deleting portlets.
+    * [PORTAL-3801] - it is difficult to drag and drop gadgets if the dashboard doesn't contain any gadgets
+    * [PORTAL-3806] - ClientAbortException after importing new site
+    * [PORTAL-3808] - Internationalization of navigation is applied only when user logout 
+    * [PORTAL-3812] - Can't login, login page doesn't appear
+    * [PORTAL-3816] - java.lang.NullPointerException in UserACL for ANONYMOUS users
+    * [PORTAL-3817] - Find user: Enter key press not catched
+    * [PORTAL-3818] - Search of users
+
+** Improvement
+    * [PORTAL-3755] - Code duplicated in UIDashboardContainer class [exo.portal.component.dashboard]
+    * [PORTAL-3775] - Do not render the DISPLAY MODE html when a portlet is in EDIT MODE
+    * [PORTAL-3776] - Should not render the content of portlets while editting layout
+
+** Task
+    * [PORTAL-3803] - Study and update API documentation for eXo JS framework
+    * [PORTAL-3804] - Study and update API documentation for portal service components
+    * [PORTAL-3814] - Customise WebUI Mandatory Text Fields
+
+
+********************
+Version portal-2.5.9
+********************
+
+** Bug
+    * [PORTAL-3652] - Popup error not visible on page
+    * [PORTAL-3686] - Cannot add multi value for UIFormUploadInput
+    * [PORTAL-3737] - JCR Explorer - Metadata Visualisation form (inherited style from portal)
+    * [PORTAL-3739] - mandatory textarea (*) should be on the right , not in the bottom
+    * [PORTAL-3743] - Erreur javascript 
+    * [PORTAL-3766] - Several JS problems with IE 7
+    * [PORTAL-3767] - The day of the month in the calendar pop-up is not translated to French
+    * [PORTAL-3769] - Show exception when select application registry portlet in special case
+    * [PORTAL-3772] - With a sample richfaces portlet the httpxmlrequest response is comming with lenght = 0 (nothing is comming back).
+    * [PORTAL-3773] - Title of button close window in popup not available in french
+    * [PORTAL-3774] - Externalize UIPortletApplication properties
+    * [PORTAL-3780] - Portlets can not render a stream of images
+    * [PORTAL-3783] - Update patch of FCKEditor to fix bug crash IE
+    * [PORTAL-3791] - Have problem when select Community Management page
+    * [PORTAL-3793] - Error when using a page body into a UITableColumnContainer
+    * [PORTAL-3795] - Portal - Still keep old value when change title or content of new gadget
+    * [PORTAL-3796] - Portal - Have problem when change page template of node from Desktop layout to Default or reverse
+    * [PORTAL-3797] - Portal - Don't show Portlet Icon when create new gadget successfully in Application registry
+    * [PORTAL-3798] - Portal - Have problem with Mask Layer when edit page properties
+
+
+** Improvement
+    * [PORTAL-3444] - ExtendedPortalConfigListener
+    * [PORTAL-3658] - Localize UIPopupMessage Tabs labels
+    * [PORTAL-3740] - Increase the Max size of the Group Label to 50 character
+
+
+** Task
+    * [PORTAL-3771] - UIGroupSelector.gtmpl isn't internationalized
+    * [PORTAL-3779] - AIO 1.6.x dependencies should be SNAPSHOTs
+    * [PORTAL-3782] - Apply a FCKEditor patch
+    * [PORTAL-3788] - Tests are failing due to dependencies cleanup in CF modules
+    * [PORTAL-3802] - Use official GWT artifacts where it is possible in GWT demo
 
 
 ********************
@@ -294,6 +389,65 @@ Version portal-2.5.4
 
 ** Task
     * [PORTAL-3078] - Create tag 2.5.4 based on JCR 1.10.4
+
+
+*****************
+Version dms-2.5.7
+*****************
+
+** Bug
+    * [ECM-5209] - Vote and Comment for Free webcontent layout document are not shown
+    * [ECM-5450] - Problem when double clicking on node in the file explorer (with IE7)
+    * [ECM-5451] - Problem with displaying documents containing illegals JCR char in some views
+    * [ECM-5452] - Problem for displaying documents with names containing illegal JCR characters using nt:file view 
+    * [ECM-5457] - Exception while "Viewing Metadata"
+    * [ECM-5458] - Customize some informations on SendMailScript.groovy
+    * [ECM-5461] - Change permissions of a document fails
+    * [ECM-5462] - Problem when returning to home page
+    * [ECM-5471] - Update of a new document (file) does not change the publication status
+    * [ECM-5472] - after restart server, Content process don't work
+    * [ECM-5478] - The read:any right is given for every new Workspace
+
+** Improvement
+    * [ECM-5480] - The UIOneNodePathSelector must hide the children in the left Panel
+
+** Task
+    * [ECM-5372] - Add SendMail Groovy script
+    * [ECM-5463] - Umbrella for issues found in AIO 1.6.5
+
+*****************
+Version dms-2.5.6
+*****************
+
+** Bug
+    * [ECM-4290] - When moving file (drag) the file name 'popup' sometimes stays visible.
+    * [ECM-4697] - Multiple "Application Data" folder in Group Drives
+    * [ECM-4771] - Exception when go to CB after cutting node
+    * [ECM-5042] - Create new OrganistationService for JAAS Module
+    * [ECM-5237] - Modification of an action script's variables is considered only after server restart.
+    * [ECM-5371] - JCRexplorer : CTRL+A in IE7 does select all as text
+    * [ECM-5375] - No permission when using "jailed" in File Explorer
+    * [ECM-5382] - The day of the month in the calendar pop-up is not translated to French
+    * [ECM-5409] - Access denied when we try to delete a taxonomy tree from file explorer
+    * [ECM-5417] - UI error when name of attachment is so long
+    * [ECM-5431] - Problem with manage taxonomy
+    * [ECM-5435] - Manage Categories doesn't work without System tree
+    * [ECM-5444] -  WebDav view doesn't work
+    * [ECM-5448] - Add some Arabic translation on the Home Page (DMS 2.5.1)
+    * [ECM-5454] - Action on node is not executed 
+    * [ECM-5455] - A bad translation of buttons
+    * [ECM-5456] - Upload a file: label translation in French
+
+
+** Task
+    * [ECM-5275] - JCR explorer : adjust a window(style inherited from portal)
+    * [ECM-5372] - Add SendMail Groovy script
+    * [ECM-5443] - AIO 1.6.x dependencies should be SNAPSHOTs
+
+
+** Sub-task
+    * [ECM-5318] - Remove exo.test.* properties from maven POMs
+
 
 *****************
 Version dms-2.5.5
@@ -990,6 +1144,58 @@ Version dms-2.3.2
     * [ECM-3587] - Describe this new feature in the wiki
 
 ****************
+Version cs-1.3.6
+****************
+
+** Bug
+    * [CS-3606] - Chat room loss when refreshing the browser page or even changing menu
+    * [CS-4197] - Remove the use of exoservice gmail Account from MailService configuration
+    * [CS-4270] - Chat - the user's id is displayed instead of the user name
+    * [CS-4373] - Problem of refresh and unread message displaying
+    * [CS-4374] - Problem in display when restoring chat context between pages
+    * [CS-4385] - Error while deleting an e-mail
+    * [CS-4386] - Unable to edit mail account details while using auto configuration
+    * [CS-4394] - Chat - Unread message on chat tab is missed when refresh browser
+    * [CS-4399] - eXo Mail : Advanced search is case sensitive
+    * [CS-4403] - eXo Mail: Mails lose their style
+    * [CS-4404] - eXo Addess Book:Advanced search is case sensitive
+    * [CS-4412] - CS Memory Leak  caused by unclosed JCR sessions
+    * [CS-4426] - Authentication listener 
+
+** Improvement
+    * [CS-2901] - Preserve Chat bar state when browsing
+
+
+****************
+Version cs-1.3.5
+****************
+
+** Bug
+    * [CS-3559] - Chat bar can not be displayed in Vista & Mac Skin
+    * [CS-3561] - Missing upload icon in import calendar form
+    * [CS-3725] - Webmail: Date format error (wrong pattern used)
+    * [CS-4045] - Mistakes in french internationalization in Chat popups
+    * [CS-4133] - Exception when a user is deleted
+    * [CS-4161] - vertical scrollbar
+    * [CS-4165] - Calendar: parameter "first day of the week" not taken into account
+    * [CS-4168] -  Problem in RSS Portlet Refresh
+    * [CS-4170] - Home page of eXo Mail is only in English
+    * [CS-4174] - Agenda: it lacks the French translations 
+    * [CS-4178] -  Mails : Cannot add a folder 
+    * [CS-4183] - Address book : missing french traduction in contacts
+    * [CS-4193] - Calendar: the "date format" (jj/mm/aaaa) setting is only partially taken into account
+    * [CS-4236] - Mail: Mail content is not displayed
+    * [CS-4237] -  Mail - Can NOT move many mails at once
+    * [CS-4268] - A bad traduction of the home page of eXo Mail 
+    * [CS-4269] - Calendar: some typo in French
+
+
+** Task
+    * [CS-4184] - AIO 1.6.x dependencies should be SNAPSHOTs
+    * [CS-4275] - update release note for cs 1.3.5 1.3.x
+
+
+****************
 Version cs-1.3.4
 ****************
 
@@ -1548,6 +1754,46 @@ Version cs-1.2.2
 
 ** Sub-task
     * [CS-3359] - Make svn tags
+
+
+****************
+Version ks-1.2.5
+****************
+
+** Bug
+    * [KS-2560] - Error when delete topic after moved
+    * [KS-2561] - Forum: User management: error when search user at the second page
+    * [KS-2610] - KS Memory Leak caused by unclosed JCR sessions
+
+** Task
+    * [KS-2399] - dependency cleanup on 1.2.x branch
+
+
+****************
+Version ks-1.2.4
+****************
+
+** Bug
+    * [KS-2402] - FAQ - Still possible to create a question at the root
+    * [KS-2410] - Edit question is invalid in special case
+    * [KS-2421] - FAQ- Problem of moderate questions 
+    * [KS-2424] - FAQ- Administrator VS moderator
+    * [KS-2437] - Remove the use of exoservice gmail Account from MPailService configuration
+    * [KS-2497] - IE7: show pop up window when right click on question that expanding
+    * [KS-2498] - All users can not see all categories although have view permission except user "Root"
+    * [KS-2500] - [Answers] IE7: show pop up window when right click on question that expanding
+    * [KS-2518] - KS error ui when change skin to vista or mac
+
+
+** Task
+    * [KS-2397] - AIO 1.6.x dependencies should be SNAPSHOTs
+    * [KS-2403] - Build, quality and automation improvements
+    * [KS-2531] - update release note for ks 1.2.4 1.2.x
+
+
+** Sub-task
+    * [KS-2235] - Fix KS 1.2.x build on hudson
+
 
 ****************
 Version ks-1.2.3
@@ -2152,6 +2398,103 @@ Version ks-1.1.2
     * [KS-1865] - Upgrade to Portal 2.5.5
     * [KS-1866] - Release 1.1.2
 
+
+*****************
+Version wcm-1.2.6
+*****************
+
+** Bug
+    * [WCM-2327] - Not display [Browse] button and upload icon in Illustration Image field  in SCV
+    * [WCM-2377] - Can not get the CSS of web content node using an SQL query in a replication environment
+    * [WCM-2694] - Problem of label display (translation) in CLV  automatic and manual browse panel
+    * [WCM-2753] - Error while setting a page with PCLV portlet
+    * [WCM-2778] - Remove portlet from the page - incomplete removal
+    * [WCM-2794] -  Problem for displaying documents with names containing illegal JCR characters using nt:file view 
+    * [WCM-2795] - Problem with displaying documents with name containing illegal JCR characters in PCLV
+    * [WCM-2796] - Problem when using the NewPortalConfigListener in WCM
+    * [WCM-2807] - Position of Homepage Button on Start Bar container to be changed when moving the mouse cursor over it
+    * [WCM-2808] - WebOS - Can not come back Homepage when Community Management form  is open
+    * [WCM-2815] - Impossible to add image from JCR in scv
+    * [WCM-2816] - A problem with clv when browsing directories with special characters (using IE7)
+    * [WCM-2818] - Can not order content in clv manual browse
+    * [WCM-2819] - Problem of display when edit CLV
+    * [WCM-2827] - Change permissions of a document fails
+    * [WCM-2828] - Search's results in FO: Results are not displayed when them number exceeds 250
+    * [WCM-2829] - Externalize the use of Fuzzy search
+    * [WCM-2832] - Impossible to download a binary file with name containing an illegal jcr char (using the right popup menu) 
+    * [WCM-2835] - Content Selector does not work on IE7
+    * [WCM-2840] - Show error message when trying to add a new Category in Newsletter Manager
+    * [WCM-2841] - Vote and Comment for Free webcontent layout document are not shown
+    * [WCM-2842] - Problem with navigation in the WCM site admin toolbar
+    * [WCM-2843] - Problem with FCK editor's insert link to a site page plugin
+    * [WCM-2844] - Translation of links next and previous in WCM search (FO) 
+    * [WCM-2845] - Portlet Category Navigation Exception
+    * [WCM-2850] - Update of a new document (file) does not change the publication status 
+    * [WCM-2851] - [WCM Standalone]: Can't save data when add/edit action in Contact Us
+    * [WCM-2852] - Can't Edit or delete a comment 
+    * [WCM-2853] - Labels  are not internationalized in WCMInsertContent functionality 
+    * [WCM-2855] - [WCM standalone] can't not creat new Category for Newsletter
+    * [WCM-2856] - Backup path is been empty at Manage Publication form
+    * [WCM-2858] - Error when moving document containing illegal jcr characters
+    * [WCM-2859] - syntax error in UIResultPageLayoutDefault.gtmpl
+    * [WCM-2860] - Search does not ignore accented characters
+    * [WCM-2861] - A problem with WCMInsertContent when browsing directories with special characters (using IE7)
+    * [WCM-2863] - Broken design with empty CLV in manual mode
+    * [WCM-2883] - Problem when drag & drop container into edit page area
+
+** Task
+    * [WCM-2848] - Backport the fix for ordering with symlink
+
+
+*****************
+Version wcm-1.2.5
+*****************
+
+** Bug
+    * [WCM-2689] - Changes in FCC action's parameters are not taken in consideration
+    * [WCM-2694] - Problem of label display (translation) in CLV  automatic and manual browse panel
+    * [WCM-2713] - Several JS problems with IE 7
+    * [WCM-2721] - Inversion of content's list in CLV at every validation
+    * [WCM-2725] - Cache & Categories errors : new published content is not considered and old content remains at cache (need to be removed)
+    * [WCM-2727] - Content edition is not considered after publication
+    * [WCM-2728] - Problems with Sorting Mechanism
+    * [WCM-2745] - Problem with manage taxonomy
+    * [WCM-2746] - Problem in downloading binary from PCLV
+    * [WCM-2751] - Problem when selecting a result in CLV configuration
+    * [WCM-2752] - Problem with popup save-success after saving portlet CLV
+    * [WCM-2753] - Error while setting a page with PCLV portlet
+    * [WCM-2754] -  Search result - wrong traduction when there's no result
+    * [WCM-2755] - A bad translation of a label in Form Generator Portlet 
+    * [WCM-2756] - Fix version 1.2.4-SNAPSHOT to 1.2.5-SNAPSHOT
+    * [WCM-2757] - Search result - wrong translation of results' number
+    * [WCM-2781] - Label categories are not traduced in clv edition
+    * [WCM-2782] - Newsletter mail's validator does not allow a multiple domain names in address mail
+    * [WCM-2783] - PCLV Portlet Preference (ORDER_BY) can't be considered when display
+    * [WCM-2786] - Mistakes in french translation of categories' labels
+    * [WCM-2787] - Labels in clv's BreadCrumb are not internationalized
+    * [WCM-2788] - WCM Content Selector: does not show content of a folder when switchin
+    * [WCM-2790] - PCLV : error in nt:file Title
+    * [WCM-2791] - Remove WCM's NewPortalConfigListener
+    * [WCM-2794] -  Problem for displaying documents with names containing illegal JCR characters using nt:file view 
+    * [WCM-2797] - Search's results: suggestion always in plural
+    * [WCM-2803] - WCM-Error in displaying name when node has more than 1 version
+    * [WCM-2805] - [DMS] Can't download file 
+    * [WCM-2806] - Picture is not shown in manage Publication form
+    * [WCM-2807] - Position of Homepage Button on Start Bar container to be changed when moving the mouse cursor over it
+    * [WCM-2810] - PCLV: content-not-found
+    * [WCM-2812] - Broken ACME's stylesheet
+
+
+** Task
+    * [WCM-2779] - Build, quality and automation improvements
+    * [WCM-2780] - AIO 1.6.x dependencies should be SNAPSHOTs
+    * [WCM-2799] - REG-CCP-328: The link in the web content is not displayed with underline
+
+
+** Sub-task
+    * [WCM-2472] - Hard coded ${exo.projects.directory.src}/portal/trunk an absolute path with the version in it (breaks release plugin usage)
+
+
 *****************
 Version wcm-1.2.4
 *****************
@@ -2676,6 +3019,20 @@ Version wcm-1.2
     * [WCM-1883] - Unknown error when edit a default Script at Site Administrator
     * [WCM-1884] - Unknown error when add new letter into a blank category
 
+
+*******************
+Version webos-1.5.7
+*******************
+
+** Empty
+
+*******************
+Version webos-1.5.6
+*******************
+
+** Improvement
+    * Update to Portal 2.5.9
+
 *******************
 Version webos-1.5.5
 *******************
@@ -2929,6 +3286,26 @@ Version webos-1.5
     * [WEBOS-183] - [DEV]: should set min-width and min-heigth for portlet when user resize portlet by using mouse
     * [WEBOS-184] - [TEST]:should set min-width and min-heigth for portlet when user resize portlet by using mouse
 
+
+****************
+Version wf-1.0.8
+****************
+
+** Bug
+    * [WF-89] - error name of some forms
+
+
+****************
+Version wf-1.0.7
+****************
+
+** Bug
+    * [WF-86] - [Workflow] Can't delegate user to approve document
+
+
+** Task
+    * [WF-84] - AIO 1.6.x dependencies should be SNAPSHOTs
+    * [WF-85] - content-publishing : correct labels
 
 ****************
 Version wf-1.0.6

@@ -2,8 +2,8 @@
 eXo All In One Release Notes
 ****************************
 
-Date:
-Version: 1.6.5
+Date: 
+Version: 1.6.6
 
 
 Thank you for downloading eXo All In One.
@@ -22,9 +22,9 @@ I. MAIN CHANGES
 II. PACKAGE CONTENTS
 ====================
 
-    * eXoAllinOne-1.6.5-tomcat.zip
-    * eXoAllInOne-1.6.5-jbossear.zip
-    * eXoAllInOne-1.6.5-chatserver.zip
+    * eXoAllInOne-1.6.6-tomcat.zip 
+    * eXoAllInOne-1.6.6-jbossear.zip
+    * eXoAllInOne-1.6.6-chatserver.zip
     
     * EXO-AIO-README.txt (this file)
     * EXO-AIO-CHANGELOG.txt
@@ -136,12 +136,14 @@ If you meet a JS or a CSS error when you run the Tomcat package on Linux, please
 The current workaround is to replace the file:
     * {tomcat-home}/lib/catalina.jar
 by the file:
-    * {tomcat-home}/patch/catalina.jar
+    * {tomcat-home}/patch/catalina-6.0.16-exopatched-webapp-load-order.jar
 
-We modified the class HostConfig to sort the webapps by alphabetical order.
-The java file is also available in {tomcat-home}/patch/HostConfig.java if you'd like to take a look (line 541), or compile it yourself. This is Tomcat version 6.0.16.
+We modified the class HostConfig class of Tomcat 6.0.16 to sort the webapps by alphabetical order.
+The java file is also available in {tomcat-home}/patch/HostConfig.java if you'd like to take a look (line 541),
+or compile it yourself.
 
-These errors appear when eXoResources is *not* deployed first. We named the other webapps so they *should* be deployed after, following the alphabetical order.
+These errors appear when eXoResources is *not* deployed first. We named the other webapps so they *should* 
+be deployed after, following the alphabetical order.
 However, Tomcat doesn't ensure this order will be respected
 
     * See also: http://wiki.apache.org/tomcat/FAQ/Miscellaneous#Q27
@@ -150,8 +152,9 @@ However, Tomcat doesn't ensure this order will be respected
 VI. BUILD INSTRUCTIONS
 ======================
 
-Please refer to our public wiki:
-http://wiki.exoplatform.org/xwiki/bin/view/Main/Building+from+sources
+Please refer to:
+* http://svn.exoplatform.org/projects/allinone/branches/1.6.x/EXO-AIO-HOW-TO-BUILD.txt
+* http://wiki.exoplatform.org/xwiki/bin/view/Main/Building+from+sources
 
 ==============
 VII. RESOURCES
@@ -161,5 +164,5 @@ VII. RESOURCES
      Community JIRA      http://jira.exoplatform.org/browse/ALL
      Community site      http://www.exoplatform.org
      Developers wiki     http://wiki.exoplatform.org
-
+     Forums              http://forum.exoplatform.com
 
