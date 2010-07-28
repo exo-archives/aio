@@ -345,6 +345,12 @@
      <version>3.1.2</version>
      <type>jar</type>
     </dependency>
+    <dependency>
+     <groupId>stax</groupId>
+     <artifactId>stax-api</artifactId>
+     <version>1.0</version>
+     <type>jar</type>
+    </dependency>
   </dependencies>
   <profiles>
     <profile>
