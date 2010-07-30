@@ -1,0 +1,4270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <external-component-plugins>
+    <target-component>org.exoplatform.services.organization.OrganizationService</target-component>
+    <component-plugin>
+      <name>init.service.listener</name>
+      <set-method>addListenerPlugin</set-method>
+      <type>org.exoplatform.services.organization.OrganizationDatabaseInitializer</type>
+      <description>this listener populate organization data for the first launch</description>
+      <init-params>      
+        <value-param>
+          <name>checkDatabaseAlgorithm</name>
+          <description>check database</description>
+          <value>entry</value>
+        </value-param>      
+        <value-param>
+          <name>printInformation</name>
+          <description>Print information init database</description>
+          <value>false</value>
+        </value-param> 
+        <object-param>
+          <name>configuration</name>
+          <description>description</description>
+          <object type="org.exoplatform.services.organization.OrganizationConfig">
+            <field name="membershipType">
+              <collection type="java.util.ArrayList">
+              	<value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$MembershipType">
+                    <field name="type"><string>manager</string></field>
+                    <field name="description"><string>manager membership type</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$MembershipType">
+                    <field name="type"><string>member</string></field>
+                    <field name="description"><string>member membership type</string></field>
+                  </object>
+                </value>                
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$MembershipType">
+                    <field name="type"><string>validator</string></field>
+                    <field name="description"><string>validator membership type</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$MembershipType">
+                    <field name="type"><string>editor</string></field>
+                    <field name="description"><string>editor membership type</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$MembershipType">
+                    <field name="type"><string>redactor</string></field>
+                    <field name="description"><string>redactor membership type</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$MembershipType">
+                    <field name="type"><string>webdesigner</string></field>
+                    <field name="description"><string>webdesigner membership type</string></field>
+                  </object>
+                </value>
+              </collection>
+            </field>
+
+            <field name="group">
+              <collection type="java.util.ArrayList">             
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>platform</string></field>
+                    <field name="parentId"><string></string></field>
+                    <field name="description"><string>the /platform group</string></field>
+                    <field name="label"><string>Platform</string></field>                    
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>administrators</string></field>
+                    <field name="parentId"><string>/platform</string></field>
+                    <field name="description"><string>the /platform/administrators group</string></field>
+                    <field name="label"><string>Administrators</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>users</string></field>
+                    <field name="parentId"><string>/platform</string></field>
+                    <field name="description"><string>the /platform/users group</string></field>
+                    <field name="label"><string>Users</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>guests</string></field>
+                    <field name="parentId"><string>/platform</string></field>
+                    <field name="description"><string>the /platform/guests group</string></field>
+                    <field name="label"><string>Guests</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>web-contributors</string></field>
+                    <field name="parentId"><string>/platform</string></field>
+                    <field name="description"><string>the /platform/web-contributors group</string></field>
+                    <field name="label"><string>Web Contributors</string></field>
+                  </object>
+                </value>                                                
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>organization</string></field>
+                    <field name="parentId"><string></string></field>
+                    <field name="description"><string>the organization group</string></field>
+                    <field name="label"><string>Organization</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>management</string></field>
+                    <field name="parentId"><string>/organization</string></field>
+                    <field name="description"><string>the /organization/management group</string></field>
+                    <field name="label"><string>Management</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>executive-board</string></field>
+                    <field name="parentId"><string>/organization/management</string></field>
+                    <field name="description"><string>the /organization/management/executive-board group</string></field>
+                    <field name="label"><string>Executive Board</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>human-resources</string></field>
+                    <field name="parentId"><string>/organization/management</string></field>
+                    <field name="description"><string>the /organization/management/human-resource group</string></field>
+                    <field name="label"><string>Human Resources</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>communication</string></field>
+                    <field name="parentId"><string>/organization</string></field>
+                    <field name="description"><string>the /organization/communication group</string></field>
+                    <field name="label"><string>Communication</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>marketing</string></field>
+                    <field name="parentId"><string>/organization/communication</string></field>
+                    <field name="description"><string>the /organization/communication/marketing group</string></field>
+                    <field name="label"><string>Marketing</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>press-and-media</string></field>
+                    <field name="parentId"><string>/organization/communication</string></field>
+                    <field name="description"><string>the /organization/communication/press-and-media group</string></field>
+                    <field name="label"><string>Press and Media</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>operations</string></field>
+                    <field name="parentId"><string>/organization</string></field>
+                    <field name="description"><string>the /organization/operations and media group</string></field>
+                    <field name="label"><string>Operations</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>sales</string></field>
+                    <field name="parentId"><string>/organization/operations</string></field>
+                    <field name="description"><string>the /organization/operations/sales group</string></field>
+                    <field name="label"><string>Sales</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>finances</string></field>
+                    <field name="parentId"><string>/organization/operations</string></field>
+                    <field name="description"><string>the /organization/operations/finances group</string></field>
+                    <field name="label"><string>Finances</string></field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>customers</string></field>
+                    <field name="parentId"><string></string></field>
+                    <field name="description"><string>the /customers group</string></field>
+                    <field name="label"><string>Customers</string></field>
+                  </object>
+                </value>                
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$Group">
+                    <field name="name"><string>partners</string></field>
+                    <field name="parentId"><string></string></field>
+                    <field name="description"><string>the /partners group</string></field>
+                    <field name="label"><string>Partners</string></field>
+                  </object>
+                </value>                
+              </collection>
+            </field>
+
+            <field name="user">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$User">
+                    <field name="userName"><string>root</string></field>
+                    <field name="password"><string>exo</string></field>
+                    <field name="firstName"><string>Root</string></field>
+                    <field name="lastName"><string>Root</string></field>
+                    <field name="email"><string>root@localhost</string></field>
+                    <field name="groups">
+                      <string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+                    </field>
+                  </object>
+                </value>
+                
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$User">
+                    <field name="userName"><string>john</string></field>
+                    <field name="password"><string>exo</string></field>
+                    <field name="firstName"><string>John</string></field>
+                    <field name="lastName"><string>Anthony</string></field>
+                    <field name="email"><string>john@localhost</string></field>
+                    <field name="groups">
+                      <string>
+                      	*:/platform/web-contributors, *:/platform/users                      	
+                      </string>
+                    </field>
+                  </object>
+                </value>                                                        
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$User">
+                    <field name="userName"><string>marry</string></field>
+                    <field name="password"><string>exo</string></field>
+                    <field name="firstName"><string>Marry</string></field>
+                    <field name="lastName"><string>Kelly</string></field>
+                    <field name="email"><string>marry@localhost</string></field>
+                    <field name="groups">
+                      <string>member:/platform/users,editor:/platform/web-contributors</string>
+                    </field>
+                  </object>
+                </value>                 
+                	<!-- Groupes des utilisateurs pilote -->
+						
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser1.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John1.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                        *:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser2.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John2.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+                    <string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser3.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John3.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser4.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John4.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser5.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John5.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser6.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John6.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser7.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John7.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser8.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John8.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser9.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John9.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser10.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John10.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser11.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John11.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser12.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John12.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser13.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John13.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser14.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John14.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser15.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John15.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser16.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John16.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser17.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John17.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser18.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John18.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser19.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John19.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser20.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John20.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser21.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John21.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser22.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John22.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser23.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John23.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser24.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John24.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser25.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John25.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser26.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John26.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser27.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John27.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser28.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John28.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser29.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John29.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser30.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John30.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser31.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John31.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser32.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John32.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser33.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John33.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser34.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John34.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser35.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John35.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser36.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John36.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser37.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John37.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser38.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John38.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser39.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John39.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser40.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John40.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser41.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John41.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser42.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John42.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser43.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John43.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser44.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John44.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser45.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John45.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser46.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John46.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser47.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John47.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser48.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John48.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser49.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John49.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>							
+									
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser50.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John50.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser51.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John51.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser52.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John52.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser53.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John53.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser54.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John54.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser55.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John55.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser56.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John56.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								 <value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser57.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John57.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser58.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John58.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser59.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John59.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser60.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John60.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser61.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John61.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser62.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John62.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser63.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John63.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser64.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John64.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser65.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John65.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser66.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John66.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser67.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John67.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser68.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John68.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								 <value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser69.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John69.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser70.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John70.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser71.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John71.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser72.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John72.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser73.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John73.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser74.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John74.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser75.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John75.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser76.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John76.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser77.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John77.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser78.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John78.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser79.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John79.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser80.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John80.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser81.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John81.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser82.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John82.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser83.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John83.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser84.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John84.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser85.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John85.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser86.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John86.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser87.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John87.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser88.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John88.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser89.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John89.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser90.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John90.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser91.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John91.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser92.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John92.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser93.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John93.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser94.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John94.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser95.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John95.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser96.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John96.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser97.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John97.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser98.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John98.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser99.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John99.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser100.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John100.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser101.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John101.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser102.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John102.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser103.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John103.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser104.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John104.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser105.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John105.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser106.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John106.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser107.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John107.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser108.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John108.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser109.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John109.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser110.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John110.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser111.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John111.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser112.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John112.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser113.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John113.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser114.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John114.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser115.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John115.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser116.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John116.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser117.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John117.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser118.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John118.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser119.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John119.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser120.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John120.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser121.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John121.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser122.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John122.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser123.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John123.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser124.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John124.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser125.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John125.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser126.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John126.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser127.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John127.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser128.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John128.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser129.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John129.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser130.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John130.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser131.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John131.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser132.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John132.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser133.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John133.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser134.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John134.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser135.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John135.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser136.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John136.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser137.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John137.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser138.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John138.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser139.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John139.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser140.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John140.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser141.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John141.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser142.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John142.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser143.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John143.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser144.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John144.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser145.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John145.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser146.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John146.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser147.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John147.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser148.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John148.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser149.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John149.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+								<value>
+									<object type="org.exoplatform.services.organization.OrganizationConfig$User">
+										<field name="userName">
+											<string>testuser150.exo</string>
+										</field>
+										<field name="password">
+											<string>exo</string>
+										</field>
+										<field name="firstName">
+											<string>John50</string>
+										</field>
+										<field name="lastName">
+											<string>Doe</string>
+										</field>
+										<field name="email">
+											<string>John1.Doe@test.exoplatform.org</string>
+										</field>
+										<field name="groups">
+											<string>
+                      	*:/platform/administrators,*:/platform/users,
+                      	*:/platform/web-contributors,
+                      	member:/organization/management/executive-board
+                      </string>
+										</field>
+									</object>
+								</value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$User">
+                    <field name="userName"><string>demo</string></field>
+                    <field name="password"><string>exo</string></field>
+                    <field name="firstName"><string>Demo</string></field>
+                    <field name="lastName"><string>exo</string></field>
+                    <field name="email"><string>demo@localhost</string></field>
+                    <field name="groups">
+                      <string>member:/platform/users</string>
+                    </field>
+                  </object>
+                </value>
+                <value>
+                  <object type="org.exoplatform.services.organization.OrganizationConfig$User">
+                    <field name="userName"><string>james</string></field>
+                    <field name="password"><string>exo</string></field>
+                    <field name="firstName"><string>James</string></field>
+                    <field name="lastName"><string>Anderson</string></field>
+                    <field name="email"><string>james@localhost</string></field>
+                    <field name="groups">
+                      <string>member:/platform/users,redactor:/platform/web-contributors</string>
+                    </field>
+                  </object>
+                </value>                       
+              </collection>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
+           
+    <component-plugin>
+      <name>new.user.event.listener</name>
+      <set-method>addListenerPlugin</set-method>
+      <type>org.exoplatform.services.organization.impl.NewUserEventListener</type>
+      <description>this listener assign group and membership to a new created user</description>
+      <init-params>
+        <object-param>
+          <name>configuration</name>
+          <description>description</description>
+          <object type="org.exoplatform.services.organization.impl.NewUserConfig">
+            <field name="group">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <object type="org.exoplatform.services.organization.impl.NewUserConfig$JoinGroup">
+                    <field name="groupId"><string>/platform/users</string></field>
+                    <field name="membership"><string>member</string></field>
+                  </object>
+                </value>               
+              </collection>
+            </field>
+            <field name="ignoredUser">
+              <collection type="java.util.HashSet">
+                <value><string>root</string></value>
+                <value><string>john</string></value>
+                <value><string>marry</string></value>
+                <value><string>demo</string></value>
+                <value><string>james</string></value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
+
+  </external-component-plugins>
+</configuration>
