@@ -16,6 +16,7 @@ Requirements
    To configure your maven settings, follow the instructions
    on our wiki.
  * Tomcat 6.0.16 or JBoss 4.2.3
+ * Openfire server v3.4.5
    They are in a specific location, cf your maven settings.
 
 =====================
