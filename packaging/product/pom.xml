@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
     <artifactId>exo.aio.packaging</artifactId>
-    <version>1.6.6</version>
+    <version>1.6.7-SNAPSHOT</version>
   </parent>
   <artifactId>allinone.packaging.product</artifactId>
   <packaging>pom</packaging>
@@ -62,13 +62,13 @@
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
       <artifactId>exo.aio.tomcat.patch</artifactId>
-      <version>1.6.6</version>
+      <version>1.6.7-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.allinone</groupId>
       <artifactId>exo.aio.jbossear.patch</artifactId>
-      <version>1.6.6</version>
+      <version>1.6.7-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
     <dependency>
