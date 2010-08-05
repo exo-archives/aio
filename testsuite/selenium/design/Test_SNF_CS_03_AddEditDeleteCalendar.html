@@ -4,13 +4,18 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
-<title>Test_SNF_CS_03_2_EditCalendar</title>
+<title>Test_SNF_CS_03_AddEditDeleteCalendar</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Test_SNF_CS_03_2_EditCalendar</td></tr>
+<tr><td rowspan="1" colspan="3">Test_SNF_CS_03_AddEditDeleteCalendar</td></tr>
 </thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>--AddEditDelete Calendar</td>
+	<td></td>
+</tr>
 <tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
@@ -19,6 +24,11 @@
 <tr>
 	<td>windowMaximize</td>
 	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
@@ -197,12 +207,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>The calendar and all its events and tasks. Do you confirm?</td>
 	<td></td>
 </tr>

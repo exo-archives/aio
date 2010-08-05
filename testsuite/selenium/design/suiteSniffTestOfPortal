@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Test_SNF_PRL_02_CreateNewAccountPublicMode.html">Test_SNF_PRL_02_CreateNewAccountPublicMode</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_03_ChangeLanguagePublicMode.html">Test_SNF_PRL_03_ChangeLanguagePublicMode</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_04_SignInAndSignOut.html">Test_SNF_PRL_04_SignInAndSignOut</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_05_ManageUser.html">Test_SNF_PRL_05_ManageUser</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_06_GroupsManagement.html">Test_SNF_PRL_06_GroupsManagement</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_06_GroupsManagement.html">Test_SNF_PRL_06_GroupsManagement</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_09_ManageCategory.html">Test_SNF_PRL_09_ManageCategory</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_10_AddApplicationIntoCategory.html">Test_SNF_PRL_10_AddApplicationIntoCategory</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_11_AddRemoteAndCreateNewGadget.html">Test_SNF_PRL_11_AddRemoteAndCreateNewGadget</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_12_AddResource.html">Test_SNF_PRL_12_AddResource</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_15_1_CreatePagebyWizard.html">Test_SNF_PRL_15_1_CreatePagebyWizard</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_15_2_CreatePagebyManagePage.html">Test_SNF_PRL_15_2_CreatePagebyManagePage</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_16_CreateNewPortal.html">Test_SNF_PRL_16_CreateNewPortal</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_17_EditNewPortal.html">Test_SNF_PRL_17_EditNewPortal</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_18_DeleteNewPortal.html">Test_SNF_PRL_18_DeleteNewPortal</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_19_ChangeUsingPortal.html">Test_SNF_PRL_19_ChangeUsingPortal</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_20_ChangeLanguagePrivateMode.html">Test_SNF_PRL_20_ChangeLanguagePrivateMode</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_22_SettingAccount.html">Test_SNF_PRL_22_SettingAccount</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_23_AddEditDeleteNodetoNavigation.html">Test_SNF_PRL_23_AddEditDeleteNodetoNavigation</a></td></tr>
+<tr><td><a href="Test_SNF_PRL_25_MoveNodeinNavigation.html">Test_SNF_PRL_25_MoveNodeinNavigation</a></td></tr>
+</tbody></table>
+</body>
+</html>

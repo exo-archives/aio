@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_05_WatchUnWatchCategory</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Watch/Unwatch category</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -47,6 +52,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Answers</td>
 	<td></td>
@@ -68,12 +78,12 @@
 </tr>
 <tr>
 	<td>clickAt</td>
-	<td>//div[@id='UIFAQPopupCategories0']//div[@class='UIRightClickPopupMenu UIContextMenuContainer']//div[2][@class='MenuItem']/a</td>
+	<td>//div[@id='UIFAQPopupCategories0']//div[@class='UIRightClickPopupMenu UIContextMenuContainer']//div[8][@class='MenuItem']/a</td>
 	<td>1,1</td>
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td>You are watching this category, you will be notified about all changes. </td>
+	<td>You are watching this category, you will be notified about all changes.</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,8 +97,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>//div[@id='UIAnswersPortlet']//div[2]//div//div[2]//div[@class='UIPopupMessages']//div[3]//div[@class='UIAction']//table//tr//td//div//div//div//div//a</td>
+	<td>verifyElementPresent</td>
+	<td>//div[@id=&quot;UICategories&quot;]//div[2]//div[2]//div//div//div[2]//div//a[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -108,17 +118,12 @@
 </tr>
 <tr>
 	<td>clickAt</td>
-	<td>//div[@id='UIFAQPopupCategories0']//div[@class='UIRightClickPopupMenu UIContextMenuContainer']//div[2][@class='MenuItem']/a</td>
+	<td>//div[@id='UIFAQPopupCategories0']//div[@class='UIRightClickPopupMenu UIContextMenuContainer']//div[8][@class='MenuItem']/a</td>
 	<td>1,1</td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@id='UIAnswersPortlet']//div[@class='ExoMessageDecorator']//div[@class='CloseButton']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='UIAnswersPortlet']//div[@class='ExoMessageDecorator']//div[@class='CloseButton']</td>
+	<td>waitForElementNotPresent</td>
+	<td>//div[@id=&quot;UICategories&quot;]//div[2]//div[2]//div//div//div[2]//div//a[2]</td>
 	<td></td>
 </tr>
 <tr>
