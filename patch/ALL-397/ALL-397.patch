@@ -1,8 +1,8 @@
-Index: web/resources/src/main/webapp/WEB-INF/conf/script/groovy/SkinConfigScript.groovy
+Index: web/resources/src/main/webapp/javascript/WEB-INF/conf/script/groovy/SkinConfigScript.groovy
 ===================================================================
---- web/resources/src/main/webapp/WEB-INF/conf/script/groovy/SkinConfigScript.groovy	(revision 0)
-+++ web/resources/src/main/webapp/WEB-INF/conf/script/groovy/SkinConfigScript.groovy	(revision 0)
-@@ -0,0 +1,101 @@
+--- web/resources/src/main/webapp/javascript/WEB-INF/conf/script/groovy/SkinConfigScript.groovy	(revision 0)
++++ web/resources/src/main/webapp/javascript/WEB-INF/conf/script/groovy/SkinConfigScript.groovy	(revision 0)
+@@ -0,0 +1,51 @@
 +/***************************HomePagePortlet**************************************************/
 +SkinService.addSkin(
 +    "web/HomePagePortlet",
@@ -26,29 +26,6 @@ Index: web/resources/src/main/webapp/WEB-INF/conf/script/groovy/SkinConfigScript
 +    "/portal/templates/skin/webui/component/UIHomePagePortlet/DefaultStylesheet.css",
 +    ServletContext,
 +    true
-+) ;/***************************HomePagePortlet**************************************************/
-+SkinService.addSkin(
-+    "web/HomePagePortlet",
-+    "Default",
-+    "/portal/templates/skin/webui/component/UIHomePagePortlet/DefaultStylesheet.css",
-+    ServletContext,
-+    true
-+) ;
-+
-+SkinService.addSkin(
-+    "web/HomePagePortlet",
-+    "Vista",
-+    "/portal/templates/skin/webui/component/UIHomePagePortlet/DefaultStylesheet.css",
-+    ServletContext,
-+    true
-+) ;
-+ 
-+SkinService.addSkin(
-+    "web/HomePagePortlet",
-+    "Mac",
-+    "/portal/templates/skin/webui/component/UIHomePagePortlet/DefaultStylesheet.css",
-+    ServletContext,
-+    true
 +) ;
 +
 +
@@ -77,30 +54,4 @@ Index: web/resources/src/main/webapp/WEB-INF/conf/script/groovy/SkinConfigScript
 +    true
 +) ;
 + 
-+
-+
-+/***************************BannerPortlet**************************************************/
-+SkinService.addSkin(
-+    "web/BannerPortlet",
-+    "Default",
-+    "/portal/templates/skin/webui/component/UIBannerPortlet/DefaultStylesheet.css",
-+    ServletContext,
-+    true
-+) ;
-+
-+SkinService.addSkin(
-+    "web/BannerPortlet",
-+    "Vista",
-+    "/portal/templates/skin/webui/component/UIBannerPortlet/VistaStylesheet.css",
-+    ServletContext,
-+    true
-+) ;
-+ 
-+SkinService.addSkin(
-+    "web/BannerPortlet",
-+    "Mac",
-+    "/portal/templates/skin/webui/component/UIBannerPortlet/MacStylesheet.css",
-+    ServletContext,
-+    true
-+) ;
-+ 
+
