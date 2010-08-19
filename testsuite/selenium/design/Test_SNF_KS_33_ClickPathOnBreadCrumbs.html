@@ -57,24 +57,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Check BreadCrumbs-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
 	<td>//div[@class='Selected']</td>
-	<td>Hom</td>
+	<td>Home</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@class='Selected']</td>
+	<td>Home</td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
@@ -87,17 +92,22 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@class='Selected']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyText</td>
 	<td>//div[@class='Selected']</td>
 	<td>Knowledge Suite</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Live demo</td>
 	<td></td>
 </tr>
@@ -117,7 +127,12 @@
 	<td>Live demo</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=Demo data policy</td>
 	<td></td>
 </tr>
@@ -137,7 +152,7 @@
 	<td>Demo data policy</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Live demo</td>
 	<td></td>
 </tr>
@@ -157,7 +172,12 @@
 	<td>Live demo</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=Knowledge Suite</td>
 	<td></td>
 </tr>
@@ -172,7 +192,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>//div[@class='Selected']</td>
 	<td>Knowledge Suite</td>
 </tr>
@@ -197,13 +217,23 @@
 	<td>Home</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

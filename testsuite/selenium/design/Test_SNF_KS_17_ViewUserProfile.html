@@ -57,18 +57,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
+	<td>click</td>
+	<td>link=Answers</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
 	<td>-Edit Category allowing to view user profile-</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,9 +82,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAt</td>
 	<td>//div[@id='FAQCategroManager']//div[@class='MenuItem']</td>
-	<td></td>
+	<td>1,1</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -137,6 +132,11 @@
 	<td>Question for View Profile</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>Question___Frame</td>
 	<td></td>
@@ -144,7 +144,7 @@
 <tr>
 	<td>typeFCKEditor</td>
 	<td>Question___Frame</td>
-	<td>English Description</td>
+	<td>English content</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -152,8 +152,18 @@
 	<td>root@localhost.vn</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAt</td>
 	<td>//div[@id=&quot;AddQuestion&quot;]//div[@class=&quot;UIAction&quot;]//div[@class=&quot;ButtonMiddle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--click OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The question has been posted</td>
 	<td></td>
 </tr>
 <tr>
@@ -187,8 +197,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyText</td>
 	<td>//div[@class='FAQContent']//div[@class='ProfileContainer']//a</td>
+	<td>Root Root</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--View user profile</td>
 	<td></td>
 </tr>
 <tr>
@@ -202,13 +217,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>User Profile</td>
+	<td>waitForElementPresent</td>
+	<td>UIViewUserProfile</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>UIViewUserProfile</td>
+	<td>echo</td>
+	<td>--close view user profile form</td>
 	<td></td>
 </tr>
 <tr>
@@ -232,6 +247,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Do you really want to delete this question and its answers ?</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//form[@id='UIDeleteQuestion']//table[@class='ActionContainer']//div</td>
 	<td></td>
@@ -249,6 +269,51 @@
 <tr>
 	<td>verifyTextNotPresent</td>
 	<td>Question for View Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Edit Category cancel option view user profile-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>FAQCategroManager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;eXo.faq.UIAnswersPortlet.viewTitle('FAQCategroManager');&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='FAQCategroManager']//div[@class='MenuItem']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='FAQCategroManager']//div[@class='MenuItem']</td>
+	<td>1,1</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>ViewAuthorInfor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ViewAuthorInfor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UICategoryForm']//table[@class='ActionContainer']//div[@class='ActionButton LightBlueStyle']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UICategoryForm']//table[@class='ActionContainer']//div[@class='ActionButton LightBlueStyle']</td>
 	<td></td>
 </tr>
 <tr>

@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_29_QuickSearchInForum</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--quick search in Forum</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -52,18 +57,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Simple Search in Forum-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -227,8 +227,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

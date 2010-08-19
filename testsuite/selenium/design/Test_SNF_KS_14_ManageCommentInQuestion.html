@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_14_ManageCommentInQuestion</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Manage Comment</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -47,13 +52,13 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>link=Sign in</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,8 +67,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
+	<td>click</td>
+	<td>link=Answers</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,6 +107,21 @@
 	<td>SNF_KS_14 English</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>Question___Frame</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeFCKEditor</td>
+	<td>Question___Frame</td>
+	<td>Question content in English</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>EmailAddress</td>
 	<td>root@localhost.vn</td>
@@ -127,13 +147,33 @@
 	<td>SNF_KS_14 French</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>Question___Frame</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeFCKEditor</td>
+	<td>Question___Frame</td>
+	<td>Question content in French</td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@id=&quot;AddQuestion&quot;]//div[@class=&quot;UIAction&quot;]//div[@class=&quot;ButtonMiddle&quot;]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAt</td>
 	<td>//div[@id=&quot;AddQuestion&quot;]//div[@class=&quot;UIAction&quot;]//div[@class=&quot;ButtonMiddle&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The question has been posted</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,6 +212,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>CommentContent___Frame</td>
 	<td></td>
@@ -197,6 +242,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='Comment']/a</td>
 	<td></td>
@@ -204,6 +254,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='Comment']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -227,8 +282,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Comment in French</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-Edit Comment-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -259,6 +324,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='ResponseItemContainer']//table//td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -287,6 +357,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>--comment in French</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>link=French</td>
 	<td></td>
@@ -297,6 +377,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='ResponseItemContainer']//table//td[3]/a</td>
 	<td></td>
@@ -304,6 +389,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='ResponseItemContainer']//table//td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -337,6 +427,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>link=English</td>
 	<td></td>
@@ -367,7 +462,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>Are you sure you want to delete this comment ?</td>
 	<td></td>
 </tr>
@@ -382,8 +477,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>--delete comment in French</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=French</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='AnswersViewContent']//div[@class='ResponseItemContainer']//table//td[4]/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -392,7 +502,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>Are you sure you want to delete this comment ?</td>
 	<td></td>
 </tr>
@@ -422,6 +532,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='Comment']/a</td>
 	<td></td>
@@ -429,6 +544,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='Comment']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -447,8 +567,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Comment in English</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=French</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -459,6 +589,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[@id='AnswersViewContent']//div[@class='Comment']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -474,6 +609,11 @@
 <tr>
 	<td>click</td>
 	<td>//form[@id='UICommentForm']/div[2]/div[2]/table//div[1]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Comment in French</td>
 	<td></td>
 </tr>
 <tr>

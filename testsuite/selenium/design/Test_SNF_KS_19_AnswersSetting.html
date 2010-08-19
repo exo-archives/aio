@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_19_AnswersSetting</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Answer setting</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,18 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Show/hide Category-</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
 	<td></td>
 </tr>
 <tr>
@@ -117,18 +112,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=Answers</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Submit question</td>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Submit question</td>
 	<td></td>
 </tr>
 <tr>
@@ -147,13 +142,33 @@
 	<td>Question for Modify Settings</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>Question___Frame</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeFCKEditor</td>
+	<td>Question___Frame</td>
+	<td>Question content</td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>EmailAddress</td>
 	<td>root@localhost.vn</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAt</td>
 	<td>//div[@id=&quot;AddQuestion&quot;]//div[@class=&quot;UIAction&quot;]//div[@class=&quot;ButtonMiddle&quot;]</td>
+	<td>1,1</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>The question has been posted</td>
 	<td></td>
 </tr>
 <tr>
@@ -247,28 +262,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
 	<td>-Check Disable Settings-</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
@@ -297,8 +307,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -362,16 +372,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Login</td>
 	<td></td>
@@ -402,8 +402,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -413,7 +413,12 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>-Disable RSS Comment Avatar-</td>
+	<td>-Enable RSS Comment Avatar-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -497,28 +502,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
 	<td>-Check Enable Settings-</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
@@ -547,8 +547,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -607,23 +607,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
 	<td>-Detele Test Data-</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
@@ -657,13 +647,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
+	<td>click</td>
+	<td>link=Answers</td>
 	<td></td>
 </tr>
 <tr>
@@ -702,8 +687,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

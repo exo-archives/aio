@@ -52,28 +52,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
 	<td>-Add Question-</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/private/classic/answers</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Answers</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,6 +87,11 @@
 	<td>Question for Send</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>Question___Frame</td>
 	<td></td>
@@ -117,7 +107,7 @@
 	<td>root@localhost.vn</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAt</td>
 	<td>//div[@id=&quot;AddQuestion&quot;]//div[@class=&quot;UIAction&quot;]//div[@class=&quot;ButtonMiddle&quot;]</td>
 	<td></td>
 </tr>

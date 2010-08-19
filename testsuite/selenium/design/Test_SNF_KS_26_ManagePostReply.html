@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_26_ManagePostReply</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Manage Post Reply</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,18 +62,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Add Topic for topic actions test-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -92,6 +92,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>messageContent___Frame</td>
 	<td></td>
@@ -100,6 +105,11 @@
 	<td>type</td>
 	<td>ThreadTitle</td>
 	<td>Topic for Post Test</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
 </tr>
 <tr>
 	<td>typeFCKEditor</td>
@@ -167,6 +177,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>MessageContent___Frame</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>MessageContent___Frame</td>
 	<td></td>
@@ -202,6 +222,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>MessageContent___Frame</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>MessageContent___Frame</td>
 	<td></td>
@@ -234,6 +264,16 @@
 <tr>
 	<td>click</td>
 	<td>//form[@id='UITopicDetail']//div[@class='PostsInThreadContainer ImageContentContainer']/div[3]//table[@class='TablePost']//div[3]/div[4]/div/div[3]//div[@class='ButtonMiddle']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>MessageContent___Frame</td>
 	<td></td>
 </tr>
 <tr>
@@ -312,23 +352,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
 	<td>-Check Private Post-</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
@@ -362,18 +392,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Add Topic for topic actions test-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -387,18 +412,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Topic for Post Test</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Topic for Post Test</td>
+	<td>waitForElementPresent</td>
+	<td>link=Topic for Post Test</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Topic for Post Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -419,16 +449,6 @@
 <tr>
 	<td>click</td>
 	<td>link=Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>Login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/</td>
 	<td></td>
 </tr>
 <tr>
@@ -467,18 +487,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Delete Test Data-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -532,8 +547,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

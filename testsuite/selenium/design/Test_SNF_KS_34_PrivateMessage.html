@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_34_PrivateMessage</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Private message</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,18 +62,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Private Message-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -97,6 +97,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>SendTo</td>
 	<td></td>
@@ -117,6 +122,11 @@
 	<td>Private Message Test</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>MailMessage___Frame</td>
 	<td></td>
@@ -132,6 +142,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Your message was sent successfully</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@id='forum']//div[@class='ExoMessageDecorator']</td>
 	<td></td>
@@ -142,6 +157,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Private Message Test</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-View Send Message-</td>
 	<td></td>
@@ -149,6 +169,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Sent messages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -327,6 +352,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>SendTo</td>
 	<td></td>
@@ -340,6 +370,11 @@
 	<td>verifyValue</td>
 	<td>MailTitle</td>
 	<td>Reply: Private Message Test</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -512,6 +547,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForTextPresent</td>
 	<td>Message Reply</td>
 	<td></td>
@@ -627,6 +667,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//table[@id='PermissionInfo']/tbody/tr[1]/td[4]/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='PermissionInfo']/tbody/tr[1]/td[4]/div/div/div[2]/div</td>
 	<td></td>
@@ -737,6 +782,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//table[@id='PermissionInfo']/tbody/tr[1]/td[4]/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//table[@id='PermissionInfo']/tbody/tr[1]/td[4]/div/div/div[2]/div</td>
 	<td></td>
@@ -792,8 +842,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

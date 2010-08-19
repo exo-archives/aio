@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_23_TagTopic</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--tag topic</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -37,6 +42,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>username</td>
 	<td>root</td>
@@ -47,18 +57,13 @@
 	<td>exo</td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=Sign in</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=Sign in</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Forum</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -84,17 +89,27 @@
 <tr>
 	<td>click</td>
 	<td>link=Start topic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
 	<td>ThreadTitle</td>
-	<td>test</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>ThreadTitle</td>
-	<td>test</td>
+	<td>Topic 23 for tag</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -104,16 +119,16 @@
 <tr>
 	<td>typeFCKEditor</td>
 	<td>//iframe[@id='messageContent___Frame']</td>
-	<td>new topic for tag</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Submit</td>
-	<td></td>
+	<td>New topic for tag</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Topic 23 for tag</td>
 	<td></td>
 </tr>
 <tr>
@@ -122,13 +137,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=test</td>
+	<td>click</td>
+	<td>link=Topic 23 for tag</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=test</td>
+	<td>waitForTextPresent</td>
+	<td>New topic for tag</td>
 	<td></td>
 </tr>
 <tr>
@@ -144,7 +159,7 @@
 <tr>
 	<td>type</td>
 	<td>AddTag</td>
-	<td>toto titi tata</td>
+	<td>Mytag1 Mytag2</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -157,78 +172,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>echo</td>
-	<td>-- Auto-Suggest tag</td>
+	<td>waitForElementPresent</td>
+	<td>link=Mytag1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Live demo</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Live demo</td>
+	<td>link=Mytag2</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Demo data policy</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Demo data policy</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@id='ButtonSearch']/div/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='ButtonSearch']/div/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>AddTag</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>AddTag</td>
-	<td>t</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>AddTag</td>
-	<td>t</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>AddTag</td>
-	<td>t</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@id='AddTagId']/div/div/div/div/div[2]/div/div/div/div[@id='searchTagName']/div[3]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='AddTagId']/div/div/div/div/div[2]/div/div/div/div[@id='searchTagName']/div[3]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>xpath=//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitForm('forum#UITopicDetail','AddTagTopic',true)&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitForm('forum#UITopicDetail','AddTagTopic',true)&quot;]</td>
+	<td>link=Mytag3</td>
 	<td></td>
 </tr>
 <tr>
@@ -237,13 +192,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=toto</td>
+	<td>click</td>
+	<td>link=Mytag1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=toto</td>
+	<td>waitForElementPresent</td>
+	<td>link=Topic 23 for tag</td>
 	<td></td>
 </tr>
 <tr>
@@ -287,13 +242,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextNotPresent</td>
-	<td>test</td>
+	<td>echo</td>
+	<td>--check after untag</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextNotPresent</td>
-	<td>test</td>
+	<td>click</td>
+	<td>link=Topic 23 for tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>New topic for tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Mytag1</td>
 	<td></td>
 </tr>
 <tr>
@@ -302,73 +267,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=Demo data policy</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>link=Demo data policy</td>
+	<td>//div[@id='TagContainer']//div//div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>xpath=//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitEvent('forum#UITopicDetail','UnTagTopic','&amp;objectId=tagtoto')&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitEvent('forum#UITopicDetail','UnTagTopic','&amp;objectId=tagtoto')&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>--Check existing of tag in topic after untag</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTextNotPresent</td>
-	<td>toto</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextNotPresent</td>
-	<td>toto</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>-- check existing of tag in Tag list after untag</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@id='ButtonSearch']/div/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='ButtonSearch']/div/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>AddTag</td>
-	<td>t</td>
-</tr>
-<tr>
-	<td>keyDown</td>
-	<td>AddTag</td>
-	<td>t</td>
-</tr>
-<tr>
-	<td>waitForTextNotPresent</td>
-	<td>toto</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextNotPresent</td>
-	<td>toto</td>
+	<td>waitForElementNotPresent</td>
+	<td>link=Mytag2</td>
 	<td></td>
 </tr>
 <tr>
@@ -387,13 +292,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>test</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>test</td>
+	<td>waitForElementPresent</td>
+	<td>link=Topic 23 for tag</td>
 	<td></td>
 </tr>
 <tr>
@@ -427,18 +327,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>Are you sure you want to delete this topic?</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextNotPresent</td>
-	<td>test</td>
+	<td>waitForElementNotPresent</td>
+	<td>link=Topic 23 for tag</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextNotPresent</td>
-	<td>test</td>
+	<td>verifyElementNotPresent</td>
+	<td>link=Topic 23 for tag</td>
 	<td></td>
 </tr>
 <tr>
@@ -454,6 +354,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

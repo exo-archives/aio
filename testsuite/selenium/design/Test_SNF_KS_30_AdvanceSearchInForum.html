@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_30_AdvanceSearchInForum</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Advanced search in Forum</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,18 +62,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Search Category-</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -192,6 +192,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>SearchType</td>
+	<td></td>
+</tr>
+<tr>
 	<td>select</td>
 	<td>SearchType</td>
 	<td>label=Topic</td>
@@ -232,6 +237,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>SearchType</td>
+	<td></td>
+</tr>
+<tr>
 	<td>select</td>
 	<td>SearchType</td>
 	<td>label=Post</td>
@@ -262,8 +272,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 
