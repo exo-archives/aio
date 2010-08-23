@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_44_ManageCategoryType</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Manage Category type</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,13 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -127,11 +127,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>//div[@class='Icon16x16 WeatherCloudy']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>-Edit Topic Type-</td>
 	<td></td>
@@ -169,11 +164,6 @@
 <tr>
 	<td>verifyTextPresent</td>
 	<td>New Topic Type Update</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>//div[@class='Icon16x16 Bomb']</td>
 	<td></td>
 </tr>
 <tr>
@@ -217,8 +207,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

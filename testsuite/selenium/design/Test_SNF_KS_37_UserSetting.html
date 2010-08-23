@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_37_UserSetting</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--User Settings</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,13 +62,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>echo</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -77,9 +82,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>componentExoContextMenu</td>
+	<td>waitForElementPresent</td>
 	<td>link=Knowledge Suite</td>
-	<td>contextmenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=Knowledge Suite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=Knowledge Suite</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -92,14 +107,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@class='PopupMessage']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>//div[@class='PopupMessage']</td>
+	<td>waitForTextPresent</td>
 	<td>You are now watching this item.</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -182,7 +192,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>Are you sure you want delete this subscription?</td>
 	<td></td>
 </tr>
@@ -202,13 +212,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyValue</td>
+	<td>waitForValue</td>
 	<td>Signature</td>
 	<td>Root Signature</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitEvent('forum#UIForumUserSettingForm','OpenTab','&amp;objectId=ForumUserOption')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitEvent('forum#UIForumUserSettingForm','OpenTab','&amp;objectId=ForumUserOption')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -292,6 +317,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>ThreadTitle</td>
 	<td></td>
@@ -300,6 +330,16 @@
 	<td>type</td>
 	<td>ThreadTitle</td>
 	<td>Test Signature</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
 </tr>
 <tr>
 	<td>typeFCKEditor</td>
@@ -414,6 +454,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Add forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -542,8 +587,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -557,6 +602,16 @@
 	<td>Topic 1</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
+</tr>
+<tr>
 	<td>typeFCKEditor</td>
 	<td>messageContent___Frame</td>
 	<td>Topic 1</td>
@@ -587,8 +642,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -602,6 +657,16 @@
 	<td>Topic 2</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
+</tr>
+<tr>
 	<td>typeFCKEditor</td>
 	<td>messageContent___Frame</td>
 	<td>Topic 2</td>
@@ -632,8 +697,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -645,6 +710,16 @@
 	<td>type</td>
 	<td>ThreadTitle</td>
 	<td>Topic 3</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
 </tr>
 <tr>
 	<td>typeFCKEditor</td>
@@ -677,8 +752,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -690,6 +765,16 @@
 	<td>type</td>
 	<td>ThreadTitle</td>
 	<td>Topic 4</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
 </tr>
 <tr>
 	<td>typeFCKEditor</td>
@@ -722,8 +807,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -735,6 +820,16 @@
 	<td>type</td>
 	<td>ThreadTitle</td>
 	<td>Topic 5</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
 </tr>
 <tr>
 	<td>typeFCKEditor</td>
@@ -767,8 +862,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -780,6 +875,16 @@
 	<td>type</td>
 	<td>ThreadTitle</td>
 	<td>Topic 6</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
 </tr>
 <tr>
 	<td>typeFCKEditor</td>
@@ -812,8 +917,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -825,6 +930,16 @@
 	<td>type</td>
 	<td>ThreadTitle</td>
 	<td>Topic for Forum Setting Test</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>messageContent___Frame</td>
+	<td></td>
 </tr>
 <tr>
 	<td>typeFCKEditor</td>
@@ -1062,11 +1177,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Topic for Forum Setting Test</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//div[@id='UIBreadcumbs']/div/div/div/div[1]/a[1]</td>
 	<td></td>
@@ -1172,7 +1282,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>Are you sure you want to delete this forum?</td>
 	<td></td>
 </tr>
@@ -1272,8 +1382,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

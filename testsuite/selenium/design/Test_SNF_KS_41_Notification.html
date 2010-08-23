@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_41_Notification</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--Notification</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,13 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -84,6 +84,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitEvent('forum#UIForumAdministrationForm','SelectTab','&amp;objectId=2')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -97,6 +102,11 @@
 	<td>Test Title</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>typeFCKEditor</td>
 	<td>notifyEmail___Frame</td>
 	<td>Test data 01</td>
@@ -129,6 +139,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[@onclick=&quot;javascript:eXo.webui.UIForm.submitEvent('forum#UIForumAdministrationForm','SelectTab','&amp;objectId=2')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -167,8 +182,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Test_SNF_KS_45_BanIP</td></tr>
 </thead><tbody>
 <tr>
+	<td>echo</td>
+	<td>--ban IP</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/portal/public/classic/</td>
 	<td></td>
@@ -57,13 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -158,6 +158,16 @@
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
+	<td>111.111.111.111</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>112.111.111.111</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
 	<td>112.111.111.111</td>
 	<td></td>
 </tr>
@@ -192,7 +202,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>This IP will no longer be banned. Do you confirm ?</td>
 	<td></td>
 </tr>
@@ -212,7 +222,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
+	<td>waitForConfirmation</td>
 	<td>This IP will no longer be banned. Do you confirm ?</td>
 	<td></td>
 </tr>
@@ -242,8 +252,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForTextPresent</td>
-	<td>Login</td>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 

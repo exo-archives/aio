@@ -102,6 +102,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-Bookmark forum-</td>
 	<td></td>
@@ -152,6 +157,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Start topic</td>
 	<td></td>
@@ -178,7 +188,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>1000</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -232,6 +242,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@id='UIForumActionBar']//table/tbody/tr/td[1]/div[9]//a/span</td>
 	<td></td>
@@ -269,6 +284,11 @@
 <tr>
 	<td>echo</td>
 	<td>-View Forum in Bookmark-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -327,13 +347,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr[3]/td[2]/a</td>
+	<td>waitForText</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr[2]/td[2]/a</td>
 	<td>Topic of Bookmark</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr[3]/td[2]/a</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr[2]/td[2]/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -352,6 +372,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>//div[@id='UIForumActionBar']//table/tbody/tr/td[1]/div[9]//a/span</td>
 	<td></td>
@@ -359,16 +384,6 @@
 <tr>
 	<td>click</td>
 	<td>//div[@id='UIForumActionBar']//table/tbody/tr/td[1]/div[9]//a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr[3]/td[3]/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr[3]/td[3]/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -383,12 +398,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//td[3]/div/div</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr/td[3]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//td[3]/div/div</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr/td[3]/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -412,6 +427,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Knowledge Suite</td>
 	<td></td>
@@ -429,6 +449,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Bookmark</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -477,6 +502,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIForumActionBar']//table/tbody/tr/td[1]/div[9]//a/span</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='UIForumActionBar']//table/tbody/tr/td[1]/div[9]//a/span</td>
 	<td></td>
@@ -487,18 +522,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyText</td>
 	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr[1]/td[2]/a</td>
 	<td>Knowledge Suite</td>
 </tr>
 <tr>
-	<td>waitForValue</td>
+	<td>verifyText</td>
 	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr[2]/td[2]/a</td>
 	<td>Live demo</td>
 </tr>
 <tr>
-	<td>waitForValue</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr[3]/td[2]/a</td>
+	<td>verifyText</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table/tbody/tr/td[2]/a</td>
 	<td>Topic of Bookmark</td>
 </tr>
 <tr>
@@ -523,32 +558,22 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr[3]/td[3]/div/div</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr/td[3]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr[3]/td[3]/div/div</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr/td[3]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr[2]/td[3]/div/div</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr/td[3]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr[2]/td[3]/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//td[3]/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//td[3]/div/div</td>
+	<td>//form[@id='UIShowBookMarkForm']/div[2]/table//tr/td[3]/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -587,16 +612,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/public/classic/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Login</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=Login</td>
 	<td></td>
@@ -627,13 +642,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>open</td>
-	<td>/portal/public/classic/forum</td>
+	<td>click</td>
+	<td>link=Forum</td>
 	<td></td>
 </tr>
 <tr>
@@ -654,6 +664,11 @@
 <tr>
 	<td>click</td>
 	<td>//form[@id='UITopicDetail']/div[4]/div[1]//div[5]/div[1]/div/div/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UITopicDetail']//div[@class='ToolbarActionsContainer']/div[5]//div[@class='UIContextMenuContainer']//div[2]//div[12]</td>
 	<td></td>
 </tr>
 <tr>
