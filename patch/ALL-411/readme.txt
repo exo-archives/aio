@@ -18,11 +18,9 @@ How is the problem fixed?
     * In eXoResources/javascript/eXo/i18n update files: MessageResource_en.js,MessageResource_fr.js,MessageResource_vi.js
 
 Patch information:
-
-    * Final files to use should be attached to this page (Jira is for the discussion)
-
 Patch files:
-There are currently no attachments on this page.
+ALL-411.patch
+
 Tests to perform
 
 Reproduction test
