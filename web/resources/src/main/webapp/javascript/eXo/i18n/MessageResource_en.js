@@ -20,3 +20,9 @@
 eXo.i18n.I18NMessage.SessionTimeout = "Session timeout ! Refresh your browser.";
 eXo.i18n.I18NMessage.TargetBlockNotFound = "The target blockId to update is not found : {0}";
 eXo.i18n.I18NMessage.BlockUpdateNotFound = "The blockId to update is not found : {0}";
+/**
+ * UICalendar.js
+ */
+
+eXo.i18n.Calendar = {} || new Calendar();
+eXo.i18n.Calendar.weekdays = ["M", "T", "W", "T", "F", "S", "S"];
