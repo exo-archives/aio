@@ -16,11 +16,9 @@ Make a new folder WEB-INF/conf/script/groovy in web/resources/src/main/webapp
 Copy SkinConfigScript.groovy file in csRessources.war to that folder
 
 Patch information:
-
-    * Final files to use should be attached to this page (Jira is for the dicussion)
-
 Patches files:
-There are currently no attachments on this page.
+ALL-397.patch
+
 Tests to perform
 
 Tests performed at DevLevel?
