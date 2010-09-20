@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_DMS_30_NamespaceRegistry</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_DMS_30_NamespaceRegistry</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/public/classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIECMAdminPortlet']/div[2]/div[1]/div[2]/div/div[3]/div[1]/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIECMAdminPortlet']/div[2]/div[1]/div[2]/div/div[3]/div[1]/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Namespace Registry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Namespace Registry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UINamespaceManager']//div[2]//table//tr//td//div//div//div//div//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINamespaceManager']//div[2]//table//tr//td//div//div//div//div//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>namespace</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>namespace</td>
+	<td>Namespace_30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>uri</td>
+	<td>Uri_30</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UINamespaceForm']/div[2]/div/div/table/tbody/tr/td/div[1]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>namespace</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UINamespaceList']//div//a[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Namespace_30</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Namespace_30</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

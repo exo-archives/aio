@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
+<title>Test_SNF_CS_13_AddTaskOnPublishedCalendar</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_CS_13_AddTaskOnPublishedCalendar</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>--Add Task on public calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/public/classic/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Agenda</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Agenda</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@onclick='eXo.calendar.UICalendarPortlet.showMainMenu(this, event);']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick='eXo.calendar.UICalendarPortlet.showMainMenu(this, event);']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>displayName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>displayName</td>
+	<td>Test_14_PublicCalendar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='calendarDetail']//textarea[@id='description']</td>
+	<td>Test 14 public calendar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;eXo.webui.UIHorizontalTabs.changeTabForUIFormTabpane(this, 'UICalendarForm', 'public');ajaxAsyncGetRequest('/portal/private/classic/calendar?portal:componentId=calendars&amp;portal:type=action&amp;portal:isSecure=false&amp;uicomponent=UICalendarForm&amp;formOp=SelectTab&amp;currentSelectedTab=public');&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>/platform/web-contributors</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>/platform/web-contributors</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='public']/table/tbody/tr[5]/td[4]/a[1]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='public']/table/tbody/tr[5]/td[4]/a[1]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=john</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=john</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Test_14_PublicCalendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--check if John has right on public calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Agenda</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Agenda</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Calendars</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Test_14_PublicCalendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--check if John has edit right on public calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>eventName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIQuickAddTask']/div[2]/div/table/tbody/tr[1]/td[2]/input</td>
+	<td>Test_14_JohnTask</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIQuickAddTask']/div[2]/div/table/tbody/tr[1]/td[2]/input</td>
+	<td>Test_14_JohnTask</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='UIQuickAddTask']/div[2]/div/table/tbody/tr[2]/td[2]/textarea</td>
+	<td>Test_14_JohnTask_description</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//form[@id='UIQuickAddTask']/div[2]/div/table/tbody/tr[6]/td[2]/select</td>
+	<td>label=Test_14_PublicCalendar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[4]/div/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Test_14_JohnTask</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Test_14_JohnTask</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Delete calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Agenda</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Agenda</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Calendars</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//form[@id='UICalendars']//div[2]//div[2]//div//div[2]//div//div[2]//div[2]//div[2]//span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//form[@id='UICalendars']//div[2]//div[2]//div//div[2]//div//div[2]//div[2]//div[2]//span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td>The calendar and all its events and tasks. Do you confirm?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Test_10_PublicCalendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

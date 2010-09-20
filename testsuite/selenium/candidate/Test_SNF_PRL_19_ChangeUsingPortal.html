@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_PRL_19_ChangeUsingPortal</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_PRL_19_ChangeUsingPortal</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/public/classic/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Delete Portal-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Manage Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Create New Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='WorkingArea']//div[@class='TabsContainer']/div[2]//div[@class='MiddleTab']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='WorkingArea']//div[@class='TabsContainer']/div[2]//div[@class='MiddleTab']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Portal_19</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='WorkingArea']//div[@class='TabsContainer']/div[3]//div[@class='MiddleTab']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>publicMode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Select permissions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Permission Setting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Select Permission</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Administrators</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Administrators</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>/platform/administrator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Portal_19</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Portal_19</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Change using portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/private/classic/home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Portal_19</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>portal/private/Portal_19</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Manage Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Delete New Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Manage Sites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='UIPortalBrowser']//tbody/tr[1]//img[@class='DeletePortalIcon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalBrowser']//tbody/tr[1]//img[@class='DeletePortalIcon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete this portal?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Portal_19</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Portal_19</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/portal/private/classic/home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

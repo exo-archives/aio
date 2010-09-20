@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/portal/public/classic/" />
+<title>Test_SNF_CS_44_ShareAddressBook</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_CS_44_ShareAddressBook</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/public/classic/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-Add Address Books-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add an Address Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Address Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Address Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>categoryName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>categoryName</td>
+	<td>Address_Book_42</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>description</td>
+	<td>Address_Book_42_description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Verify Address book created</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@class='PersonalAddress']//div[@title='Address_Book_42']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=//div[@class='PersonalAddress']//div[@title='Address_Book_42']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Add an Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add/Edit Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>firstName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>category</td>
+	<td>label=Address_Book_42</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>Test_44</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>eXo_Contact</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>nickName</td>
+	<td>Contact_44</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>jobTitle</td>
+	<td>eXo_Tester_44</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>multiEmail0</td>
+	<td>Test_44@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Add/Edit Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_44 eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Share Addressbook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Share</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Share</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Share Address Book to other users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Share for user with edit right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select User ']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>User Selector</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>john</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--click Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIUserSelector']/div[2]/div[2]/table/tbody/tr/td/a[1]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--click Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIUserSelector']/div[2]/div[2]/table/tbody/tr/td/a[2]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>canEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='PermissionList']//table//tr//td//div</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='PermissionList']//table//tr//td[2]//div</td>
+	<td>Yes</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--share for group without edit right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Select Group']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Group Selector</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Platform</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=/platform/web-contributors</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=/platform/web-contributors</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>group</td>
+	<td>/platform/web-contributors</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='PermissionList']//table//tr[2]//td//div</td>
+	<td>/platform/web-contributors</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='PermissionList']//table//tr[2]//td[2]//div</td>
+	<td>No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--check view shared AD with edit right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Address Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>root - Address_Book_42 </td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_44 eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--Add contact on shared AD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add/Edit Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>//div[@id='categoryInput']//table//tr//td[2]//select</td>
+	<td>root - Address_Book_42</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstName</td>
+	<td>Test_44_Shared</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastName</td>
+	<td>eXo_Contact</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>nickName</td>
+	<td>Contact_44</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>jobTitle</td>
+	<td>eXo_Tester_44</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>multiEmail0</td>
+	<td>Test_44@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Add/Edit Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_44_Shared eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--check view shared AD without edit right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>marry</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Address Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>root - Address_Book_42 </td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_44 eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Test_44_Shared eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Add/Edit Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--remove shared AD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Discard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Discard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td>You are about to discard a shared address book. You will no longer be able to see it. Do you confirm?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>root - Address_Book_42 </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//div[@id='UIAddressBooks']//div[3]//div[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Test_44 eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Test_44_Shared eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Delete Address Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='UIPortalLoginFormAction']//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Address Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td>This address book will be deleted. Do you confirm?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//div[@id='UIAddressBooks']//div[2]//div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

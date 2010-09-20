@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_DMS_21_Search</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_DMS_21_Search</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/public/classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Article_21</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Article_21_title</td>
+</tr>
+<tr>
+	<td>typeFCKEditor</td>
+	<td>//iframe[@id='summary___Frame']</td>
+	<td>article summary</td>
+</tr>
+<tr>
+	<td>typeFCKEditor</td>
+	<td>//iframe[@id='content___Frame']</td>
+	<td>article content</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIDocumentForm']/div[2]/div/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--simple search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>simpleSearch</td>
+	<td>Article_21_title</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>SimpleSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Path: /sites content/live/acme/documents/Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--advanced: search by name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIAddressBar']/div[2]/table/tbody/tr/td[3]/div[1]/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='keyword']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>keyword</td>
+	<td>Article_21</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIContentNameSearch']/div[2]/div//table/tbody/tr/td/div/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Path: /sites content/live/acme/documents/Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--advanced: Advanced search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;eXo.webui.UIHorizontalTabs.changeTabForUITabPane(this, 'UIECMSearch', 'UISearchContainer')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>input</td>
+	<td>article content</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UISimpleSearch']//div[2]//div//div//table//tr//td//div[2]//div//div//div//a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>No result found</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--create new query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;eXo.webui.UIHorizontalTabs.changeTabForUITabPane(this, 'UIECMSearch', 'UIJCRAdvancedSearch')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Query_21</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIJCRAdvancedSearch']/div[2]/div/div/table/tbody/tr/td/div[2]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Query_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--execute added query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISavedQuery']//table//tr[2]//td[5]/div/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Path: /sites content/live/acme/documents/Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--view document from search result</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='AdvancedSearchResult']//table//tr//td[4]/div//img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Article_21_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='ViewSearch']//div[@class='OverflowContainer']//div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ViewSearch']//div[@class='OverflowContainer']//div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--go to folder from search result</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Go to folder']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--delete document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Article_21_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDownRight</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete the node</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Article_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--delete added query</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIAddressBar']/div[2]/table/tbody/tr/td[3]/div[1]/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='keyword']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@onclick=&quot;eXo.webui.UIHorizontalTabs.changeTabForUITabPane(this, 'UIECMSearch', 'UISavedQuery')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;eXo.webui.UIHorizontalTabs.changeTabForUITabPane(this, 'UIECMSearch', 'UISavedQuery')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UISavedQuery']//table//tr[2]//td[5]//div//img[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UISavedQuery']//table//tr[2]//td[5]//div//img[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForConfirmation</td>
+	<td>Do you really want to delete this query?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Query_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Query_21</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPopupWindow']//div[@class='OverflowContainer']//div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIPopupWindow']//div[@class='OverflowContainer']//div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

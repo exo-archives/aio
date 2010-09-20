@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test_SNF_DMS_29_ManageDrives</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_SNF_DMS_29_ManageDrives</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/portal/public/classic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowMaximize</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIECMAdminPortlet']/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIECMAdminPortlet']/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Manage Drives</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Manage Drives</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name</td>
+	<td>Drive_29</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Add Permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[@title='Set any permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Set any permission']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>permissions</td>
+	<td>*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>viewPreferences</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>viewNonDocument</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>viewSideBar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>showHiddenNode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='AddDriveManagerPopup']//div//div[2]//div[@class='TabsContainer']//div[2]//div//div//div//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>taxonomy-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>anonymous-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>icon-view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>taxonomy-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>taxonomy-icons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>cover-flow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIDriveList']//div//div//a[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Drive_29</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Drive_29</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--edit added drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIDriveList']//table//tr//td[7]//img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Edit Drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>permissions</td>
+	<td>member:/platform/users</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Edit Drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='UIDriveList']//table//tr//td[5]//div</td>
+	<td>member:/platform/users</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--delete new added drive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIDriveList']//table//tr//td[7]//img[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Do you really want to delete ?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Drive_29</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>Drive_29</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
