@@ -1,0 +1,72 @@
+Index: web/portal/src/main/webapp/WEB-INF/conf/cs/cs-plugins-configuration.xml
+===================================================================
+--- web/portal/src/main/webapp/WEB-INF/conf/cs/cs-plugins-configuration.xml	(revision 50545)
++++ web/portal/src/main/webapp/WEB-INF/conf/cs/cs-plugins-configuration.xml	(working copy)
+@@ -7,14 +7,14 @@
+ 			<init-params>
+ 				<properties-param>
+ 					<name>config</name>
+-					<property name="mail.smtp.auth.username" value="exoservice@gmail.com" />
+-					<property name="mail.smtp.auth.password" value="exoadmin" />
+-					<property name="mail.smtp.host" value="smtp.gmail.com" />
+-					<property name="mail.smtp.port" value="465" />
++					<property name="mail.smtp.auth.username" value="" />
++					<property name="mail.smtp.auth.password" value="" />
++					<property name="mail.smtp.host" value="" />
++					<property name="mail.smtp.port" value="" />
+ 		 			<property name="mail.smtp.starttls.enable" value="true" />
+ 					<property name="mail.smtp.auth" value="true" />
+ 					<property name="mail.smtp.debug" value="false" />
+-					<property name="mail.smtp.socketFactory.port" value="465" />
++					<property name="mail.smtp.socketFactory.port" value="" />
+ 					<property name="mail.smtp.socketFactory.class" value="javax.net.ssl.SSLSocketFactory" />
+ 					<property name="mail.smtp.socketFactory.fallback" value="false" />
+ 				</properties-param>
+@@ -43,8 +43,8 @@
+           <name>reminder.info</name>
+           <description>save the monitor data  periodically</description>
+           <property name="timeZone" value="This is TimeZone"/>          
+-          <property name="account" value="exoservice@gmail.com"/>          
+-          <property name="password" value="exoadmin"/>          
++          <property name="account" value=""/> <!-- name of email account. For example: abcxyz@gmail.com -->      
++          <property name="password" value=""/> <!-- password of email account -->
+ 		  		<property name="ssl" value="true"/> 
+           <property name="outgoing" value="smtp.gmail.com"/>          
+           <property name="port" value="465"/>          
+@@ -407,21 +407,21 @@
+             <type>org.exoplatform.mail.service.AuthenticationLogoutListener</type>
+       		<description>description</description>     
+     	</component-plugin>      
+-  	</external-component-plugins>
+-  	
+-  	<external-component-plugins>
+-    <target-component>org.exoplatform.services.jcr.RepositoryService</target-component>
+-    <component-plugin>
+-          <name>add.namespaces</name>
+-          <set-method>addPlugin</set-method>
+-          <type>org.exoplatform.services.jcr.impl.AddNamespacesPlugin</type>
+-          <init-params>
+-            <properties-param>
+-              <name>namespaces</name>
+-              <property name="lr" value="http://www.exoplatform.org/liveroom/1.0"/>
+-            </properties-param>
+-          </init-params>
++  	</external-component-plugins>
++  	
++  	<external-component-plugins>
++    <target-component>org.exoplatform.services.jcr.RepositoryService</target-component>
++    <component-plugin>
++          <name>add.namespaces</name>
++          <set-method>addPlugin</set-method>
++          <type>org.exoplatform.services.jcr.impl.AddNamespacesPlugin</type>
++          <init-params>
++            <properties-param>
++              <name>namespaces</name>
++              <property name="lr" value="http://www.exoplatform.org/liveroom/1.0"/>
++            </properties-param>
++          </init-params>
+       </component-plugin>
+-  	</external-component-plugins>
++  	</external-component-plugins>
+   	  
+ </configuration>
