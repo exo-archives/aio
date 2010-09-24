@@ -152,28 +152,33 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-- Delete Contact</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIMessageList&nbsp;&nbsp;SpliterResizableListArea']//table[@id='UIListUsers']//tbody/tr[2]//input[1]</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIMessageList&nbsp;&nbsp;SpliterResizableListArea']//table[@id='UIListUsers']//tbody/tr[2]//input[1]</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Delete']</td>
+	<td>verifyChecked</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Delete']</td>
+	<td>//form[@id='UIContacts']//div[2]//a[4]//div</td>
 	<td></td>
 </tr>
 <tr>

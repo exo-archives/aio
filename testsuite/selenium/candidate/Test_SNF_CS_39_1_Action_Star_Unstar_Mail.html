@@ -72,13 +72,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIActionBar']//div[@class='IconHolder AccountSettingIcon']</td>
+	<td>waitForTextPresent</td>
+	<td>No account, click here to create one</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIActionBar']//div[@class='IconHolder AccountSettingIcon']</td>
+	<td>//form[@id='UISelectAccount']//div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add account</td>
 	<td></td>
 </tr>
 <tr>
@@ -297,8 +307,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>--Filter to view stared mails</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UIMessageList']/div[2]/div[5]/div[1]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -307,8 +327,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='tmpMenuElement']/div/div[2]/div/div/div[2]/div[1]/a</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[@id='tmpMenuElement']/div/div[2]/div/div/div[2]/div[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Mail test 39</td>
 	<td></td>
 </tr>
 <tr>
@@ -352,13 +382,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementNotPresent</td>
 	<td>link=Mail test 39</td>
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>-- Delete Create Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='UISelectAccount']//div[@title='Manage accounts']</td>
 	<td></td>
 </tr>
 <tr>

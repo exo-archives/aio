@@ -163,22 +163,32 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIMessageList&nbsp;&nbsp;SpliterResizableListArea']//table[@id='UIListUsers']//tbody/tr[2]//input[1]</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIMessageList&nbsp;&nbsp;SpliterResizableListArea']//table[@id='UIListUsers']//tbody/tr[2]//input[1]</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyChecked</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Tag']</td>
+	<td>//form[@id='UIContacts']//div[2]//a[2]//div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Tag']</td>
+	<td>//form[@id='UIContacts']//div[2]//a[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add/Remove Tag</td>
 	<td></td>
 </tr>
 <tr>
@@ -228,12 +238,17 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Tag']</td>
+	<td>//form[@id='UIContacts']//div[2]//a[2]//div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Tag']</td>
+	<td>//form[@id='UIContacts']//div[2]//a[2]//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Add/Remove Tag</td>
 	<td></td>
 </tr>
 <tr>
@@ -242,8 +257,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>--choose tag to untag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='UITagForm']//div[2]//div//table//tr[4]//td[2]//input</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>xpath=//table[@class='UIFormGrid']//input[@class='checkbox']</td>
+	<td>//form[@id='UITagForm']//div[2]//div//table//tr[4]//td[2]//input</td>
 	<td></td>
 </tr>
 <tr>
@@ -273,12 +298,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='PersonalAddress']//div[@title='My Contacts']</td>
+	<td>//div[@id='defaultroot']//div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='PersonalAddress']//div[@title='My Contacts']</td>
+	<td>//div[@id='defaultroot']//div</td>
 	<td></td>
 </tr>
 <tr>
@@ -288,37 +313,32 @@
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>link=Test_50 eXo_Contact</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=Test_50@gmail.com</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
 	<td>link=Test_50@gmail.com</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIMessageList&nbsp;&nbsp;SpliterResizableListArea']//table[@id='UIListUsers']//tbody/tr[2]//input[1]</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIMessageList&nbsp;&nbsp;SpliterResizableListArea']//table[@id='UIListUsers']//tbody/tr[2]//input[1]</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyChecked</td>
+	<td>//table[@id='UIListUsers']//tr[2]//td//input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Delete']</td>
+	<td>//form[@id='UIContacts']//div[2]//a[4]//div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=//div[@class='UIContactActionsBar']//div[@title='Delete']</td>
+	<td>//form[@id='UIContacts']//div[2]//a[4]//div</td>
 	<td></td>
 </tr>
 <tr>
@@ -334,6 +354,46 @@
 <tr>
 	<td>verifyElementNotPresent</td>
 	<td>link=Test_50 eXo_Contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--delete added tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>link=Tag_Test_50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>link=Tag_Test_50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete this tag ?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>link=Tag_Test_50</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>link=Tag_Test_50</td>
 	<td></td>
 </tr>
 <tr>
