@@ -2,7 +2,7 @@ AIO 1.6.x Regression tests are moved on :
 
 svn co http://svn.exoplatform.org:3840/projects/ecm/dms/branches/2.5.x/testsuite/testdefinitions/eXo_RegressTest_AIO_DMS_2.5.x_TestDefinition.ods
 svn co http://svn.exoplatform.org:3840/projects/portal/branches/2.5.x/testsuite/testdefinitions/eXo_RegressTest_AIO_Portal_2.5.x_TestDefinition.ods
-svn co http://svn.exoplatform.org:3840/projects/ecm/wcm/branches/1.2.x/testsuite/testdefinitions/eXo_RegressTest_WCM.1.2.x_TestDefinition.ods
+svn co http://svn.exoplatform.org:3840/projects/ecm/wcm/branches/1.2.x/testsuite/testdefinitions/eXo_RegressTest_AIO_WCM.1.2.x_TestDefinition.ods
 svn co http://svn.exoplatform.org:3840/projects/cs/branches/1.3.x/testsuite/testdefinitions/eXo_RegressTest_AIO_CS_1.3.x_TestDefinition.ods
 svn co http://svn.exoplatform.org:3840/projects/ks/branches/1.2.x/testsuite/testdefinitions/eXo_RegressTest_AIO_KS_1.2.x_TestDefinition.ods
 
