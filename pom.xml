@@ -64,5 +64,6 @@
     <module>server/tomcat/patch</module>
     <module>server/jboss/patch</module>
     <module>packaging</module>
+	<module>testsuite</module>
   </modules>
 </project>
