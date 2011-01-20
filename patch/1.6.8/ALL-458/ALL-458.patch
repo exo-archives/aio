@@ -1,0 +1,49 @@
+Index: web/portal/src/main/webapp/WEB-INF/conf/portal/group/platform/users/navigation.xml
+===================================================================
+--- web/portal/src/main/webapp/WEB-INF/conf/portal/group/platform/users/navigation.xml	(revision 64618)
++++ web/portal/src/main/webapp/WEB-INF/conf/portal/group/platform/users/navigation.xml	(working copy)
+@@ -62,7 +62,7 @@
+ 	  <node>
+ 	    <uri>webos</uri>
+ 	    <name>webos</name>
+-	    <label>#{platform.users.collaboration}</label>
++	    <label>#{platform.users.collaboration.title}</label>
+ 	    <visible>false</visible>	 
+ 	    <page-reference>group::platform/users::webos</page-reference>
+ 	   </node>
+Index: web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_en.xml
+===================================================================
+--- web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_en.xml	(revision 64618)
++++ web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_en.xml	(working copy)
+@@ -9,6 +9,7 @@
+       <workflow-controller>Workflow Controller</workflow-controller>
+       <workflow-administration>Workflow Administration</workflow-administration>
+       <collaboration>
++        <title>Collaboration</title>
+       	<contact>Contacts</contact>
+       	<mail>Mail</mail>
+       	<calendar>Agenda</calendar>
+Index: web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_fr.xml
+===================================================================
+--- web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_fr.xml	(revision 64618)
++++ web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_fr.xml	(working copy)
+@@ -9,6 +9,7 @@
+       <workflow-controller>Processus Métiers</workflow-controller>
+       <workflow-administration>Administration des Workflows</workflow-administration>
+       <collaboration>
++        <title>Collaboration</title>  
+       	<contact>Contacts</contact>
+       	<mail>Mail</mail>
+       	<calendar>Agenda</calendar>
+Index: web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_vi.xml
+===================================================================
+--- web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_vi.xml	(revision 64618)
++++ web/portal/src/main/webapp/WEB-INF/classes/locale/navigation/group/platform/users_vi.xml	(working copy)
+@@ -9,6 +9,7 @@
+       <workflow-controller>Trung tâm quá trình nghiệp vụ</workflow-controller>
+       <workflow-administration>Workflow Administration</workflow-administration>
+       <collaboration>
++        <title>Collaboration</title>
+       	<contact>Contacts</contact>
+       	<mail>Mail</mail>
+       	<calendar>Agenda</calendar>

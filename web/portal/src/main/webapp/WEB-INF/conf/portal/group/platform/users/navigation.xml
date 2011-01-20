@@ -62,7 +62,7 @@
 	  <node>
 	    <uri>webos</uri>
 	    <name>webos</name>
-	    <label>#{platform.users.collaboration}</label>
+	    <label>#{platform.users.collaboration.title}</label>
 	    <visible>false</visible>	 
 	    <page-reference>group::platform/users::webos</page-reference>
 	   </node>
