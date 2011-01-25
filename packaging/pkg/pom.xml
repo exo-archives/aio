@@ -351,6 +351,18 @@
      <version>1.0</version>
      <type>jar</type>
     </dependency>
+    <dependency>
+      <groupId>jabber.smack</groupId>
+      <artifactId>smackx</artifactId>
+      <version>3.0.4</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>jabber.smack</groupId>
+      <artifactId>smack</artifactId>
+      <version>3.0.4</version>
+      <type>jar</type>
+    </dependency>
   </dependencies>
   <profiles>
     <profile>
