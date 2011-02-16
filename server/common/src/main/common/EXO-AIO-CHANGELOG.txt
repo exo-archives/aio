@@ -1,6 +1,33 @@
 ============================
-CHANGELOG - ALL IN ONE 1.6.6
+CHANGELOG - ALL IN ONE 1.6.8
 ============================
+
+*****************
+Version all-1.6.8
+*****************
+
+** Bug
+    * [ALL-396] - Label are not translated in French
+    * [ALL-449] - WCM: Taxonomy display error in the CLV categories:encoding problem (blocked REG/CCP-302)
+    * [ALL-450] - WCM: Popup error when config Category navigation portlet (relates to REG WCM/CCP-368)
+    * [ALL-458] - Lose Resource bundle in Collaboration page when show it in Page Create Wizard form
+    * [ALL-466] - Add configuration for GlobalPortalConfigService
+
+** Task
+    * [ALL-461] - Fix AIO packaging failure on hudson
+
+*****************
+Version all-1.6.7
+*****************
+
+** Bug
+    * [ALL-393] - Bad context on search result in Taxonomy Tree (In Site Explorer)
+    * [ALL-397] - HomePagePortlet CSS exists in csresources.war
+    * [ALL-411] - Do not display mini calendar when create newsletter
+
+** Task
+    * [ALL-412] - Apply the patch CS-4197
+
 
 *****************
 Version all-1.6.6
@@ -138,6 +165,76 @@ Version all-1.6.1
     * [ALL-184] - Upd maven version from 1.6-SNAPSHOT to 1.6.1-SNAPSHOT
     * [ALL-193] - Tag the products related to AIO 1.6.1 one by one
     * [ALL-194] - Check JBPM integration, v3.0.1
+
+
+*********************
+Version portal-2.5.12
+*********************
+
+** Bug
+    * [PORTAL-3626] - Problem when move up/ move down node 
+    * [PORTAL-3690] - UIFormTextAreaInput can't save value NULL
+    * [PORTAL-3706] - Nothing happen after edit page by wizard
+    * [PORTAL-3728] - [Portal] Move node up/down action can not be saved
+    * [PORTAL-3815] - Time's format of webos
+    * [PORTAL-3828] - The If-Modified-Since property in the HTTP header doesn't exist 
+    * [PORTAL-3829] - Labels in French
+    * [PORTAL-3837] - [DMS][Portal] Portlet Preference is still there after aborting to create a new page
+    * [PORTAL-3842] - Can't show page which selected after click Discard in Edit Site
+    * [PORTAL-3848] - Should change message when delete navigation of portal
+    * [PORTAL-3849] - Localization of Gender and Language in User profile
+    * [PORTAL-3854] - Should retrieve current user's memberships from Identity
+    * [PORTAL-3862] - Users authenticated using JAAS can not add portlets to page in create page wizard 
+    * [PORTAL-3864] - problem with the procedure "Forgot your User Name/Password?"
+    * [PORTAL-3870] - Right click popup menu doesn't work on IE8
+    * [PORTAL-3875] - Problem when searching page or user not existing in list by using enter key
+    * [PORTAL-3885] - Problem with Scroll bar in a frame with IE7
+    * [PORTAL-3886] - Add page wizards: Some labels are not translated in French
+    * [PORTAL-3889] - Problem with CAS authentication:portal displays "Loading" popup, and request doesn't success in private mode
+    * [PORTAL-3891] - Using an email link with Internet Explorer opens a stange page
+    * [PORTAL-3900] - Page template names exceed border in French
+
+** Feedback
+    * [PORTAL-3890] - Applying div inspite of table in UITableColumnContainer
+
+** Improvement
+    * [PORTAL-3824] - Modify the max value of StringLengthValidator in UIPortletForm
+
+** New Feature
+    * [PORTAL-3895] - Add service to support  reading global configurable parameters for portal
+
+
+*********************
+Version portal-2.5.11
+*********************
+
+** Bug
+    * [PORTAL-2983] - Resizing the container in Portal pages does not work correctly.
+    * [PORTAL-3822] - date field is reset after clicking on "+" to add a new value in another field
+    * [PORTAL-3823] - Portlet is dropped automatically when exceeds screen border (using IE7)
+    * [PORTAL-3826] -  Value of attribute "id" of "container" invalid with W3C recommendations 
+    * [PORTAL-3827] - Position of dragged object (One row container, One column container) is not under mouse in Edit page, Edit portal
+    * [PORTAL-3831] - Managing tables in FCKEditor
+    * [PORTAL-3836] - Bug in Sign in form in French
+    * [PORTAL-3838] - [Portal] Max length of Group label is limited to 30 characters
+    * [PORTAL-3841] - Always take the value of description of next position when edit membership
+    * [PORTAL-3855] - A drag & drop bug with javascript in IE
+    * [PORTAL-3857] - Broken link in the navigation after moving nodes 
+    * [PORTAL-3859] - Change of Navigation node labels considered only after server restarts
+    * [PORTAL-3865] - Duplicated id "UICLVPortlet"
+
+** Improvement
+    * [PORTAL-3740] - Increase the Max size of the Group Label to 50 character
+    * [PORTAL-3807] - Problem in saving portlet settings
+
+** Task
+    * [PORTAL-3803] - Study and update API documentation for eXo JS framework
+    * [PORTAL-3868] - W3C Validation: Value of attribute "id" invalid and Document type does not allow element "div"
+
+** Sub-task
+    * [PORTAL-3833] - Improve Javascript for drag and drop in UITableColumnContainer
+    * [PORTAL-3835] - Change some stylesheets for UITableColumnContainer
+
 
 *********************
 Version portal-2.5.10
@@ -404,6 +501,81 @@ Version portal-2.5.4
 
 ** Task
     * [PORTAL-3078] - Create tag 2.5.4 based on JCR 1.10.4
+
+
+*****************
+Version dms-2.5.9
+*****************
+
+** Bug
+    * [ECM-5453] - Impossible to download binary with name containing illegal jcr char(using the right popup menu) 
+    * [ECM-5467] - Labels in French 
+    * [ECM-5469] - Can NOT select specific membership in Add Template form
+    * [ECM-5488] - Cannot remove exo:folksonomy property after creating tags for document
+    * [ECM-5493] - Problem of opening a binary file with name containing illegal JCR character ' (coverflow view)
+    * [ECM-5504] - Document comment not yet localized
+    * [ECM-5508] - The clipboard doesn't work properly
+    * [ECM-5511] - Impossible to save changes in editable node properties
+    * [ECM-5512] - Category acme displayed by default has no child node
+    * [ECM-5516] - File explorer: right click not working (IE8)
+    * [ECM-5518] - [DMS 2.5]The HTTP header ifModifiedSince needs to be given to the jcr version of the WebDavServiceImpl to enable the cache-control
+    * [ECM-5520] - Impossible to retrieve the lock on a node even by the root
+    * [ECM-5522] - Problem of display in Content Browser
+    * [ECM-5524] - Content Browser folders do not get collapsed when clicking the - button
+    * [ECM-5529] - Can not use JAAS to allow access to File Explorer
+    * [ECM-5531] - Display's problem of long name of taxonomy
+    * [ECM-5536] - In the content browser portlet the search doesn't run when hitting 'ENTER' key
+    * [ECM-5542] - Can not edit a WYSIWYGField with multiple value.
+    * [ECM-5543] - End tag for "img" omitted
+    * [ECM-5546] - Template Service unit test fails
+    * [ECM-5549] - Insert/Edit option not available in FCKEditor if field is multivalued
+    * [ECM-5550] - A date field is shown instead of text area field when property is multiple
+    * [ECM-5554] - Error in the research of a document in a node
+    * [ECM-5556] - Script action never execute with remove lifecycle 
+    * [ECM-5559] - The name of taxonomy is limited to 30 characters
+    * [ECM-5560] - Group drive title is too long
+    * [ECM-5562] - Exception when adding  a select box multi valuated in edit meta data form
+    * [ECM-5564] - Link can't be distinguished in document view mode
+    * [ECM-5566] - Disable the versioning/publication on Webcontents sub-nodes
+    * [ECM-5567] - Problem with document name having space at the beginning and the end
+    * [ECM-5576] - Impossible to sign in DMS standalone after PORTAL-3815
+    * [ECM-5579] - NPE when click on a taxonomy with accented character
+
+** Task
+    * [ECM-5563] - Labels in Advanced Search are not translated in French 
+
+*****************
+Version dms-2.5.8
+*****************
+
+** Bug
+    * [ECM-5440] - Put the name of document' s author instead of owner
+    * [ECM-5474] - Find node by name
+    * [ECM-5475] - ListView generate a ConcurrentAccessModificationException
+    * [ECM-5476] - Metadata : date field is reset after clicking on "+" to add a new value in another field
+    * [ECM-5482] - Bad context on search result in Taxonomy Tree (In Site Explorer)
+    * [ECM-5483] - Error: ConcurrentModificationException with UITreeExplorer
+    * [ECM-5485] - Sort documents by Modified date and creation date doesn't work
+    * [ECM-5489] - Problems after importing documents with version history
+    * [ECM-5490] - Problem in UIJCRExplorer when using SessionLeakDetector
+    * [ECM-5499] - Cannot scroll when using drag & drop nodes in JCR explorer from up to bottom
+    * [ECM-5500] - Search result error on exo:article document if it contains accented characters in summary or content
+    * [ECM-5502] - Bad behavior of page iterator in JCR explorer
+    * [ECM-5519] - Can't delete a webcontent  created in a category from the web contents folder
+    * [ECM-5525] - Exception when go to CB after deleting folder
+    * [ECM-5526] - Content browser refresh after adding or deleting a folder
+    * [ECM-5528] - Documents generated by MS Office 2007 are not recognized
+    * [ECM-5535] -  Document display exceeds the WCM Explorer in full screen mode
+    * [ECM-5538] - Changes in permissions are not taken in consideration by SymLinks
+    * [ECM-5539] - The File explorer simple search doesn't work in categories.
+
+** Improvement
+    * [ECM-5491] - Cannot delete tags for documents
+    * [ECM-5517] - Modify the length value of tag name
+
+** Task
+    * [ECM-5486] - Edit french message of path-not-found
+    * [ECM-5487] - Edit french message of repository-exception
 
 
 *****************
@@ -1158,6 +1330,52 @@ Version dms-2.3.2
     * [ECM-3586] - Describe this new feature in the guides
     * [ECM-3587] - Describe this new feature in the wiki
 
+
+****************
+Version cs-1.3.8
+****************
+
+** Bug
+    * [CS-4385] - Error while deleting an e-mail
+    * [CS-4411] - Chat Room: Message are lost when changing navigation
+    * [CS-4420] - Labels in French
+    * [CS-4440] - Mail - Exception after being in use a period of time
+    * [CS-4468] - XML parsing error caused by wrong Encoding at org.exoplatform.rest.client.openfire.Utils.doGet
+    * [CS-4581] - Duplicate message when checking mail in the 1.3.x version
+    * [CS-4615] - Can not delete or move the messages Sent, Draft and Spam folder
+    * [CS-4668] - AddressBook: Cannot share contact by drag&drop
+    * [CS-4694] - Contacts with long names are not correctly displayed 
+    * [CS-4717] - RSS Portlet Reader: missing label internationalization
+
+** Task
+    * [CS-4185] - Fix missing dependencies in cs 1.3.x
+    * [CS-4574] - Unit Tests for Connectors in CS 1.3.x
+
+
+****************
+Version cs-1.3.7
+****************
+
+** Bug
+    * [CS-4159] - strange height of the calendar
+    * [CS-4208] - Problems when exchanging message in chat with IE7  
+    * [CS-4386] - Unable to edit mail account details while using auto configuration
+    * [CS-4403] - eXo Mail: Mails lose their style
+    * [CS-4439] - Chat: Number of unread messages lost after refreshing the page
+    * [CS-4490] - UUID still been displayed in chat notifications
+    * [CS-4639] - Missing ID of portlet and rise js error on contact and mail application 
+    * [CS-4653] - Calendar settings form is not shown when current language is French/VNese
+
+** Feedback
+    * [CS-4510] - Smacks threads related to user connection
+
+** New Feature
+    * [CS-1384] - SMTP authentication
+
+** Task
+    * [CS-4427] - Update fisheye URL in pom.xml
+
+
 ****************
 Version cs-1.3.6
 ****************
@@ -1770,6 +1988,58 @@ Version cs-1.2.2
 
 ** Sub-task
     * [CS-3359] - Make svn tags
+
+
+****************
+Version ks-1.2.7
+****************
+
+** Bug
+    * [KS-2629] - Labels in French
+    * [KS-2644] - Item [Print] is hidden when click on it in special case
+    * [KS-2649] - IE7: Error in Upload file form and can not upload
+    * [KS-2655] - Wrong date format in search result of FAQ answers portlet
+    * [KS-2659] - Deleted user still appears in User Management in KS in special case
+    * [KS-2686] - "Click here" in a french notification mail
+    * [KS-2768] - [Answers] An inactived and/or disapproved question is always visible in FAQ 
+    * [KS-2817] - Text in French exceeds border.
+    * [KS-2825] - Notification email for questions and answers (KS Answer module)
+    * [KS-3000] - Format of mini calendar is in English when changing language in French
+    * [KS-3001] - [Answer] English labels are not translated in French
+    * [KS-3002] - Text isn't translated in French notification mail
+    * [KS-3003] - [Forum] English labels are not translated in French
+    * [KS-3051] - Impossible to sign in KS standalone after PORTAL-3815
+
+** Task
+    * [KS-2133] - ${exo.projects.directory.src}/ks/branches/1.2.x hard coded in pom -- will block release plugin
+    * [KS-2790] - Cleanup dependencies to build and deploy KS 1.2.x with clean local repository.
+
+
+****************
+Version ks-1.2.6
+****************
+
+** Bug
+    * [KS-2227] - Forum: "ban IP" style issue 
+    * [KS-2576] - Problem to translate label from English to French "UnWatch"
+    * [KS-2588] - Deleted user issues in forum
+    * [KS-2597] - Impossible to Reinitialize Avatar (FrenchUI)
+    * [KS-2645] - [KS] Question with attachment disappears after moved
+    * [KS-2646] - [KS-Answer] Show duplicate question that contains attachment in search result in special case
+    * [KS-2648] - [KS-Forum] Topic is still displayed in Last post column although this topic deleted.
+    * [KS-2650] - show message "This link is not visible anymore" when view post by normal user
+    * [KS-2655] - Wrong date format in search result of FAQ answers portlet
+    * [KS-2657] - Missing and wrong popup title 
+    * [KS-2693] - Answers: Response for a bad question
+    * [KS-2705] - [FORUM] English label error
+    * [KS-2712] - FAQ: date in English format
+    * [KS-2874] - Missing ID of portlet and rise js error can not summit action 
+
+** Task
+    * [KS-2517] - Temp folder in test phase has been created, when build product  
+    * [KS-2635] - Update fisheye URL in pom.xml
+    * [KS-2675] - Add missing icon to the "ban ip" menu item
+    * [KS-2676] - problem with quotes management in forum posts
 
 
 ****************
@@ -2416,6 +2686,86 @@ Version ks-1.1.2
 
 
 *****************
+Version wcm-1.2.8
+*****************
+
+** Bug
+    * [WCM-2688] - Taxonomy display error in the CLV categories:encoding problem
+    * [WCM-2725] - Cache & Categories errors : new published content is not considered and old content remains at cache (need to be removed)
+    * [WCM-2753] - Error while setting a page with PCLV portlet
+    * [WCM-2820] - Impossible to download a binary file with name containing illegal JCR char. 
+    * [WCM-2823] - Link can't be distinguished in fck editor edit mode
+    * [WCM-2826] - Search find things from the version storage
+    * [WCM-2831] - TestNodeClassifyService always failed at the 31 each month
+    * [WCM-2832] - Impossible to download a binary file with name containing an illegal jcr char (using the right popup menu) 
+    * [WCM-2845] - Portlet Category Navigation Exception
+    * [WCM-2867] - End of Tag  not exist (W3C)
+    * [WCM-2872] - Link still be referenced after being inserted
+    * [WCM-2879] - Labels in French
+    * [WCM-2905] - PCLV displays the latest title of document
+    * [WCM-2911] - clv manual search content: Error when previewing content with image loaded from jcr
+    * [WCM-2914] - FCKEditor: Exception when creating page link after adding new page for the user navigation
+    * [WCM-2922] - The If-Modified-Since property in the HTTP header of all resources generated by rest service doesn't exist 
+    * [WCM-2925] - The selection od repository brings up some content
+    * [WCM-2929] - Labels in French
+    * [WCM-2936] - Duplicated portlet ID: Content List, Category Navigation, Category Content, Content by URL
+    * [WCM-2939] - No attribute "target" in "ACME Overview" when checking with W3C 
+    * [WCM-2943] - Error in displaying .rtf file 
+    * [WCM-2946] - Impossible to show HTML link in a printed document
+    * [WCM-2947] - Problem of downloading Microsoft Office 97/2003 files (IE7) in CLV
+    * [WCM-2948] - Quick edit icons of portlet in column container lost when editing page using IE7
+    * [WCM-2950] - Align problem in acme/News page
+    * [WCM-2951] - Impossible selection to insert contents into a  text content
+    * [WCM-2952] - [Newsletter] Wrong text of changing "Subscribe" in French 
+    * [WCM-2956] - Error in research when writing characters * and -
+    * [WCM-2957] - Add page wizards: Some labels are not translated in French
+    * [WCM-2960] - It isn't possible to select a not visible page when creating a portal page link into a text (FCK Editor)
+    * [WCM-2961] - Portlets are not dropped in the desired position when edit site
+    * [WCM-2977] - NPE when print 1 SCV page
+    * [WCM-2978] - Error when url contains non existing page(node) on address bar
+    * [WCM-2979] - [WCM] 'Back' icon is not displayed
+    * [WCM-2981] - Unknown err when search without input value to search while configuring CLV
+    * [WCM-2986] - [WCM] Nothing happen when subscribe newsleter
+
+** Task
+    * [WCM-2857] - Unjustified use of javascript code
+    * [WCM-2933] - Impossible to hide Admin bar for a user group
+
+
+*****************
+Version wcm-1.2.7
+*****************
+
+** Bug
+    * [WCM-2814] - Managing tables in FCKEditor
+    * [WCM-2817] - properly catch the PathNotFoundException when a resource doesn't exist
+    * [WCM-2836] - IE6: Can't login (Login/Change language/ Register link don't work )
+    * [WCM-2838] - Can't sort category content in a CLV
+    * [WCM-2854] - The "order by" in the clv portlet preference is not stored in the view mode
+    * [WCM-2861] - A problem with WCMInsertContent when browsing directories with special characters (using IE7)
+    * [WCM-2864] - Value of attribute "id" invalid  W3C
+    * [WCM-2865] - Duplicated Id "UIPopupContainer"
+    * [WCM-2866] - Document type does not allow element "style".
+    * [WCM-2868] - cannot view nor select content when selecting a content (text) for a SCV using search
+    * [WCM-2870] - Problem when displaying nt:file view in DMS Administration drive
+    * [WCM-2874] - WCM 1.2 does not pass W3C tests
+    * [WCM-2880] - The order of content's list in  CLV changes at disconnection 
+    * [WCM-2882] - Problem with WCMInsertContent when browsing directories with illegal jcr character '
+    * [WCM-2884] - Assigning a text to an SCV Portlet - must validate text twice
+    * [WCM-2904] - Duplicated id "UICLVPortlet"
+    * [WCM-2909] - W3C Validation : Ampersands in URLs
+    * [WCM-2910] - Broken link in the navigation after moving nodes
+    * [WCM-2913] - Duplicate content in CLV when add symlink to CLV
+    * [WCM-2915] - Quick edit icons lost when editing page using IE7
+    * [WCM-2917] - SCV: Error when adding content which extend from exo:webcontent and other node types
+    * [WCM-2921] - Duplicated elements at the creation of a CLV
+    * [WCM-2931] - Impossible to pull down "Sites" menu to the last item (IE7)
+    * [WCM-2932] - Problem in UIJCRExplorer when using SessionLeakDetector
+
+** Task
+    * [WCM-2908] - W3C Validation : UICLVPortlet problems
+
+*****************
 Version wcm-1.2.6
 *****************
 
@@ -3042,6 +3392,20 @@ Version wcm-1.2
 
 
 *******************
+Version webos-1.5.9
+*******************
+
+** Empty
+
+*******************
+Version webos-1.5.8
+*******************
+
+** Bug
+    * [WEBOS-348] - Problem of javascript in IE8
+
+
+*******************
 Version webos-1.5.7
 *******************
 
@@ -3307,6 +3671,20 @@ Version webos-1.5
     * [WEBOS-183] - [DEV]: should set min-width and min-heigth for portlet when user resize portlet by using mouse
     * [WEBOS-184] - [TEST]:should set min-width and min-heigth for portlet when user resize portlet by using mouse
 
+
+*****************
+Version wf-1.0.10
+*****************
+
+** Bug
+    * [WF-90] - mini calendar is not shown at some forms where include date/time field
+
+
+****************
+Version wf-1.0.9
+****************
+
+** Empty
 
 ****************
 Version wf-1.0.8
