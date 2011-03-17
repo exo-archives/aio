@@ -188,11 +188,6 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
 	<td>ThreadTitle</td>
 	<td></td>
 </tr>
@@ -202,9 +197,34 @@
 	<td>Censor Topic</td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>messageContent___Frame</td>
+	<td>waitForElementPresent</td>
+	<td>//iframe[@id='messageContent___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//iframe[@id='messageContent___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]/td/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>Censor Topic Content</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Submit</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -248,11 +268,6 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
 	<td>ThreadTitle</td>
 	<td></td>
 </tr>
@@ -268,13 +283,33 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>//iframe[@id='messageContent___Frame']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>messageContent___Frame</td>
-	<td>Topic for CTest</td>
+	<td>selectFrame</td>
+	<td>//iframe[@id='messageContent___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]/td/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
+	<td>Topic for CTest Content</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Submit</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -436,7 +471,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

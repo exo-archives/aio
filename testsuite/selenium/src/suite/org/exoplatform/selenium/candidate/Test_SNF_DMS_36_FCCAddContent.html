@@ -77,14 +77,54 @@
 	<td>FCCAddContent_36_title</td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>summary___Frame</td>
+	<td>waitForElementPresent</td>
+	<td>//iframe[@id='summary___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//iframe[@id='summary___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>FCC add content summary</td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>content___Frame</td>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//iframe[@id='content___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//iframe[@id='content___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>FCC Add content text</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -93,12 +133,12 @@
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td> This node has been saved at '/Groups/platform/users/Documents' location successfully </td>
+	<td>This node has been saved at '/Groups/platform/users/Documents' location successfully</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='UIFastContentCreatorPortlet']/div[2]//tbody//a</td>
+	<td>link=OK</td>
 	<td></td>
 </tr>
 <tr>
@@ -166,7 +206,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

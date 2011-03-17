@@ -88,7 +88,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>1000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,19 +102,54 @@
 	<td>Test Title</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForElementPresent</td>
+	<td>//iframe[@id='notifyEmail___Frame']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>notifyEmail___Frame</td>
+	<td>selectFrame</td>
+	<td>//iframe[@id='notifyEmail___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>Test data 01</td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>notifyEmailMoved___Frame</td>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//iframe[@id='notifyEmailMoved___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//iframe[@id='notifyEmailMoved___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>Test data 02</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -143,7 +178,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>1000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -186,7 +221,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
