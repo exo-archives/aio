@@ -1,0 +1,2 @@
+************** KS Notes
+1. SNF_KS_13_ManageAnswerInQuestion: need preparation: add user demo to group /platform/web-contributors with membership editor.
