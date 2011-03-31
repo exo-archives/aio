@@ -523,7 +523,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -537,9 +537,29 @@
 	<td>File_04</td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
+	<td>waitForElementPresent</td>
 	<td>//iframe[@id='contentHtml___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//iframe[@id='contentHtml___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>File 04 content</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1111,7 +1131,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

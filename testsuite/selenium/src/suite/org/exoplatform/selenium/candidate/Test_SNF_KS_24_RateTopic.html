@@ -93,7 +93,7 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>ThreadTitle</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,19 +102,34 @@
 	<td>Topic 24 for Rate</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForElementPresent</td>
+	<td>//iframe[@id='messageContent___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//iframe[@id='messageContent___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]/td/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
+	<td>Topic 24 for Rate Content</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>messageContent___Frame</td>
+	<td>link=Submit</td>
 	<td></td>
-</tr>
-<tr>
-	<td>typeFCKEditor</td>
-	<td>messageContent___Frame</td>
-	<td>Topic 24 for Rate content</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -446,7 +461,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

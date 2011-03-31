@@ -128,13 +128,33 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>MailMessage___Frame</td>
+	<td>//iframe[@id='MailMessage___Frame']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>MailMessage___Frame</td>
+	<td>selectFrame</td>
+	<td>//iframe[@id='MailMessage___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]/iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>Private Message Test Content</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Send</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -378,13 +398,33 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>MailMessage___Frame</td>
+	<td>//iframe[@id='MailMessage___Frame']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>typeFCKEditor</td>
-	<td>MailMessage___Frame</td>
+	<td>selectFrame</td>
+	<td>//iframe[@id='MailMessage___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//html/body</td>
 	<td>Message Reply</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Send</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -846,7 +886,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
