@@ -45,12 +45,12 @@
       <description>rss reader plugin</description>     
     </component-plugin>
     
-    <!-- component-plugin>
+    <component-plugin>
       <name>description.listener</name>
       <set-method>addPlugin</set-method>
       <type>org.exoplatform.content.service.DescriptionPlugin</type>
       <description>Description plugin</description>     
-    </component-plugin -->
+    </component-plugin>
   </external-component-plugins>
   
   <!-- external-component-plugins>
