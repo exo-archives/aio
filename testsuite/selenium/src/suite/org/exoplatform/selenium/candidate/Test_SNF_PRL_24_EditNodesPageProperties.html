@@ -182,21 +182,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForLocation</td>
-	<td>http://localhost:8080/portal/private/classic/home/Test_SNF_PRL_24</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertLocation</td>
-	<td>http://localhost:8080/portal/private/classic/home/Test_SNF_PRL_24</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>--Edit node's page by check show max windown--</td>
 	<td></td>
@@ -292,6 +277,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>//div[contains(@onclick,'UIExoStart')]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Logout</td>
 	<td></td>
@@ -317,11 +307,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Home</td>
 	<td></td>
@@ -342,11 +327,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Edit Node's Page</td>
 	<td></td>
@@ -359,6 +339,11 @@
 <tr>
 	<td>echo</td>
 	<td>-- View page properties--</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='UIPageEditBar']/div/div/div/div/div/a[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -422,23 +407,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Home</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>link=Home</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>click</td>
+	<td>link=Home</td>
 	<td></td>
 </tr>
 <tr>
@@ -501,7 +481,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

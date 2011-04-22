@@ -172,19 +172,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/home</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>link=Portal_19</td>
+	<td>//div[contains(@onclick,'UIExoStart')]</td>
 	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td></td>
-	<td>portal/private/Portal_19</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -193,6 +183,11 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>xpath=//div[@id='UIPortalApplication']/div[@id='UIControlWorkspace']/div[@id='UIWorkspaceContainer']/div[@id='UIWorkspaceControl']/div[@id='UIExoStart']/div[1]/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
 	<td>link=classic</td>
 	<td></td>
 </tr>
@@ -242,21 +237,20 @@
 	<td></td>
 </tr>
 <tr>
-	<td>open</td>
-	<td>/portal/private/classic/home</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>link=Logout</td>
+	<td>xpath=//div[contains(@id,'UIPortalApplication')]/div[contains(@id,'UIControlWorkspace')]/div[contains(@id,'UIWorkspaceContainer')]/div[contains(@id,'UIWorkspaceControl')]/div[contains(@id,'UIExoStart')]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Login</td>
+	<td>link=Logout</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>
