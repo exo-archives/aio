@@ -148,7 +148,172 @@
 </tr>
 <tr>
 	<td>echo</td>
+	<td>-- View comment button on Collaboration tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sites Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIECMAdminPortlet']/div[2]/div[1]/div[2]/div/div[2]/div[1]/div/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Manage View</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[contains(@onclick,'wcm-view')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[contains(@onclick,'wcm-view')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@onclick,'Collaboration')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@onclick,'Collaboration')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[contains(@name,'comment')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[contains(@name,'comment')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add Tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='UIViewFormTabPane']//div[contains(@onclick,'Save')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
 	<td>--comment on document</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>root</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>exo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sites Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='iconTreeExplorer']//div[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Article_13</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Article_13</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Collaboration</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,11 +327,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
 	<td>//iframe[@id='comment___Frame']</td>
 	<td></td>
@@ -177,18 +337,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>//html/body/table/tbody/tr[2]//iframe</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
-	<td>//html/body</td>
+	<td>//iframe[@id='comment___Frame']</td>
 	<td>comment on document 13</td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>relative=top</td>
+	<td>click</td>
+	<td>//a[text()='Save']</td>
 	<td></td>
 </tr>
 <tr>
