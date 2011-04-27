@@ -68,7 +68,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='UIWindow-fastcontentcreator']/div[1]/div/div/div/div[1]/div/div/div/div[2]/div/div/a[2]/div</td>
+	<td>//div[@title=&quot;Portlet Mode&quot; and @onclick=&quot;eXo.webui.UIPopupSelectCategory.show(this, event);&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[text()='Edit']</td>
 	<td></td>
 </tr>
 <tr>
@@ -92,13 +97,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>echo</td>
-	<td>--click OK</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>//div[@id='UIFastContentCreatorPortlet']//div[2]//div//div[2]//div[@class='UIPopupMessages']//div[3]//div[@class='UIAction']//table//tr//td//div//div//div//div//a</td>
+	<td>//div[@class='UIPage']//div[contains(@id,'UIFastContentCreatorPortlet')]/div[@class='UIPopupWindow UIDragObject']//a[text()='OK']</td>
 	<td></td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='UIWindow-fastcontentcreator']/div[1]/div/div/div/div[1]/div/div/div/div[2]/div/div/a[3]/div</td>
+	<td>//div[@title='View']</td>
 	<td></td>
 </tr>
 <tr>
@@ -131,7 +131,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

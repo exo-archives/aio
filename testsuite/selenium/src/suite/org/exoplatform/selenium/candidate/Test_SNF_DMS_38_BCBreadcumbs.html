@@ -147,6 +147,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
+	<td></td>
+</tr>
+<tr>
 	<td>selectFrame</td>
 	<td>//html/body/table/tbody/tr[2]//iframe</td>
 	<td></td>
@@ -242,28 +247,58 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>link=Article_38</td>
+	<td>click</td>
+	<td>//div[@onclick='eXo.webui.UIPopupSelectCategory.show(this, event);']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Folder_38</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementNotPresent</td>
-	<td>link=Article_38</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementNotPresent</td>
-	<td>link=Article_38</td>
+	<td>//div[@id='UIWindow-contentbrowser']/div[1]/div/div/div/div[1]/div/div/div/div[2]/div/div/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=documents</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Add Path']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOneNodePathSelector']/div/div[3]/div/div/div/div/div/div[5]/a/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOneNodePathSelector']/div/div[3]/div/div/div/div/div/div[2]/a/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOneNodePathSelector']/div/div[3]/div/div/div/div/div/div[3]/a/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title='Add Root Node']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@onclick='eXo.webui.UIPopupSelectCategory.show(this, event);']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIWindow-contentbrowser']/div[1]/div/div/div/div[1]/div/div/div/div[2]/div/div/div[3]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -292,11 +327,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=Article_38</td>
 	<td></td>
@@ -304,11 +334,6 @@
 <tr>
 	<td>waitForTextPresent</td>
 	<td>Article_38_title</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -328,7 +353,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td>//div[contains(@onclick,'op=OK')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -352,11 +377,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>mouseDownRight</td>
 	<td>link=Folder_38</td>
 	<td></td>
@@ -367,8 +387,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>Are you sure want to delete</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[@id='UIPopupWindow']/div/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr/td/div[1]/div/div/div/a</td>
+	<td>//div[contains(@onclick,'op=OK')]</td>
 	<td></td>
 </tr>
 <tr>

@@ -612,11 +612,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextNotPresent</td>
-	<td>taxonomy2</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>--check if taxonomy2 is cut into 1</td>
 	<td></td>
@@ -652,11 +647,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertConfirmation</td>
-	<td>Do you really want to delete ?</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementNotPresent</td>
 	<td>link=taxonomy2</td>
 	<td></td>
@@ -667,13 +657,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>echo</td>
-	<td>--escape editing</td>
+	<td>waitForConfirmationPresent</td>
+	<td>Do you really want to delete ?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Do you really want to delete ?</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>-- Edit Taxonomy</td>
 	<td></td>
 </tr>
 <tr>
@@ -721,7 +721,6 @@
 	<td>link=Login</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

@@ -102,23 +102,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
 	<td>link=Add Document</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>link=Add Document</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -149,6 +134,11 @@
 <tr>
 	<td>selectFrame</td>
 	<td>//iframe[@id='summary___Frame']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//html/body/table/tbody/tr[2]//iframe</td>
 	<td></td>
 </tr>
 <tr>
@@ -212,28 +202,33 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>echo</td>
 	<td>--switch to edit mode to config</td>
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(@onclick,'UIPopupSelectCategory')]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[@id='UIWindow-contentbrowser']//div//div//div//div//div</td>
+	<td>//div[contains(@onclick,'UIPopupSelectCategory')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>link=Edit</td>
+	<td>//div[@title='Edit']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Edit</td>
+	<td>//div[@title='Edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>--click icon to select path</td>
 	<td></td>
 </tr>
 <tr>
@@ -242,18 +237,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>echo</td>
-	<td>--click Edit button</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//form[@id='UIPathConfig']//div[2]//div//table//tr//td//div//div//div//div//a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>--click icon to select path</td>
 	<td></td>
 </tr>
 <tr>
@@ -273,6 +258,16 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
+	<td>//div[@id='UIOneNodePathSelector']//div[3]//div//div//div//div//div//div[4]//a//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='UIOneNodePathSelector']//div[3]//div//div//div//div//div//div[4]//a//div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
 	<td>link=sites content</td>
 	<td></td>
 </tr>
@@ -289,26 +284,6 @@
 <tr>
 	<td>click</td>
 	<td>link=live</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>--select 'acme'</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[@id='UIOneNodePathSelector']//div[3]//div//div//div//div//div//div[4]//a//div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='UIOneNodePathSelector']//div[3]//div//div//div//div//div//div[4]//a//div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>link=documents</td>
 	<td></td>
 </tr>
 <tr>
@@ -337,13 +312,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>link=View</td>
+	<td>waitForTextPresent</td>
+	<td>//div[@title='View']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=View</td>
+	<td>//div[@title='View']</td>
 	<td></td>
 </tr>
 <tr>
@@ -369,11 +344,6 @@
 <tr>
 	<td>click</td>
 	<td>//div[@id='UIToolBar']/div[4]/a[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -522,11 +492,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=Article_39</td>
 	<td></td>
@@ -534,11 +499,6 @@
 <tr>
 	<td>waitForTextPresent</td>
 	<td>Article_39_title</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
 	<td></td>
 </tr>
 <tr>

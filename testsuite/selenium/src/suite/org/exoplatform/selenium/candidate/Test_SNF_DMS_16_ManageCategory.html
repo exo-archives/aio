@@ -52,6 +52,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>-- Add category</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Sites Explorer</td>
 	<td></td>
@@ -178,7 +183,7 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>--check after adding category</td>
+	<td>-- Check after adding category</td>
 	<td></td>
 </tr>
 <tr>
@@ -193,12 +198,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//div[contains(@onclick,'acme')]</td>
+	<td>//a[text()='acme']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[contains(@onclick,'acme')]</td>
+	<td>//a[text()='acme']</td>
 	<td></td>
 </tr>
 <tr>
@@ -227,8 +232,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>link=Sites Explorer</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[@id='UIViewBarContainer']//a[2]</td>
+	<td>link=Sites Explorer</td>
 	<td></td>
 </tr>
 <tr>
