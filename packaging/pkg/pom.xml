@@ -258,7 +258,7 @@
     <dependency>
       <groupId>org.apache.shindig</groupId>
       <artifactId>shindig-social-api</artifactId>
-      <version>0.8.1-1-r719456</version>
+      <version>trunk-r719456-eXo03</version>
       <type>jar</type>
     </dependency>
     <dependency>
