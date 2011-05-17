@@ -77,6 +77,18 @@ III. STARTUP INSTRUCTIONS
 
 
     * Download eXo All In One (Tomcat or JBoss)
+
+    * Configure the Mail service (mandatory since AIO 1.6.7)
+      +) Open cs-plugins-configuration.xml (in portal.war/WEB-INF/conf/cs folder).
+      +) Add the appropriate values for the empty fields of the following components:
+         org.exoplatform.services.mail.MailService
+         org.exoplatform.calendar.service.ReminderPeriodJob
+
+         MailService is mandatory for different applications of sending mails. For example, to send account/password in case of "Forget username/password", or to send notification when watching a JCR node.
+         http://wiki.exoplatform.com/xwiki/bin/view/CS/CS+General+Configuration#HNotificationsandEmails
+
+         ReminderPeriodJob is needed for Reminder functionality in eXo Calendar application.
+         http://wiki.exoplatform.org/xwiki/bin/view/CS/Email%20Reminder%20Plugin%20Configuration
     
     * Configure the application (optional)
       
