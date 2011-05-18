@@ -536,6 +536,25 @@ Version portal-2.5.4
 ** Task
     * [PORTAL-3078] - Create tag 2.5.4 based on JCR 1.10.4
 
+******************
+Version dms-2.5.10
+******************
+
+** Bug
+    * [ECM-5477] - Don't Allow adding Actions into Contents other than Folder nodetypes
+    * [ECM-5492] - Problem of displaying document name containing illegal JCR character ' (Node properties, Manage Versions)
+    * [ECM-5509] - Unable to use validator for CalendarField
+    * [ECM-5523] - java.io.IOException exception when copy/paste pdf in webdav drive
+    * [ECM-5536] - In the content browser portlet the search doesn't run when hitting 'ENTER' key
+    * [ECM-5568] - Labels aren't translated in French in Manage Actions
+    * [ECM-5569] - Username of the author is displayed instead of his name and surname
+    * [ECM-5584] - the results of an initial research not cleared during a second search
+    * [ECM-5590] - Bug when deleting and recreating a document in a category
+    * [ECM-5591] - Bug when replacing a file in categories
+    * [ECM-5592] - Bugs when searching documents which names contain apostrophes in Simple search.
+    * [ECM-5593] - Display author comment's name for documents inside WCM Presentation view 
+    * [ECM-5594] - Bugs when displaying pagination results of search in drive acme
+    * [ECM-5599] - Unknown error when hit enter at quick search without input search keyword in BO
 
 *****************
 Version dms-2.5.9
@@ -1364,6 +1383,26 @@ Version dms-2.3.2
     * [ECM-3586] - Describe this new feature in the guides
     * [ECM-3587] - Describe this new feature in the wiki
 
+****************
+Version cs-1.3.9
+****************
+
+** Bug
+    * [CS-3360] - Can't check mail any more when edit date to check in special case
+    * [CS-4277] - UI error when select user in French language
+    * [CS-4415] - eXo Mail: Print message : only the first page is printed
+    * [CS-4681] - Mail: Cannot send/receive email with incoming/outgoing SSL protocol
+    * [CS-4735] - RSS Reader portlet : problem with the creation of a category (an URL input is required)
+    * [CS-4748] - Job starts before loading some nodetypes
+    * [CS-4766] - Offline messages are marked with current date
+    * [CS-4830] - Untranslated label of Priority field in the search of agenda
+    * [CS-4831] - Untranslated labels in sharing calendar
+    * [CS-4907] - In Calendar, the reminding of an event by mail is not working
+    * [CS-4916] - Can not add a contact with a long mail address in the address book
+    * [CS-4987] - CS - Contact - Wrong address validation when sending email in Contact
+
+** New Feature
+    * [CS-4757] - loss of messages in chat when user is offline
 
 ****************
 Version cs-1.3.8
@@ -2023,6 +2062,22 @@ Version cs-1.2.2
 ** Sub-task
     * [CS-3359] - Make svn tags
 
+****************
+Version ks-1.2.8
+****************
+
+** Bug
+    * [KS-2629] - Labels in French
+    * [KS-2701] - [Forum] Bad UI of Administration form in French
+    * [KS-3007] - [Forum] Tooltip is not translated in French 
+    * [KS-3057] - Advanced Search returns all questions if using (Term=any word, Search in = Entries, Created between/And is filled up)
+    * [KS-3101] - Buttons hidden when start a topic in the Forum portlet
+    * [KS-3117] - redundant calls to "Organization Service"  in FAQ
+    * [KS-3118] -  KS - IE7: Don't show avatar of user after upload successfull
+    * [KS-3135] - [Forum] Bad UI if username is too long
+
+** Task
+    * [KS-2793] - Manage e.printStacktrace() and replace by logging system for Forum and FAQ
 
 ****************
 Version ks-1.2.7
@@ -2718,6 +2773,33 @@ Version ks-1.1.2
     * [KS-1865] - Upgrade to Portal 2.5.5
     * [KS-1866] - Release 1.1.2
 
+*****************
+Version wcm-1.2.9
+*****************
+
+** Bug
+    * [WCM-2567] - Exception when the page register is opened the 1st time (portal classic)
+    * [WCM-2903] - Update UIContainers after PORTAL-2983
+    * [WCM-2928] - Search results contain some useless and unwanted information(document properties) for structured documents
+    * [WCM-2944] - Impossible to change to another page of CLV portlets
+    * [WCM-2948] - Quick edit icons of portlet in column container lost when editing page using IE7
+    * [WCM-2968] - Labels aren't translated in French when managing publications
+    * [WCM-2984] - Content in some CLV disappears after change position of documents listed in DOCUMENTS in Overview page
+    * [WCM-2992] - Links are displayed not underlined when visited
+    * [WCM-2993] - Errors when importing CSS files in fckeditor
+    * [WCM-2996] - Bugs when creating a page under many nodes
+    * [WCM-2997] - Bugs when search and download documents which names contain apostrophes.
+
+** Task
+    * [WCM-2959] - The user workspace panel remains visible after editing the current page.
+    * [WCM-2962] - The user workspace panel remains visible after editing the current site.
+    * [WCM-2963] - The user workspace panel remains visible after aborting to edit the current page.
+    * [WCM-3002] - W3C Validation: ID begins with a digit
+
+** Sub-task
+    * [WCM-2945] - Impossible to move containers
+    * [WCM-2964] - Gray area appears each time the mouse passes the border of column container
+    * [WCM-2965] - Possible to add a portlet to the right or left side of a column container
 
 *****************
 Version wcm-1.2.8
@@ -3424,6 +3506,13 @@ Version wcm-1.2
     * [WCM-1883] - Unknown error when edit a default Script at Site Administrator
     * [WCM-1884] - Unknown error when add new letter into a blank category
 
+********************
+Version webos-1.5.10
+********************
+
+** Bug
+    * [WEBOS-336] - Translation of portlets' Tooltip
+    * [WEBOS-397] - Display's problem of the left panel in the portlet File Explorer
 
 *******************
 Version webos-1.5.9
@@ -3705,6 +3794,11 @@ Version webos-1.5
     * [WEBOS-183] - [DEV]: should set min-width and min-heigth for portlet when user resize portlet by using mouse
     * [WEBOS-184] - [TEST]:should set min-width and min-heigth for portlet when user resize portlet by using mouse
 
+*****************
+Version wf-1.0.11
+*****************
+
+** Empty
 
 *****************
 Version wf-1.0.10
