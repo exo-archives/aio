@@ -1,6 +1,20 @@
 ============================
-CHANGELOG - ALL IN ONE 1.6.8
+CHANGELOG - ALL IN ONE 1.6.9
 ============================
+
+*****************
+Version all-1.6.9
+*****************
+
+** Bug
+    * [ALL-241] - Exception when the page register is opened the 1st time
+    * [ALL-505] - Add page wizards: Some labels are not translated in French
+    * [ALL-506] - Job starts before loading some nodetypes
+    * [ALL-510] - (500)Internal Server Error
+    * [ALL-517] - Orphan symlinks aren't cleaned after removing real nodes
+
+** Documentation
+    * [ALL-527] - Update README: guide to configure MailService
 
 *****************
 Version all-1.6.8
@@ -166,6 +180,26 @@ Version all-1.6.1
     * [ALL-193] - Tag the products related to AIO 1.6.1 one by one
     * [ALL-194] - Check JBPM integration, v3.0.1
 
+*********************
+Version portal-2.5.13
+*********************
+
+** Bug
+    * [PORTAL-3811] - Always redirect to home page when url contains non existing page(node) on address bar
+    * [PORTAL-3832] - Gadgets make requests to a Subversion repository trunk
+    * [PORTAL-3880] - Exception when trying to move the page body inside a UITableColumnContainer
+    * [PORTAL-3892] - Problem with removed remote gadgets from the admin app registry
+    * [PORTAL-3896] - Broken Design on page wizard creation when tabs titles are too long
+    * [PORTAL-3899] - Hard-coded title in UIFormMultiValueInputSet
+    * [PORTAL-3907] - W3C validation:CSS errors
+    * [PORTAL-3911] - Problem of display when accessing to User Workspace
+    * [PORTAL-3914] - Update shindig version
+
+** Improvement
+    * [PORTAL-3825] - Add possibility to paste node on navigation several times in the same location
+
+** New Feature
+    * [PORTAL-3893] - Add new option for translating portlet's title by using javax.portlet.title key from resource bundle
 
 *********************
 Version portal-2.5.12
