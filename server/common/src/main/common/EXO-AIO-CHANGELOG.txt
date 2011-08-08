@@ -1,6 +1,13 @@
 ============================
-CHANGELOG - ALL IN ONE 1.6.9
+CHANGELOG - ALL IN ONE 1.6.10
 ============================
+
+******************
+Version all-1.6.10
+******************
+
+** Bug
+    * [ALL-515] - Search box UI bug
 
 *****************
 Version all-1.6.9
@@ -179,6 +186,21 @@ Version all-1.6.1
     * [ALL-184] - Upd maven version from 1.6-SNAPSHOT to 1.6.1-SNAPSHOT
     * [ALL-193] - Tag the products related to AIO 1.6.1 one by one
     * [ALL-194] - Check JBPM integration, v3.0.1
+
+*********************
+Version portal-2.5.14
+*********************
+
+** Bug
+    * [PORTAL-3209] - Upload icon not visible on Firefox 3 (Ubuntu)
+    * [PORTAL-3863] - Upload Icon disappears at large font size in Windows
+    * [PORTAL-3880] - Exception when trying to move the page body inside a UITableColumnContainer
+    * [PORTAL-3912] - Unable to redeploy portal.war
+    * [PORTAL-3913] - Fix failing testcases in Shindig build
+    * [PORTAL-3920] - Don't support translating portlet's title by default for newly adding portlets
+
+** Task
+    * [PORTAL-3922] - Lost status of running applications after logout/login in the first time
 
 *********************
 Version portal-2.5.13
@@ -535,6 +557,28 @@ Version portal-2.5.4
 
 ** Task
     * [PORTAL-3078] - Create tag 2.5.4 based on JCR 1.10.4
+
+******************
+Version dms-2.5.11
+******************
+
+** Bug
+    * [ECM-5496] - [DMS] Still existing a category on Taxonomy after deleted it on category
+    * [ECM-5577] - Display's problem of the left panel in the portlet File Explorer
+    * [ECM-5578] -  Automatic scroll in content explorer directory 
+    * [ECM-5581] - [WCM] Unknown error when add permission for node
+    * [ECM-5583] - [WCM] exo:PublishingProcess action is not executed
+    * [ECM-5603] - Search in taxonomy do not look on associated content
+    * [ECM-5608] - Problem when using the "Save as" function on webdav
+    * [ECM-5609] - The result of search contains jcr:FrozenNode
+    * [ECM-5611] - NPE when Content Browser displays a category 
+    * [ECM-5612] - Can't edit or remove comments
+    * [ECM-5613] - [WCM] Unknown error when create new drive with special character
+    * [ECM-5614] - Layout of Version Info with +40 versions unreadable/accessible 
+    * [ECM-5618] - Can not upload when there're more than 1 uploaded fields
+
+** Task
+    * [ECM-5571] - [ECM] Portlet's titles are not translated in French
 
 ******************
 Version dms-2.5.10
@@ -1383,6 +1427,21 @@ Version dms-2.3.2
     * [ECM-3586] - Describe this new feature in the guides
     * [ECM-3587] - Describe this new feature in the wiki
 
+*****************
+Version cs-1.3.10
+*****************
+
+** Bug
+    * [CS-3923] - Wrong number of unread emails
+    * [CS-4432] - IE7: Upload Icon is not displayed
+    * [CS-4489] - *_en.properties are missing in Mail, Calendar and contact portlets
+    * [CS-4721] - Change "undefined" by the name of user who invite.
+    * [CS-4765] - Action on Pop3 Mail is invalid
+    * [CS-4849] - Chat - there is no user notification of the session timeout
+    * [CS-4985] - CS - Mail - Filter {With Attachment} does not work
+    * [CS-5055] - CLONE - CS - Mail - Get message "Please select messages" when right-click on a message and select a menu item
+    * [CS-5063] - CLONE - NPE when sending chat message (Jboss)
+
 ****************
 Version cs-1.3.9
 ****************
@@ -2061,6 +2120,21 @@ Version cs-1.2.2
 
 ** Sub-task
     * [CS-3359] - Make svn tags
+
+****************
+Version ks-1.2.9
+****************
+
+** Bug
+    * [KS-2759] - Upload Icon disappears at large font size in Windows
+    * [KS-2872] - RepositoryException: Illegal relPath: "null" when edit a category from the Answer portlet
+    * [KS-2879] - [AnswerS Portlet] RepositoryException: Illegal relPath: "" when edit question
+    * [KS-2881] - [ksportal] cs config in ks sources
+    * [KS-2882] - [ANswers Portlet] PathNotFoundException when answering a question
+    * [KS-2985] - Submit poll edition (delete option) isn't possible
+    * [KS-3279] - Impossible to create a FAQ Category using a name with an apostroph (')
+    * [KS-3280] - Not quite easy to re-order sub-categories of one category
+    * [KS-3364] - Impossible access to a forum's category when having the restriction *:/platform/users
 
 ****************
 Version ks-1.2.8
@@ -2772,6 +2846,24 @@ Version ks-1.1.2
 ** Task
     * [KS-1865] - Upgrade to Portal 2.5.5
     * [KS-1866] - Release 1.1.2
+
+******************
+Version wcm-1.2.10
+******************
+
+** Bug
+    * [WCM-2893] -  Unknown error when send a letter
+    * [WCM-2971] - Publication of documents in File Explorer do not refresh cache
+    * [WCM-2976] - Content's publication state changed to draft after being selected in a SCV
+    * [WCM-2991] - Picture horizontal right, middle and left position into a text content
+    * [WCM-2998] - [WCM] Error UI when result's list is too long
+    * [WCM-3004] - Break UI folder's name with space
+    * [WCM-3011] - Register Newsletter form is reset after subscribe successfully (when logout/confirm through email)
+    * [WCM-3018] - Problem when selecting contents with path contains apostrophe character (CLV, SCV)
+    * [WCM-3026] - The navigation menu is baddly displayed when page contains a Flash Player
+    * [WCM-3028] - Problem of displaying an Article with comments in a SCV
+    * [WCM-3029] - CLONE - Upload icon not visible (in Site explorer) using Firefox under Linux
+    * [WCM-3030] - Problem of displaying the left panel in the File Explorer portlet
 
 *****************
 Version wcm-1.2.9
@@ -3507,6 +3599,13 @@ Version wcm-1.2
     * [WCM-1884] - Unknown error when add new letter into a blank category
 
 ********************
+Version webos-1.5.11
+********************
+
+** Bug
+    * [WEBOS-336] - Translation of portlets' Tooltip
+
+********************
 Version webos-1.5.10
 ********************
 
@@ -3793,6 +3892,14 @@ Version webos-1.5
     * [WEBOS-182] - [TEST]: Should have scroll in desktop page when restore down the windown
     * [WEBOS-183] - [DEV]: should set min-width and min-heigth for portlet when user resize portlet by using mouse
     * [WEBOS-184] - [TEST]:should set min-width and min-heigth for portlet when user resize portlet by using mouse
+
+*****************
+Version wf-1.0.12
+*****************
+
+** Bug
+    * [WF-91] - Unable to internationalize "task name"
+    * [WF-94] - exo:PublishingProcess action is not executed
 
 *****************
 Version wf-1.0.11

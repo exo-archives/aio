@@ -2,8 +2,8 @@
 eXo All In One Release Notes
 ****************************
 
-Date: May 18th, 2011
-Version: 1.6.9
+Date: August 8th, 2011
+Version: 1.6.10
 
 
 Thank you for downloading eXo All In One.
@@ -17,22 +17,22 @@ I. MAIN CHANGES
 ===============
 
 Updated to the following products:
-    * Portal 2.5.13
-    * WebOS 1.5.10
-    * CS 1.3.9
-    * KS 1.2.8
-    * WF 1.0.11
-    * DMS 2.5.10
-    * WCM 1.2.9
+    * Portal 2.5.14
+    * WebOS 1.5.11
+    * CS 1.3.10
+    * KS 1.2.9
+    * WF 1.0.12
+    * DMS 2.5.11
+    * WCM 1.2.10
 
 
 ====================
 II. PACKAGE CONTENTS
 ====================
 
-    * eXoAllInOne-1.6.9-tomcat.zip 
-    * eXoAllInOne-1.6.9-jbossear.zip
-    * eXoAllInOne-1.6.9-chatserver.zip
+    * eXoAllInOne-1.6.10-tomcat.zip 
+    * eXoAllInOne-1.6.10-jbossear.zip
+    * eXoAllInOne-1.6.10-chatserver.zip
     
     * EXO-AIO-README.txt (this file)
     * EXO-AIO-CHANGELOG.txt
@@ -167,7 +167,14 @@ be deployed after, following the alphabetical order.
 However, Tomcat doesn't ensure this order will be respected
 
     * See also: http://wiki.apache.org/tomcat/FAQ/Miscellaneous#Q27
-    
+
+If you meet Hibernate cache exception appears when launching server AIO, please take o look at:
+   
+    * https://jira.exoplatform.org/browse/ALL-419
+
+If you can not send mail in Jboss server, please take o look at:    
+    * https://jira.exoplatform.org/browse/CS-4991
+
 ======================
 VI. BUILD INSTRUCTIONS
 ======================
