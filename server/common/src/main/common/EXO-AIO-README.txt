@@ -168,11 +168,11 @@ However, Tomcat doesn't ensure this order will be respected
 
     * See also: http://wiki.apache.org/tomcat/FAQ/Miscellaneous#Q27
 
-If you meet Hibernate cache exception appears when launching server AIO, please take o look at:
+If you meet Hibernate cache exception appears when launching server AIO, please take a look at:
    
     * https://jira.exoplatform.org/browse/ALL-419
 
-If you can not send mail in Jboss server, please take o look at:    
+If you cannot send mail in Jboss server, please take a look at:    
     * https://jira.exoplatform.org/browse/CS-4991
 
 ======================
