@@ -2,8 +2,8 @@
 eXo All In One Release Notes
 ****************************
 
-Date: August 8th, 2011
-Version: 1.6.10
+Date: February 17th, 2012
+Version: 1.6.11
 
 
 Thank you for downloading eXo All In One.
@@ -17,13 +17,13 @@ I. MAIN CHANGES
 ===============
 
 Updated to the following products:
-    * Portal 2.5.14
-    * WebOS 1.5.11
-    * CS 1.3.10
-    * KS 1.2.9
-    * WF 1.0.12
-    * DMS 2.5.11
-    * WCM 1.2.10
+    * Portal 2.5.15
+    * WebOS 1.5.12
+    * CS 1.3.11
+    * KS 1.2.10
+    * WF 1.0.13
+    * DMS 2.5.12
+    * WCM 1.2.11
 
 
 ====================

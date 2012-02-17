@@ -1,7 +1,14 @@
 ============================
-CHANGELOG - ALL IN ONE 1.6.10
+CHANGELOG - ALL IN ONE 1.6.11
 ============================
 
+
+******************
+Version all-1.6.11
+******************
+
+** Empty
+    
 ******************
 Version all-1.6.10
 ******************
@@ -187,6 +194,20 @@ Version all-1.6.1
     * [ALL-193] - Tag the products related to AIO 1.6.1 one by one
     * [ALL-194] - Check JBPM integration, v3.0.1
 
+
+*********************
+Version portal-2.5.15
+*********************
+
+** Bug
+    * [PORTAL-3209] - Upload icon not visible on Firefox 3 (Ubuntu)
+    * [PORTAL-3863] - Upload Icon disappears at large font size in Windows
+    * [PORTAL-3912] - Unable to redeploy portal.war
+    * [PORTAL-3913] - Fix failing testcases in Shindig build
+    * [PORTAL-3928] - The message encoding changes when opening an email link in Outlook 2007
+    * [PORTAL-3930] - Problem of calendar with the dutch language (podcast files)
+    
+    
 *********************
 Version portal-2.5.14
 *********************
@@ -558,6 +579,21 @@ Version portal-2.5.4
 ** Task
     * [PORTAL-3078] - Create tag 2.5.4 based on JCR 1.10.4
 
+
+
+******************
+Version dms-2.5.12
+******************
+
+** Bug
+    * [ECM-5496] - [DMS] Still existing a category on Taxonomy after deleted it on category
+    * [ECM-5577] - Display's problem of the left panel in the portlet File Explorer
+    * [ECM-5586] - Error in console when switching to Detail view in File Explorer
+    * [ECM-5617] - Problem with Left container paginator for folders names including special characters 
+    * [ECM-5620] - Impossible manipulation of a document containing & in its name 
+    * [ECM-5621] - Adding an exo:createRSSFeedAction is not working
+
+
 ******************
 Version dms-2.5.11
 ******************
@@ -579,6 +615,7 @@ Version dms-2.5.11
 
 ** Task
     * [ECM-5571] - [ECM] Portlet's titles are not translated in French
+
 
 ******************
 Version dms-2.5.10
@@ -1427,6 +1464,25 @@ Version dms-2.3.2
     * [ECM-3586] - Describe this new feature in the guides
     * [ECM-3587] - Describe this new feature in the wiki
 
+
+*****************
+Version cs-1.3.11
+*****************
+
+** Bug
+    * [CS-4432] - IE7: Upload Icon is not displayed
+    * [CS-4721] - Change "undefined" by the name of user who invite.
+    * [CS-4765] - Action on Pop3 Mail is invalid
+    * [CS-4999] - Mail: Error in displaying text in French
+    * [CS-5055] - CLONE - CS - Mail - Get message "Please select messages" when right-click on a message and select a menu item
+    * [CS-5060] - [CS][Calendar] Time of one task/event isn't updated (only rolled back to previous status) after editing sth of other task/event on the same calendar
+    * [CS-5061] - [CS][Mail] UI error msg shown after adding new account
+    * [CS-5151] - In Contact Portlets, some labels are not changed when changing the language
+    * [CS-5184] - Wrong number of unread emails that have many senders
+    * [CS-5310] - Display problems with RSS Reader Portlet
+
+
+
 *****************
 Version cs-1.3.10
 *****************
@@ -2120,6 +2176,19 @@ Version cs-1.2.2
 
 ** Sub-task
     * [CS-3359] - Make svn tags
+
+
+
+
+****************
+Version ks-1.2.10
+****************
+
+** Bug
+    * [KS-2759] - Upload Icon disappears at large font size in Windows
+    * [KS-2943] - Error in the order of the tree when adding a category
+
+
 
 ****************
 Version ks-1.2.9
@@ -2847,6 +2916,19 @@ Version ks-1.1.2
     * [KS-1865] - Upgrade to Portal 2.5.5
     * [KS-1866] - Release 1.1.2
 
+
+******************
+Version wcm-1.2.11
+******************
+
+** Bug
+    * [WCM-2789] - Adding an exo:createRSSFeedAction is not working
+    * [WCM-2971] - Publication of documents in File Explorer do not refresh cache
+    * [WCM-2972] - Add default icon for the specific contents when inserting content in FCKEditor
+    * [WCM-3007] - Incorrect mimetype assigned to images by RESTImagesRendererService
+    * [WCM-3030] - Problem of displaying the left panel in the File Explorer portlet
+    
+    
 ******************
 Version wcm-1.2.10
 ******************
@@ -3598,6 +3680,15 @@ Version wcm-1.2
     * [WCM-1883] - Unknown error when edit a default Script at Site Administrator
     * [WCM-1884] - Unknown error when add new letter into a blank category
 
+
+
+********************
+Version webos-1.5.12
+********************
+
+** Empty
+
+
 ********************
 Version webos-1.5.11
 ********************
@@ -3892,6 +3983,14 @@ Version webos-1.5
     * [WEBOS-182] - [TEST]: Should have scroll in desktop page when restore down the windown
     * [WEBOS-183] - [DEV]: should set min-width and min-heigth for portlet when user resize portlet by using mouse
     * [WEBOS-184] - [TEST]:should set min-width and min-heigth for portlet when user resize portlet by using mouse
+
+
+*****************
+Version wf-1.0.13
+*****************
+
+** Bug
+    * [WF-96] - Labels without values in the portlet WorkflowController and WorkflowAdministration
 
 *****************
 Version wf-1.0.12
