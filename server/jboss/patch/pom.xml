@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.exoplatform.allinone</groupId>
     <artifactId>aio.parent</artifactId>
-    <version>1.6.11</version>
+    <version>1.6.12-SNAPSHOT</version>
   </parent>
   <artifactId>exo.aio.jbossear.patch</artifactId>
   <packaging>jar</packaging>
